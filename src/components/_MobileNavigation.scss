@@ -13,19 +13,16 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .MobileNavigation {
     display: block;
+
   }
-  .MobileMenuHidden {
+  .MobileNavigationHidden {
     display: none;
   }
-  .MobileNavigationWrap {
-    .Link {
-      text-decoration: none;
-    }
-  }
+
   .MobileNavigationActive {
+    position: absolute;
     padding: 2.0em;
     display: block;
-    position: absolute;
     text-align: left;
     height: 600px;
     width: 100%;

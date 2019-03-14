@@ -6,8 +6,9 @@ import Navigation from '../components/Navigation'
 const Header = ({ siteTitle }) => (
   <header>
     <div>
+    <Navigation />
     <Banner />
-      <Navigation />
+
 
     </div>
   </header>

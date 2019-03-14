@@ -27,8 +27,8 @@ class MobileNavigation extends Component {
               <div class="hamburger-inner"></div>
             </div>
           </div>
-          <div className={this.state.isToggleOn ? 'MobileMenuHidden' : 'MobileMenuActive'}>
-            <div className="MobileMenuWrap">
+          <div className={this.state.isToggleOn ? 'MobileNavigationHidden' : 'MobileNavigationActive'}>
+
                 <Link
                   onClick={this.handleClick}
                   to="/">
@@ -59,7 +59,7 @@ class MobileNavigation extends Component {
                   to="/Contact/">
                 <h5>Contact</h5>
               </Link>
-            </div>
+          
           </div>
         </div>
       </div>
