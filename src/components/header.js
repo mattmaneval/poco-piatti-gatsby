@@ -1,14 +1,10 @@
 import PropTypes from "prop-types"
 import React from "react"
-import Banner from "./Banner"
-import Navigation from '../components/Navigation'
+
 
 const Header = ({ siteTitle }) => (
   <header>
     <div>
-    <Navigation />
-    <Banner />
-
 
     </div>
   </header>

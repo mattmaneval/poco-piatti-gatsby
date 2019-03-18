@@ -1,4 +1,5 @@
 import React from 'react';
+import './_Map.scss';
 
 const Map = () => (
   <div className="Map">

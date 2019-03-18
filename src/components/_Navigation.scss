@@ -1,11 +1,10 @@
 .Navigation {
-  text-align: center;
-  position: fixed;
   display: inline-flex;
+  position: sticky;
+  //position: fixed;
   width: 100%;
+  top: 0px;
   background-color: #ffffff;
-  .Navigation {
-  }
   ul li {
     display: inline-flex;
     :hover {

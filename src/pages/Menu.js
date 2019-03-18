@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import Layout from "../components/layout"
 import "../components/_Menu.scss"
+import Banner from "../components/Banner"
+import Navigation from "../components/Navigation"
 
 class Menu extends Component {
   render() {
     return (
       <Layout>
+      <Banner />
+      <Navigation />
     <div className="menu">
       <div className="menu-wrap">
         <div className="column-one">

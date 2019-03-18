@@ -3,10 +3,14 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Banner from "../components/Banner"
+import Navigation from "../components/Navigation"
 
 
 const Catering = () => (
   <Layout>
+  <Banner />
+  <Navigation />
     <SEO title="Poco Piatti Catering" />
     <div className="Catering">
     <div className="CateringWrap">

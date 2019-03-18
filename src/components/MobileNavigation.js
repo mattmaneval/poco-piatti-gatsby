@@ -22,7 +22,7 @@ class MobileNavigation extends Component {
           <div
             onClick={this.handleClick}
             className={this.state.isToggleOn ? 'hamburger hamburger--slider' : 'hamburger hamburger--slider is-active'}
-            type="button">
+            >
             <div class="hamburger-box">
               <div class="hamburger-inner"></div>
             </div>
@@ -59,7 +59,7 @@ class MobileNavigation extends Component {
                   to="/Contact/">
                 <h5>Contact</h5>
               </Link>
-          
+
           </div>
         </div>
       </div>
