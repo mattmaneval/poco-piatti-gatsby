@@ -1,4 +1,5 @@
 import React from 'react';
+import "./_Sylvania.scss";
 
 const Sylvania = () => (
   <div className="Sylvania">

@@ -1,3 +1,26 @@
 .Locations {
-  background-color: #ffffff;
+  width: 100%;
+    background-color: #ffffff;
+  padding: 4rem 0;
+  text-align: center;
+  .Locations-wrap {
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+/*Begin Responsive Style*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .Locations {
+    .Locations-wrap {
+      display: block;
+    }
+  }
 }

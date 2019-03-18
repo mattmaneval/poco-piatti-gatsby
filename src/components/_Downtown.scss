@@ -1,0 +1,66 @@
+.Downtown {
+  h1 {
+    font-family: atrament-web, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.0em;
+    text-transform: uppercase;
+    color: #31373f;
+  }
+  span {
+    display: inline-flex;
+    width: 9.5em;
+    height: 0.325em;
+    border-top: 0.225em solid #bf5252;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  h3 {
+    font-family: atrament-web, sans-serif;
+    font-size: 2.15em;
+    color: #5b3636;
+    font-weight: 600;
+
+  }
+  h4 {
+    font-family: helvetica, sans-serif;
+    font-style: normal;
+    font-size:1.25em;
+    padding: 0.5em 0.5em 0.5em 0em;
+  }
+  p {
+    padding: 10px 0 10px 0;
+    font-family: helvetica, sans-serif;
+    font-size: 1.25em;
+    line-height: 160%;
+
+  }
+  .Hours {
+    display: flex;
+    padding-top: 0.5rem;
+  }
+}
+
+/*Begin Responsive Style*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .Downtown {
+    text-align: center;
+    width: -webkit-fill-available;
+    margin: 30px;
+    padding: 25px;
+    .Hours {
+      justify-content: space-around;
+    }
+    .Weekdays {
+      text-align: left;
+    }
+    .Weekends {
+      text-align: left;
+    }
+  }
+}

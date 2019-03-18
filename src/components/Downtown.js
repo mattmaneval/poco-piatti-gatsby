@@ -1,4 +1,5 @@
 import React from 'react';
+import "./_Downtown.scss"
 
 const Downtown = () => (
   <div className="Downtown">
@@ -8,7 +9,7 @@ const Downtown = () => (
       <p>329 N Huron<br />Toledo, Ohio</p>
     </div>
     <div className="Hours">
-      
+
     </div>
   </div>
 );

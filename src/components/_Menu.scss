@@ -1,7 +1,7 @@
 .menu {
   margin: 0;
   padding: 0;
-  width: 100%;
+  max-width: 100%;
 
   .menu-wrap {
     display: inline-flex;
@@ -12,7 +12,7 @@
     .column-wrap {
     float: left;
     width: 100%;
-    padding: 2.0em;
+    //padding: 2.0em;
     }
   }
   .column-two {
@@ -20,7 +20,7 @@
     .column-wrap-2 {
     float: right;
     width: 100%;
-    padding: 2.0em;
+    //padding: 2.0em;
     }
   }
   span {
@@ -81,18 +81,18 @@
     .menu {
       margin: 0;
       padding: 0;
-      width: 100%;
-      text-align: center;
+      max-width: 100%;
+      //text-align: center;
       .menu-wrap {
         display: inline-flex;
         width: 100%;
-        justify-content: space-around;
+        //justify-content: space-around;
       }
       .column-one {
-        width: 100%;
+        //width: 100%;
       }
       .column-two {
-        width: 100%;
+        //width: 100%;
       }
       .food p {
         margin: 0;
