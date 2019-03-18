@@ -1,9 +1,10 @@
 import React from 'react';
+import "./_ThePocoExperience.scss";
 
 const ThePocoExperince = () => (
   <div className="ThePocoExperience">
     <div>
-      <p>The Poco Experience.</p>
+      <h1>The Poco Experience.</h1>
     </div>
     <p>Poco Piatti means "small plates."
       Here, you have the opportunity to experience
