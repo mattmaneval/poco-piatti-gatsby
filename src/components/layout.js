@@ -26,15 +26,8 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-
-        >
+        <div>
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built by
-            {` `}
-            <a href="https://www.mattmaneval.com">Matt Maneval</a>
-          </footer>
         </div>
       </>
     )}
