@@ -4,12 +4,9 @@ import './_Banner.scss';
 
 
 const Banner = () => (
-  <div className="Banner">
-    <div>
-      <img src={PocoPiattiLogo} alt="Poco Piatti Logo" />
-      
-    </div>
-  </div>
+  <section className="Banner">
+    <img src={PocoPiattiLogo} alt="Poco Piatti Logo" />
+  </section>
 );
 
 export default Banner;

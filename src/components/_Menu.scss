@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   max-width: 100%;
-  background-color: #ffffff;
+
   .menu-wrap {
-    display: inline-flex;
+    //display: inline-flex;
     width: 100%;
+    background-color: #ffffff;
   }
   .column-one {
     text-align: left;
@@ -40,7 +41,7 @@
        font-weight: 400;
        font-style: normal;
        text-transform: capitalize;
-     	font-size: 1.3em;
+     	 font-size: 1.3em;
        margin-top: 1.2em;
 }
 .title h1 {
@@ -82,17 +83,16 @@
       margin: 0;
       padding: 0;
       max-width: 100%;
-      //text-align: center;
       .menu-wrap {
-        display: inline-flex;
+
         width: 100%;
-        //justify-content: space-around;
+
       }
       .column-one {
-        //width: 100%;
+
       }
       .column-two {
-        //width: 100%;
+
       }
       .food p {
         margin: 0;

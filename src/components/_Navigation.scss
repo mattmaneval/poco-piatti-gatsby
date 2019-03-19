@@ -1,15 +1,32 @@
 .Navigation {
-  display: inline-flex;
-  position: sticky;
-  //position: fixed;
+  margin: 0;
+  padding: 0;
+  position: fixed;
   width: 100%;
   top: 0px;
-  background-color: #ffffff;
+  background-color: rgb(242,242,242);
+  text-align: center;
+  ul {
+    margin: 0;
+    padding: 0;
+
+  }
   ul li {
     display: inline-flex;
+    margin: 0;
+    font-family: Atrament;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 0.35em;
+    padding-bottom: 0.35em;
+    padding-left: 0.65em;
+    padding-right: 0.65em;
+    font-size: 1.5em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
     :hover {
-      color: #ffffff;
-      background-color: #bf5252;
+      color: #bf5252;
     }
     a {
       //color: #5b3636;
@@ -18,14 +35,6 @@
     }
   }
   li {
-    font-family: Atrament;
-    font-weight: 400;
-    font-style: normal;
-    padding: 0.75em;
-    font-size: 1.5em;
-    color: #5b3636;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
 
   }
 }
@@ -37,6 +46,9 @@
 
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .Navigation {
+    text-align: left;
+  }
   .Navigation ul {
     display: none;
   }

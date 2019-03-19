@@ -356,7 +356,7 @@ class Menu extends Component {
             <h1>carne</h1>
             <span className="underline"></span>
           </div>
-        
+
     <div class="food-item">
     <div class="food">
       <h3>poco tips</h3>
