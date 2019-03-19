@@ -1,5 +1,23 @@
 .ThePocoExperience {
+  display: inline-flex;
+  width: 100%;
   font-family: Helvetica;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: rgb(242,242,242);
+  section {
+    width: 100%;
+  }
+  aside {
+
+
+    img {
+
+    }
+  }
+  h1 {
+    color: #111;
+  }
+  p {
+    color: #333;
+  }
 }

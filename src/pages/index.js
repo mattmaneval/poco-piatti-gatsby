@@ -13,8 +13,9 @@ const IndexPage = () => (
     <Navigation />
     <Banner />
     <Locations />
-    <ThePocoExperience />
     <Map />
+    <ThePocoExperience />
+
   </Layout>
 )
 
