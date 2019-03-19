@@ -11,22 +11,22 @@ const Sylvania = () => (
     </div>
     <div className="Hours">
       <section className="Weekdays">
-        <h4>Mon.</h4>
-        <h4>Tue.</h4>
-        <h4>Wed.</h4>
-        <h4>Thu.</h4>
-        <h4>Fri.</h4>
-        <h4>Sat.</h4>
-        <h4>Sun.</h4>
+        <p>Mon.</p>
+        <p>Tue.</p>
+        <p>Wed.</p>
+        <p>Thu.</p>
+        <p>Fri.</p>
+        <p>Sat.</p>
+        <p>Sun.</p>
       </section>
       <section className="Weekends">
-        <h4>11:30 AM - Close</h4>
-        <h4>11:30 AM - Close</h4>
-        <h4>11:30 AM - Close</h4>
-        <h4>11:30 AM - Close</h4>
-        <h4>11:30 AM - Close</h4>
-        <h4>4:00 PM - Close</h4>
-        <h4>Closed</h4>
+        <p>11:30 am - Close</p>
+        <p>11:30 am - Close</p>
+        <p>11:30 am - Close</p>
+        <p>11:30 am - Close</p>
+        <p>11:30 am - Close</p>
+        <p>4:00 pm - Close</p>
+        <p>Closed</p>
       </section>
     </div>
   </div>

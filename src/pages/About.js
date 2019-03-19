@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Banner from "../components/Banner"
 import Navigation from "../components/Navigation"
+import "../components/_About.scss"
 
 const About = () => (
   <Layout>

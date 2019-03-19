@@ -1,4 +1,10 @@
 .Sylvania {
+  .Weekdays {
+    text-align: left;
+  }
+  .Weekends {
+    text-align: right;
+  }
   h1 {
     font-family: atrament-web, sans-serif;
     font-weight: 600;
@@ -29,10 +35,9 @@
     padding: 0.5em 0.5em 0.5em 0em;
   }
   p {
-    padding: 10px 0 10px 0;
     font-family: helvetica, sans-serif;
     font-size: 1.25em;
-    line-height: 160%;
+
   }
   .Hours {
     display: flex;
@@ -55,11 +60,6 @@
     .Hours {
       justify-content: space-around;
     }
-    .Weekdays {
-      text-align: left;
-    }
-    .Weekends {
-      text-align: left;
-    }
+
   }
 }

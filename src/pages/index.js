@@ -10,6 +10,7 @@ import Navigation from "../components/Navigation"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`Poco Piatti`, `Toledo`, `Ohio`, `mediterranean`, `restaurant`]} />
+
     <Banner />
     <Navigation />
     <ThePocoExperience />

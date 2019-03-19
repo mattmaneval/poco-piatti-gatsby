@@ -20,13 +20,13 @@ const Perrysburg = () => (
         <p>Sun.</p>
       </section>
       <section className="Weekends">
-        <p>11:30 AM - 9:00 PM</p>
-        <p>11:30 AM - 9:30 PM</p>
-        <p>11:30 AM - 9:30 PM</p>
-        <p>11:30 AM - 9:30 PM</p>
-        <p>11:30 AM - 10:30 PM</p>
-        <p>11:30 AM - 10:30PM</p>
-        <p>12:00 PM - 9:00PM</p>
+        <p>11:30 am - 9:00 pm</p>
+        <p>11:30 am - 9:30 pm</p>
+        <p>11:30 am - 9:30 pm</p>
+        <p>11:30 am - 9:30 pm</p>
+        <p>11:30 am - 10:30 pm</p>
+        <p>11:30 am - 10:30 pm</p>
+        <p>12:00 am - 9:00 pm</p>
       </section>
     </div>
   </div>
