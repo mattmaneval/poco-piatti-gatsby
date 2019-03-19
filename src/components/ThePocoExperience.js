@@ -1,10 +1,14 @@
 import React from 'react';
+
+
+
+
 import "./_ThePocoExperience.scss";
 import DSC04762 from "../images/DSC04762.jpg";
 import DSC04786 from "../images/DSC04786.jpg";
 import DSC04717 from "../images/DSC04717.jpg";
 
-const ThePocoExperince = () => (
+const ThePocoExperince = (props) => (
   <div className="ThePocoExperience">
     <div>
       <section>
@@ -19,9 +23,8 @@ const ThePocoExperince = () => (
         </p>
       </section>
       <aside>
-        <img src={DSC04762} alt="Small Plates" />
-        <img src={DSC04786} alt="Small Plates" />
-        <img src={DSC04717} alt="Small Plates" />
+      
+
       </aside>
     </div>
   </div>
