@@ -1,16 +1,9 @@
 import React from 'react';
-
-
-
-
 import "./_ThePocoExperience.scss";
-import DSC04762 from "../images/DSC04762.jpg";
-import DSC04786 from "../images/DSC04786.jpg";
-import DSC04717 from "../images/DSC04717.jpg";
 
-const ThePocoExperince = (props) => (
+
+const ThePocoExperience = (props) => (
   <div className="ThePocoExperience">
-    <div>
       <section>
         <h1>The Poco Experience.</h1>
         <p>Poco Piatti means "small plates."
@@ -22,12 +15,7 @@ const ThePocoExperince = (props) => (
         So share the small, or large, plates with your table and enjoy!
         </p>
       </section>
-      <aside>
-      
-
-      </aside>
-    </div>
   </div>
 );
 
-export default ThePocoExperince;
+export default ThePocoExperience;
