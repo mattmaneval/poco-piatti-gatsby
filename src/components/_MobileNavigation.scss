@@ -20,13 +20,13 @@
   }
 
   .MobileNavigationActive {
-    position: absolute;
+    position: fixed;
     padding: 2.0em;
     display: block;
     text-align: left;
     height: 600px;
-    width: 100%;
-    background-color: #ffffff;
+    width: 90%;
+    background-color: rgb(242,242,242);
     a {
       text-decoration: none;
       color: #31373f;

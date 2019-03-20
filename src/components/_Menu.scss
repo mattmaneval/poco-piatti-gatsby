@@ -4,9 +4,9 @@
   max-width: 100%;
 
   .menu-wrap {
-    //display: inline-flex;
+    display: inline-flex;
     width: 100%;
-    background-color: #ffffff;
+    background-color: rgb(242,242,242);
   }
   .column-one {
     text-align: left;
@@ -46,16 +46,18 @@
 }
 .title h1 {
   font-family: atrament-web, sans-serif;
+  color: #111;
   font-weight: 400;
   font-style: normal;
 	text-transform: uppercase;
-	font-size: 2.0em;
+	font-size: 2.15em;
   margin-top: 1.53em;
 }
 .food-item {
 .food h3 {
   //font-family: atrament-web, sans-serif;
   font-family: helvetica, sans-serif;
+  color: #111;
   font-weight: 400;
   font-style: normal;
   text-transform: capitalize;
@@ -64,6 +66,7 @@
 }
 .food p {
 	font-size: 1.2em;
+  color: #333;
   font-family: helvetica, sans-serif;
   font-weight: lighter;
   font-style: normal;
