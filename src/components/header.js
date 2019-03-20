@@ -1,11 +1,12 @@
 import PropTypes from "prop-types"
 import React from "react"
+import Navigation from './Navigation';
 
 
 const Header = ({ siteTitle }) => (
   <header>
     <div>
-
+      <Navigation />
     </div>
   </header>
 )

@@ -1,14 +1,17 @@
 .Locations {
   width: 100%;
-  background-color: rgb(242,242,242);
-  padding: 4rem 0;
+
+
+  
   text-align: center;
   color: #333;
   .Locations-wrap {
+    background-color: rgb(242,242,242);
     display: flex;
     text-align: left;
     justify-content: space-around;
     width: 100%;
+    padding: 20px;
   }
 }
 

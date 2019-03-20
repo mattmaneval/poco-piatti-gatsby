@@ -1,11 +1,14 @@
 import React from 'react';
 import PocoPiattiLogo from '../images/PocoPiattiLogo.svg';
 import './_Banner.scss';
+import ThePocoExperience from "./ThePocoExperience"
 
 const Banner = () => (
-  <section className="Banner">
-    <img src={PocoPiattiLogo} alt="Poco Piatti Logo" />
-  </section>
+  <div className="Banner">
+    <section>
+      <img src={PocoPiattiLogo} alt="Poco Piatti Logo" />
+    </section>
+  </div>
 );
 
 export default Banner;

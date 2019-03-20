@@ -8,6 +8,7 @@ import Navigation from "../components/Navigation"
 import "../components/_Catering.scss"
 
 
+
 const Catering = () => (
   <Layout>
   <Banner />

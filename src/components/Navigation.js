@@ -17,8 +17,6 @@ const Navigation = () => (
       </ul>
       <MobileNavigation />
     </div>
-
-
 )
 
 export default Navigation

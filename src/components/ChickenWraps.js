@@ -14,12 +14,12 @@ import "./_image.scss"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const Image = () => (
+const ChickenWraps = () => (
   <div className="Image">
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "DSC04717.jpg" }) {
+        placeholderImage: file(relativePath: { eq: "DSC04786.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
@@ -32,4 +32,4 @@ const Image = () => (
   />
   </div>
 )
-export default Image
+export default ChickenWraps

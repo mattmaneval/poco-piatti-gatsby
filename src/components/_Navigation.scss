@@ -1,8 +1,9 @@
 .Navigation {
   margin: 0;
   padding: 0;
-  position: fixed;
-  width: auto;
+  //display: flex;
+  //position: fixed;
+  width: 100%;
   top: 0px;
   background-color: rgb(242,242,242);
   text-align: center;
@@ -13,24 +14,22 @@
   }
   ul li {
     display: inline-flex;
-    margin: 0;
-    font-family: Atrament;
+    font-family: atrament-web, sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #111;
     padding-top: 0.35em;
     padding-bottom: 0.35em;
     padding-left: 0.65em;
     padding-right: 0.65em;
-    font-size: 1.5em;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
+
     :hover {
       color: #bf5252;
     }
     a {
       //color: #5b3636;
-      color: black;
+      color: #111;
       text-decoration: none;
     }
   }
