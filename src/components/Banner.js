@@ -1,7 +1,6 @@
 import React from 'react';
 import PocoPiattiLogo from '../images/PocoPiattiLogo.svg';
 import './_Banner.scss';
-import ThePocoExperience from "./ThePocoExperience"
 
 const Banner = () => (
   <div className="Banner">

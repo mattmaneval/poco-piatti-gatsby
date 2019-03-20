@@ -10,7 +10,7 @@ import Navigation from "../components/Navigation"
 const Contact = () => (
   <Layout>
   <Banner />
-  <Navigation />
+
     <SEO title="Contact" />
     <Locations />
   </Layout>

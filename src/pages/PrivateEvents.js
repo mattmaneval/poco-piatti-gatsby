@@ -10,7 +10,6 @@ import "../components/_PrivateEvents.scss"
 const PrivateEvents = () => (
   <Layout>
   <Banner />
-  <Navigation />
     <SEO title="Private Events" />
     <div className="PrivateEvents">
     <div className="PrivateEventsWrap">
