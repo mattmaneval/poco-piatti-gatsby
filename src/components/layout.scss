@@ -1,6 +1,7 @@
 @import url('https://use.typekit.net/ffo3zwq.css');
 
 html {
+  background-color: rgb(242,242,242);
   text-align: center;
   background-image: url('../images/DSC04751.jpg');
   background-size: cover;
@@ -627,6 +628,6 @@ pre tt:after {
   html {
     font-size: 100%;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
   }
 }
