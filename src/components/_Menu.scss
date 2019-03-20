@@ -1,19 +1,20 @@
 .menu {
   margin: 0;
   padding: 0;
-  max-width: 100%;
-
+  width: 100%;
   .menu-wrap {
-    display: inline-flex;
+    display: block;
     width: 100%;
-    background-color: rgb(242,242,242);
+
+
   }
   .column-one {
     text-align: left;
     .column-wrap {
     float: left;
     width: 100%;
-    padding: 2.0em;
+    background-color: rgb(242,242,242);
+    padding: 1.5em;
     }
   }
   .column-two {
@@ -21,7 +22,8 @@
     .column-wrap-2 {
     float: right;
     width: 100%;
-    padding: 2.0em;
+    background-color: rgb(242,242,242);
+    padding: 1.5em;
     }
   }
   span {

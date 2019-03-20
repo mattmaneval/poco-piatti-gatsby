@@ -8,6 +8,7 @@ import Banner from "../components/Banner"
 import Navigation from "../components/Navigation"
 import Img from "gatsby-image"
 import "../components/_index.scss"
+import Video from "../components/Video"
 
 
 const IndexPage = (props) => (
@@ -18,7 +19,6 @@ const IndexPage = (props) => (
     <ThePocoExperience />
     <Locations />
     <Map />
-
     <div className="photo-features">
       <div className="photo-features-wrap">
         <div className="photo-features-photos">
@@ -28,7 +28,7 @@ const IndexPage = (props) => (
         </div>
       </div>
     </div>
-
+    <Video />
   </Layout>
 )
 
