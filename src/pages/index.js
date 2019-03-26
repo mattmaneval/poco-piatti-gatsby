@@ -7,8 +7,7 @@ import Map from "../components/Map"
 import Banner from "../components/Banner"
 import "../components/_index.scss"
 import Video from "../components/Video"
-import DSC04780 from "../images/DSC04780-Edit.jpg"
-import DSC04762 from "../images/DSC04762.jpg";
+
 
 const IndexPage = (props) => (
   <Layout>
@@ -17,14 +16,7 @@ const IndexPage = (props) => (
     <ThePocoExperience />
     <Locations />
     <Map />
-    <div className="photo-div">
-      <section>
-        <img src={DSC04780} alt="Markouk Chicken Wraps" />
-      </section>
-      <aside>
-        <img src={DSC04762} alt="Small Plates" />
-      </aside>
-    </div>
+
     <Video />
   </Layout>
 )

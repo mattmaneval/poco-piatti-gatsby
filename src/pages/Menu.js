@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Layout from "../components/layout"
 import "../components/_Menu.scss"
 import Banner from "../components/Banner"
+import DSC04727  from "../images/DSC04727.jpg"
 
 class Menu extends Component {
   render() {
@@ -351,6 +352,9 @@ class Menu extends Component {
 
         <div className="column-two">
           <section className="column-wrap-2">
+          <div>
+            <img src={DSC04727} alt="food" />
+          </div>
           <div class="title">
             <h1>carne</h1>
             <span className="underline"></span>

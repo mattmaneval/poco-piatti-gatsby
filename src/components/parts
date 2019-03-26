@@ -1,0 +1,12 @@
+<div className="photo-div">
+  <section>
+    <img src={DSC04780} alt="Markouk Chicken Wraps" />
+  </section>
+  <aside>
+    <img src={DSC04762} alt="Small Plates" />
+  </aside>
+</div>
+
+
+import DSC04780 from "../images/DSC04780-Edit.jpg"
+import DSC04762 from "../images/DSC04762.jpg";
