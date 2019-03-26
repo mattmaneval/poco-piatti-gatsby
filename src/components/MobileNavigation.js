@@ -19,14 +19,14 @@ class MobileNavigation extends Component {
     return (
       <div className="MobileNavigation">
         <div className="MobileNavigationWrap">
-          <div
+          <button
             onClick={this.handleClick}
             className={this.state.isToggleOn ? 'hamburger hamburger--slider' : 'hamburger hamburger--slider is-active'}
             >
-            <div class="hamburger-box">
-              <div class="hamburger-inner"></div>
-            </div>
-          </div>
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
           <div className={this.state.isToggleOn ? 'MobileNavigationHidden' : 'MobileNavigationActive'}>
 
                 <Link
