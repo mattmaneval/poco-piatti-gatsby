@@ -7,8 +7,8 @@ const Perrysburg = () => (
       <h1>Perrysburg</h1>
       <span className="Underline"></span>
       <p>3155 Chappel Dr.<br />Perrysburg, Ohio</p>
-      <h3>419-931-0281</h3>
       <h6>Carryout & Reservations</h6>
+      <h3>419-931-0281</h3>
     </div>
     <div className="Hours">
       <section className="Weekdays">

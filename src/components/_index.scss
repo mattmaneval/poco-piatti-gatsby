@@ -1,5 +1,5 @@
 .photo-div {
-  z-index: 0;
+  position: static !important;
   background-color: rgb(242,242,242);
   width: 100%;
   display: flex;
