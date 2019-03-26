@@ -9,7 +9,6 @@ import "../components/_About.scss"
 const About = () => (
   <Layout>
   <Banner />
-
     <SEO title="About" />
     <div className="About">
     <div className="AboutWrap">

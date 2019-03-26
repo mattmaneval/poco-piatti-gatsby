@@ -8,7 +8,6 @@ class Menu extends Component {
     return (
       <Layout>
       <Banner />
-
     <div className="menu">
       <div className="menu-wrap">
         <div className="column-one">

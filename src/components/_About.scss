@@ -1,5 +1,38 @@
 .About {
-  background-color: #ffffff;
+  background-color: rgb(242,242,242);
+  text-align: center;
+  display: inline-flex;
+  .AboutWrap {
+    justify-content: space-evenly;
+    max-width: 600px;
+  }
+  h1 {
+    font-family: atrament-web, sans-serif;
+    color: #111;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 2.15em;
+    margin-top: 1.15em;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-family: helvetica, sans-serif;
+    color: #111;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 1.3em;
+    margin-top: 1.2em;
+  }
+  p {
+    font-size: 1.2em;
+    color: #333;
+    font-family: helvetica, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    letter-spacing: 0.02em;
+  }
   span {
     display: inline-flex;
     width: 9.5em;

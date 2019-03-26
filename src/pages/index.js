@@ -16,7 +16,6 @@ const IndexPage = (props) => (
     <ThePocoExperience />
     <Locations />
     <Map />
-
     <Video />
   </Layout>
 )

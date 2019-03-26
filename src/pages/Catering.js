@@ -4,7 +4,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Banner from "../components/Banner"
-import Navigation from "../components/Navigation"
 import "../components/_Catering.scss"
 
 
@@ -12,7 +11,6 @@ import "../components/_Catering.scss"
 const Catering = () => (
   <Layout>
   <Banner />
-  <Navigation />
     <SEO title="Poco Piatti Catering" />
     <div className="Catering">
     <div className="CateringWrap">
@@ -20,7 +18,7 @@ const Catering = () => (
       <div className="OneHalfWrap">
     <div class="menu-header">
       <div class="title">
-        <h1>Catering<br /> Packages</h1>
+        <h1>Packages</h1>
         <span className="underline"></span>
       </div>
     </div>
@@ -28,27 +26,21 @@ const Catering = () => (
       <div class="food">
         <h3>Package 1</h3>
         <p>Hummous, Fatoosh, Markouk Chicken Wraps, Ara-yes Halabi.</p>
-      </div>
-      <div class="size">
-        <h3>10 per person</h3>
+        <p>10 per person</p>
       </div>
     </div>
     <div class="food-item">
       <div class="food">
         <h3>Package 2</h3>
         <p>Hummous, Fatoosh, Grape Leaves, Chicken Shish Kabob.</p>
-      </div>
-      <div class="size">
-        <h3>14 per person</h3>
+        <p>14 per person</p>
       </div>
     </div>
     <div class="food-item">
       <div class="food">
         <h3>Package 3</h3>
         <p>Hummous, Fatoosh, Beef Tenderloin Shish Kabob, Chicken ShishKabob.</p>
-      </div>
-      <div class="size">
-        <h3>19 per person</h3>
+        <p>19 per person</p>
       </div>
     </div>
     <div class="food-item">
@@ -56,9 +48,7 @@ const Catering = () => (
         <h3>Package 4</h3>
         <p>Hummous, Fatoosh, Grape Leaves, Ara-yes, Beef Shish Kabob,
         Chicken Shish Kabob.</p>
-      </div>
-      <div class="size">
-        <h3>23 per person</h3>
+        <p>23 per person</p>
       </div>
     </div>
     <div class="food-item">
@@ -67,9 +57,7 @@ const Catering = () => (
         <p>Hummous, Feta Dip, Fatoosh, Tabouli, Grape Leaves, Ara-yes,
         Chicken Wraps, Beef Tenderloin Shish Kabob, Shish Kafta, Chicken
         Shish Kabob.</p>
-      </div>
-      <div class="size">
-        <h3>37 per person</h3>
+        <p>37 per person</p>
       </div>
     </div>
     <div class="food-item">
@@ -78,9 +66,7 @@ const Catering = () => (
         <p>Hummous, Feta Dip, Fatoosh, Grape Leaves, Brussel Sprouts,
         Cauliflower, Sauteed Mushrooms, Lamb Chops, Beef Tenderloin Shish
         Kabob, Chicken Shish Kabob.</p>
-      </div>
-      <div class="size">
-        <h3>42 per person</h3>
+        <p>42 per person</p>
       </div>
     </div>
     <div class="food-item">
@@ -89,9 +75,7 @@ const Catering = () => (
         <p>Hummous, Feta Dip, Vegetable Tray, Fatoosh, Greek Salad,
         Grape Leaves, Brussel Sprouts, Cauliflower, Sauteed Mushrooms,
         Greek Potatoes, Lamb Chops, Whole Beef Tenderloin Filet.</p>
-      </div>
-      <div class="size">
-        <h3>50 per person</h3>
+        <p>50 per person</p>
       </div>
     </div>
     <div class="food-item">
@@ -99,9 +83,7 @@ const Catering = () => (
         <h3>Poco Vegetarian Package</h3>
         <p>Hummous, Fatoosh, Veggie Grape Leaves, Brussel Sprouts,
         Cauliflower, Mujadara, Sauteed Mushrooms, Veggie Shish Kabob.</p>
-      </div>
-      <div class="size">
-        <h3>25 per person</h3>
+        <p>25 per person</p>
       </div>
     </div>
     <div class="food-item">
@@ -109,9 +91,7 @@ const Catering = () => (
         <h3>Poco Gluten-Free Package</h3>
         <p>Hummous, Gluten-Free Bread, Greek Salad, Grape Leaves, Chicken
         Shish Kabob.</p>
-      </div>
-      <div class="size">
-        <h3>16 per person</h3>
+        <p>16 per person</p>
       </div>
       <div class="size">
         <p>* Packages are intended to be guides. Any and all items may be subsituted

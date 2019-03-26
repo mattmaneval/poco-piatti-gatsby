@@ -9,7 +9,6 @@ import Banner from "../components/Banner"
 const Contact = () => (
   <Layout>
   <Banner />
-
     <SEO title="Contact" />
     <Locations />
   </Layout>
