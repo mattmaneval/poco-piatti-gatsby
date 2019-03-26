@@ -1,16 +1,31 @@
 .ThePocoExperience {
-  margin-top: 50px;
+  .ThePocoExperienceWrap {
+    justify-content: space-evenly;
+  }
+  //margin-top: 50px;
   display: inline-flex;
   width: 100%;
   font-family: Helvetica;
   padding: 20px 20px 0 20px;
   background-color: rgb(242,242,242);
-  text-align: left;
+  text-align: center;
   h1 {
+    font-family: atrament-web, sans-serif;
     color: #111;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 2.15em;
+    //margin-top: 1.15em;
+    margin-bottom: 0.45em;;
   }
   p {
+    font-size: 1.2em;
     color: #333;
+    font-family: helvetica, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    letter-spacing: 0.02em;
   }
 }
 

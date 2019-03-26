@@ -40,9 +40,12 @@
     text-transform: uppercase;
   }
   p {
-    margin-bottom: 0.3em;
+    font-size: 1.2em;
+    color: #333;
     font-family: helvetica, sans-serif;
-    font-size: 0.95em;
+    font-weight: lighter;
+    font-style: normal;
+    letter-spacing: 0.02em;
 
   }
   .Hours {
@@ -61,8 +64,11 @@
   .Sylvania {
     text-align: center;
     width: -webkit-fill-available;
-    margin: 30px;
+    //margin: 30px;
     padding: 25px;
+    p {
+      margin: 0.25em;
+    }
     .Hours {
       justify-content: space-around;
     }

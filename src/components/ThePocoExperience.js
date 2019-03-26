@@ -4,6 +4,7 @@ import "./_ThePocoExperience.scss";
 
 const ThePocoExperience = (props) => (
   <div className="ThePocoExperience">
+    <div className="ThePocoExperienceWrap">
       <section>
         <h1>The Poco Experience.</h1>
         <p>Poco Piatti means "small plates."
@@ -15,6 +16,7 @@ const ThePocoExperience = (props) => (
         So share the small, or large, plates with your table and enjoy!
         </p>
       </section>
+    </div>
   </div>
 );
 

@@ -1,15 +1,12 @@
 .Locations {
   width: 100%;
-
-
-  
   text-align: center;
   color: #333;
   .Locations-wrap {
     background-color: rgb(242,242,242);
     display: flex;
     text-align: left;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     padding: 20px;
   }
