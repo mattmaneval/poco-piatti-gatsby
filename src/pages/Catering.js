@@ -113,12 +113,12 @@ const Catering = () => (
       <div class="size">
         <h3>16 per person</h3>
       </div>
-    </div>
-    <div class="size">
-      <h3>*Packages are intended to be guides. Any and all items may be subsituted
-      and are subject to price changes. All packages are served with Pita
-      Bread and Rice. All regular menu itms are available for pricing and
-      other packages are available upon request.</h3>
+      <div class="size">
+        <p>* Packages are intended to be guides. Any and all items may be subsituted
+        and are subject to price changes. All packages are served with Pita
+        Bread and Rice. All regular menu itms are available for pricing and
+        other packages are available upon request.</p>
+      </div>
     </div>
   </div>
 </div>
@@ -293,11 +293,11 @@ const Catering = () => (
       <div class="size">
         <p>75 (20-25 ppl)</p>
       </div>
-    </div>
-    <div class="size">
-      <p>When adding two A la Carte items to a package a pitcher of Poco
-      Piatti's Famous Sangria will be included. Choices include Red, White,
-      and Mixed.</p>
+      <div class="size">
+        <p>* When adding two A la Carte items to a package a pitcher of Poco
+        Piatti's Famous Sangria will be included. Choices include Red, White,
+        and Mixed.</p>
+      </div>
     </div>
   </div>
 </div>

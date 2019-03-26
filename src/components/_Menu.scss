@@ -3,31 +3,33 @@
   padding: 0;
   width: 100%;
   .menu-wrap {
-    //display: flex;
+    display: flex;
     width: 100%;
-
+    justify-content: space-evenly;
 
   }
   .column-one {
-    text-align: left;
+    text-align: center;
+    max-width: 300px;
     .column-wrap {
     float: left;
     width: 100%;
     background-color: rgb(242,242,242);
-    padding: 1.5em;
+    //padding: 1.5em;
     }
   }
   .column-two {
-    text-align: left;
+    text-align: center;
+    max-width: 300px;
     .column-wrap-2 {
     float: right;
     width: 100%;
     background-color: rgb(242,242,242);
-    padding: 1.5em;
+    //padding: 1.5em;
     }
   }
   span {
-      display: block;
+      display: inline-flex;
       width: 5.5em;
       height: 0.325em;
       border-top: 0.225em solid #bf5252;
@@ -55,6 +57,9 @@
 	font-size: 2.15em;
   margin-top: 1.53em;
 }
+.food {
+  text-align: center;
+}
 .food-item {
 .food h3 {
   //font-family: atrament-web, sans-serif;
@@ -67,6 +72,7 @@
   margin-top: 1.2em;
 }
 .food p {
+  //max-width: 300px;
 	font-size: 1.2em;
   color: #333;
   font-family: helvetica, sans-serif;

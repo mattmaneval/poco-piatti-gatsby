@@ -1,8 +1,21 @@
 .Catering {
       background-color: rgb(242,242,242);
       padding: 2.0em;
+      width: 100%;
+      text-align: center;
+      .CateringWrap {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        .CateringOneHalf {
+          max-width: 300px;
+        }
+        .CateringSecondHalf {
+          max-width: 300px;
+        }
+      }
   span {
-      display: block;
+      display: inline-flex;
       width: 5.5em;
       height: 0.325em;
       border-top: 0.225em solid #bf5252;
@@ -48,7 +61,16 @@
   font-weight: lighter;
   font-style: normal;
   letter-spacing: 0.02em;
-  margin: 0.75em 3.0em 0.5em 0em;
+  //margin: 0.75em 3.0em 0.5em 0em;
+}
+.size p {
+  font-size: 1.2em;
+  color: #333;
+  font-family: helvetica, sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  //margin: 0.75em 3.0em 0.5em 0em;
 }
 }
 
