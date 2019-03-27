@@ -1,24 +1,41 @@
+@import url('https://use.typekit.net/ffo3zwq.css');
+
+
 .Navigation {
   margin: 0;
   padding: 0;
   //display: flex;
   position: fixed !important;
   width: 100%;
+  height: 100px;
   top: 0px;
-  background-color: rgb(242,242,242);
+  background-color: #ffffff;
   text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
   ul {
     margin: 0;
     padding: 0;
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+  img {
+    max-width: 120px;
+    margin: auto;
+    padding: auto;
   }
   ul li {
     display: inline-flex;
-    font-family: atrament-web, sans-serif;
-    font-weight: 400;
-    font-size: 1.5em;
+    //font-family: atrament-web, sans-serif;
+    //font-weight: 400;
+    //font-size: 1.5em;
+    font-family: din-condensed, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.09em;
+    font-style: normal;
     text-transform: uppercase;
-    color: #111;
+    font-size: 18px;
     padding-top: 0.35em;
     padding-bottom: 0.35em;
     padding-left: 0.65em;
@@ -50,7 +67,9 @@
     height: 60px;
     margin: 0;
     padding: 0;
-
+    img {
+      display: none;
+    }
   }
   .Navigation ul {
     display: none;

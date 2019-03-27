@@ -3,7 +3,7 @@
   text-align: center;
   color: #333;
   .Locations-wrap {
-    background-color: rgb(242,242,242);
+    background-color: #ffffff;
     display: flex;
     text-align: left;
     justify-content: space-evenly;
@@ -22,6 +22,7 @@
   .Locations {
     .Locations-wrap {
       display: block;
+      
     }
   }
 }
