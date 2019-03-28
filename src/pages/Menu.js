@@ -17,7 +17,7 @@ const Menu = () => (
         <p>Sauteed with garlic, asti-spumante and parsley.</p>
         <h5>Thai Shrimp 'Lasagna' &mdash; Sm 7 Lg 13</h5>
         <p>Layered with crispy wontons, spicy thai and coconut basil.</p>
-        <h5>Blue Crab Lump Crab Cakes &mdash; Sm 9 Lg 17</h5>
+        <h5>Blue Crab Lump Crab Cakes<br /> &mdash; Sm 9 Lg 17</h5>
         <p>Served with roasted red pepper cream sauce.</p>
         <h5>Sumac Encrusted Tuna &mdash; Sm 9 Lg 17</h5>
         <p>Served with tahini and diced cucumber salad.</p>
