@@ -1,57 +1,46 @@
 @import url('https://use.typekit.net/ffo3zwq.css');
 
-
 .Navigation {
-  margin: 0;
-  padding: 0;
-  //display: flex;
-  position: fixed !important;
   width: 100%;
-  height: 100px;
-  top: 0px;
+  display: flex;
+  position: fixed !important;
+  height: 159px;
   background-color: #ffffff;
   text-align: center;
   align-items: center;
-  justify-content: space-between;
-  display: flex;
+  //vertical-align: middle;
+  .left-links {
+    width: 40%;
+  }
+  .logo {
+    width: 20%;
+    img {
+      max-width: 120px;
+      margin: 0;
+    }
+  }
+  .right-links {
+    width: 40%;
+  }
   ul {
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  img {
-    max-width: 120px;
-    margin: auto;
-    padding: auto;
   }
   ul li {
     display: inline-flex;
-    //font-family: atrament-web, sans-serif;
-    //font-weight: 400;
-    //font-size: 1.5em;
+    padding: 0 0.65em 0 0.65em;
     font-family: din-condensed, sans-serif;
     font-weight: lighter;
     letter-spacing: 0.09em;
     font-style: normal;
     text-transform: uppercase;
     font-size: 18px;
-    padding-top: 0.35em;
-    padding-bottom: 0.35em;
-    padding-left: 0.65em;
-    padding-right: 0.65em;
-
     :hover {
       color: #bf5252;
     }
     a {
-      //color: #5b3636;
       color: #111;
       text-decoration: none;
     }
-  }
-  li {
-
   }
 }
 
@@ -63,12 +52,16 @@
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .Navigation {
-    text-align: left;
-    height: 60px;
+    display: flex;
+    height: 100px;
+    max-width: 100%;
     margin: 0;
     padding: 0;
-    img {
-      display: none;
+    .logo {
+      position: absolute;
+      left: 50%;
+      z-index: 1;
+      transform: translate3d(-65%, 0, 0);
     }
   }
   .Navigation ul {

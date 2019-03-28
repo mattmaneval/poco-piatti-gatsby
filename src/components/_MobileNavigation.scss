@@ -21,20 +21,20 @@
 
   .MobileNavigationActive {
     position: fixed;
+    left: 0;
     padding: 2.0em;
     display: block;
     text-align: left;
-    //height: 500px;
     height: 100%;
     height: -webkit-fill-available;
     width: 100%;
-    background-color: rgb(242,242,242);
+    background-color: #ffffff;
     a {
       text-decoration: none;
       color: #111;
     }
     h5 {
-      font-family: atrament-web, sans-serif;
+      font-family: din-condensed, sans-serif;
       font-style: normal;
       text-transform: uppercase;
       font-size: 2.1em;

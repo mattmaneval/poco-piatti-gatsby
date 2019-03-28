@@ -7,20 +7,24 @@ import PocoPiattiRedLogo from "../images/PocoPiattiRedLogo.jpg";
 
 const Navigation = () => (
     <div className="Navigation">
-    <SEO title="Poco Piatti Menu" />
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/Menu/">Menu</Link></li>
-        <li><Link to="/Catering/">Catering</Link></li>
-      </ul>
-
+      <SEO title="Poco Piatti Menu" />
+      <div className="left-links">
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/Menu/">Menu</Link></li>
+          <li><Link to="/Catering/">Catering</Link></li>
+        </ul>
+      </div>
+      <div className="logo">
           <img src={PocoPiattiRedLogo} alt="Poco Piatti Logo" />
-        
-      <ul>
-        <li><Link to="/PrivateEvents/">Private Events</Link></li>
-        <li><Link to="/About/">About</Link></li>
-        <li><Link to="/Contact/">Contact</Link></li>
-      </ul>
+      </div>
+      <div className="right-links">
+        <ul>
+          <li><Link to="/PrivateEvents/">Private Events</Link></li>
+          <li><Link to="/About/">About</Link></li>
+          <li><Link to="/Contact/">Contact</Link></li>
+        </ul>
+      </div>
       <MobileNavigation />
     </div>
 )

@@ -18,7 +18,6 @@ class MobileNavigation extends Component {
   render() {
     return (
       <div className="MobileNavigation">
-        <div className="MobileNavigationWrap">
           <button
             onClick={this.handleClick}
             className={this.state.isToggleOn ? 'hamburger hamburger--slider' : 'hamburger hamburger--slider is-active'}
@@ -28,7 +27,6 @@ class MobileNavigation extends Component {
             </span>
           </button>
           <div className={this.state.isToggleOn ? 'MobileNavigationHidden' : 'MobileNavigationActive'}>
-
                 <Link
                   onClick={this.handleClick}
                   to="/">
@@ -59,10 +57,8 @@ class MobileNavigation extends Component {
                   to="/Contact/">
                 <h5>Contact</h5>
               </Link>
-
           </div>
         </div>
-      </div>
     );
   }
 }
