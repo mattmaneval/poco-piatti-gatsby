@@ -1,14 +1,10 @@
 import React from "react"
-
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Banner from "../components/Banner"
 import "../components/_PrivateEvents.scss"
 
 const PrivateEvents = () => (
   <Layout>
-  <Banner />
     <SEO title="Private Events" />
     <div className="PrivateEvents">
     <div className="PrivateEventsWrap">

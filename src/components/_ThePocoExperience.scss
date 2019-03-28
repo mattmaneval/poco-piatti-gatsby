@@ -10,6 +10,12 @@
   padding: 20px;
   background-color: #ffffff;
   text-align: left;
+  h1 {
+    font-family: adobe-garamond-pro;
+    font-weight: bolder;
+    font-size: 2.15em;
+    color: #111;
+  }
   h2 {
     font-family: adobe-garamond-pro, serif;
     font-size: 35px;
@@ -29,5 +35,8 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .ThePocoExperience {
     margin-top: 50px;
+    h2 {
+      font-size: 25px;
+    }
   }
 }

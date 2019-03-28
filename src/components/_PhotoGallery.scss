@@ -69,6 +69,10 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .PhotoGallery {
     .PhotoGalleryWrap {
+      article {
+        border-right: none;
+        border-left: none;
+      }
       .PhotoGalleryRow {
         display: block;
         .PortobelloCaps {

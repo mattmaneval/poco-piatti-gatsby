@@ -6,6 +6,7 @@ const ThePocoExperience = (props) => (
   <div className="ThePocoExperience">
     <div className="ThePocoExperienceWrap">
       <section>
+      <h1>The Poco Experience</h1>
         <h2>Poco Piatti means "small plates."
         Here, you have the opportunity to experience
         the many flavors of the mediterranean! We strive
