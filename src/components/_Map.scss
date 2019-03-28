@@ -4,14 +4,15 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: rgb(242,242,242);
+    color: #111;
     text-align: center;
     .MapWrap {
-      background-image: linear-gradient(rgba(28,31,38,0.75), rgba(28,31,38,0.1));
+      //background-image: linear-gradient(rgba(28,31,38,0.75), rgba(28,31,38,0.1));
       align-items: center;
 
     }
     h1 {
+      font-family: adobe-garamond-pro, serif;
       padding-top: 0.75em;
     }
     iframe {

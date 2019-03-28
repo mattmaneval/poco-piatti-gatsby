@@ -53,25 +53,3 @@
     padding-top: 0.5rem;
   }
 }
-
-/*Begin Responsive Style*/
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .Sylvania {
-    text-align: center;
-    width: -webkit-fill-available;
-    //margin: 30px;
-    padding: 25px;
-    p {
-      margin: 0.25em;
-    }
-    .Hours {
-      justify-content: space-around;
-    }
-
-  }
-}
