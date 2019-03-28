@@ -3,10 +3,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ThePocoExperience from "../components/ThePocoExperience"
 import Locations from "../components/Locations"
-import Map from "../components/Map"
 import Banner from "../components/Banner"
 import "../components/_index.scss"
-import Video from "../components/Video"
+import Review from "../components/Review"
+import PhotoGallery from "../components/PhotoGallery"
 
 
 const IndexPage = (props) => (
@@ -15,8 +15,8 @@ const IndexPage = (props) => (
     <Banner />
     <ThePocoExperience />
     <Locations />
-    <Map />
-    <Video />
+    <PhotoGallery />
+    <Review />
   </Layout>
 )
 

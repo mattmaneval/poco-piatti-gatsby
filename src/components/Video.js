@@ -6,7 +6,7 @@ const Video = () => (
     <div className="VideoWrap">
       <section>
         <h2>"The Mediterranean food at this restaurant (with heavy
-        Leganese and Italian influences) is so beautifully prepared
+        Lebanese and Italian influences) is so beautifully prepared
         that it seems like a more elite spot, but you can certainly find
         great values."
         </h2>

@@ -1,0 +1,126 @@
+.PhotoGallery {
+  .PhotoGalleryWrap {
+    article {
+      min-height: 700px;
+      border: 5px solid #ffffff;
+      text-align: left;
+      h6 {
+        color: #ffffff;
+        font-family: din-condensed, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding: 10px;
+      }
+    }
+    .PhotoGalleryRow {
+      display: flex;
+      .PortobelloCaps {
+        width: 40%;
+        background-image: url("../images/DSC04717.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .PocoTips {
+        width: 60%;
+        background-image: url("../images/DSC04727.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    .PhotoGalleryRow2 {
+      display: flex;
+      .ChickenWraps {
+        width: 60%;
+        background-image: url("../images/DSC04786.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .Arayes {
+        width: 40%;
+        background-image: url("../images/DSC04757.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    .PhotoGalleryRow3 {
+      display: flex;
+      .Pizza {
+        width: 40%;
+        background-image: url("../images/DSC04736.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .Fatoosh {
+        width: 60%;
+        background-image: url("../images/DSC04768.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}
+
+/*Begin Responsive Style*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .PhotoGallery {
+    .PhotoGalleryWrap {
+      .PhotoGalleryRow {
+        display: block;
+        .PortobelloCaps {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .PocoTips {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      .PhotoGalleryRow2 {
+        display: block;
+        .ChickenWraps {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .Arayes {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      .PhotoGalleryRow3 {
+        display: block;
+        .Pizza {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .Fatoosh {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+
+}
