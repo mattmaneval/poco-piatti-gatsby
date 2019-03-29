@@ -1,46 +1,62 @@
 @import url('https://use.typekit.net/ffo3zwq.css');
 
 .Navigation {
+  margin: 0;
+  padding: 0;
   width: 100%;
-  display: flex;
   position: fixed !important;
-  height: 159px;
   background-color: #ffffff;
   text-align: center;
   align-items: center;
-  .left-links {
-    width: 40%;
-  }
-  .logo {
-    width: 20%;
-    img {
-      max-width: 120px;
+  .NavigationWrap {
+    margin: auto;
+    padding: auto;
+    display: flex;
+    height: 159px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    .left-links {
+      width: 40%;
+      //width: 33.33333%;
+    }
+    .logo {
+      width: 20%;
+    //  width: 33.33333%;
+      img {
+        max-width: 120px;
+        margin: auto;
+      }
+    }
+    .right-links {
+      width: 40%;
+
+    //width: 33.33333%;
+    }
+    ul {
       margin: 0;
     }
-  }
-  .right-links {
-    width: 40%;
-  }
-  ul {
-    margin: 0;
-  }
-  ul li {
-    display: inline-flex;
-    padding: 0 0.65em 0 0.65em;
-    font-family: din-condensed, sans-serif;
-    font-weight: lighter;
-    letter-spacing: 0.09em;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 18px;
-    :hover {
-      color: #bf5252;
-    }
-    a {
-      color: #111;
-      text-decoration: none;
+    ul li {
+      display: inline-flex;
+      padding: 0 0.65em 0 0.65em;
+      font-family: din-condensed, sans-serif;
+      font-weight: lighter;
+      letter-spacing: 0.09em;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 18px;
+      :hover {
+        color: #bf5252;
+      }
+      a {
+        color: #111;
+        text-decoration: none;
+      }
     }
   }
+
 }
 
 /*Begin Responsive Style*/
@@ -51,17 +67,20 @@
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .Navigation {
-    display: flex;
-    height: 100px;
-    max-width: 100%;
     margin: 0;
     padding: 0;
-    .logo {
-      position: absolute;
-      left: 50%;
-      z-index: 1;
-      transform: translate3d(-65%, 0, 0);
+    .NavigationWrap {
+      display: flex;
+      height: 100px;
+      max-width: 100%;
+      .logo {
+        position: absolute;
+        left: 50%;
+        //z-index: 1;
+        transform: translate3d(-65%, 0, 0);
+      }
     }
+
   }
   .Navigation ul {
     display: none;

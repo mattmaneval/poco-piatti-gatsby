@@ -7,7 +7,8 @@ import PocoPiattiRedLogo from "../images/PocoPiattiRedLogo.jpg";
 
 const Navigation = () => (
     <div className="Navigation">
-      <SEO title="Poco Piatti Menu" />
+    <SEO title="Poco Piatti Menu" />
+    <div className="NavigationWrap">
       <div className="left-links">
         <ul>
           <li><Link to="/">Home</Link></li>
@@ -26,6 +27,7 @@ const Navigation = () => (
         </ul>
       </div>
       <MobileNavigation />
+      </div>
     </div>
 )
 

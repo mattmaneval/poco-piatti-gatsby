@@ -9,7 +9,9 @@ const Review = () => (
       that it seems like a more elite spot, but you can certainly find
       great values."
       </h2>
-      <p>- The Blade</p>
+      <p>&mdash; The Blade</p>
+      <h2>2018 Dining Guide Award Winner for Best Restaurateur</h2>
+      <p>&mdash; Toledo City Paper</p>
     </div>
   </div>
 );

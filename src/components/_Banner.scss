@@ -1,12 +1,14 @@
 .Banner {
-  top: 0px;
   //padding: 20px;
   width: 100%;
   display: block;
   height: 800px;
+  //background-image: url('../images/DSC04762.jpg');
   background-image: url('../images/DSC04762.jpg');
   background-size: cover;
-  background-position: center;
+  //background-position: center;
+  background-repeat: no-repeat;
+  //background-attachment: fixed;
   //height: -webkit-fill-available;
   //background-image: linear-gradient(rgba(28,31,38,0.75), rgba(28,31,38,0.1));
   text-align: center;
