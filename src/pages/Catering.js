@@ -3,286 +3,84 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Banner from "../components/Banner"
-import "../components/_Catering.scss"
+import "../components/_Menu.scss"
 
 
 
 const Catering = () => (
   <Layout>
-  <Banner />
     <SEO title="Poco Piatti Catering" />
-    <div className="Catering">
-    <div className="CateringWrap">
-    <div className="CateringOneHalf">
-      <div className="OneHalfWrap">
-    <div class="menu-header">
-      <div class="title">
-        <h1>Packages</h1>
-        <span className="underline"></span>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Package 1</h3>
-        <p>Hummous, Fatoosh, Markouk Chicken Wraps, Ara-yes Halabi.</p>
-        <p>10 per person</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Package 2</h3>
-        <p>Hummous, Fatoosh, Grape Leaves, Chicken Shish Kabob.</p>
-        <p>14 per person</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Package 3</h3>
-        <p>Hummous, Fatoosh, Beef Tenderloin Shish Kabob, Chicken ShishKabob.</p>
-        <p>19 per person</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Package 4</h3>
-        <p>Hummous, Fatoosh, Grape Leaves, Ara-yes, Beef Shish Kabob,
-        Chicken Shish Kabob.</p>
-        <p>23 per person</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Package 5</h3>
-        <p>Hummous, Feta Dip, Fatoosh, Tabouli, Grape Leaves, Ara-yes,
-        Chicken Wraps, Beef Tenderloin Shish Kabob, Shish Kafta, Chicken
-        Shish Kabob.</p>
-        <p>37 per person</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Package 6</h3>
+    <div className="Menu">
+      <div className="MenuWrap">
+
+      <h1>Packages</h1>
+      <span className="Line"></span>
+      <div className="Outline">
+        <h5>Package 1 &mdash; 10 per person</h5>
+        <p>Hummous, Markouk Chicken Wraps, Ara-yes Halabi.</p>
+        <h5>Package 2 &mdash; 14 per person</h5>
+        <p>Hummous, Fatoosh, Grape Leaves, Shish Tawook.</p>
+        <h5>Package 3 &mdash; 19 per person</h5>
+        <p>Hummous, Fatoosh, Beef Tenderloin Shish Kabob, Shish Tawook.</p>
+        <h5>Package 4 &mdash; 23 per person</h5>
+        <p>Hummous, Fatoosh, Grape Leaves, Ara-yes Halabi, Beef Shish Kabob, Shish Tawook.</p>
+        <h5>Package 5 &mdash; 37 per person</h5>
+        <p>Hummous, Feta Dip, Fatoosh, Tabouli, Grape Leaves, Ara-yes, Chicken Wraps, Beef Tenderloin Shish Kabob,
+          Shish Kafta, Chicken Shish Kabob.</p>
+        <h5>Package 6 &mdash; 42 per person</h5>
         <p>Hummous, Feta Dip, Fatoosh, Grape Leaves, Brussel Sprouts,
-        Cauliflower, Sauteed Mushrooms, Lamb Chops, Beef Tenderloin Shish
-        Kabob, Chicken Shish Kabob.</p>
-        <p>42 per person</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Poco Deluxe Package</h3>
+          Cauliflower, Sauteed Mushrooms, Lamb Chops, Beef Tenderloin
+          Shish Kabob, Chicken Shish Kabob.</p>
+        <h5>Deluxe Package &mdash; 50 per person</h5>
         <p>Hummous, Feta Dip, Vegetable Tray, Fatoosh, Greek Salad,
-        Grape Leaves, Brussel Sprouts, Cauliflower, Sauteed Mushrooms,
-        Greek Potatoes, Lamb Chops, Whole Beef Tenderloin Filet.</p>
-        <p>50 per person</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Poco Vegetarian Package</h3>
+          Grape Leaves, Brussel Sprouts, Cauliflower, Sauteed Mushrooms,
+          Greek Potatoes, Lamb Chops, Whole Beef Tenderloin Filet.</p>
+        <h5>Vegetarian Package &mdash; 25 per person</h5>
         <p>Hummous, Fatoosh, Veggie Grape Leaves, Brussel Sprouts,
-        Cauliflower, Mujadara, Sauteed Mushrooms, Veggie Shish Kabob.</p>
-        <p>25 per person</p>
+          Cauliflower, Mujadara, Sauteed Mushrooms, Veggie Shish Kabob.</p>
+        <h5>Gluten-Free Package &mdash; 16 per person</h5>
+        <p>Hummous, Gluten-Free Bread, Greek Salad, Grape Leaves, Chicken Shish Kabob.</p>
+        <p>* Packages are intended to be guides. Any and all items may be substituted and
+        are sugject to price changes. All packages are served with pita bread and rice.
+        All regular menu items are available for pricing and other packages are available
+        upon request.</p>
+      </div>
+
+      <h1>A La Carte</h1>
+      <span className="Line"></span>
+      <div className="Outline">
+        <h5>Package 1 &mdash; 10 per person</h5>
+        <p>Hummous, Markouk Chicken Wraps, Ara-yes Halabi.</p>
+        <h5>Package 2 &mdash; 14 per person</h5>
+        <p>Hummous, Fatoosh, Grape Leaves, Shish Tawook.</p>
+        <h5>Package 3 &mdash; 19 per person</h5>
+        <p>Hummous, Fatoosh, Beef Tenderloin Shish Kabob, Shish Tawook.</p>
+        <h5>Package 4 &mdash; 23 per person</h5>
+        <p>Hummous, Fatoosh, Grape Leaves, Ara-yes Halabi, Beef Shish Kabob, Shish Tawook.</p>
+        <h5>Package 5 &mdash; 37 per person</h5>
+        <p>Hummous, Feta Dip, Fatoosh, Tabouli, Grape Leaves, Ara-yes, Chicken Wraps, Beef Tenderloin Shish Kabob,
+          Shish Kafta, Chicken Shish Kabob.</p>
+        <h5>Package 6 &mdash; 42 per person</h5>
+        <p>Hummous, Feta Dip, Fatoosh, Grape Leaves, Brussel Sprouts,
+          Cauliflower, Sauteed Mushrooms, Lamb Chops, Beef Tenderloin
+          Shish Kabob, Chicken Shish Kabob.</p>
+        <h5>Deluxe Package &mdash; 50 per person</h5>
+        <p>Hummous, Feta Dip, Vegetable Tray, Fatoosh, Greek Salad,
+          Grape Leaves, Brussel Sprouts, Cauliflower, Sauteed Mushrooms,
+          Greek Potatoes, Lamb Chops, Whole Beef Tenderloin Filet.</p>
+        <h5>Vegetarian Package &mdash; 25 per person</h5>
+        <p>Hummous, Fatoosh, Veggie Grape Leaves, Brussel Sprouts,
+          Cauliflower, Mujadara, Sauteed Mushrooms, Veggie Shish Kabob.</p>
+        <h5>Gluten-Free Package &mdash; 16 per person</h5>
+        <p>Hummous, Gluten-Free Bread, Greek Salad, Grape Leaves, Chicken Shish Kabob.</p>
+        <p>* Packages are intended to be guides. Any and all items may be substituted and
+        are sugject to price changes. All packages are served with pita bread and rice.
+        All regular menu items are available for pricing and other packages are available
+        upon request.</p>
+      </div>
+
       </div>
     </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Poco Gluten-Free Package</h3>
-        <p>Hummous, Gluten-Free Bread, Greek Salad, Grape Leaves, Chicken
-        Shish Kabob.</p>
-        <p>16 per person</p>
-      </div>
-      <div class="size">
-        <p>* Packages are intended to be guides. Any and all items may be subsituted
-        and are subject to price changes. All packages are served with Pita
-        Bread and Rice. All regular menu itms are available for pricing and
-        other packages are available upon request.</p>
-      </div>
-    </div>
-  </div>
-</div>
-  <div className="CateringSecondHalf">
-    <div className="SecondHalfWrap">
-    <div class="menu-header">
-      <div class="title">
-        <h1>A la Carte</h1>
-        <span className="underline"></span>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Vegetable Tray</h3>
-      </div>
-      <div class="size">
-        <p>30 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Hummous</h3>
-      </div>
-      <div class="size">
-        <p>35 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Roasted Garlic Feta Dip</h3>
-      </div>
-      <div class="size">
-        <p>60 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Lebanee</h3>
-      </div>
-      <div class="size">
-        <p>35 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Fatoosh, Greek Salad, Tabouli.</h3>
-      </div>
-      <div class="size">
-        <p>45 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Meat or Veggie Grape Leaves</h3>
-        <p>40 pieces</p>
-      </div>
-      <div class="size">
-        <p>30 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Mujadara</h3>
-      </div>
-      <div class="size">
-        <p>45 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Sauteed Mushrooms</h3>
-      </div>
-      <div class="size">
-        <p>50 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Brussel Sprouts/Roasted Cauliflower</h3>
-      </div>
-      <div class="size">
-        <p>50 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Lubia Bi Zeit</h3>
-      </div>
-      <div class="size">
-        <p>50 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Markouk Chicken Wraps</h3>
-      </div>
-      <div class="size">
-        <p>50 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Ara-yes Halabi</h3>
-      </div>
-      <div class="size">
-        <p>50 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Mousakka</h3>
-      </div>
-      <div class="size">
-        <p>75 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Kibbe Nayee (Raw)</h3>
-      </div>
-      <div class="size">
-        <p>90 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Shrimp Asti-Spumante, Thai Shrimp 'Lasagna', Shrimp Saganaki</h3>
-        <p>60 pieces</p>
-      </div>
-      <div class="size">
-        <p>130 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Grilled Baby Lamb Chops</h3>
-        <p>40 pieces</p>
-      </div>
-      <div class="size">
-        <p>140 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Beef Tenderloin Shish Kabob</h3>
-      </div>
-      <div class="size">
-        <p>175 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Chicken Shish Kabob</h3>
-      </div>
-      <div class="size">
-        <p>125 per Half-Pan (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Whole Beef Tenderloin Filet</h3>
-      </div>
-      <div class="size">
-        <p>200 (20-25 ppl)</p>
-      </div>
-    </div>
-    <div class="food-item">
-      <div class="food">
-        <h3>Dessert Platter</h3>
-        <p>Baklava and Brownies</p>
-      </div>
-      <div class="size">
-        <p>75 (20-25 ppl)</p>
-      </div>
-      <div class="size">
-        <p>* When adding two A la Carte items to a package a pitcher of Poco
-        Piatti's Famous Sangria will be included. Choices include Red, White,
-        and Mixed.</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-  </div>
   </Layout>
 )
 
