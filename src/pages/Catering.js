@@ -9,7 +9,7 @@ import "../components/_Catering.scss"
 
 const Catering = () => (
   <Layout>
-    <SEO title="Poco Piatti Catering" />
+    <SEO title="Catering" />
     <div className="Catering">
       <div className="CateringWrap">
 

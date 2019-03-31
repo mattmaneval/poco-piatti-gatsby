@@ -1,9 +1,11 @@
 import React from 'react';
+import SEO from "../components/seo"
 import Layout from "../components/layout"
 import "../components/_Menu.scss"
 
 const Menu = () => (
   <Layout>
+  <SEO title="Menu" />
     <div className="Menu">
       <div className="MenuWrap">
         <div className="column-1">
