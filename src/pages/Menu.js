@@ -168,9 +168,9 @@ const Menu = () => (
           <h1>Vegetarian</h1>
           <span className="Line"></span>
             <div className="Outline">
-              <h5>Riad's Hummuos B Tahini &mdash; Sm 5 Lg 9</h5>
+              <h5>Riad's Hummuos B Tahini<br /> &mdash; Sm 5 Lg 9</h5>
               <p>Served with Pita.</p>
-              <h5>Roasted Garlic Feta Dip &mdash; Sm 6 Lg 9</h5>
+              <h5>Roasted Garlic Feta Dip<br /> &mdash; Sm 6 Lg 9</h5>
               <p>Served warm with diced tomato.</p>
               <h5>Lebanee &mdash; Sm 4 Lg 7</h5>
               <p>Yogurt with cucumber, mint and drizzled with olive oil.</p>
@@ -187,7 +187,7 @@ const Menu = () => (
               <p>Covered in fig jam, mint yogurt, grapes and toasted pecans.</p>
               <h5>Roasted Cauliflower &mdash; Sm 5 Lg 9</h5>
               <p>Tossed in garlic oil, tahini and fresh dill.</p>
-              <h5>Stuffed Portabella Caps &mdash; Sm 6 Lg 10</h5>
+              <h5>Stuffed Portabella Caps<br /> &mdash; Sm 6 Lg 10</h5>
               <p>Mushroom stuffed with a broccoli pesto and topped with pepperjack cheese and tomato.</p>
             </div>
             <h1>Carne</h1>
@@ -199,7 +199,7 @@ const Menu = () => (
               <p>Marinated in balsamic, fresh herbs and garlic, grilled to perfection.</p>
               <h5>Ara-yes Halabi &mdash; Sm 6 Lg 10</h5>
               <p>Lamb, parsley and onion baked in pita. Served with hummous.</p>
-              <h5>Kibbe Nayee (raw) &mdash; Beef 10  Lamb 13</h5>
+              <h5>Kibbe Nayee (raw)<br /> &mdash; Beef 10  Lamb 13</h5>
               <p>Mixed with cracked wheat and spices. Served with onion, cucumbers and radish.</p>
               <h5>Stuffed Cabbage Rolls &mdash; Sm 6 Lg 10</h5>
               <p>Cabbage stuffed with lamb and rice. Cooked with tomato, garlic and mint.</p>
