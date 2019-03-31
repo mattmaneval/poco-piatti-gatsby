@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Locations from "../components/Locations"
 import "../components/_contact.scss"
-import Map from "../components/Map"
 
 const Contact = () => (
   <Layout>
@@ -11,7 +10,6 @@ const Contact = () => (
     <div className="Contact">
       <div className="ContactWrap">
         <Locations />
-        <Map />
       </div>
     </div>
   </Layout>
