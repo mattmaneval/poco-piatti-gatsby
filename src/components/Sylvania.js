@@ -7,7 +7,7 @@ const Sylvania = () => (
       <h1>Sylvania</h1>
       <span className="Underline"></span>
       <p>6710 W Central Ave #1<br />Toledo, Ohio</p>
-      <h3>419-720-8028</h3>
+      <a href="tel:419-720-8028"><h3>419-720-8028</h3></a>
     </div>
     <div className="Hours">
       <section className="Weekdays">
