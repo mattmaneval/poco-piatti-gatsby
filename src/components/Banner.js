@@ -2,11 +2,7 @@ import React from 'react';
 import './_Banner.scss';
 
 const Banner = () => (
-  <div className="Banner">
-    <section>
-
-    </section>
-  </div>
+  <div className="Banner"></div>
 );
 
 export default Banner;

@@ -3,6 +3,7 @@
   padding: 0;
   display: inline-flex;
   .MenuWrap {
+    width: 100%;
     .mobile-menu {
       display: none;
     }
@@ -27,6 +28,7 @@
         font-size: 2.15em;
         color: #111;
       }
+
     span {
       display: inline-flex;
       min-width: 300px;
