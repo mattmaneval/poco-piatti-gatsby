@@ -7,7 +7,7 @@ const Downtown = () => (
       <h1>Downtown</h1>
       <span className="Underline"></span>
       <p>329 N Huron<br />Toledo, Ohio</p>
-      <h3>419-720-8028</h3>
+      <h3>xxx-xxx-xxxx</h3>
     </div>
     <div className="Hours">
       <section className="Weekdays">
