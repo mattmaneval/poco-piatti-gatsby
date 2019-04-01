@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../components/_About.scss"
+import "../sass/_About.scss"
 
 const About = () => (
   <Layout>
@@ -17,10 +17,9 @@ const About = () => (
         <h5>Reservations and Carryout</h5>
         <p>For reservations at Perrysburg location call: <a href="tel:419-931-0281">419-931-0281</a></p>
         <p>For reservations at Sylvania location call: <a href="tel:419-720-8028">419-720-8028</a></p>
-        <p>For reservations at Downtown location call: <a href="tel:123-456-7890">123-456-7890</a></p>
+        
         <p>Automatic gratuity may be applied to groups of 5 or more.</p>
-        <h5>Downtown Parking</h5>
-        <p>... </p>
+
         <h5>Bar Options</h5>
         <p>We serve beer, wine, cocktails, and our famous sangria!</p>
         <h5>Wifi</h5>

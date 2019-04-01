@@ -1,4 +1,5 @@
 @import "../hamburgers/hamburgers";
+@import "./_Variables";
 
 .MobileNavigation {
   display: none;
@@ -33,14 +34,14 @@
       text-decoration: none;
       //margin: 10px 0 0 0;
       //padding: 20px;
-      font-family: din-condensed, sans-serif;
+      font-family: $nav-font;
       font-weight: normal;
       //font-size: 2.15em;
       color: #111;
     }
     h5 {
       margin: 20px 0 0 0;
-      font-family: adobe-garamond-pro;
+      font-family: $adobe-font;
       font-weight: bolder;
       font-size: 2.15em;
       color: #111;

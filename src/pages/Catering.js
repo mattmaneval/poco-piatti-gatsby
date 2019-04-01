@@ -3,7 +3,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../components/_Catering.scss"
+import "../sass/_Catering.scss"
 
 
 

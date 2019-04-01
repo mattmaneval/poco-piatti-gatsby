@@ -1,5 +1,5 @@
 import React from 'react';
-import "./_Perrysburg.scss";
+import "../sass/_Perrysburg.scss";
 
 const Perrysburg = () => (
   <div className="Perrysburg">

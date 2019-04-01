@@ -1,5 +1,5 @@
 import React from 'react';
-import "./_ThePocoExperience.scss";
+import "../sass/_ThePocoExperience.scss";
 
 
 const ThePocoExperience = (props) => (

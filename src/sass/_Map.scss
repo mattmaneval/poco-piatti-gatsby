@@ -1,3 +1,5 @@
+@import "./_Variables";
+
 .Map {
     //background-image: url("../images/background.png");
     //background-image: url("../images/DSC04753.jpg");
@@ -12,7 +14,7 @@
 
     }
     h1 {
-      font-family: adobe-garamond-pro, serif;
+      font-family: $adobe-fonts;
       padding-top: 0.75em;
     }
     iframe {

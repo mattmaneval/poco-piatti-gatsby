@@ -1,5 +1,5 @@
 import React from 'react';
-import './_Review.scss';
+import '../sass/_Review.scss';
 
 const Review = () => (
   <div className="Review">

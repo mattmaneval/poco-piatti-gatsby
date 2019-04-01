@@ -1,5 +1,5 @@
 import React from 'react';
-import "./_PhotoGallery.scss";
+import "../sass/_PhotoGallery.scss";
 
 const PhotoGallery = () => (
   <div className="PhotoGallery">

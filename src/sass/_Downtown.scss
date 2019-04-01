@@ -1,3 +1,5 @@
+@import "./_Variables";
+
 .Downtown {
   .Weekdays {
     text-align: left;
@@ -9,7 +11,7 @@
     text-decoration: none;
     h3 {
       margin: 0;
-      font-family: adobe-garamond-pro;
+      font-family: $adobe-font;
       font-size: 2.0em;
       color: #111;
       font-weight: 600;
@@ -17,7 +19,7 @@
   }
   h1 {
     margin: 0;
-    font-family: adobe-garamond-pro;
+    font-family: $adobe-font;
     font-weight: 600;
     font-style: normal;
     font-size: 2.15em;
@@ -32,19 +34,19 @@
     margin-bottom: 15px;
   }
   h4 {
-    font-family: adobe-garamond-pro;
+    font-family: $adobe-font;
     font-style: normal;
     font-size:1.25em;
     padding: 0.5em 0.5em 0.5em 0em;
   }
   h6 {
-    font-family: adobe-garamond-pro;
+    font-family: $adobe-font;
     text-transform: uppercase;
   }
   p {
     font-size: 1.2em;
     color: #333;
-    font-family: adobe-garamond-pro;
+    font-family: $adobe-font;
     font-weight: lighter;
     font-style: normal;
     letter-spacing: 0.02em;

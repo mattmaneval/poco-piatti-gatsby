@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "gatsby";
-import "./_MobileNavigation.scss"
+import "../sass/_MobileNavigation.scss"
 
 class MobileNavigation extends Component {
   constructor(props) {

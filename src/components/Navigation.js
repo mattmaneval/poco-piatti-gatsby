@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
-import "./_Navigation.scss"
+import "../sass/_Navigation.scss"
 import MobileNavigation from "../components/MobileNavigation"
 import PocoPiattiRedLogo from "../images/PocoPiattiRedLogo.jpg";
 

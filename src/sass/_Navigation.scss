@@ -1,4 +1,4 @@
-@import url('https://use.typekit.net/ffo3zwq.css');
+@import "./_Variables";
 
 .Navigation {
   margin: 0;
@@ -41,7 +41,7 @@
     ul li {
       display: inline-flex;
       padding: 0 0.65em 0 0.65em;
-      font-family: din-condensed, sans-serif;
+      font-family: $nav-font;
       font-weight: lighter;
       letter-spacing: 0.09em;
       font-style: normal;

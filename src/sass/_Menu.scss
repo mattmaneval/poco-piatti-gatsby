@@ -1,3 +1,5 @@
+@import "./_Variables";
+
 .Menu {
   margin: 0;
   padding: 0;
@@ -23,7 +25,7 @@
       h1 {
         margin: 10px 0 0 0;
         padding: 20px;
-        font-family: adobe-garamond-pro;
+        font-family: $adobe-font;
         font-weight: normal;
         font-size: 2.15em;
         color: #111;
@@ -47,7 +49,7 @@
         margin: 0 0 5px 0;
         padding: 25px 0 0 25px;
         font-size: 17.6px;
-        font-family: adobe-garamond-pro;
+        font-family: $adobe-font;
         font-weight: bolder;
       }
       p {
@@ -56,7 +58,7 @@
         padding: 0 0 0 25px;
         font-size: 16px;
         color: #333;
-        font-family: adobe-garamond-pro;
+        font-family: $adobe-font;
         font-weight: lighter;
         font-style: normal;
         letter-spacing: 0.02em;
@@ -88,27 +90,7 @@
       padding-top: 110px;
       display: flex;
       flex-flow: column;
-      #seafood {
-        order: 1;
-      }
-      #vegetarian {
-        order: 2;
-      }
-      #carne {
-        order: 3;
-      }
-      #big-plates {
-        order: 4;
-      }
-      #pizza {
-        order: 5;
-      }
-      #accompaniments {
-        order: 6;
-      }
-      .Outline {
-
-      }
+      
     }
   }
 }

@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import ThePocoExperience from "../components/ThePocoExperience"
 import Locations from "../components/Locations"
 import Banner from "../components/Banner"
-import "../components/_index.scss"
+import "../sass/_index.scss"
 import Review from "../components/Review"
 import PhotoGallery from "../components/PhotoGallery"
 

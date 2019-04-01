@@ -1,7 +1,7 @@
 import React from 'react';
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import "../components/_Menu.scss"
+import "../sass/_Menu.scss"
 
 import Seafood from "../components/Seafood"
 import Vegetarian from "../components/Vegetarian"
