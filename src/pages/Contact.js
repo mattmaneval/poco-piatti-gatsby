@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Locations from "../components/Locations"
-import "../sass/_contact.scss"
+import "../sass/_Contact.scss"
 
 const Contact = () => (
   <Layout>
