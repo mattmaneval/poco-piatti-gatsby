@@ -1,10 +1,11 @@
+@import "../sass/_Variables";
+@import "../sass/_Mixins";
+
 .PrivateEvents {
-  //background-color: rgb(242,242,242);
   text-align: center;
   display: inline-flex;
   .PrivateEventsWrap {
     justify-content: space-evenly;
-    //max-width: 600px;
     padding-top: 150px;
     .Outline {
       margin: 0;
@@ -15,36 +16,30 @@
     }
   }
   h1 {
+    @include extra-large;
     margin: 10px 0 0 0;
     padding: 20px;
-    font-family: adobe-garamond-pro;
-    font-weight: normal;
-    font-size: 2.15em;
-    color: #111;
+  }
+  h5 {
+    @include small-bold;
+    margin: 0 0 5px 0;
+    padding: 25px 0 0 25px;
   }
   p {
-    margin: 5px;
-    padding: 25px;
-    font-size: 16px;
-    color: #333;
-    font-family: adobe-garamond-pro;
-    font-weight: lighter;
-    font-style: normal;
-    letter-spacing: 0.02em;
+    @include medium;
+    margin: 0 0 5px 0;
+    padding: 0 25px 25px 25px;
+    //margin: 5px;
+    //padding: 25px;
   }
   span {
-    display: inline-flex;
-    min-width: 300px;
-    height: 0.75px;
-    border-top: 0.5px solid rgba(51, 51, 51, 0.52);
-    margin-top: 15px;
-    margin-bottom: 15px;
+    @include gray-span;
   }
   button {
     margin-top: 20px;
     font-family: adobe-garamond-pro;
     padding: .5rem 2.5rem;
-    color: #fff;
+    color: $white;
     fontWeight: 700;
     background: #bf5252;
     border-radius: 5%;

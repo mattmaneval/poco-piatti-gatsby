@@ -1,3 +1,6 @@
+@import "../sass/_Variables";
+@import "../sass/_Mixins";
+
 .PhotoGallery {
   .PhotoGalleryWrap {
     article {
@@ -5,10 +8,7 @@
       border: 5px solid #ffffff;
       text-align: left;
       h6 {
-        color: #ffffff;
-        font-family: din-condensed, sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 3px;
+        @include photo-caption;
         padding: 10px;
       }
     }

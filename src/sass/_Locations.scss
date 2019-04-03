@@ -1,7 +1,9 @@
+@import "../sass/_Variables";
+
 .Locations {
   width: 100%;
   text-align: center;
-  color: #333;
+  color: $light;
   .Locations-wrap {
     background-color: #ffffff;
     display: flex;

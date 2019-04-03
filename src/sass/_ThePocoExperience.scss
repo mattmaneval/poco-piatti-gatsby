@@ -1,3 +1,6 @@
+@import "../sass/_Variables";
+@import "../sass/_Mixins";
+
 .ThePocoExperience {
   .ThePocoExperienceWrap {
     justify-content: space-evenly;
@@ -5,23 +8,16 @@
   display: block;
   width: 100%;
   min-height: 400px;
-  font-family: Helvetica;
   margin: 100px 0 0 0;
   padding: 20px;
   background-color: #ffffff;
   text-align: left;
   h1 {
-    font-family: adobe-garamond-pro;
-    font-weight: bolder;
-    font-size: 2.15em;
-    color: #111;
+    @include extra-large-bold;
   }
   h2 {
-    font-family: adobe-garamond-pro, serif;
-    font-size: 35px;
-    font-weight: 400;
-    max-width: 700px;
-    font-style: normal;
+    @include large;
+    max-width: 800px;
   }
 }
 

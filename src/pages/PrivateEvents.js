@@ -11,8 +11,8 @@ const PrivateEvents = () => (
         <h1>Events and Private Parties</h1>
         <span className="Line"></span>
         <div className="Outline">
-          <p>
-          Book your next private party or event at Poco Piatti.
+          <h5>Perrysburg Banquet Room</h5>
+          <p>Book your next private party or event at Poco Piatti.
           Poco Piatti offers flexible packages and personal attention
           to your party planning needs with each event customized to fit your criteria.
           As a result, pricing is contingent upon your requirements as well as menu choices.

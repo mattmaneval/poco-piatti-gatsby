@@ -1,21 +1,21 @@
+@import "../sass/_Variables";
+@import "../sass/_Mixins";
+
 .Review {
   background-color: #171717;
   height: 700px;
   .ReviewWrap {
     text-align: left;
     h2 {
+      @include large;
       padding: 75px 0 0 200px;
-      font-family: adobe-garamond-pro, serif;
-      font-size: 35px;
-      font-weight: 400;
       max-width: 700px;
-      font-style: normal;
-      color: rgb(255,255,255);
+      color: $white;
     }
     p {
       padding-left: 200px;
       text-transform: uppercase;
-      color: rgb(255,255,255);
+      color: $white;
     }
   }
 }
