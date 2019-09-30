@@ -16,8 +16,8 @@ const About = () => (
         <p>Our meat is Halal.</p>
         <h5>Reservations and Carryout</h5>
         <p>For reservations at Perrysburg location call: <a href="tel:419-931-0281">419-931-0281</a></p>
-        <p>For reservations at Sylvania location call: <a href="tel:419-720-8028">419-720-8028</a></p>
-        
+        <p>For reservations at Sylvania location call: <a href="tel:419-931-0281">419-931-0281</a></p>
+      <p>For reservations at Downtown location call: <a href="tel:419-931-0281">419-931-0281</a></p>
         <p>Automatic gratuity may be applied to groups of 5 or more.</p>
 
         <h5>Bar Options</h5>

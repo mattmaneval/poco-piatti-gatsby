@@ -47,6 +47,14 @@
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+@mixin online-ordering {
+  color: $white;
+  font-family: $nav-font;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2.0em;
+  text-decoration: none;
+}
 @mixin span {
   display: inline-flex;
   width: 9.5em;

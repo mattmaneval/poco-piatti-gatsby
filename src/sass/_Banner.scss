@@ -1,4 +1,5 @@
 @import "../sass/_Variables";
+@import "../sass/_Mixins";
 
 .Banner {
   text-align: center;
@@ -12,6 +13,28 @@
   text-align: center;
   section {
     width: 100%;
+  }
+  .Banner-Wrap {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(28,31,38,0.75), rgba(28,31,38,0.1));
+    .Banner-Inner {
+      margin: auto;
+      text-align: center;
+      min-width: 200px;
+      max-width: 300px;
+      h1 {
+        @include extra-large;
+        color: #fff;
+        padding-top: 200px;
+      }
+      h6 {
+          border: 0.15rem #fff solid;
+        a {
+          @include online-ordering;
+        }
+      }
+    }
   }
 }
 

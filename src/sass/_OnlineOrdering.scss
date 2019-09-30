@@ -1,0 +1,106 @@
+@import "../sass/_Variables";
+@import "../sass/_Mixins";
+
+.OnlineOrdering {
+  text-align: center;
+  padding-top: 350px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(28,31,38,0.75), rgba(28,31,38,0.1));
+  .OnlineOrderingWrap {
+    width: 100%;
+    text-align: center;
+    .OnlineOrderingLinks {
+      width: 500px;
+      text-align: center;
+      display: inline;
+      button {
+        background-color: #bf5252;
+        @include photo-caption;
+        border: none;
+        border-radius: 1.5%;
+        min-width: 400px;
+        margin: 10px;
+        padding: 10px;
+        display: inline-block;
+        a {
+          color: $white;
+          text-decoration: none;
+          &:hover {
+            color: #bf5252;;
+          }
+        }
+        &:hover {
+          background-color: $dark;
+        }
+    }
+  }
+
+
+    .Line {
+      display: inline-flex;
+      width: 9.5em;
+      height: 0.325em;
+      border-top: 0.225em solid #bf5252;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+  h1 {
+    @include extra-large;
+    color: $white;
+    margin: 0;
+    padding: 0;
+
+  }
+  h5 {
+    @include small;
+    color: $white;
+    padding-bottom: 10px;
+  }
+  .OrderingLinks {
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+    section {
+      display: inline;
+      margin: 25px;
+      button {
+        text-align: left;
+      }
+      h3 {
+        color: $white;
+        font-family: $nav-font;
+        text-transform: uppercase;
+        font-weight: lighter;
+        letter-spacing: 0.09em;
+        font-style: normal;
+        border-left: 2px solid #bf5252;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+/*Begin Responsive Style*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .OnlineOrdering {
+    padding-top: 150px;
+    padding-bottom: 0;
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+  .OrderingLinks {
+
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+  button {
+  }
+}
