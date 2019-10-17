@@ -15,8 +15,10 @@ const Pizza = () => (
       <p>Garlic sauce, tomato, roasted peppers, onion, kalamata olives, feta.</p>
       <h5>Italian Sausage and Ricotta &mdash; 12</h5>
       <p>Spicy Italian Sausage with ricotta, roasted red peppers, topped with fresh basil.</p>
-      <h5>Portabella and Artichoke &mdash; 12</h5>
+      <h5>Spinach Artichoke &mdash; 12</h5>
       <p>Homemade alfredo sauce, artichoke, spinach, tomato, three cheese blend.</p>
+      <h5>Portabella and Artichoke &mdash; 12</h5>
+      <p>Goat cheese pesto, portabella mushroom, artichoke, caramelized onion, three cheese blend.</p>
     </div>
   </div>
 );
