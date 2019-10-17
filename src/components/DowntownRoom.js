@@ -12,10 +12,10 @@ const DowntownRoom = () => (
             you and your guests will feel exclusive and comfortable in our space.
             With such a large space, our layout can adapt for mingling, all seated
             (up to sixty) or a combination of both. Perfect for business gatherings,
-            celebratory events or a special evening with friends, we guarantee you will be pleased dining with us. 
+            celebratory events or a special evening with friends, we guarantee you will be pleased dining with us.
           </p>
         </div>
-        <a href="mailto:pocopiattiparty@gmail.com"><button>Email Us</button></a>
+        <a href="mailto:ch.lepre.402@gmail.com"><button>Email Us</button></a>
       </div>
     </div>
 )
