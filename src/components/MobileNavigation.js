@@ -22,8 +22,8 @@ class MobileNavigation extends Component {
             onClick={this.handleClick}
             className={this.state.isToggleOn ? 'hamburger hamburger--slider' : 'hamburger hamburger--slider is-active'}
             >
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
+            <span className="hamburger-box">
+              <span className="hamburger-inner"></span>
             </span>
           </button>
           <div className={this.state.isToggleOn ? 'MobileNavigationHidden' : 'MobileNavigationActive'}>

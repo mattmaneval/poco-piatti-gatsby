@@ -6,20 +6,17 @@
   padding-top: 350px;
   width: 100%;
   height: 100%;
-  //background-image: linear-gradient(rgba(28,31,38,0.75), rgba(28,31,38,0.1));
+  background-image: linear-gradient(rgba(28,31,38,0.75), rgba(28,31,38,0.1));
   .OnlineOrderingWrap {
     width: 100%;
     text-align: center;
     .OnlineOrderingLinks {
-      //width: 500px;
+      width: 500px;
       text-align: center;
-      display: block;
+      display: inline;
       button {
-        //background-color: #bf5252;
-        background-color: black;
+        background-color: #bf5252;
         @include photo-caption;
-        font-size: 2.1em;
-        line-height: 1.0em;
         border: none;
         border-radius: 1.5%;
         min-width: 400px;
@@ -94,25 +91,16 @@
   .OnlineOrdering {
     padding-top: 150px;
     padding-bottom: 0;
-    .OnlineOrderingWrap {
-      max-width: 100%;
-      .OnlineOrderingLinks {
-        text-align: center;
-
-        button {
-          display: inline-block;
-          min-width: 300px;
-          font-size: 1.5em;
-        }
-      }
-    }
     h1 {
       font-size: 1.5em;
     }
   }
+  .OrderingLinks {
 
+  }
   h3 {
     font-size: 1.1em;
   }
-
+  button {
+  }
 }
