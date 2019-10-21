@@ -8,7 +8,7 @@ import PhotoGallery from "../components/PhotoGallery"
 import LandingPage from "../components/LandingPage"
 import PhotoGalleryTwo from "../components/PhotoGalleryTwo"
 import ThePocoExperience from "../components/ThePocoExperience"
-
+import Map from "../components/Map"
 
 const IndexPage = (props) => (
   <Layout>
@@ -16,8 +16,9 @@ const IndexPage = (props) => (
     <LandingPage />
     <ThePocoExperience />
     <Locations />
+    <Map />
     <PhotoGalleryTwo />
-   
+    
     <PhotoGallery />
     <Review />
     

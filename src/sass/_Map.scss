@@ -1,8 +1,10 @@
-@import "./_Variables";
+@import "../sass/_Variables";
+@import "../sass/_Mixins";
+
 
 .Map {
     //background-image: url("../images/background.png");
-    //background-image: url("../images/DSC04753.jpg");
+    background-image: url("../images/IMG_0053.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,7 +16,7 @@
 
     }
     h1 {
-      font-family: $adobe-fonts;
+      @include photo-caption;
       padding-top: 0.75em;
     }
     iframe {
