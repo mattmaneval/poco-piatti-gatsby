@@ -1,0 +1,198 @@
+@import "../sass/_Variables";
+@import "../sass/_Mixins";
+
+.PhotoGalleryTwo {
+  .PhotoGalleryWrap {
+    article {
+      min-height: 700px;
+      border: 5px solid #ffffff;
+      text-align: left;
+      h6 {
+        @include photo-caption;
+        padding: 10px;
+      }
+    }
+    .PhotoGalleryRow {
+      display: flex;
+      .PortobelloCaps {
+        width: 40%;
+        background-image: url("../images/IMG_0120.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .PocoTips {
+        width: 60%;
+        background-image: url("../images/IMG_0114.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    .PhotoGalleryRow2 {
+      display: flex;
+      .ChickenWraps {
+        width: 60%;
+        background-image: url("../images/IMG_0088.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .Arayes {
+        width: 40%;
+        background-image: url("../images/IMG_0093.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    .PhotoGalleryRow3 {
+      display: flex;
+      .Pizza {
+        width: 40%;
+        background-image: url("../images/IMG_0071.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .Fatoosh {
+        width: 60%;
+        background-image: url("../images/IMG_0108.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}
+
+/*Begin Responsive Style*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .PhotoGallery {
+    .PhotoGalleryWrap {
+      article {
+        border-right: none;
+        border-left: none;
+      }
+      .PhotoGalleryRow {
+        display: block;
+        .PortobelloCaps {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .PocoTips {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      .PhotoGalleryRow2 {
+        display: block;
+        .ChickenWraps {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .Arayes {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      .PhotoGalleryRow3 {
+        display: block;
+        .Pizza {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .Fatoosh {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+}
+
+/*Begin Responsive Style*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .PhotoGalleryTwo {
+    .PhotoGalleryWrap {
+      article {
+        border-right: none;
+        border-left: none;
+      }
+      .PhotoGalleryRow {
+        display: block;
+        .PortobelloCaps {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .PocoTips {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      .PhotoGalleryRow2 {
+        display: block;
+        .ChickenWraps {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .Arayes {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      .PhotoGalleryRow3 {
+        display: block;
+        .Pizza {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .Fatoosh {
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+
+}

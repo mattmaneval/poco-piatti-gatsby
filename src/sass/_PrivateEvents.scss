@@ -3,12 +3,35 @@
 
 .PrivateEvents {
   text-align: center;
-  //display: inline-flex;
+  article {
+    min-height: 700px;
+    border: 5px solid #ffffff;
+    text-align: left;
+    h6 {
+      @include photo-caption;
+      padding: 10px;
+    }
+  }
   .PrivateEventsWrap {
     background-color: #171717;
     justify-content: space-evenly;
     padding-top: 150px;
     text-align: center;
+  }
+  .PhotoGalleryRow {
+    display: flex;
+    .PortobelloCaps {
+      width: 50%;
+      background-image: url("../images/IMG_0049.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    .PocoTips {
+      width: 50%;
+      background-image: url("../images/IMG_0060.jpg");
+      background-size: cover;
+      background-position: center;
+    }
   }
   h1 {
     @include extra-large;

@@ -1,17 +1,13 @@
 import React from 'react';
 import '../sass/_LandingPage.scss';
 import OnlineOrdering from './OnlineOrdering';
-import ThePocoExperience from './ThePocoExperience';
 
 const LandingPage = () => (
   <div className="LandingPage">
     <div className="LandingPageWrap">
-        <section className="LandingImage">
-            
+        <section>
+          <OnlineOrdering />
         </section>
-        <aside className="LandingLinks">
-            <OnlineOrdering />
-        </aside>
     </div>
   </div>
 );

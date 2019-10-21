@@ -51,6 +51,20 @@
         padding: 0 0 0 25px;
       }
     }
+    .PortobelloCaps {
+        text-align: left;
+        margin-top: 25px;
+        width: 100%;
+        min-height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../images/DSC04717.jpg");
+        h6 {
+          @include photo-caption;
+          padding: 10px;
+        }
+    }
   }
 }
 
