@@ -15,9 +15,11 @@
   text-align: left;
   h1 {
     @include extra-large-bold;
+    color: $white;
   }
   h2 {
     @include large;
+    color: $white;
     max-width: 800px;
   }
 }

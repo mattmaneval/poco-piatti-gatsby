@@ -5,6 +5,7 @@
   padding: 0;
   width: 100%;
   position: fixed !important;
+  top: 0;
   background-color: #ffffff;
   text-align: center;
   align-items: center;
@@ -12,7 +13,7 @@
     margin: auto;
     padding: auto;
     display: flex;
-    height: 159px;
+    height: 100px;
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -46,7 +47,7 @@
       letter-spacing: 0.09em;
       font-style: normal;
       text-transform: uppercase;
-      font-size: 18px;
+      font-size: 25px;
       :hover {
         color: #bf5252;
       }
