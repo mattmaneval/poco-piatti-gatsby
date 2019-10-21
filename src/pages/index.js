@@ -8,8 +8,7 @@ import PhotoGallery from "../components/PhotoGallery"
 import LandingPage from "../components/LandingPage"
 import PhotoGalleryTwo from "../components/PhotoGalleryTwo"
 import ThePocoExperience from "../components/ThePocoExperience"
-import FoodMenu from "../components/FoodMenu"
-import AboutComp from "../components/AboutComp"
+
 
 const IndexPage = (props) => (
   <Layout>
@@ -18,10 +17,10 @@ const IndexPage = (props) => (
     <ThePocoExperience />
     <Locations />
     <PhotoGalleryTwo />
-    <FoodMenu />
+   
     <PhotoGallery />
     <Review />
-    <AboutComp />
+    
   </Layout>
 )
 

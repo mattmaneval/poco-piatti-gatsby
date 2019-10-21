@@ -1,0 +1,42 @@
+@import "./_Variables";
+@import "./_Mixins";
+
+.AboutComp {
+  text-align: center;
+  width: 100%;
+  .AboutCompWrap {
+    padding-top: 150px;
+    //justify-content: space-evenly;
+    max-width: 500px;
+    text-align: center;
+    .Outline {
+      margin: 0;
+      padding: 0;
+      border: 1px solid rgba(219, 0, 0, 0.52);
+      text-align: left;
+      max-width: 500px;
+    }
+  }
+  h1 {
+    @include extra-large;
+    margin: 10px 0 0 0;
+    padding: 20px;
+  }
+  h5 {
+    @include small-bold;
+    margin: 0 0 5px 0;
+    padding: 25px 0 0 25px;
+  }
+  p {
+    @include medium;
+    margin: 0 0 5px 0;
+    padding: 0 25px 0 25px;
+    a {
+      text-decoration: none;
+      color: $dark;
+    }
+  }
+  span {
+    @include gray-span;
+  }
+}

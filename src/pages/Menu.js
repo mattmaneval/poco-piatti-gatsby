@@ -18,7 +18,7 @@ const Menu = () => (
       <div className="MenuWrap">
         <div className="column-1">
           <Seafood />
-          <BigPlates />
+          <BigPlates /> 
           <Accompaniments />
         </div>
         <div className="column-2">

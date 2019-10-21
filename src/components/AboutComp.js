@@ -1,5 +1,5 @@
 import React from "react"
-import "../sass/_About.scss"
+import "../sass/_AboutComp.scss"
 
 const AboutComp = () => (
     <div className="About">
