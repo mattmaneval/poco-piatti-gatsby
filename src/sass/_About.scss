@@ -2,41 +2,60 @@
 @import "./_Mixins";
 
 .About {
+  background-color: #171717;
   text-align: center;
-  display: inline-flex;
+  //display: flex;
+
   .AboutWrap {
     padding-top: 150px;
-    justify-content: space-evenly;
-    max-width: 500px;
-    text-align: center;
-    .Outline {
-      margin: 0;
-      padding: 0;
-      border: 1px solid rgba(219, 0, 0, 0.52);
-      text-align: left;
-      max-width: 500px;
-    }
+    padding-bottom: 25px;
+    //justify-content: space-evenly;
+    //width: 100%;
+    text-align: left;
+    
   }
   h1 {
     @include extra-large;
     margin: 10px 0 0 0;
-    padding: 20px;
+    padding-left: 25px;
+    color: $white;
   }
   h5 {
     @include small-bold;
     margin: 0 0 5px 0;
     padding: 25px 0 0 25px;
+    color: $white;
   }
   p {
     @include medium;
     margin: 0 0 5px 0;
     padding: 0 25px 0 25px;
+    color: $white;
     a {
       text-decoration: none;
       color: $dark;
     }
   }
   span {
-    @include gray-span;
+   
+    
   }
+}
+
+/*Begin Responsive Style*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .About {
+    width: 100%;
+    text-align: center;
+    .AboutWrap {
+      
+      .Outline {
+        //max-width: 300px;
+     }
+    }
+}
 }

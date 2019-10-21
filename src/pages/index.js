@@ -18,10 +18,8 @@ const IndexPage = (props) => (
     <Locations />
     <Map />
     <PhotoGalleryTwo />
-    
-    <PhotoGallery />
     <Review />
-    
+    <PhotoGallery />
   </Layout>
 )
 

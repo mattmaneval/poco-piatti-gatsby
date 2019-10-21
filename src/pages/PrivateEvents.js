@@ -15,12 +15,10 @@ const PrivateEvents = () => (
         to your party planning needs with each event customized to fit your criteria.</h1>
         <span className="Line"></span>
         <div className="PhotoGalleryRow">
-        <article className="PortobelloCaps">
-          
-        </article>
-        <article className="PocoTips">
-        
-        </article>
+          <article className="PortobelloCaps">
+          </article>
+          <article className="PocoTips">
+          </article>
       </div>
       </div>
       <PerrysburgRoom />

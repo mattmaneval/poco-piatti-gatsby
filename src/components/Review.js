@@ -10,6 +10,9 @@ const Review = () => (
       great values."
       </h2>
       <p>&mdash; The Blade</p>
+      <h2>2019 Dining Guide Award Winner for Best Appetizers & 
+        Runner-Up for Best Staff
+      </h2>
       <h2>2018 Dining Guide Award Winner for Best Restaurateur</h2>
       <p>&mdash; Toledo City Paper</p>
     </div>
