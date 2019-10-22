@@ -2,11 +2,10 @@ import React from "react"
 import "../sass/_Faq.scss"
 
 const Faq = () => (
-    <div className="About">
-    <div className="AboutWrap">
+    <div className="Faq">
+    <div className="FaqWrap">
       <h1>Frequently Asked Questions</h1>
       <span className="line"></span>
-      <div className="Outline">
         <h5>Dietary Restrictions</h5>
           <p>We accommodate most dietary needs like gluten free, vegetarian, and vegan. Ask for our gluten free menu. </p>
           <p>Our meat is Halal.</p>
@@ -25,7 +24,6 @@ const Faq = () => (
           <p>We offer gift certificates in-store at all our locations.</p>
       </div>
     </div>
-  </div>
 )
 
 export default Faq;
