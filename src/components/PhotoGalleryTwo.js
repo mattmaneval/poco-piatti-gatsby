@@ -5,21 +5,21 @@ const PhotoGalleryTwo = () => (
   <div className="PhotoGalleryTwo">
     <div className="PhotoGalleryWrap">
       <div className="PhotoGalleryRow">
-        <article className="PortobelloCaps">
+        <article className="Photo1">
         </article>
-        <article className="PocoTips">
+        <article className="Photo2">
         </article>
       </div>
       <div className="PhotoGalleryRow2">
-        <article className="ChickenWraps">
+        <article className="Photo3">
         </article>
-        <article className="Arayes">
+        <article className="Photo4">
         </article>
       </div>
       <div className="PhotoGalleryRow3">
-        <article className="Pizza">
+        <article className="Photo5">
         </article>
-        <article className="Fatoosh">
+        <article className="Photo6">
         </article>
       </div>
     </div>

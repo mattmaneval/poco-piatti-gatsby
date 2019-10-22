@@ -20,6 +20,12 @@ const PrivateEvents = () => (
           <article className="PrivateEventsPhoto2">
           </article>
         </div>
+        <div className="PrivateEventsPhotos">
+          <article className="PrivateEventsPhoto3">
+          </article>
+          <article className="PrivateEventsPhoto4">
+          </article>
+        </div>
         <a href="mailto:pocopiattiparty@gmail.com"><button>Email Us</button></a>
         <h1>Or call 419.931.0281
         </h1>
@@ -27,6 +33,7 @@ const PrivateEvents = () => (
           <PerrysburgRoom />
           <DowntownRoom />
         </div>
+        
       </div>
     </div>
   </Layout>

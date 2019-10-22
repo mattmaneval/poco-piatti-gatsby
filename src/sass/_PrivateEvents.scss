@@ -15,6 +15,7 @@
     text-align: center;
     .RoomDescription {
       width: 100%;
+      padding: 0 0 100px 0;
     }
   }
   .PrivateEventsPhotos {
@@ -26,6 +27,18 @@
       background-position: center;
     }
     .PrivateEventsPhoto2 {
+      width: 50%;
+      background-image: url("../images/IMG_0058.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    .PrivateEventsPhoto3 {
+      width: 50%;
+      background-image: url("../images/IMG_0054.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    .PrivateEventsPhoto4 {
       width: 50%;
       background-image: url("../images/IMG_0060.jpg");
       background-size: cover;
@@ -76,7 +89,7 @@
   .PrivateEvents {
     .PrivateEventsWrap {
       h1 {
-        padding: 0;
+        padding: 25px;
       }
       article {
         min-height: 400px;

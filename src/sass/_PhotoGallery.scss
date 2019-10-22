@@ -1,8 +1,8 @@
 @import "../sass/_Variables";
 @import "../sass/_Mixins";
 
-.PhotoGallery {
-  .PhotoGalleryWrap {
+.FoodPhotoGallery {
+  .FoodPhotoGalleryWrap {
     article {
       min-height: 700px;
       border: 5px solid #ffffff;
@@ -12,7 +12,7 @@
         padding: 10px;
       }
     }
-    .PhotoGalleryRow {
+    .FoodPhotoGalleryRow {
       display: flex;
       .PortobelloCaps {
         width: 40%;
@@ -27,7 +27,7 @@
         background-position: center;
       }
     }
-    .PhotoGalleryRow2 {
+    .FoodPhotoGalleryRow2 {
       display: flex;
       .ChickenWraps {
         width: 60%;
@@ -42,7 +42,7 @@
         background-position: center;
       }
     }
-    .PhotoGalleryRow3 {
+    .FoodPhotoGalleryRow3 {
       display: flex;
       .Pizza {
         width: 40%;
@@ -60,71 +60,19 @@
   }
 }
 
+
 /*Begin Responsive Style*/
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
-
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .PhotoGallery {
-    .PhotoGalleryWrap {
+  .FoodPhotoGallery {
+    .FoodPhotoGalleryWrap {
       article {
-        border-right: none;
-        border-left: none;
-      }
-      .PhotoGalleryRow {
-        display: block;
-        .PortobelloCaps {
-          width: 100%;
-          min-height: 300px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-        .PocoTips {
-          width: 100%;
-          min-height: 300px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-      }
-      .PhotoGalleryRow2 {
-        display: block;
-        .ChickenWraps {
-          width: 100%;
-          min-height: 300px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-        .Arayes {
-          width: 100%;
-          min-height: 300px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-      }
-      .PhotoGalleryRow3 {
-        display: block;
-        .Pizza {
-          width: 100%;
-          min-height: 300px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-        .Fatoosh {
-          width: 100%;
-          min-height: 300px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
+        min-height: 200px;
+        max-height: 300px;
       }
     }
   }
-
 }

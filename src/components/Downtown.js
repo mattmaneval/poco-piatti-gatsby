@@ -6,6 +6,7 @@ const Downtown = () => (
     <div className="Location">
       <h1>Downtown</h1>
       <span className="Underline"></span>
+      <article></article>
       <p>329 N Huron<br />Toledo, Ohio</p>
     </div>
     <div className="Hours">
