@@ -3,7 +3,7 @@
 
 .Review {
   background-color: #171717;
-  height: 700px;
+  height: 1000px;
   .ReviewWrap {
     text-align: left;
     h2 {
@@ -28,6 +28,7 @@
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .Review {
+    height: 600px;
     .ReviewWrap {
       h2 {
         padding: 20px 20px 5px 20px;

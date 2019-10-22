@@ -11,18 +11,23 @@ const PrivateEvents = () => (
     <div className="PrivateEvents">
       <div className="PrivateEventsWrap">
         <h1>Book your next private party or event at Poco Piatti.
-        Poco Piatti offers flexible packages and personal attention
+        We offer flexible packages and personal attention
         to your party planning needs with each event customized to fit your criteria.</h1>
         <span className="Line"></span>
-        <div className="PhotoGalleryRow">
-          <article className="PortobelloCaps">
+        <div className="PrivateEventsPhotos">
+          <article className="PrivateEventsPhoto1">
           </article>
-          <article className="PocoTips">
+          <article className="PrivateEventsPhoto2">
           </article>
+        </div>
+        <a href="mailto:pocopiattiparty@gmail.com"><button>Email Us</button></a>
+        <h1>Or call 419.931.0281
+        </h1>
+        <div className="RoomDescription">
+          <PerrysburgRoom />
+          <DowntownRoom />
+        </div>
       </div>
-      </div>
-      <PerrysburgRoom />
-      <DowntownRoom />
     </div>
   </Layout>
 )

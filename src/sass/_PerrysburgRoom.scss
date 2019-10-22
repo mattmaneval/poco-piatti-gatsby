@@ -1,14 +1,19 @@
+@import "../sass/_Variables";
+@import "../sass/_Mixins";
+
 .PerrysburgRoom {
+  display: inline-flex;
+  width: 100%;
 .PerrysburgRoomWrap {
   display: inline-block;
-  .Outline {
-    max-width: 300px;
-    margin: 0;
-    padding: 0;
-    border: 1px solid rgba(219, 0, 0, 0.52);
-    text-align: left;
-    width: 500px;
-    display: block;
+  h1 {
+    @include extra-large-bold;
+    color: $white;
+  }
+  h2 {
+    @include extra-large;
+    color: $white; 
+    padding: 25px;
   }
 }
 }
