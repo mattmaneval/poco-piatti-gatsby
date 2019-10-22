@@ -16,6 +16,9 @@ const PhotoGallery = () => (
         <article className="ChickenWraps">
         <h6>Markouk Chicken Wraps</h6>
         </article>
+        <article className="Hummus">
+          <h6>Hummus & Roasted Beet Salad</h6>
+        </article>
         <article className="Arayes">
         <h6>Ara-yes Halabi</h6>
         </article>

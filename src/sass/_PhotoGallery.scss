@@ -30,13 +30,19 @@
     .FoodPhotoGalleryRow2 {
       display: flex;
       .ChickenWraps {
-        width: 60%;
+        width: 30%;
         background-image: url("../images/DSC04786.jpg");
         background-size: cover;
         background-position: center;
       }
-      .Arayes {
+      .Hummus {
         width: 40%;
+        background-image: url("../images/DSC04751.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .Arayes {
+        width: 30%;
         background-image: url("../images/DSC04757.jpg");
         background-size: cover;
         background-position: center;
