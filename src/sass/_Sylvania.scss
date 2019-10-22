@@ -2,6 +2,7 @@
 @import "./_Mixins";
 
 .Sylvania {
+  
   .Weekdays {
     text-align: left;
   }
@@ -12,6 +13,7 @@
     text-decoration: none;
   }
   h1 {
+    padding-top: 2.0em;
     @include extra-large-bold;
     color: $dark;
     margin: 0;
@@ -26,5 +28,6 @@
   .Hours {
     display: flex;
     padding-top: 0.5rem;
+    padding-bottom: 2.0em;
   }
 }

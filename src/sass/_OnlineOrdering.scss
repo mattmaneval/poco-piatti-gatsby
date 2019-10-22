@@ -9,13 +9,14 @@
     .OnlineOrderingLinks {
       text-align: center;
       button {
-        border: 5px solid #ffffff;
+        border-top: 2.5px solid #ffffff;
+        border-bottom: 2.5px solid #ffffff;
         background-color:  #171717;
         @include photo-caption;
         font-size: 2.25em;
         font-weight: bolder;
         letter-spacing: 0.09em;
-        line-height: 0.95em;
+        line-height: 0.99em;
         border-radius: 1.5%;
         min-width: 600px;
         height: 100px;

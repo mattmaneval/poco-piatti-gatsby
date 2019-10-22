@@ -39,13 +39,13 @@ class MobileNavigation extends Component {
                 </Link>
                 <Link
                   onClick={this.handleClick}
-                  to="/Catering/">
-                  <h5>Catering</h5>
+                  to="/PrivateEvents/">
+                  <h5>Private Events</h5>
                 </Link>
                 <Link
                   onClick={this.handleClick}
-                  to="/PrivateEvents/">
-                  <h5>Private Events</h5>
+                  to="/Catering/">
+                  <h5>Catering</h5>
                 </Link>
                 <Link
                   onClick={this.handleClick}

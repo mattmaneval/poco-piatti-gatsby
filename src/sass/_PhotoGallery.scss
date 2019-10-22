@@ -2,10 +2,10 @@
 @import "../sass/_Mixins";
 
 .FoodPhotoGallery {
+  background-color: #ffffff;
   .FoodPhotoGalleryWrap {
     article {
       min-height: 700px;
-      border: 5px solid #ffffff;
       text-align: left;
       h6 {
         @include photo-caption;
@@ -15,52 +15,79 @@
     .FoodPhotoGalleryRow {
       display: flex;
       .PortobelloCaps {
-        width: 40%;
+        width: calc(40% - 2.5px);
+        border-top: 5px solid #ffffff;
+        border-right: 2.5px solid #ffffff;
+        border-bottom: 2.5px solid #ffffff;
         background-image: url("../images/DSC04717.jpg");
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
       }
       .PocoTips {
-        width: 60%;
-        background-image: url("../images/DSC04727.jpg");
+        width: calc(60% + 2.5px);
+        border-top: 5px solid #ffffff;
+        border-bottom: 2.5px solid #ffffff;
+        border-left: 2.5px solid #ffffff;
+        background-image: url("../images/DSC04736.jpg");
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
       }
     }
     .FoodPhotoGalleryRow2 {
       display: flex;
       .ChickenWraps {
-        width: 30%;
+        width: calc(30% - 2.5px);
+        border-top: 2.5px solid #ffffff;
+        border-right: 2.5px solid #ffffff;
+        border-bottom: 2.5px solid #ffffff;
         background-image: url("../images/DSC04786.jpg");
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
       }
       .Hummus {
-        width: 40%;
+        width: calc(40%);
+        border-top: 2.5px solid #ffffff;
+        border-right: 2.5px solid #ffffff;
+        border-bottom: 2.5px solid #ffffff;
+        border-left: 2.5px solid #ffffff;
         background-image: url("../images/DSC04751.jpg");
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
       }
       .Arayes {
-        width: 30%;
+        width: calc(30% + 2.5px);
+        border-top: 2.5px solid #ffffff;
+        border-bottom: 2.5px solid #ffffff;
+        border-left: 2.5px solid #ffffff;
         background-image: url("../images/DSC04757.jpg");
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
       }
     }
     .FoodPhotoGalleryRow3 {
       display: flex;
       .Pizza {
-        width: 40%;
-        background-image: url("../images/DSC04736.jpg");
+        width: calc(40% - 2.5px);
+        border-top: 2.5px solid #ffffff;
+        border-right: 2.5px solid #ffffff;
+        background-image: url("../images/DSC04727.jpg");
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
       }
       .Fatoosh {
-        width: 60%;
+        width: calc(60% + 2.5px);
+        border-top: 2.5px solid #ffffff;
+        border-left: 2.5px solid #ffffff;
         background-image: url("../images/DSC04768.jpg");
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
       }
     }
   }
@@ -76,8 +103,8 @@
   .FoodPhotoGallery {
     .FoodPhotoGalleryWrap {
       article {
-        border: 2px solid #ffffff;
-        min-height: 200px;
+        //border: 2px solid #ffffff;
+        min-height: 225px;
         max-height: 300px;
       }
     }

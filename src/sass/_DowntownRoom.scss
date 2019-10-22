@@ -8,10 +8,14 @@
   display: block;
   padding: 15px;
   text-align: left;
+  h1 {
+    @include extra-large;
+    color: $white;
+  }
   h2 {
     @include large;
     color: $white; 
-    padding: 0 100px 0 100px;
+    padding: 0 100px 0 0;
   }
 }
 }

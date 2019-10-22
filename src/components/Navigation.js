@@ -13,7 +13,7 @@ const Navigation = () => (
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/Menu/">Menu</Link></li>
-          <li><Link to="/Catering/">Catering</Link></li>
+          <li><Link to="/PrivateEvents/">Private Events</Link></li>
         </ul>
       </div>
       <div className="logo">
@@ -21,7 +21,7 @@ const Navigation = () => (
       </div>
       <div className="right-links">
         <ul>
-          <li><Link to="/PrivateEvents/">Private Events</Link></li>
+          <li><Link to="/Catering/">Catering</Link></li>
           <li><Link to="/About/">About</Link></li>
           <li><Link to="/Contact/">Contact</Link></li>
         </ul>

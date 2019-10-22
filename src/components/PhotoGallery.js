@@ -9,7 +9,7 @@ const PhotoGallery = () => (
           <h6>Stuffed Portobello Caps</h6>
         </article>
         <article className="PocoTips">
-        <h6>Beef Poco Tips</h6>
+        <h6>Italian Sausage and Ricotta Pizza</h6>
         </article>
       </div>
       <div className="FoodPhotoGalleryRow2">
@@ -25,7 +25,7 @@ const PhotoGallery = () => (
       </div>
       <div className="FoodPhotoGalleryRow3">
         <article className="Pizza">
-          <h6>Italian Sausage and Ricotta Pizza</h6>
+          <h6>Beef Poco Tips</h6>
         </article>
         <article className="Fatoosh">
         <h6>Fatoosh</h6>
