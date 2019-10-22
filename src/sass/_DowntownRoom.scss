@@ -6,7 +6,8 @@
   //display: inline-flex;
 .DowntownRoomWrap {
   display: block;
-//  padding: 100px;
+  padding: 15px;
+  text-align: left;
   h2 {
     @include large;
     color: $white; 

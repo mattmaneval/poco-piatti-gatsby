@@ -2,10 +2,10 @@
 @import "../sass/_Mixins";
 
 .PerrysburgRoom {
-  //display: inline-flex;
   width: 100%;
 .PerrysburgRoomWrap {
-  //display: inline-block;
+  text-align: left;
+  padding: 15px;
   h2 {
     @include large;
     color: $white; 
