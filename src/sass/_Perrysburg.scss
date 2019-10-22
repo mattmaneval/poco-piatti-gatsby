@@ -27,6 +27,21 @@
   .Hours {
     display: flex;
     padding-top: 0.5rem;
-    padding-bottom: 2.0em;
+    padding-bottom: 4.5em;
+  }
+}
+
+
+/*Begin Responsive Style*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .Perrysburg {
+    .Hours {
+      padding-bottom: 0;
+    }
   }
 }

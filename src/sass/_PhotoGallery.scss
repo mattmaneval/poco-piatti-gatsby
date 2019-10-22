@@ -42,13 +42,14 @@
         border-top: 2.5px solid #ffffff;
         border-right: 2.5px solid #ffffff;
         border-bottom: 2.5px solid #ffffff;
+        border-left: 0;
         background-image: url("../images/DSC04786.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
       }
       .Hummus {
-        width: calc(40%);
+        width: 40%;
         border-top: 2.5px solid #ffffff;
         border-right: 2.5px solid #ffffff;
         border-bottom: 2.5px solid #ffffff;
@@ -61,6 +62,7 @@
       .Arayes {
         width: calc(30% + 2.5px);
         border-top: 2.5px solid #ffffff;
+        border-right: 0;
         border-bottom: 2.5px solid #ffffff;
         border-left: 2.5px solid #ffffff;
         background-image: url("../images/DSC04757.jpg");
@@ -83,6 +85,7 @@
       .Fatoosh {
         width: calc(60% + 2.5px);
         border-top: 2.5px solid #ffffff;
+        border-right: 0;
         border-left: 2.5px solid #ffffff;
         background-image: url("../images/DSC04768.jpg");
         background-size: cover;
