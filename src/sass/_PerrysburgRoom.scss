@@ -11,9 +11,10 @@
     color: $white;
   }
   h2 {
-    @include large;
-    color: $white; 
-    padding: 0 100px 0 0;
+    @include extra-large;
+        color: $white;
+        padding: 75px 200px 120px 200px;
+        margin: 0;
   }
 }
 }

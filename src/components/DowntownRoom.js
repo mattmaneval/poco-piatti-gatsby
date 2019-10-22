@@ -4,8 +4,8 @@ import "../sass/_DowntownRoom.scss"
 const DowntownRoom = () => (
     <div className="DowntownRoom">
       <div className="DowntownRoomWrap">
-          <h1>Downtown</h1>
-          <h2>Our stylish, elegant upstairs can accommodate ten to one-hundred people.
+          
+          <h2>Downtown - Our stylish, elegant upstairs can accommodate ten to one-hundred people.
             Accompanied with a bar area, two private restrooms, and an elevator,
             you and your guests will feel exclusive and comfortable in our space.
             With such a large space, our layout can adapt for mingling, all seated
