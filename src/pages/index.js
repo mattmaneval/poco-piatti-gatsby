@@ -10,6 +10,8 @@ import PhotoGalleryTwo from "../components/PhotoGalleryTwo"
 import ThePocoExperience from "../components/ThePocoExperience"
 import Map from "../components/Map"
 import Faq from "../components/Faq"
+import PhotoGalleryThree from "../components/PhotoGalleryThree"
+import FullMenu from "../components/FullMenu"
 
 const IndexPage = (props) => (
   <Layout>
@@ -21,6 +23,8 @@ const IndexPage = (props) => (
     <PhotoGalleryTwo />
     <Review />
     <PhotoGallery />
+    <FullMenu />
+    <PhotoGalleryThree />
     <Faq />
   </Layout>
 )

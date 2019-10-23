@@ -1,8 +1,8 @@
 @import "../sass/_Variables";
 @import "../sass/_Mixins";
 
-.PhotoGalleryTwo {
-  .PhotoGalleryWrap {
+.PhotoGalleryThree {
+  .PhotoGalleryThreeWrap {
     article {
       min-height: 700px;
       h6 {
@@ -10,7 +10,7 @@
         padding: 10px;
       }
     }
-    .PhotoGalleryRow {
+    .PhotoGalleryThreeRow {
       display: flex;
       .Photo1 {
         width: calc(40% - 2.5px);
@@ -18,7 +18,7 @@
         border-right: 2.5px solid #ffffff;
         border-bottom: 2.5px solid #ffffff;
         border-left: 0;
-        background-image: url("../images/IMG_0120.jpg");
+        background-image: url("../images/IMG_0198.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -28,20 +28,20 @@
         border-top: 5px solid #ffffff;
         border-bottom: 2.5px solid #ffffff;
         border-left: 2.5px solid #ffffff;
-        background-image: url("../images/IMG_0114.jpg");
+        background-image: url("../images/IMG_0074.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
       }
     }
-    .PhotoGalleryRow2 {
+    .PhotoGalleryThreeRow2 {
       display: flex;
       .Photo3 {
         width: calc(60% - 2.5px);
         border-top: 2.5px solid #ffffff;
         border-right: 2.5px solid #ffffff;
         border-bottom: 2.5px solid #ffffff;
-        background-image: url("../images/IMG_0066.jpg");
+        background-image: url("../images/IMG_0172-2.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -51,21 +51,21 @@
         border-top: 2.5px solid #ffffff;
         border-bottom: 2.5px solid #ffffff;
         border-left: 2.5px solid #ffffff;
-        background-image: url("../images/IMG_0093.jpg");
+        background-image: url("../images/IMG_0188.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-repeat: no-repeat;
       }
     }
-    .PhotoGalleryRow3 {
+    .PhotoGalleryThreeRow3 {
       display: flex;
       .Photo5 {
         width: calc(40% - 2.5px);
         border-top: 2.5px solid #ffffff;
         border-right: 2.5px solid #ffffff;
         border-bottom: 2.5px solid #ffffff;
-        background-image: url("../images/IMG_0071.jpg");
+        background-image: url("../images/IMG_0172-2.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -75,30 +75,31 @@
         border-top: 2.5px solid #ffffff;
         border-bottom: 2.55px solid #ffffff;
         border-left: 2.5px solid #ffffff;
-        background-image: url("../images/IMG_0108.jpg");
+        background-image: url("../images/IMG_0175.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
       }
     }
-    .PhotoGalleryRow4 {
+    .PhotoGalleryThreeRow4 {
       display: flex;
       .Photo7 {
-        width: calc(60% - 2.5px);
+        width: calc(40% - 2.5px);
         border-top: 2.5px solid #ffffff;
         border-right: 2.5px solid #ffffff;
-        border-bottom: 2.5px solid #ffffff;
-        background-image: url("../images/IMG_0190.jpg");
+        border-bottom: 5px solid #ffffff;
+        border-left: 0;
+        background-image: url("../images/IMG_0087.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
       }
       .Photo8 {
-        width: calc(40% + 2.5px);
+        width: calc(60% + 2.5px);
         border-top: 2.5px solid #ffffff;
-        border-bottom: 2.5px solid #ffffff;
+        border-bottom: 5px solid #ffffff;
         border-left: 2.5px solid #ffffff;
-        background-image: url("../images/IMG_0177.jpg");
+        background-image: url("../images/IMG_0046.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -114,9 +115,9 @@
 
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .PhotoGalleryTwo {
-    .PhotoGalleryWrap {
-      .PhotoGalleryRow {
+  .PhotoGalleryThree {
+    .PhotoGalleryThreeWrap {
+      .PhotoGalleryThreeRow {
         display: block; 
         .Photo1 {
           width: 100%;
@@ -136,7 +137,7 @@
           background-position: center;
         }
       }
-      .PhotoGalleryRow2 {
+      .PhotoGalleryThreeRow2 {
         display: block;
         .Photo3 {
           width: 100%;
@@ -155,7 +156,7 @@
           background-position: center;
         }
       }
-      .PhotoGalleryRow3 {
+      .PhotoGalleryThreeRow3 {
         display: block;
         .Photo5 {
           width: 100%;
@@ -174,7 +175,7 @@
           background-position: center;
         }
       }
-      .PhotoGalleryRow4 {
+      .PhotoGalleryThreeRow4 {
         display: block;
         .Photo7 {
           width: 100%;
