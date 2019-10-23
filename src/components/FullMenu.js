@@ -1,5 +1,5 @@
 import React from 'react';
-import "../sass/_Menu.scss"
+import "../sass/_FullMenu.scss"
 
 import Seafood from "../components/Seafood"
 import Vegetarian from "../components/Vegetarian"
@@ -10,8 +10,8 @@ import Salads from "../components/Salads"
 import Pizza from "../components/Pizza"
 
 const FullMenu = () => (
-    <div className="Menu">
-      <div className="MenuWrap">
+    <div className="FullMenu">
+      <div className="FullMenuWrap">
         <div className="column-1">
           <Seafood />
           <BigPlates /> 

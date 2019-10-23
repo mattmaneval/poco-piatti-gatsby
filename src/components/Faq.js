@@ -19,6 +19,8 @@ const Faq = () => (
           <p>Automatic gratuity may be applied to groups of 5 or more.</p>
         <h5>Bar Options?</h5>
           <p>We serve beer, wine, cocktails, and our famous sangria!</p>
+        <h5>Kids Menu?</h5>
+          <p>Ask for a cheese or pepperoni pizza.</p>
         <h5>Wifi?</h5>
           <p>Complimentary wifi is available.</p>
         <h5>Gift Certificates?</h5>

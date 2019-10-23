@@ -2,6 +2,7 @@ import React from 'react';
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import FullMenu from "../components/FullMenu"
+import "../sass/_Menu.scss"
 
 const Menu = () => (
   <Layout>

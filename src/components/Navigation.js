@@ -17,7 +17,8 @@ const Navigation = () => (
         </ul>
       </div>
       <div className="logo">
-          <img src={PocoPiattiRedLogo} alt="Poco Piatti Logo" />
+      <Link to="/"><img src={PocoPiattiRedLogo} alt="Poco Piatti Logo" /></Link>
+          
       </div>
       <div className="right-links">
         <ul>
