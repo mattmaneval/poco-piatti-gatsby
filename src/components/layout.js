@@ -9,9 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "../sass/layout.scss"
-import "../sass/_index.scss"
+import Header from "./header/header"
+import "../styles/_index.scss"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -30,8 +29,8 @@ const Layout = ({ children }) => (
         <div
         style={{
           margin: `0 auto`,
-          maxWidth: 1260,
-          padding: `0px 1.0875rem 1.45rem`,
+          //maxWidth: 1260,
+          //padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}
         >

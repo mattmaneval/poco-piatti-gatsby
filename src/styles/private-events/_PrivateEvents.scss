@@ -1,0 +1,123 @@
+.PrivateEvents {
+  text-align: center;
+
+  article {
+    min-height: 700px;
+    text-align: left;
+  }
+  .PrivateEventsWrap {
+    padding-top: 150px;
+    text-align: center;
+    .PrivateEventsWrapHeader {
+      margin-bottom: 0;
+      background-color: #171717;
+      h1 {
+        @include extra-large;
+        color: $white;
+        padding: 75px 200px 120px 200px;
+        margin: 0;
+      }
+    }
+  }
+  .PrivateEventsPhotos {
+    display: flex;
+    .PrivateEventsPhoto1 {
+      width: calc(50% - 2.5px);
+      border-top: 5px solid #ffffff;
+      border-right: 2.5px solid #ffffff;
+      border-bottom: 2.5px solid #ffffff;
+      border-left: 0;
+      background-image: url("../images/IMG_0049.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .PrivateEventsPhoto2 {
+      width: calc(50% + 2.5px);
+      border-top: 5px solid #ffffff;
+      border-right: 0;
+      border-bottom: 2.5px solid #ffffff;
+      border-left: 2.5px solid white;
+      background-image: url("../images/IMG_0058.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .PrivateEventsPhoto3 {
+      width: calc(50% - 2.5px);
+      border-top: 2.5px solid #ffffff;
+      border-right: 2.5px solid #ffffff;
+      border-bottom: 5px solid #ffffff;
+      border-left: 0;
+      background-image: url("../images/IMG_0054.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .PrivateEventsPhoto4 {
+      width: calc(50% + 2.5px);
+      border-top: 2.5px solid #ffffff;
+      border-right: 0;
+      border-bottom: 5px solid #ffffff;
+      border-left: 2.5px solid #ffffff;
+      background-image: url("../images/IMG_0060.jpg");
+      background-size: cover;
+      background-repeat: none;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  .RoomDescription {
+    background-color: #171717;
+    width: 100%;
+    padding: 0 0 100px 0;
+    h1 {
+      @include extra-large;
+      color: $white;
+      padding-top: 25px;
+    }
+    button {
+          border: 5px solid #ffffff;
+          background-color:  #171717;
+          @include photo-caption;
+          font-size: 2.25em;
+          font-weight: bolder;
+          letter-spacing: 0.09em;
+          line-height: 0.95em;
+          border-radius: 1.5%;
+          min-width: 600px;
+          height: 100px;
+          margin: 100px 0 0 0;
+          padding: 10px;
+    }
+  }
+}
+
+/*Begin Responsive Style*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .PrivateEvents {
+    .PrivateEventsWrap {
+      .PrivateEventsWrapHeader
+      h1 {
+        padding: 25px;
+      }
+      article {
+        min-height: 400px;
+      }
+      button {
+        min-width: 300px;
+        max-width: 300px;
+        font-size: 1.25em;
+        line-height: 1.25em;
+        margin: 40px 0 40px 0;
+        padding: 0px;
+        height: 75px;
+      }
+    }
+  }
+}

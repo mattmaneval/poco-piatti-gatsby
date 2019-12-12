@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../sass/_About.scss"
-import Faq from "../components/Faq"
+import "../styles/_index.scss"
+import Faq from "../components/about/Faq"
 
 const About = () => (
   <Layout>

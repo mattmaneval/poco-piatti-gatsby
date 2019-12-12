@@ -1,9 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../sass/_PrivateEvents.scss"
-import PerrysburgRoom from "../components/PerrysburgRoom"
-import DowntownRoom from "../components/DowntownRoom"
+import "../styles/_index.scss"
+import PerrysburgRoom from "../components/private-events/PerrysburgRoom"
+import DowntownRoom from "../components/private-events/DowntownRoom"
 
 const PrivateEvents = () => (
   <Layout>
@@ -34,7 +34,7 @@ const PrivateEvents = () => (
           <PerrysburgRoom />
           <DowntownRoom />
         </div>
-        
+
       </div>
     </div>
   </Layout>

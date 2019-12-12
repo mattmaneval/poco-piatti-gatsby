@@ -1,18 +1,13 @@
 import React from "react"
-
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../sass/_Catering.scss"
-
-
+import "../styles/_index.scss"
 
 const Catering = () => (
   <Layout>
     <SEO title="Catering" />
     <div className="Catering">
       <div className="CateringWrap">
-
       <div className="column-1">
       <h1>Packages</h1>
       <span className="Line"></span>

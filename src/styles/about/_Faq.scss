@@ -1,0 +1,60 @@
+.Faq {
+  //background-color: #171717;
+  background-color: #ffffff;
+  text-align: center;
+  //display: flex;
+
+  .FaqWrap {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    //justify-content: space-evenly;
+    //width: 100%;
+    text-align: left;
+
+  }
+  h1 {
+    @include extra-large;
+    margin: 10px 0 0 0;
+    padding: 0px;
+    color: $dark;
+  }
+  h5 {
+    @include small-bold;
+    font-size: 1.15em;
+    margin: 0 0 5px 0;
+    padding: 50px 0 5px 0;
+    color: $dark;
+  }
+  p {
+    @include medium;
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: $dark;
+    a {
+      text-decoration: none;
+      color: $dark;
+    }
+  }
+  span {
+
+
+  }
+}
+
+/*Begin Responsive Style*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .About {
+    width: 100%;
+    text-align: center;
+    .AboutWrap {
+
+      .Outline {
+        //max-width: 300px;
+     }
+    }
+}
+}

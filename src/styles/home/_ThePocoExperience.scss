@@ -1,0 +1,41 @@
+.ThePocoExperience {
+  border-top: 5px solid #ffffff;
+  .ThePocoExperienceWrap {
+  }
+  display: block;
+  width: 100%;
+  min-height: 400px;
+  //padding: 50px 100px 20px 100px;
+  //background-color: #ffffff;
+  background-color: #171717;
+  text-align: center;
+  h1 {
+    @include extra-large-bold;
+    color: $white;
+  }
+  h2 {
+    @include large;
+    color: $white;
+    //max-width: 800px;
+  }
+}
+
+
+/*Begin Responsive Style*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .ThePocoExperience {
+    padding: 20px;
+    margin-top: 50px;
+    .ThePocoExperienceWrap {
+
+    }
+    h2 {
+      font-size: 25px;
+    }
+  }
+}
