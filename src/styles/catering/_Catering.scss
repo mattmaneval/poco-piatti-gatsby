@@ -1,11 +1,12 @@
 .Catering {
   margin: 0;
   padding: 0;
-  display: inline-flex;
+
   .CateringWrap {
     display: flex;
+    justify-content: center;
     width: 100%;
-    padding-top: 150px;
+    padding-top: 110px;
     text-align: center;
       .column-1 {
         padding: 0 10px 0 10px;
@@ -51,6 +52,7 @@
   .Catering {
     .CateringWrap {
       display: block;
+      padding-top: 50px;
     }
   }
 }

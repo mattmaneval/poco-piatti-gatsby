@@ -1,24 +1,23 @@
 import React from "react"
 import { Link } from "gatsby"
 import SEO from "../seo"
-import Headroom from 'react-headroom';
 import MobileNavigation from "./MobileNavigation"
 import PocoPiattiRedLogo from "../../images/PocoPiattiRedLogo.jpg";
 
 
 const Navigation = () => (
-    <Headroom>
       <div className="Navigation">
-      <SEO title="Poco Piatti Menu" />
-        <Link to="/">Home</Link>
-        <Link to="/Menu/">Menu</Link>
-        <Link to="/PrivateEvents/">Private Events</Link>
-        <Link to="/"><img src={PocoPiattiRedLogo} alt="Poco Piatti Logo" /></Link>
-        <Link to="/Catering/">Catering</Link><Link to="/About/">About</Link>
-        <Link to="/Contact/">Contact</Link>
-        <MobileNavigation />
+        <div><Link to="/"><img src={PocoPiattiRedLogo} alt="Poco Piatti Logo" /></Link></div>
+        <div className="NavigationWrap">
+          <SEO title="Poco Piatti Menu" />
+          <div><Link to="/Menu/">Menu</Link></div>
+          <div><Link to="/PrivateEvents/">Private Events</Link></div>
+          <div><Link to="/Catering/">Catering</Link><Link to="/About/">About</Link></div>
+          <div><Link to="/Contact/">Contact</Link></div>
+          <div className="Order"><a href="tel:419-931-0281">419-931-0281</a></div>
+        </div>
+          <MobileNavigation />
       </div>
-    </Headroom>
 )
 
 export default Navigation

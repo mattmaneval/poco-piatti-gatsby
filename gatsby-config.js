@@ -5,8 +5,12 @@ module.exports = {
     author: `Matt Maneval`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-157836046-1`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -14,6 +18,8 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

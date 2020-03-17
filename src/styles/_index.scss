@@ -1,15 +1,22 @@
-/* Variable and Mixins */
+/*reset*/
+
+@import './_reset';
+
+/*Variable and Mixins*/
 
 @import "./_Variables";
 @import "./_Mixins";
 
-/* Header */
+/*Header*/
 
+@import './header/Header';
+@import "./header/hamburgers/hamburgers";
 @import './header/_Navigation';
 @import './header/_MobileNavigation';
 
-/* Home */
+/*Home*/
 
+@import './home/_OrderingLinks';
 @import './home/_Banner';
 @import './home/_Downtown';
 @import './home/_LandingPage';
@@ -24,26 +31,26 @@
 @import './home/_Sylvania';
 @import './home/_ThePocoExperience';
 
-/* Menu */
+/*Menu*/
 
 @import './menu/_Menu';
 @import './menu/_FullMenu';
 
-/* Private Events */
+/*Private Events*/
 
 @import './private-events/_DowntownRoom';
 @import './private-events/_PerrysburgRoom';
 @import './private-events/_PrivateEvents';
 
-/* Catering */
+/*Catering*/
 
 @import './catering/_Catering';
 
-/* About */
+/*About*/
 
 @import './about/_About';
 @import './about/_Faq';
 
-/* Contact */
+/*Contact*/
 
 @import './contact/_COntact';

@@ -1,12 +1,12 @@
 import React from 'react';
-import OnlineOrdering from './OnlineOrdering';
+import Covid19 from './Covid19';
+import OrderingLinks from './OrderingLinks';
 
 const LandingPage = () => (
   <div className="LandingPage">
     <div className="LandingPageWrap">
-        <section>
-          <OnlineOrdering />
-        </section>
+        <Covid19 />
+        <OrderingLinks />
     </div>
   </div>
 );

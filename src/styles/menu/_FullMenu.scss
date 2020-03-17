@@ -1,10 +1,12 @@
 .FullMenu {
   margin: 0;
-  padding: 3.0em 0 3.0em 0;
-  display: inline-flex;
+  //padding: 3.0em 0 3.0em 0;
+
   background-color: #FFFFFF;
   .FullMenuWrap {
     width: 100%;
+    display: flex;
+    justify-content: center;
     .mobile-menu {
       display: none;
     }
@@ -70,10 +72,9 @@
       }
       .mobile-menu {
         display: block;
+      
       }
-      //padding-top: 110px;
-      display: flex;
-      flex-flow: column;
+
 
     }
   }

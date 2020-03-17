@@ -71,7 +71,7 @@ const Catering = () => (
         <p>60 pieces.</p>
         <h5>Grilled Baby Lamb Chops &mdash; 140</h5>
         <p>40 pieces.</p>
-        <h5>Beef Tenderloin Shish Kabob &mdash; 125</h5>
+        <h5>Beef Tenderloin Shish Kabob &mdash; 175</h5>
         <h5>Shish Tawook &mdash; 125 per half-pan</h5>
         <h5>Whole Beef Tenderloin Filets &mdash; 200</h5>
         <h5>Dessert Platter &mdash; 75</h5>

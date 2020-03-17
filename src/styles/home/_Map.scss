@@ -6,17 +6,19 @@
     background-repeat: no-repeat;
     color: $dark;
     text-align: center;
-    .MapWrap {
-      //background-image: linear-gradient(rgba(28,31,38,0.75), rgba(28,31,38,0.1));
-      align-items: center;
 
+    .MapWrap {
+      align-items: center;
     }
+
     h1 {
       @include photo-caption;
       padding-top: 0.75em;
     }
+
     iframe {
       max-width: 60%;
+      margin-bottom: 50px;
       border: 12px solid rgb(242,242,242);
     }
 }
@@ -35,5 +37,6 @@
     iframe {
       max-width: 90%;
     }
+
   }
 }

@@ -1,21 +1,40 @@
 .Navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
   background-color: $white;
+  display: flex;
+  padding: 10px 40px 10px 5px;
 
-  a {
-    padding: 25px;
-    font-family: $nav-font;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $dark;
-  }
 
   img {
-    max-width: 100px;
-    margin: 0;
+    width: 80px;
+    padding: 0 0 0 10px;
   }
+
+  .NavigationWrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .Order {
+      border: 3px solid black;
+      border-radius: 2em;
+      padding: 8px;
+    }
+
+    a {
+      padding: 25px;
+      font-family: $nav-font;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $dark;
+    }
+
+
+
+  }
+
+
 }
 
 /*Begin Responsive Style*/
@@ -24,15 +43,21 @@
 
 
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .Navigation {
     margin: 0;
     padding: 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     .NavigationWrap {
-      display: flex;
-      height: 100px;
+      display: none;
+      height: 400px;
       max-width: 100%;
       text-align: left;
+
       .logo {
         position: absolute;
         left: 50%;
@@ -40,9 +65,5 @@
         transform: translate3d(-80%, 0, 0);
       }
     }
-
-  }
-  .Navigation ul {
-    display: none;
   }
 }

@@ -2,13 +2,10 @@ import PropTypes from "prop-types"
 import React from "react"
 import Navigation from './Navigation';
 
-
 const Header = ({ siteTitle }) => (
-  <header>
-    <div>
+  <div className="Header">
       <Navigation />
-    </div>
-  </header>
+  </div>
 )
 
 Header.propTypes = {

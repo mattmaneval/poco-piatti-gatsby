@@ -56,6 +56,7 @@ class MobileNavigation extends Component {
                   to="/Contact/">
                 <h5>Contact</h5>
               </Link>
+              <div><a href="tel:419-931-0281">419-931-0281</a></div>
           </div>
         </div>
     );

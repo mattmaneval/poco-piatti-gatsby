@@ -1,0 +1,52 @@
+.OrderingLinks {
+  //padding-top: 500px;
+  display: flex;
+
+.OrderingLinksWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  border-radius: 55%;
+
+  button {
+    border: 5px solid #ffffff;
+    background-color: black;
+    padding: 20px;
+    margin: 10px;
+    border: 3px solid white;
+    border-radius: 2em;
+    padding: 8px;
+    padding: 20px;
+
+    a {
+      font-family: $nav-font;
+      text-transform: uppercase;
+      width: 200px;
+      color: #FFFFFF;
+      font-size: 30px;
+      text-decoration: none;
+    }
+  }
+}
+
+}
+
+
+/*Begin Responsive Style*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .OrderingLinks {
+    display: block;
+  }
+  .OrderingLinksWrap {
+    button {
+      display: block;
+    }
+  }
+}

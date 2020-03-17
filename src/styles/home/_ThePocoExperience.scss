@@ -1,22 +1,23 @@
 .ThePocoExperience {
-  border-top: 5px solid #ffffff;
-  .ThePocoExperienceWrap {
-  }
-  display: block;
+  //border-top: 5px solid #ffffff;
+  //margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 400px;
-  //padding: 50px 100px 20px 100px;
-  //background-color: #ffffff;
   background-color: #171717;
   text-align: center;
+
   h1 {
     @include extra-large-bold;
     color: $white;
   }
+
   h2 {
     @include large;
     color: $white;
-    //max-width: 800px;
+    max-width: 900px;
   }
 }
 
@@ -29,10 +30,11 @@
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .ThePocoExperience {
-    padding: 20px;
-    margin-top: 50px;
-    .ThePocoExperienceWrap {
+    max-width: 100%;
 
+    //margin-top: 50px;
+    .ThePocoExperienceWrap {
+      padding: 20px;
     }
     h2 {
       font-size: 25px;
