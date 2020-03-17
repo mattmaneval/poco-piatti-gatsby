@@ -1,31 +1,35 @@
 .OrderingLinks {
-  //padding-top: 500px;
-  display: flex;
+  display: block;
+  width: 60vw;
+  background: rgb(166,163,164);
+  background: #FFFFFF;
+  //padding: 10px;
 
 .OrderingLinksWrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-
-  border-radius: 55%;
+  h5 {
+    margin: 0;
+    padding: 20px;
+    text-transform: uppercase;
+    @include photo-caption;
+    font-size: 16px;
+    color: $dark;
+  }
 
   button {
     border: 5px solid #ffffff;
-    background-color: black;
-    padding: 20px;
-    margin: 10px;
+    background-color: $dark;
+    padding: 20px 30px;
+    margin: 30px;
     border: 3px solid white;
-    border-radius: 2em;
-    padding: 8px;
-    padding: 20px;
+    border-radius: 8em;
 
     a {
       font-family: $nav-font;
       text-transform: uppercase;
       width: 200px;
       color: #FFFFFF;
-      font-size: 30px;
+      font-size: 25px;
       text-decoration: none;
     }
   }
@@ -40,13 +44,18 @@
 
 
 }
+
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .OrderingLinks {
-    display: block;
-  }
-  .OrderingLinksWrap {
-    button {
-      display: block;
+    width: 90vw;
+
+    .OrderingLinksWrap {
+
+      button {
+        margin: 10px;
+
+      }
     }
   }
+
 }

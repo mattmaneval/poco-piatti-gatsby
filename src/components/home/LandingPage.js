@@ -5,8 +5,10 @@ import OrderingLinks from './OrderingLinks';
 const LandingPage = () => (
   <div className="LandingPage">
     <div className="LandingPageWrap">
-        <Covid19 />
-        <OrderingLinks />
+        <div className="LandingPageContent">
+          <Covid19 />
+          <OrderingLinks />
+        </div>
     </div>
   </div>
 );

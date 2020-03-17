@@ -1,0 +1,45 @@
+.Covid19 {
+  width: 60vw;
+}
+
+.Covid19Wrap {
+  background-color: #ffffff;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    //background: rgb(166,163,164);
+    //background: linear-gradient(90deg, rgba(166,163,164,1) 0%, rgba(28,46,52,0.7035189075630253) 50%, rgba(0,0,0,1) 100%);
+    @include photo-caption;
+    letter-spacing: 1.5px;
+    color: $dark;
+
+  }
+
+  p {
+    margin: 0;
+    padding: 20px;
+    @include small;
+    font-size: 16px;
+    color: $dark;
+  }
+
+  a {
+    text-decoration: none;
+    color: #3B5998;
+  }
+}
+
+/*Begin Responsive Style*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .Covid19 {
+    width: 90vw;
+  }
+}
