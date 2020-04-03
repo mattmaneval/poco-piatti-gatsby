@@ -1,10 +1,11 @@
 .LandingPage {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    background-image: url('../images/transparent-wallpaper.png');
+    min-height: 100vh;
+
+    background-image: url('../images/IMG_0175.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     width: 100%;
 }

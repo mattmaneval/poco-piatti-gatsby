@@ -5,6 +5,10 @@
 .Covid19Wrap {
   background-color: #ffffff;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   h2 {
     margin: 0;
@@ -19,10 +23,11 @@
   }
 
   p {
+    max-width: 500px;
     margin: 0;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     @include small;
-    font-size: 16px;
+    font-size: 18px;
     color: $dark;
   }
 
@@ -41,6 +46,6 @@
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .Covid19 {
-    width: 90vw;
+    width: 95vw;
   }
 }
