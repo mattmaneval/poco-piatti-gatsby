@@ -1,57 +1,57 @@
 /*reset*/
 
-@import './_reset';
+@import './reset';
 
 /*Variable and Mixins*/
 
-@import "./_Variables";
-@import "./_Mixins";
+@import "./variables";
+@import "./Mixins";
 
 /*Header*/
 
 @import './header/Header';
 @import "./header/hamburgers/hamburgers";
-@import './header/_Navigation';
-@import './header/_MobileNavigation';
+@import './header/Navigation';
+@import './header/MobileNavigation';
 
 /*Home*/
 
-@import './home/_Covid19';
-@import './home/_OrderingLinks';
-@import './home/_Banner';
-@import './home/_Downtown';
-@import './home/_LandingPage';
-@import './home/_Locations';
-@import './home/_Map';
-@import './home/_OnlineOrdering';
-@import './home/_Perrysburg';
-@import './home/_PhotoGallery';
-@import './home/_PhotoGalleryTwo';
-@import './home/_PhotoGalleryThree';
-@import './home/_Review';
-@import './home/_Sylvania';
-@import './home/_ThePocoExperience';
+@import './home/Covid19';
+@import './home/OrderingLinks';
+@import './home/Banner';
+@import './home/Downtown';
+@import './home/LandingPage';
+@import './home/Locations';
+@import './home/Map';
+@import './home/OnlineOrdering';
+@import './home/Perrysburg';
+@import './home/PhotoGallery';
+@import './home/PhotoGalleryTwo';
+@import './home/PhotoGalleryThree';
+@import './home/Review';
+@import './home/Sylvania';
+@import './home/ThePocoExperience';
 
 /*Menu*/
 
-@import './menu/_Menu';
-@import './menu/_FullMenu';
+@import './menu/Menu';
+@import './menu/FullMenu';
 
 /*Private Events*/
 
-@import './private-events/_DowntownRoom';
-@import './private-events/_PerrysburgRoom';
-@import './private-events/_PrivateEvents';
+@import './private-events/DowntownRoom';
+@import './private-events/PerrysburgRoom';
+@import './private-events/PrivateEvents';
 
 /*Catering*/
 
-@import './catering/_Catering';
+@import './catering/Catering';
 
 /*About*/
 
-@import './about/_About';
-@import './about/_Faq';
+@import './about/About';
+@import './about/Faq';
 
 /*Contact*/
 
-@import './contact/_COntact';
+@import './contact/Contact';
