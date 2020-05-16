@@ -11,11 +11,12 @@ const ThePocoExperience = (props) => (
   <div class="popup" id="popup">
     <div class="popup-content">
       <a href="#cta close" class="close">&times;</a>
-      <h6>Choose your location.</h6>
+      <h6>Choose your location for online ordering.</h6>
       <div class="popup-content-bottom">
         <a href="#cta" class="cta leave-popup">Perrysburg</a>
         <a href="#cta" class="cta leave-popup">Sylvania</a>
       </div>
+      <h6>Or call <a href="#" class="phone" id="cta">419-931-0281</a> for any location.</h6>
     </div>
   </div>
     <h1>The Poco Experience</h1>

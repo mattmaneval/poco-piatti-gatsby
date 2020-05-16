@@ -5,44 +5,28 @@
 	//--color-bg: #f8ecde;
 	--color-bg: #FFEDC8;
 	--color-link: #b19e7f;
-	--color-link-hover: #000;
+	//--color-link-hover: #000;
 	color: var(--color-text);
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-family: sofia-pro, sans-serif;
 	background-image: url('../images/beet-salad.png');
-	background-size: 50vw;
+	background-size: 40vw;
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-position: bottom right;
+
+	// background-image: url('../images/FoodBackground.png');
+	// background-size: cover;
+	// background-repeat: no-repeat;
+	// background-position: bottom;
+	// background-position: bottom right;
 }
 
 
 
-h6 {
-	font-family: $font-bold;
-	color: black;
-	font-size: 1.750em;
-	margin-bottom: 2rem;
-	letter-spacing: 0.1rem;
 
-	span {
-		// Primary Mobile - Tablet & Below
-		@media screen and (max-width: $tablet) {
-			display: inline-block;
-		} // End Tablet & Below
-
-		&:first-of-type {
-			// Secondary Mobile - Phone & Below
-			@media screen and (max-width: $phone) {
-				margin-bottom: 0.5em;
-			} // End Phone & Below
-		}
-	}
-
-
-}
 
 
 
@@ -73,6 +57,7 @@ a:hover,
 a:focus {
 	color: var(--color-link-hover);
 	outline: none;
+	text-decoration: underline;
 }
 
 .frame {
@@ -153,7 +138,7 @@ a:focus {
 
 .menu__item-link:hover {
 	transition-duration: 0.1s;
-	opacity: 0;
+	//opacity: 0;
 }
 
 .menu__item-img {

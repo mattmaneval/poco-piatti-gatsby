@@ -87,9 +87,13 @@
 
   &-content {
   	background-color: #fff;
-  	padding: 6em;
+  	padding: 6rem;
   	position: relative;
   	z-index: 9999;
+
+    @media screen and (max-width: $phone) {
+      padding: 0;
+    } // End Phone & Below
 
   	.close {
   		font-size: 5em;
@@ -132,5 +136,27 @@
   	margin-bottom: 0.6em;
   	font-family: $heading;
   }
+  h6 {
+  	font-family: $font-bold;
+  	color: black;
+  	font-size: 1.750em;
+  	margin-bottom: 2rem;
+  	letter-spacing: 0.1rem;
 
+  	span {
+  		// Primary Mobile - Tablet & Below
+  		@media screen and (max-width: $tablet) {
+  			display: inline-block;
+  		} // End Tablet & Below
+
+  		&:first-of-type {
+  			// Secondary Mobile - Phone & Below
+  			@media screen and (max-width: $phone) {
+  				margin-bottom: 0.5em;
+  			} // End Phone & Below
+  		}
+  	}
+
+
+  }
 }

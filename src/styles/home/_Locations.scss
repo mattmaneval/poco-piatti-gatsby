@@ -9,7 +9,7 @@
 
   &-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     // Primary Mobile - Tablet & Below
     @media screen and (max-width: $tablet) {
