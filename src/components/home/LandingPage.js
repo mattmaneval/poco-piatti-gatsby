@@ -1,13 +1,11 @@
 import React from 'react';
-import Covid19 from './Covid19';
-import OrderingLinks from './OrderingLinks';
+import MarqueeNav from '../hero-nav';
 
 const LandingPage = () => (
   <div className="LandingPage">
     <div className="LandingPageWrap">
         <div className="LandingPageContent">
-          <Covid19 />
-          <OrderingLinks />
+          <MarqueeNav />
         </div>
     </div>
   </div>

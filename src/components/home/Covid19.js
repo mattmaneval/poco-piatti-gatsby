@@ -1,4 +1,5 @@
 import React from 'react';
+import Popup from '../popup';
 
 const Covid19 = () => (
   <div className="Covid19">
@@ -12,7 +13,9 @@ const Covid19 = () => (
         Stay safe and healthy and we hope to help serve you as best we can.
       </p>
     </div>
+    <Popup />
   </div>
+
 );
 
 export default Covid19;
