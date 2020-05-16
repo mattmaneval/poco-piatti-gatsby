@@ -14,13 +14,13 @@ const MarqueeNav = () => (
 
 			<div class="menu__item">
 
-				<a href="/menu/" to="/Menu/" class="menu__item-link">Menu</a>
+				<a href="/menu/"  class="menu__item-link">Menu</a>
 
 				<img class="menu__item-img" src={bar} alt="Some image"/>
 			</div>
 
 			<div class="menu__item">
-				<a class="menu__item-link">Catering</a>
+				<a href="/catering/" class="menu__item-link">Catering</a>
 				<img class="menu__item-img" src="img/2.jpg" alt="Some image"/>
 			</div>
 			<div class="menu__item">
