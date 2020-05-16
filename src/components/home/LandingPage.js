@@ -3,11 +3,7 @@ import MarqueeNav from '../hero-nav';
 
 const LandingPage = () => (
   <div className="LandingPage">
-    <div className="LandingPageWrap">
-        <div className="LandingPageContent">
-          <MarqueeNav />
-        </div>
-    </div>
+    <MarqueeNav />
   </div>
 );
 

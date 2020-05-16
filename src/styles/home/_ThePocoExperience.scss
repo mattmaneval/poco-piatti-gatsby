@@ -1,43 +1,136 @@
-.ThePocoExperience {
-  //border-top: 5px solid #ffffff;
-  //margin-top: 10px;
+.home-hero {
+  //background-image: url('../images/paper-texture.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  widht: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 6em 0;
+
+  // background-image: url('../images/beet-salad.png');
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // background-position: bottom right;
+
+  // CTA
+  .cta {
+  &,
+  &:link,
+  &:visited {
+  	display: block;
+  	max-width: fit-content;
+  	min-width: 9em;
+  	text-align: center;
+  	background: $color4;
+  	//border: 2px solid $color4;
+  	padding: 1em 2em;
+  	border-radius: 1rem;
+  	box-shadow: 0 1rem 2rem rgba(#000, .2);
+  	transition: all .2s;
+  	color: #FFEDC8;
+  	text-decoration: none;
+  	font-family: $heading;
+  	font-size: 1.7em;
+  	margin-bottom: 3rem;
+  	letter-spacing: 0.1rem;
+  	text-transform: lowercase;
+
+  	&:first-of-type {
+  		margin-right: 1rem;
+  	}
+
+  	// // Primary Mobile - Tablet & Below
+  	// @media screen and (max-width: $tablet) {
+  	//   &:first-of-type {
+  	//     margin-right: 0;
+  	//   }
+  	// } // End Tablet & Below
+  }
+
+  &:hover {
+  	transform: translateY(-3px);
+  }
+
+  &:active,
+  &:focus {
+  	outline: none;
+  	transform: translateY(-1px);
+  	box-shadow: 0 .5rem 1rem rgba(#000, .2);
+  }
+  }
+
+  // POPUP
+  .popup {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(#000, .8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  min-height: 400px;
-  background-color: #171717;
-  text-align: center;
+
+
+  &:target {
+  	opacity: 1;
+  	visibility: visible;
+  }
+
+  &-content {
+  	background-color: #fff;
+  	padding: 6em;
+  	position: relative;
+  	z-index: 9999;
+
+  	.close {
+  		font-size: 5em;
+  		line-height: 0;
+  		position: absolute;
+  		top: 2.5rem;
+      right: 2.1rem;
+  		color: $color1;
+  	}
+
+  	&-bottom {
+
+  		//height: 80%;
+  		display: flex;
+  		justify-content: space-evenly;
+  		align-items: center;
+
+  		// Primary Mobile - Tablet & Below
+  		@media screen and (max-width: $tablet) {
+  			flex-direction: column;
+  		} // End Tablet & Below
+  	}
+  }
+  }
+  p {
+  	font-size: 1.188em;
+  	line-height: 160%;
+  	display: inline-block;
+  	max-width: 40em;
+  	font-family: $font-bold;
+  	color: black;
+  	margin-bottom: 3em;
+  }
 
   h1 {
-    @include extra-large-bold;
-    color: $white;
+    margin: 0;
+  	font-size: 3.4em;
+  	line-height: 1.2;
+  	letter-spacing: 0.1rem;
+  	margin-bottom: 0.6em;
+  	font-family: $heading;
   }
 
-  h2 {
-    @include large;
-    color: $white;
-    max-width: 900px;
-  }
-}
-
-
-/*Begin Responsive Style*/
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .ThePocoExperience {
-    max-width: 100%;
-
-    //margin-top: 50px;
-    .ThePocoExperienceWrap {
-      padding: 20px;
-    }
-    h2 {
-      font-size: 25px;
-    }
-  }
 }

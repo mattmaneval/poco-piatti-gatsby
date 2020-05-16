@@ -1,63 +1,63 @@
-.OrderingLinks {
-  display: block;
-  width: 60vw;
-  background: rgb(166,163,164);
-  background: #FFFFFF;
-  //padding: 10px;
-
-.OrderingLinksWrap {
-
-  h5 {
-    margin: 0;
-    padding: 5px;
-    text-transform: uppercase;
-    @include photo-caption;
-    letter-spacing: 1.5px;
-    font-size: 18px;
-    color: $dark;
-  }
-
-  button {
-    width: 330px;
-    background-color: #3B5998;
-    padding: 20px 10px;
-    margin: 30px;
-    border: 3px solid white;
-    border-radius: 8em;
-
-    a {
-      font-family: $nav-font;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      width: 200px;
-      color: #ffffff;
-      font-size: 25px;
-      text-decoration: none;
-    }
-  }
-}
-
-}
-
-
-/*Begin Responsive Style*/
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-
-}
-
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  .OrderingLinks {
-    width: 95vw;
-
-    .OrderingLinksWrap {
-
-      button {
-        margin: 10px;
-        padding: 20px 10px;
-      }
-    }
-  }
-
-}
+// .OrderingLinks {
+//   display: block;
+//   width: 60vw;
+//   background: rgb(166,163,164);
+//   background: #FFFFFF;
+//   //padding: 10px;
+//
+// .OrderingLinksWrap {
+//
+//   h5 {
+//     margin: 0;
+//     padding: 5px;
+//     text-transform: uppercase;
+//     @include photo-caption;
+//     letter-spacing: 1.5px;
+//     font-size: 18px;
+//     color: $dark;
+//   }
+//
+//   button {
+//     width: 330px;
+//     background-color: #3B5998;
+//     padding: 20px 10px;
+//     margin: 30px;
+//     border: 3px solid white;
+//     border-radius: 8em;
+//
+//     a {
+//       font-family: $nav-font;
+//       letter-spacing: 0.07em;
+//       text-transform: uppercase;
+//       width: 200px;
+//       color: #ffffff;
+//       font-size: 25px;
+//       text-decoration: none;
+//     }
+//   }
+// }
+//
+// }
+//
+//
+// /*Begin Responsive Style*/
+//
+// @media screen and (min-width: 768px) and (max-width: 1024px) {
+//
+//
+// }
+//
+// @media screen and (min-width: 0px) and (max-width: 767px) {
+//   .OrderingLinks {
+//     width: 95vw;
+//
+//     .OrderingLinksWrap {
+//
+//       button {
+//         margin: 10px;
+//         padding: 20px 10px;
+//       }
+//     }
+//   }
+//
+// }

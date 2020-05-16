@@ -1,40 +1,54 @@
-*,
-*::after,
-*::before {
-	box-sizing: border-box;
+.marquee-nav {
+	padding: 6em 0;
+	margin: 0;
+	--color-text: #111;
+	//--color-bg: #f8ecde;
+	--color-bg: #FFEDC8;
+	--color-link: #b19e7f;
+	--color-link-hover: #000;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: sofia-pro, sans-serif;
+	background-image: url('../images/beet-salad.png');
+	background-size: 50vw;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-position: bottom right;
 }
 
-:root {
-	font-size: 15px;
+
+
+h6 {
+	font-family: $font-bold;
+	color: black;
+	font-size: 1.750em;
+	margin-bottom: 2rem;
+	letter-spacing: 0.1rem;
+
+	span {
+		// Primary Mobile - Tablet & Below
+		@media screen and (max-width: $tablet) {
+			display: inline-block;
+		} // End Tablet & Below
+
+		&:first-of-type {
+			// Secondary Mobile - Phone & Below
+			@media screen and (max-width: $phone) {
+				margin-bottom: 0.5em;
+			} // End Phone & Below
+		}
+	}
+
+
 }
 
-.gallery {
 
-
-  --color-text: red;
-  --color-bg: $color1;
-  --color-link: #b19e7f;
-  --color-link-hover: #000;
-  color: var(--color-text);
-  background-color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: $heading;
-}
 
 /* Grainy texture animation by Geoff Graham https://css-tricks.com/snippets/css/animated-grainy-texture/ */
 
-main::before {
-	animation: grain 8s steps(10) infinite;
-	background-image: url('../images/noise.png');
-	content: '';
-	height: 300%;
-	left: -50%;
-	opacity: 0.6;
-	position: fixed;
-	top: -100%;
-	width: 300%;
-}
+
 
 @keyframes grain {
   0%, 100% { transform:translate(0, 0); }
@@ -104,13 +118,14 @@ a:focus {
 	--offset: 20vw;
 	--move-initial: calc(-25% + var(--offset));
 	--move-final: calc(-50% + var(--offset));
-	--item-font-size: 4em;
+	--item-font-size: 10vw;
 	counter-reset: menu;
 }
 
 .menu__item {
 	cursor: default;
 	position: relative;
+	//padding: 0 5vw;
 }
 
 .menu__item-link {
@@ -119,7 +134,7 @@ a:focus {
 	position: relative;
 	-webkit-text-stroke: 1.5px #000;
 	text-stroke: 1.5px #000;
-	//-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
 	text-fill-color: transparent;
 	color: transparent;
 	transition: opacity 0.4s;
@@ -195,13 +210,13 @@ a:focus {
 .marquee span {
 	white-space: nowrap;
 	font-size: var(--item-font-size);
-	padding: 0 1vw;
+	//padding: 0 1vw;
 	font-weight: 900;
 	line-height: 1.15;
 }
 
 .marquee span {
-	//font-style: italic;
+	font-style: italic;
 }
 
 @keyframes marquee {

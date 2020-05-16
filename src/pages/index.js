@@ -17,8 +17,10 @@ const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" keywords={[`Poco Piatti`, `Toledo`, `Ohio`, `Mediterranean`, `Restaurant`]} />
     <LandingPage />
+    <div class="paper-background">
     <ThePocoExperience />
     <Locations />
+    </div>
     <Map />
     <PhotoGalleryTwo />
     <Review />

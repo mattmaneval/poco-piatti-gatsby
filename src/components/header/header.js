@@ -4,7 +4,7 @@ import Navigation from './Navigation';
 
 const Header = ({ siteTitle }) => (
   <div className="Header">
-      <Navigation />
+    
   </div>
 )
 
