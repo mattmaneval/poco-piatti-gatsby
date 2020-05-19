@@ -4,10 +4,12 @@ import SEO from "../components/seo"
 import "../styles/_index.scss"
 import PerrysburgRoom from "../components/private-events/PerrysburgRoom"
 import DowntownRoom from "../components/private-events/DowntownRoom"
+import HeroNav from '../components/hero-nav';
 
 const PrivateEvents = () => (
   <Layout>
     <SEO title="Private Events" />
+    <HeroNav />
     <div className="PrivateEvents">
       <div className="PrivateEventsWrap">
         <div className="PrivateEventsWrapHeader">
