@@ -10,32 +10,27 @@ const HeroNav = () => (
     <nav class="menu wrap">
 
 			<div class="menu__item">
-        <a href="#popup" class="menu__item-link">Order</a>
-			</div>
-
-
-			<div class="menu__item">
-				<Link to="/Menu/" class="menu__item-link">Menu</Link>
-				<img class="menu__item-img" src={DSC04757} alt="Some image"/>
+				<Link to="/" class="menu__item-link" activeClassName="active">Home</Link>
 			</div>
 
 			<div class="menu__item">
-				<Link to="/Catering/" class="menu__item-link">Catering</Link>
-				<img class="menu__item-img" src={foodtruck} alt="Some image"/>
+				<Link to="/Menu/" class="menu__item-link" activeClassName="active">Menu</Link>
 			</div>
 
 			<div class="menu__item">
-				<Link to="/PrivateEvents/" class="menu__item-link">Private Events</Link>
-				<img class="menu__item-img" src={IMG_0049} alt="Some image"/>
+				<Link to="/Catering/" class="menu__item-link" activeClassName="active">Catering</Link>
+			</div>
+
+			<div class="menu__item">
+				<Link to="/PrivateEvents/" class="menu__item-link" activeClassName="active">Private Events</Link>
       </div>
 
 			<div class="menu__item">
-				<Link to="/About/" class="menu__item-link">About</Link>
-				<img class="menu__item-img" src={IMG_0198} alt="Some image"/>
+				<Link to="/About/" class="menu__item-link" activeClassName="active">About</Link>
 			</div>
 
 			<div class="menu__item">
-				<Link to="/Contact/" class="menu__item-link">Contact</Link>
+				<Link to="/Contact/" class="menu__item-link" activeClassName="active">Contact</Link>
 			</div>
 
 		</nav>

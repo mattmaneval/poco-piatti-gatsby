@@ -51,6 +51,7 @@ a {
 	text-decoration: none;
 	color: var(--color-link);
 	outline: none;
+	transition-duration: 1s;
 }
 
 a:hover,
@@ -58,6 +59,7 @@ a:focus {
 	color: var(--color-link-hover);
 	outline: none;
 	text-decoration: underline;
+
 }
 
 .frame {
@@ -103,8 +105,13 @@ a:focus {
 	--offset: 20vw;
 	--move-initial: calc(-25% + var(--offset));
 	--move-final: calc(-50% + var(--offset));
-	--item-font-size: 10vw;
+	--item-font-size: 6vw;
 	counter-reset: menu;
+
+	// Secondary Mobile - Phone & Below
+	@media screen and (max-width: $phone) {
+		--item-font-size: 10vw;
+} // End Phone & Below
 }
 
 .menu__item {
@@ -114,6 +121,19 @@ a:focus {
 }
 
 .menu__item-link {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	-webkit-text-stroke: 1.5px #000;
+	text-stroke: 1.5px #000;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+	color: transparent;
+	transition: opacity 0.4s;
+
+}
+
+.active {
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
