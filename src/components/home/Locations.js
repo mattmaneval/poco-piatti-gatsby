@@ -30,6 +30,19 @@ const Locations = () => (
           <p>Sun, 12 am - 9 pm</p>
         </div>
       </div>
+      <div class="location">
+        <h3>Downtown</h3>
+        <div class="address">
+          <p>329 N Huron</p>
+          <p>Toledo, Ohio</p>
+        </div>
+        <div class="hours">
+          <p>Mon - Thu, 11 am - 9pm</p>
+          <p>Fri, 11 am - 10 pm</p>
+          <p>Sat, 4 pm - 10 pm</p>
+          <p>Sun, Closed</p>
+        </div>
+      </div>
     </div>
     </div>
 
