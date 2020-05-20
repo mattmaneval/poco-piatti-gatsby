@@ -2,6 +2,7 @@
   margin: 0;
   background-color: #FFFFFF;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 
     .mobile-menu {
@@ -24,6 +25,7 @@
         @include large;
         margin: 10px 0 0 0;
         padding: 20px;
+        text-align: center;
       }
 
     span {

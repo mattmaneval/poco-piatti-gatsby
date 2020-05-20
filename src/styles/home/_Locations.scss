@@ -1,11 +1,9 @@
 .locations {
-  // background-image: url('assets/images/brown-paper.png');
-  // background-repeat: no-repeat;
   background-color: $color5;
-  //background-size: 100% auto;
-  //position: relative;
-  // display: flex;
-  // justify-content: space-between;
+  //background-color: #f8ecde;;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
 
   &-content {
     display: flex;
@@ -17,7 +15,7 @@
   } // End Tablet & Below
 
     .location {
-      margin-bottom: 7.8em;
+      padding: 2em 0;
     }
 
     h3 {
@@ -25,7 +23,8 @@
       letter-spacing: 0.1em;
       font-family: $font-medium;
       text-transform: lowercase;
-      color: #FFEDC8;
+      color: #FFF;
+      margin: 0 0 3rem 0;
     }
 
     p {
@@ -33,11 +32,11 @@
       font-size: 0.975em;
       margin-bottom: 0.3em;
       letter-spacing: 0.1rem;
-      color: #FFEDC8;
+      color: #FFF;
     }
 
     .address {
-      margin-bottom: 1.5em;
+      margin-bottom: 3rem;
 
       p {
         line-height: 1;

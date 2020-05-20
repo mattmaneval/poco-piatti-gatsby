@@ -234,23 +234,15 @@ $box-shadow: 1em 1em 10em -1em $background;
 
 /*Home*/
 
-
-@import './home/Covid19';
-@import './popup';
-@import './home/OrderingLinks';
-@import './home/Banner';
-@import './home/Downtown';
-@import './home/LandingPage';
+@import './home/ThePocoExperience';
 @import './home/Locations';
 @import './home/Map';
-@import './home/OnlineOrdering';
-@import './home/Perrysburg';
+
 @import './home/PhotoGallery';
 @import './home/PhotoGalleryTwo';
 @import './home/PhotoGalleryThree';
 @import './home/Review';
-@import './home/Sylvania';
-@import './home/ThePocoExperience';
+
 
 /*Menu*/
 
@@ -259,9 +251,6 @@ $box-shadow: 1em 1em 10em -1em $background;
 
 /*Private Events*/
 
-@import './private-events/DowntownRoom';
-@import './private-events/PerrysburgRoom';
-@import './private-events/PrivateEvents';
 
 /*Catering*/
 

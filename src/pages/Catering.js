@@ -2,12 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/_index.scss"
-import HeroNav from '../components/hero-nav';
 
 const Catering = () => (
   <Layout>
     <SEO title="Catering" />
-    <HeroNav />
     <div className="Catering">
       <div className="CateringWrap">
       <div className="column-1">

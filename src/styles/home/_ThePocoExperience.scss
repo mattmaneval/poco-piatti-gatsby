@@ -1,16 +1,9 @@
 .home-hero {
-  //background-image: url('../images/paper-texture.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  widht: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
   padding: 6em 0;
 
-
+  .phone {
+    text-decoration: none;
+  }
 
   // CTA
   .cta {
@@ -18,21 +11,27 @@
   &:link,
   &:visited {
   	display: inline-block;
-  	min-width: 8em;
+  	min-width: 10em;
   	text-align: center;
-  	background: $color4;
-
-  	padding: 1em 2em;
-  	border-radius: 1rem;
+  	background: #3b5998;
+  	padding: 1em 1.75em;
+  	border-radius: 5rem;
   	box-shadow: 0 1rem 2rem rgba(#000, .2);
   	transition: all .2s;
-  	color: #FFEDC8;
+  	color: #FFF;
   	text-decoration: none;
-  	font-family: $heading;
-  	font-size: 1.5em;
+  	font-family: $font-bold;
+  	font-size: 1.1em;
   	margin-bottom: 3rem;
   	letter-spacing: 0.1rem;
-  	text-transform: lowercase;
+  	//text-transform: lowercase;
+
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      min-width: 10em;
+      margin-bottom: 2rem;
+      display: inline-block;
+    } // End Phone & Below
 
   	&:first-of-type {
   		margin-right: 1rem;
@@ -81,13 +80,15 @@
   &-content {
     box-sizing: border-box;
   	background-color: #fff;
-  	padding: 3em 6em;
+  	padding: 5em 6em;
   	position: relative;
   	z-index: 9999;
+    border-radius: 0.5em;
 
     @media screen and (max-width: $phone) {
       width: 85%;
-      padding: 1em 2em;
+      padding: 5em 2em;
+
     } // End Phone & Below
 
   	.close {
@@ -97,27 +98,35 @@
       top: -0.5rem;
       right: -0.9rem;
       padding: 2rem;
-  		color: $color1;
+  		color: #bf5252;
+      text-decoration: none;
   	}
+
+    h6 {
+
+    	  font-size: 1.15em;
+
+    }
 
   	&-bottom {
   		display: flex;
   		justify-content: space-evenly;
   		align-items: center;
-
-  		// Primary Mobile - Tablet & Below
-  		@media screen and (max-width: $tablet) {
-  			flex-direction: column;
-  		} // End Tablet & Below
+      flex-wrap: wrap;
   	}
+
+    .phone {
+      text-decoration: none;
+      color: #3b5998;;
+    }
   }
-  }
+}
   p {
   	font-size: 1.188em;
   	line-height: 160%;
   	display: inline-block;
   	max-width: 40em;
-  	font-family: $font-bold;
+  	font-family: $adobe-font;
   	color: black;
   	margin-bottom: 3em;
   }
@@ -128,21 +137,26 @@
   	line-height: 1.2;
   	letter-spacing: 0.1rem;
   	margin-bottom: 0.6em;
-  	font-family: $heading;
+  	font-family: $font-bold;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1.5px #000;
+    text-stroke: 1.5px #000;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
   h6 {
   	font-family: $font-bold;
   	color: black;
   	font-size: 1.750em;
-
   	margin: 0 0 2rem 0;
   	letter-spacing: 0.1rem;
 
   	span {
-  		// Primary Mobile - Tablet & Below
-  		@media screen and (max-width: $tablet) {
-  			display: inline-block;
-  		} // End Tablet & Below
+      display: block;
+
+      .phone {
+        color: #3b5998;
+      }
 
   		&:first-of-type {
   			// Secondary Mobile - Phone & Below
@@ -151,7 +165,5 @@
   			} // End Phone & Below
   		}
   	}
-
-
   }
 }

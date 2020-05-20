@@ -2,7 +2,7 @@ import React from 'react';
 
 const Review = () => (
   <div className="Review">
-    <div className="ReviewWrap">
+    <div className="wrap">
       <h2>"The Mediterranean food at this restaurant (with heavy
       Lebanese and Italian influences) is so beautifully prepared
       that it seems like a more elite spot, but you can certainly find

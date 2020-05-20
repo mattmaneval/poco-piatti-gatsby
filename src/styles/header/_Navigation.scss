@@ -1,10 +1,8 @@
 .Navigation {
-  width: 100%;
   background-color: $white;
   display: flex;
-  padding: 10px 40px 10px 5px;
-  //display: none;
-  z-index: 1000;
+  padding: 1em;
+  z-index: 10000;
 
   img {
     width: 80px;
@@ -21,12 +19,13 @@
       border: 3px solid black;
       border-radius: 2em;
       padding: 8px;
+      display: none;
     }
 
     a {
       padding: 25px;
-      font-family: $nav-font;
-      text-transform: uppercase;
+      font-family: $heading;
+      //text-transform: uppercase;
       text-decoration: none;
       color: $dark;
     }

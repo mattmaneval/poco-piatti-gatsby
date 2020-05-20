@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "poco-piatti"
+    "default": "poco-piatti",
+    "staging": "poco-piatti-staging"
   }
 }
