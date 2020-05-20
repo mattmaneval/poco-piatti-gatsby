@@ -1,69 +1,33 @@
-.Navigation {
-  background-color: $white;
+.navigation {
   display: flex;
-  padding: 1em;
+  align-items: center;
   z-index: 10000;
 
-  img {
-    width: 80px;
-    padding: 0 0 0 10px;
-  }
-
-  .NavigationWrap {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    .Order {
-      border: 3px solid black;
-      border-radius: 2em;
-      padding: 8px;
-      display: none;
-    }
-
-    a {
-      padding: 25px;
-      font-family: $heading;
-      //text-transform: uppercase;
-      text-decoration: none;
-      color: $dark;
-    }
-
-
-
-  }
-
-
-}
-
-/*Begin Responsive Style*/
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-
-}
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  .Navigation {
-    margin: 0;
-    padding: 0;
-    height: 80px;
-    display: flex;
+  // Primary Mobile - Tablet & Below
+  @media screen and (max-width: $tablet) {
     justify-content: space-between;
-    align-items: center;
+  } // End Tablet & Below
 
-    .NavigationWrap {
+  img {
+    padding: 1em 1em 1em 0;
+    width: 80px;
+  }
+
+  &-desktop-link {
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
       display: none;
-      height: 400px;
-      max-width: 100%;
-      text-align: left;
+    } // End Tablet & Below
 
-      .logo {
-        position: absolute;
-        left: 50%;
-        z-index: 1;
-        transform: translate3d(-80%, 0, 0);
-      }
-    }
+   a {
+     padding: 25px;
+     font-family: $heading;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: $dark;
+   }
+
+
   }
 }

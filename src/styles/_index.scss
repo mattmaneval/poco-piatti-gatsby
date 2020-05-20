@@ -228,15 +228,17 @@ $box-shadow: 1em 1em 10em -1em $background;
 /*Header*/
 
 @import './header/Header';
-@import "./header/hamburgers/hamburgers";
 @import './header/Navigation';
 @import './header/MobileNavigation';
+@import './hamburgers/hamburgers';
 
 /*Home*/
 
 @import './home/ThePocoExperience';
+@import './popup';
 @import './home/Locations';
 @import './home/Map';
+
 
 @import './home/PhotoGallery';
 @import './home/PhotoGalleryTwo';
@@ -250,7 +252,7 @@ $box-shadow: 1em 1em 10em -1em $background;
 @import './menu/FullMenu';
 
 /*Private Events*/
-
+@import './private-events/PrivateEvents';
 
 /*Catering*/
 
@@ -264,4 +266,3 @@ $box-shadow: 1em 1em 10em -1em $background;
 /*Contact*/
 
 @import './contact/Contact';
-@import './marquee-nav';

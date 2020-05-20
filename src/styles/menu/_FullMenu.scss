@@ -1,9 +1,11 @@
 .full-menu {
   margin: 0;
+  padding: 6em 0;
   background-color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: $dark;
 
     .mobile-menu {
       display: none;
@@ -26,6 +28,7 @@
         margin: 10px 0 0 0;
         padding: 20px;
         text-align: center;
+
       }
 
     span {

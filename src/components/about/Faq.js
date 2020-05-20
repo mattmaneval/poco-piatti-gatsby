@@ -2,20 +2,19 @@ import React from "react"
 
 const Faq = () => (
     <div className="Faq">
-    <div className="FaqWrap">
+    <div className="wrap">
       <h1>Frequently Asked Questions</h1>
       <span className="line"></span>
         <h5>Dietary Restrictions?</h5>
-          <p>We accommodate most dietary needs like gluten free, vegetarian, and vegan. Ask for our gluten free menu. </p>
-          <p>Our meat is Halal.</p>
+          <p>We accommodate most dietary needs like gluten free, vegetarian, and vegan. Ask for our gluten free menu. Our meat is Halal.</p>
         <h5>Locations?</h5>
           <p>We have three locations: Levis Commons in Perrysburg, Central Avenue in Sylvania, and Downtown Toledo on
             Huron near Adams.</p>
         <h5>Reservations and Carryout?</h5>
-          <p>For reservations at Perrysburg location call: <a href="tel:419-931-0281">419-931-0281</a></p>
-          <p>For reservations at Sylvania location call: <a href="tel:419-931-0281">419-931-0281</a></p>
-          <p>For reservations at Downtown location call: <a href="tel:419-931-0281">419-931-0281</a></p>
-          <p>Automatic gratuity may be applied to groups of 5 or more.</p>
+          <p>For reservations at Perrysburg location call: <a href="tel:419-931-0281">419-931-0281</a>
+          For reservations at Sylvania location call: <a href="tel:419-931-0281">419-931-0281</a>
+          For reservations at Downtown location call: <a href="tel:419-931-0281">419-931-0281</a>
+          Automatic gratuity may be applied to groups of 5 or more.</p>
         <h5>Bar Options?</h5>
           <p>We serve beer, wine, cocktails, and our famous sangria!</p>
         <h5>Kids Menu?</h5>

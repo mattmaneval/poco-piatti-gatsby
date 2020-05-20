@@ -42,6 +42,7 @@
   color: $dark;
 }
 @mixin photo-caption {
+  margin: 0.5em;
   color: $white;
   font-family: $nav-font;
   text-transform: uppercase;

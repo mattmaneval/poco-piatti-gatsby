@@ -16,7 +16,7 @@ class MobileNavigation extends Component {
 
   render() {
     return (
-      <div className="MobileNavigation">
+      <div className="mobile-navigation">
           <button
             onClick={this.handleClick}
             className={this.state.isToggleOn ? 'hamburger hamburger--slider' : 'hamburger hamburger--slider is-active'}
@@ -25,38 +25,16 @@ class MobileNavigation extends Component {
               <span className="hamburger-inner"></span>
             </span>
           </button>
-          <div className={this.state.isToggleOn ? 'MobileNavigationHidden' : 'MobileNavigationActive'}>
-                <Link
-                  onClick={this.handleClick}
-                  to="/">
-                  <h5>Home</h5>
-                </Link>
-                <Link
-                  onClick={this.handleClick}
-                  to="/Menu/">
-                  <h5>Menu</h5>
-                </Link>
-                <Link
-                  onClick={this.handleClick}
-                  to="/PrivateEvents/">
-                  <h5>Private Events</h5>
-                </Link>
-                <Link
-                  onClick={this.handleClick}
-                  to="/Catering/">
-                  <h5>Catering</h5>
-                </Link>
-                <Link
-                  onClick={this.handleClick}
-                  to="/About/">
-                  <h5>About</h5>
-                </Link>
-                <Link
-                  onClick={this.handleClick}
-                  to="/Contact/">
-                <h5>Contact</h5>
-              </Link>
-              <div><a href="tel:419-931-0281">419-931-0281</a></div>
+          <div className={this.state.isToggleOn ? 'mobile-navigation-hidden' : 'mobile-navigation-active'}>
+            <div className="mobile-navigation-active-wrap">
+            <Link onClick={this.handleClick} to="/">Home</Link>
+            <Link onClick={this.handleClick} to="/Menu/">Menu</Link>
+            <Link onClick={this.handleClick}to="/PrivateEvents/">Private Events</Link>
+            <Link onClick={this.handleClick}to="/Catering/">Catering</Link>
+            <Link onClick={this.handleClick}to="/About/">About</Link>
+            <Link onClick={this.handleClick}to="/Contact/">Contact</Link>
+        
+            </div>
           </div>
         </div>
     );

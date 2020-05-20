@@ -1,5 +1,65 @@
 .home-hero {
+  //height: 85vh;
+  border: none;
+  // border-left: 1em solid #fff;
+  // border-right: 1em solid #fff;
+  // border-bottom: 1em solid #fff;
   padding: 6em 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#792d09, 0.5),
+      rgba(#6800ff, 0.5)),
+  url('../images/FoodBackground.png');
+  // background-image: linear-gradient(
+  //     to right bottom,
+  //     rgba(#792d09, 0.8),
+  //     rgba(#6800ff, 0.8)),
+  // url('../images/FoodBackground.png');
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  background-color: red;
+
+  // @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+  //     -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  //     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  // }
+  //
+  // @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  //     only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  //     only screen and (min-width: 125em) {
+  //     background-image: linear-gradient(
+  //         to right bottom,
+  //         rgba(#792d09, 0.8),
+  //         rgba(#6800ff, 0.8)),
+  //     url('../images/FoodBackground.png');
+  // }
+  //
+  // // Secondary Mobile - Phone & Below
+  // @media screen and (max-width: $phone) {
+  //   -webkit-clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+  //   clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+  // } // End Phone & Below
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  ///////////////////////
 
   .phone {
     text-decoration: none;
@@ -13,12 +73,14 @@
   	display: inline-block;
   	min-width: 10em;
   	text-align: center;
-  	background: #3b5998;
+  	//background: #3b5998;
+    background-color: #FFF;
   	padding: 1em 1.75em;
   	border-radius: 5rem;
   	box-shadow: 0 1rem 2rem rgba(#000, .2);
   	transition: all .2s;
-  	color: #FFF;
+  	//color: #FFF;
+    color: $dark;
   	text-decoration: none;
   	font-family: $font-bold;
   	font-size: 1.1em;
@@ -54,108 +116,52 @@
     }
   }
 
-  // POPUP
-  .popup {
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(#000, .8);
-  z-index: 9999;
-  opacity: 0;
-  visibility: hidden;
-  transition: all .3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-  &:target {
-  	opacity: 1;
-  	visibility: visible;
-  }
-
-  &-content {
-    box-sizing: border-box;
-  	background-color: #fff;
-  	padding: 5em 6em;
-  	position: relative;
-  	z-index: 9999;
-    border-radius: 0.5em;
-
-    @media screen and (max-width: $phone) {
-      width: 85%;
-      padding: 5em 2em;
-
-    } // End Phone & Below
-
-  	.close {
-  		font-size: 3em;
-  		line-height: 0;
-  		position: absolute;
-      top: -0.5rem;
-      right: -0.9rem;
-      padding: 2rem;
-  		color: #bf5252;
-      text-decoration: none;
-  	}
-
-    h6 {
-
-    	  font-size: 1.15em;
-
-    }
-
-  	&-bottom {
-  		display: flex;
-  		justify-content: space-evenly;
-  		align-items: center;
-      flex-wrap: wrap;
-  	}
-
-    .phone {
-      text-decoration: none;
-      color: #3b5998;;
-    }
-  }
-}
   p {
-  	font-size: 1.188em;
+  	font-size: 1.5em;
   	line-height: 160%;
   	display: inline-block;
   	max-width: 40em;
   	font-family: $adobe-font;
-  	color: black;
+  	color: #fff;
   	margin-bottom: 3em;
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      font-size: 1.2em;
+    } // End Phone & Below
   }
 
   h1 {
     margin: 0;
-  	font-size: 3.4em;
+  	font-size: 5em;
   	line-height: 1.2;
   	letter-spacing: 0.1rem;
   	margin-bottom: 0.6em;
   	font-family: $font-bold;
-    text-transform: uppercase;
-    -webkit-text-stroke: 1.5px #000;
-    text-stroke: 1.5px #000;
+    //text-transform: uppercase;
+    -webkit-text-stroke: 1.9px #FFF;
+    text-stroke: 1.9px #FFF;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
+
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      font-size: 2.75em;
+    } // End Phone & Below
   }
   h6 {
   	font-family: $font-bold;
-  	color: black;
+  	//color: black;
   	font-size: 1.750em;
   	margin: 0 0 2rem 0;
   	letter-spacing: 0.1rem;
 
   	span {
       display: block;
+      color: #FFF;
 
       .phone {
-        color: #3b5998;
+        //color: #3b5998;
+        color: #FFF;
       }
 
   		&:first-of-type {
@@ -166,4 +172,7 @@
   		}
   	}
   }
+
+
+
 }

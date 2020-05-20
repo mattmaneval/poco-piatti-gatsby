@@ -11,6 +11,7 @@ import ThePocoExperience from "../components/home/ThePocoExperience"
 import Map from "../components/home/Map"
 import Faq from "../components/about/Faq"
 import FullMenu from "../components/menu/FullMenu"
+import Popup from "../components/popup"
 
 const IndexPage = (props) => (
   <Layout>
@@ -24,6 +25,7 @@ const IndexPage = (props) => (
     <FullMenu />
     <PhotoGalleryThree />
     <Faq />
+    <Popup />
   </Layout>
 )
 
