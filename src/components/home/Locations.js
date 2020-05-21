@@ -4,10 +4,6 @@ import React from 'react';
 const Locations = () => (
   <section class="locations">
   <div class="wrap">
-  <h6>
-    <span>carryout & reservations:</span>
-    <span><a href="tel:419-931-0281" class="phone" id="cta">419-931-0281</a></span>
-  </h6>
     <div class="locations-content">
       <div class="location">
         <h3>Perrysburg</h3>
@@ -41,10 +37,7 @@ const Locations = () => (
           <p>Toledo, Ohio</p>
         </div>
         <div class="hours">
-          <p>Mon - Thu, 11 am - 9pm</p>
-          <p>Fri, 11 am - 10 pm</p>
-          <p>Sat, 4 pm - 10 pm</p>
-          <p>Sun, Closed</p>
+          <p>Open for private events.</p>
         </div>
       </div>
     </div>

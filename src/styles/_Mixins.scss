@@ -1,6 +1,10 @@
 @import "./_Variables";
 
-
+@mixin gothic {
+  font-family: $gothic;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
 @mixin small {
   font-size: 16px;
   color: $light;

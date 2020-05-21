@@ -234,7 +234,9 @@ $box-shadow: 1em 1em 10em -1em $background;
 
 /*Home*/
 
+@import './covid-modal';
 @import './home/ThePocoExperience';
+@import './home/togo';
 @import './popup';
 @import './home/Locations';
 @import './home/Map';
@@ -253,6 +255,8 @@ $box-shadow: 1em 1em 10em -1em $background;
 
 /*Private Events*/
 @import './private-events/PrivateEvents';
+@import './private-events/DowntownRoom';
+@import './private-events/PerrysburgRoom';
 
 /*Catering*/
 

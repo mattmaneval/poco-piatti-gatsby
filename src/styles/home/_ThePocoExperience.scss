@@ -1,39 +1,26 @@
 .home-hero {
-  //height: 85vh;
+  height: 70vh;
   border: none;
-  // border-left: 1em solid #fff;
-  // border-right: 1em solid #fff;
-  // border-bottom: 1em solid #fff;
   padding: 6em 0;
+  //background-image: url('../images/foodtruck.jpg');
+  //background-image: url('../images/FoodBackground.png');
   background-image: linear-gradient(
       to right bottom,
-      rgba(#792d09, 0.5),
-      rgba(#6800ff, 0.5)),
-  url('../images/FoodBackground.png');
-  // background-image: linear-gradient(
-  //     to right bottom,
-  //     rgba(#792d09, 0.8),
-  //     rgba(#6800ff, 0.8)),
-  // url('../images/FoodBackground.png');
+      rgba(#792d09, 0.8),
+      rgba(#6800ff, 0.8)),
+  url('../images/foodtruck.jpg');
+  //background-color: #f8ecde;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
-  background-color: red;
+  background-color: $dark;
 
-  // @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-  //     -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-  //     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-  // }
-  //
-  // @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-  //     only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-  //     only screen and (min-width: 125em) {
-  //     background-image: linear-gradient(
-  //         to right bottom,
-  //         rgba(#792d09, 0.8),
-  //         rgba(#6800ff, 0.8)),
-  //     url('../images/FoodBackground.png');
-  // }
+  // Primary Mobile - Tablet & Below
+  @media screen and (max-width: $tablet) {
+    height: auto;
+  } // End Tablet & Below
+
   //
   // // Secondary Mobile - Phone & Below
   // @media screen and (max-width: $phone) {
@@ -73,7 +60,7 @@
   	display: inline-block;
   	min-width: 10em;
   	text-align: center;
-  	//background: #3b5998;
+  	background: #3b5998;
     background-color: #FFF;
   	padding: 1em 1.75em;
   	border-radius: 5rem;
@@ -82,11 +69,11 @@
   	//color: #FFF;
     color: $dark;
   	text-decoration: none;
-  	font-family: $font-bold;
+  	font-family: $gothic;
   	font-size: 1.1em;
   	margin-bottom: 3rem;
   	letter-spacing: 0.1rem;
-  	//text-transform: lowercase;
+  	text-transform: uppercase;
 
     // Secondary Mobile - Phone & Below
     @media screen and (max-width: $phone) {
@@ -116,36 +103,25 @@
     }
   }
 
-  p {
-  	font-size: 1.5em;
-  	line-height: 160%;
-  	display: inline-block;
-  	max-width: 40em;
-  	font-family: $adobe-font;
-  	color: #fff;
-  	margin-bottom: 3em;
-    // Secondary Mobile - Phone & Below
-    @media screen and (max-width: $phone) {
-      font-size: 1.2em;
-    } // End Phone & Below
-  }
-
   h1 {
     margin: 0;
   	font-size: 5em;
   	line-height: 1.2;
   	letter-spacing: 0.1rem;
   	margin-bottom: 0.6em;
-  	font-family: $font-bold;
-    //text-transform: uppercase;
-    -webkit-text-stroke: 1.9px #FFF;
-    text-stroke: 1.9px #FFF;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
+  	font-family: $heading;
+    color: #fff;
+    text-transform: uppercase;
+    // -webkit-text-stroke: 1.9px #FFF;
+    // text-stroke: 1.9px #FFF;
+    // -webkit-text-fill-color: transparent;
+    // text-fill-color: transparent;
+    @include gothic;
+    letter-spacing: -.05em;
 
     // Secondary Mobile - Phone & Below
     @media screen and (max-width: $phone) {
-      font-size: 2.75em;
+      font-size: 3.25em;
     } // End Phone & Below
   }
   h6 {
@@ -155,6 +131,8 @@
   	margin: 0 0 2rem 0;
   	letter-spacing: 0.1rem;
 
+
+
   	span {
       display: block;
       color: #FFF;
@@ -162,6 +140,17 @@
       .phone {
         //color: #3b5998;
         color: #FFF;
+        margin: 0;
+      	font-size: 1em;
+      	line-height: 1.2;
+      	letter-spacing: 0.1rem;
+      	margin-bottom: 0.6em;
+      	font-family: $gothic;
+        //text-transform: uppercase;
+        // -webkit-text-stroke: 1.9px #FFF;
+        // text-stroke: 1.9px #FFF;
+        // -webkit-text-fill-color: transparent;
+        // text-fill-color: transparent;
       }
 
   		&:first-of-type {
