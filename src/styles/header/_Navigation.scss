@@ -1,69 +1,35 @@
-.Navigation {
-  width: 100%;
-  background-color: $white;
+.navigation {
   display: flex;
-  padding: 10px 40px 10px 5px;
+  align-items: center;
+  z-index: 10000;
 
+  // Primary Mobile - Tablet & Below
+  @media screen and (max-width: $tablet) {
+    justify-content: space-between;
+  } // End Tablet & Below
 
   img {
+    padding: 1em 1em 1em 0;
     width: 80px;
-    padding: 0 0 0 10px;
   }
 
-  .NavigationWrap {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  &-desktop-link {
 
-    .Order {
-      border: 3px solid black;
-      border-radius: 2em;
-      padding: 8px;
-    }
-
-    a {
-      padding: 25px;
-      font-family: $nav-font;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: $dark;
-    }
-
-
-
-  }
-
-
-}
-
-/*Begin Responsive Style*/
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-
-}
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  .Navigation {
-    margin: 0;
-    padding: 0;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .NavigationWrap {
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
       display: none;
-      height: 400px;
-      max-width: 100%;
-      text-align: left;
+    } // End Tablet & Below
 
-      .logo {
-        position: absolute;
-        left: 50%;
-        z-index: 1;
-        transform: translate3d(-80%, 0, 0);
-      }
-    }
+   a {
+     padding: 25px;
+     font-family: $gothic;
+     letter-spacing: -1px;
+     font-size: 1.2em;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: $dark;
+   }
+
+
   }
 }

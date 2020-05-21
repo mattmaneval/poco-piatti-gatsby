@@ -8,30 +8,28 @@ import Salads from "./Salads"
 import Pizza from "./Pizza"
 
 const FullMenu = () => (
-    <div className="FullMenu">
-      <div className="FullMenuWrap">
-        <div className="column-1">
-          <Seafood />
-          <BigPlates />
-          <Accompaniments />
-        </div>
-        <div className="column-2">
-          <Carne />
-          <Salads />
-        </div>
-        <div className="column-3">
-          <Vegetarian />
-          <Pizza />
-        </div>
-        <div className="mobile-menu">
-          <Seafood />
-          <Vegetarian />
-          <Carne />
-          <BigPlates />
-          <Pizza />
-          <Salads />
-          <Accompaniments />
-        </div>
+    <div className="full-menu">
+      <div className="column-1">
+        <Seafood />
+        <BigPlates />
+        <Accompaniments />
+      </div>
+      <div className="column-2">
+        <Carne />
+        <Salads />
+      </div>
+      <div className="column-3">
+        <Vegetarian />
+        <Pizza />
+      </div>
+      <div className="mobile-menu">
+        <Seafood />
+        <Vegetarian />
+        <Carne />
+        <BigPlates />
+        <Pizza />
+        <Salads />
+        <Accompaniments />
       </div>
     </div>
 );

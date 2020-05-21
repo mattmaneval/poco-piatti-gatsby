@@ -1,28 +1,64 @@
-.Locations {
-  width: 100%;
-  text-align: center;
-  color: $white;
-  .Locations-wrap {
-    //background-color: #A8B5C0;
-    //background-color: #171717;
+.locations {
+  padding: 0 0 6em 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  display: block;
+   p {
+     color: $dark;
+     font-family: $heading;
+   }
+
+  &-content {
     display: flex;
-    text-align: left;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-}
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-/*Begin Responsive Style*/
+    .location {
+      // Primary Mobile - Tablet & Below
+      @media screen and (max-width: $tablet) {
+        margin-bottom: 4em;
+      } // End Tablet & Below
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    h3 {
+      font-size: 2.3em;
+      letter-spacing: 0.1em;
+      font-family: $gothic;
+      text-transform: uppercase;
+      color: $dark;
+      margin: 0 0 3rem 0;
+
+    }
+
+    p {
+      font-family: $adobe-font;
+      font-size: 0.975em;
+      font-weight: bold;
+      margin-bottom: 0.3em;
+      letter-spacing: 0.1rem;
+      color: $dark;
+    }
+
+    .address {
+      margin-bottom: 3rem;
 
 
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .Locations {
-    .Locations-wrap {
-      display: block;
-      text-align: center;
+      p {
+        line-height: 1;
+        display: block;
+      }
+    }
+
+    .hours {
+      p {
+        line-height: 1;
+        display: block;
+      }
     }
   }
 }
