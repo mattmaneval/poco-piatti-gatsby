@@ -4,10 +4,6 @@
   position: relative;
   z-index: 0;
   display: block;
-   p {
-     color: $dark;
-     font-family: $heading;
-   }
 
   &-content {
     display: flex;
@@ -15,6 +11,7 @@
     flex-wrap: wrap;
 
     .location {
+
       // Primary Mobile - Tablet & Below
       @media screen and (max-width: $tablet) {
         margin-bottom: 4em;
@@ -36,27 +33,18 @@
     }
 
     p {
-      font-family: $adobe-font;
-      font-size: 0.975em;
-      font-weight: bold;
-      margin-bottom: 0.3em;
-      letter-spacing: 0.1rem;
-      color: $dark;
     }
 
     .address {
-      margin-bottom: 3rem;
-
+      margin-bottom: 1.5em;
 
       p {
-        line-height: 1;
         display: block;
       }
     }
 
     .hours {
       p {
-        line-height: 1;
         display: block;
       }
     }

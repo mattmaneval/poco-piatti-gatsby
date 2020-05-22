@@ -20,3 +20,47 @@
 .inner-wrap {
   @include wrap($wrap, 68em);
 }
+
+// Flex
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// cta
+@mixin cta {
+  @include better-box;
+  min-width: 10em;
+  padding: 1em 1.75em;
+  font-family: $font-bold;
+  font-size: 1.1em;
+  letter-spacing: 0.1;
+  color: $dark;
+  text-decoration: none;
+  border-radius: 5rem;
+  box-shadow: 0 1rem 2rem rgba($background, .2);
+  transition: all .2s;
+  cursor: pointer;
+  background: $foreground;
+  text-align: center;
+}
+
+.cta {
+  &,
+  &:link,
+  &:visited {
+    @include cta;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+
+    &:active,
+    &:focus {
+    	outline: none;
+    	transform: translateY(-1px);
+    	box-shadow: 0 .5rem 1rem rgba($background, .2);
+    }
+  }
+}

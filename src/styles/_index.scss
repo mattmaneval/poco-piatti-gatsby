@@ -17,7 +17,7 @@
 //  iPad Only
 //  iPhone Only
 
-/*! WORDPRESS THEME INFO
+/*! GATSBY THEME INFO
 Theme Name: Poco Piatti
 Author: Matt Maneval
 Author URI: https://mattmaneval.com
@@ -28,40 +28,6 @@ Version: 1.0
 // ---------------------------------------------------------------------------------------------------
 
 // 0.1 Variables
-
-//Coolors
-/* HSL */
-$color1: hsla(13%, 74%, 58%, 1);
-$color2: hsla(37%, 98%, 75%, 1);
-$color3: hsla(19%, 52%, 80%, 1);
-$color4: hsla(0%, 67%, 24%, 1);
-$color5: hsla(74%, 48%, 42%, 1);
-
-/* RGB */
-$color1: rgba(148, 62, 38, 1);
-$color2: rgba(191, 120, 4, 1);
-$color3: rgba(203, 131, 97, 1);
-$color4: rgba(60, 20, 20, 1);
-$color5: rgba(96, 108, 56, 1);
-
-/* HEX */
-$color1: #943e26ff;
-$color2: #bf7804ff;
-$color3: #cb8361ff;
-$color4: #3c1414ff;
-$color5: #606c38ff;
-
-/* GRADIENT */
-$gradient-top: linear-gradient(0deg, #943e26ff, #bf7804ff, #cb8361ff, #3c1414ff, #606c38ff);
-$gradient-right: linear-gradient(90deg, #943e26ff, #bf7804ff, #cb8361ff, #3c1414ff, #606c38ff);
-$gradient-bottom: linear-gradient(180deg, #943e26ff, #bf7804ff, #cb8361ff, #3c1414ff, #606c38ff);
-$gradient-left: linear-gradient(270deg, #943e26ff, #bf7804ff, #cb8361ff, #3c1414ff, #606c38ff);
-$gradient-top-right: linear-gradient(45deg, #943e26ff, #bf7804ff, #cb8361ff, #3c1414ff, #606c38ff);
-$gradient-bottom-right: linear-gradient(135deg, #943e26ff, #bf7804ff, #cb8361ff, #3c1414ff, #606c38ff);
-$gradient-top-left: linear-gradient(225deg, #943e26ff, #bf7804ff, #cb8361ff, #3c1414ff, #606c38ff);
-$gradient-bottom-left: linear-gradient(315deg, #943e26ff, #bf7804ff, #cb8361ff, #3c1414ff, #606c38ff);
-$gradient-radial: radial-gradient(#943e26ff, #bf7804ff, #cb8361ff, #3c1414ff, #606c38ff);
-
 
 // Responsive
 $wrap: calc(100% - 10rem);
@@ -74,20 +40,26 @@ $phone: 767px;
 $small-phone: 480px;
 
 // Color
-$background: #eef5db; // Primary background color
+$dark: #111111;
+$light: #333;
+$white: #fff;
+
+
+
+$background: #111111; // Primary background color
 $foreground: #FFFFFF;
-$foreground-alt: #eaf2e3;
-$foreground-tert: #ffa68f;
+$foreground-alt: $background;
+$foreground-tert: $background;
 $background-alt: $background;
 $border-color: $background;
 $brand: $background;
-$callout: #f2ff49;
-$callout-alt: #3626a7;
+$callout: #3b5998;
+$callout-alt: $background;
 $default: $background;
-$error: #FB3640;
+$error: $background;
 $shadow: rgba($background, 0.1);
 $type: $background;
-$type-alt: #8a817c;
+$type-alt: $background;
 
 // Space
 $base: 16px;
@@ -108,18 +80,24 @@ $double-micro-space: $micro-space * 2;
 $nano-space: $micro-space / 2;
 
 // Fonts
-$font: "source_code_proregular";
+$adobe-font: adobe-garamond-pro, sans-serif;
+$nav-font: din-condensed, sans-serif;
+$gothic: trade-gothic-next, sans-serif;
+
+
+@import url('https://use.typekit.net/ffo3zwq.css');
+$font: adobe-garamond-pro, sans-serif;
 $font-italic: "";
 $font-light: "";
-$font-medium: "nimbus_sans_lbold";
-$font-semibold: "source_code_prosemibold";
+$font-medium: trade-gothic-next, sans-serif;
+$font-semibold: "";
 $font-bold: "aileronbold";
 $font-bold-italic: "";
 $font-alt: HelveticaNeue, Helvetica;
 $font-stack: $font, $font-alt;
 $heading: "paytone_oneregular";
-$social: "FSIndustrie-Book";
-$title: "archivo_blackregular";
+$social: "";
+$title: "";
 
 // Misc
 $animate-time: 0.2s;
@@ -127,65 +105,49 @@ $border-radius: 0.250em;
 $border-treatment: 1rem solid;
 $box-shadow: 1em 1em 10em -1em $background;
 
-// // Base Vendor Styles
+// Base Vendor Styles
 // @import "assets/stylesheets/vendor/flickity";
-//
-// // Base Imports
+
+// Base Imports
 @import "base/utilities";
+@import './reset';
+
 // @import "assets/stylesheets/base/resets";
 @import "base/generics";
 @import "base/fonts";
-//
-// // Generics
-// // @import "assets/stylesheets/arrow-cta";
-//
-// // 1.0 LAYOUT - Global Structure
-// // ---------------------------------------------------------------------------------------------------
-// @import "assets/stylesheets/layout/global";
-// @import "assets/stylesheets/layout/menu-button";
-// @import "assets/stylesheets/layout/headings";
-// @import "assets/stylesheets/layout/forms";
-// // @import "assets/stylesheets/layout/content";
-// // @import "assets/stylesheets/layout/table";
-//
-//
-// // Header Structure
-// @import "assets/stylesheets/layout/header";
-// @import "assets/stylesheets/layout/footer";
-//
-//
-// // 2.0 MODULES - Page Specific
-// // ---------------------------------------------------------------------------------------------------
-//
-// // Modules
-// // @import "assets/stylesheets/search";
-// //
-// @import "assets/stylesheets/home-hero";
-// @import "assets/stylesheets/locations";
-// @import "assets/stylesheets/marquee";
-// @import "assets/stylesheets/paper-background";
-// // @import "assets/stylesheets/primary-callout";
-// // @import "assets/stylesheets/press-partners";
-//
-// // Writeups
-// @import "assets/stylesheets/writeups/author";
-// @import "assets/stylesheets/writeups/writeups";
-// @import "assets/stylesheets/writeups/writeups-callout";
-// @import "assets/stylesheets/writeups/writeups-card";
-//
-// // Placements
-// @import "assets/stylesheets/placements/placements-callout";
-// @import "assets/stylesheets/placements/placements-card";
-// @import "assets/stylesheets/placements/see-more-card";
-//
-// // Contact
-// @import "assets/stylesheets/contact/contact";
+
+// Generics
+
+
+// 1.0 LAYOUT - Global Structure
+// ---------------------------------------------------------------------------------------------------
+@import "layout/headings";
+@import "layout/global";
+
+
+// Header Structure
+
+
+
+// 2.0 MODULES - Page Specific
+// ---------------------------------------------------------------------------------------------------
+
+// Modules
+
+
+// Writeups
+
+// Placements
+
+
+// Contact
+
 
 // Print
-// @import "assets/stylesheets/base/print";
+
 
 // Overrides
-// @import "assets/stylesheets/base/override-utilities";
+
 
 // 3.0 Media Query Manifest
 // ---------------------------------------------------------------------------------------------------
@@ -218,55 +180,52 @@ $box-shadow: 1em 1em 10em -1em $background;
 
 /*reset*/
 
-@import './reset';
+
 
 /*Variable and Mixins*/
 
-@import "./variables";
-@import "./Mixins";
+@import "./mixins";
 
 /*Header*/
 
-@import './header/Header';
-@import './header/Navigation';
-@import './header/MobileNavigation';
+@import './header/header';
+@import './header/navigation';
+@import './header/mobile-navigation';
 @import './hamburgers/hamburgers';
 
 /*Home*/
 
 @import './covid-modal';
-@import './home/ThePocoExperience';
-@import './home/togo';
+@import './home/home-hero';
+@import './home/poco-experience';
 @import './popup';
-@import './home/Locations';
-@import './home/Map';
+@import './home/locations';
+@import './home/map';
 
 
-@import './home/PhotoGallery';
-@import './home/PhotoGalleryTwo';
-@import './home/PhotoGalleryThree';
-@import './home/Review';
+@import './home/photo-gallery';
+@import './home/photo-gallery-two';
+@import './home/photo-gallery-three';
+@import './home/review';
 
 
 /*Menu*/
-
-@import './menu/Menu';
-@import './menu/FullMenu';
+@import './menu/full-menu';
 
 /*Private Events*/
-@import './private-events/PrivateEvents';
-@import './private-events/DowntownRoom';
-@import './private-events/PerrysburgRoom';
+@import './private-events/private-events';
+@import './private-events/downtown-room';
+@import './private-events/perrysburg-room';
 
 /*Catering*/
 
-@import './catering/Catering';
+@import './catering/catering';
 
 /*About*/
 
-@import './about/About';
-@import './about/Faq';
+@import './about/about';
+@import './about/faq';
 
 /*Contact*/
 
-@import './contact/Contact';
+@import './contact/contact';

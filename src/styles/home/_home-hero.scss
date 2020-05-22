@@ -1,0 +1,68 @@
+.home-hero {
+  position: relative;
+  height: 70vh;
+  padding: 6em 0;
+  background-image: linear-gradient(to right bottom, rgba(#000, 0.7), rgba(#000, 0.2)), url('../images/foodtruck.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+
+  // Primary Mobile - Tablet & Below
+  @media screen and (max-width: $tablet) {
+    height: auto;
+  } // End Tablet & Below
+
+  .phone {
+    text-decoration: none;
+  }
+
+  // CTA
+  .cta {
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      min-width: 10em;
+      margin-bottom: 2rem;
+      display: inline-block;
+    } // End Phone & Below
+
+  	&:first-of-type {
+  		margin-right: 1rem;
+      // Primary Mobile - Tablet & Below
+    	@media screen and (max-width: $tablet) {
+    	  margin-right: 0;
+    	} // End Tablet & Below
+    }
+  }
+
+  h1 {
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      font-size: 3.25em;
+    } // End Phone & Below
+  }
+
+  h6 {
+  	span {
+      display: block;
+      color: $foreground;
+
+      .phone {
+        color: $foreground;
+        margin: 0;
+      	font-size: 1em;
+      	line-height: 1.2;
+      	letter-spacing: 0.1rem;
+      	margin-bottom: 0.6em;
+      	font-family: $gothic;
+      }
+
+  		&:first-of-type {
+  			// Secondary Mobile - Phone & Below
+  			@media screen and (max-width: $phone) {
+  				margin-bottom: 0.5em;
+  			} // End Phone & Below
+  		}
+  	}
+  }
+}

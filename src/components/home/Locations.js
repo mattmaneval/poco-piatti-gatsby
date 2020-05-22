@@ -6,7 +6,7 @@ const Locations = () => (
   <div class="wrap">
     <div class="locations-content">
       <div class="location">
-        <h3>Perrysburg</h3>
+        <h6>Perrysburg</h6>
         <div class="address">
           <p>3155 Chappel Dr.</p>
           <p>Perrysburg, Ohio</p>
@@ -19,7 +19,7 @@ const Locations = () => (
         </div>
       </div>
       <div class="location">
-        <h3>Sylvania</h3>
+        <h6>Sylvania</h6>
         <div class="address">
           <p>6710 W. Central Ave #1</p>
           <p>Toledo, Ohio</p>
@@ -31,7 +31,7 @@ const Locations = () => (
         </div>
       </div>
       <div class="location">
-        <h3>Downtown</h3>
+        <h6>Downtown</h6>
         <div class="address">
           <p>329 N Huron</p>
           <p>Toledo, Ohio</p>

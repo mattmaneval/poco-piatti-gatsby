@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ThePocoExperience = (props) => (
+const HomeHero = (props) => (
   <section class="home-hero">
   <div class="wrap">
   <h1>The Poco Experience<br />TO-GO</h1>
@@ -14,4 +14,4 @@ const ThePocoExperience = (props) => (
 </section>
 );
 
-export default ThePocoExperience;
+export default HomeHero;
