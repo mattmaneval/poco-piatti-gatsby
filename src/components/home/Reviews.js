@@ -2,18 +2,18 @@ import React from 'react';
 
 const Reviews = () => (
   <div className="reviews">
-    <div className="wrap">
-      <h2>"The Mediterranean food at this restaurant (with heavy
+    <div className="inner-wrap">
+      <p>"The Mediterranean food at this restaurant (with heavy
         Lebanese and Italian influences) is so beautifully prepared
         that it seems like a more elite spot, but you can certainly find
         great values."
-      </h2>
-      <p>&mdash; The Blade</p>
-      <h2>2019 Dining Guide Award Winner for Best Appetizers &
+      </p>
+      <h6>&mdash; The Blade</h6>
+      <p>2019 Dining Guide Award Winner for Best Appetizers &
         Runner-Up for Best Staff
-      </h2>
-      <h2>2018 Dining Guide Award Winner for Best Restaurateur</h2>
-      <p>&mdash; Toledo City Paper</p>
+      </p>
+      <p>2018 Dining Guide Award Winner for Best Restaurateur</p>
+      <h6>&mdash; Toledo City Paper</h6>
     </div>
   </div>
 );

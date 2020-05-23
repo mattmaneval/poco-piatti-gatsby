@@ -5,8 +5,9 @@ import "../styles/_index.scss";
 import CovidModal from "../components/CovidModal";
 import HomeHero from "../components/home/HomeHero";
 import PocoExperience from "../components/home/PocoExperience";
-import Locations from "../components/home/Locations";
+import Locations from "../components/modules/Locations";
 import Reviews from "../components/home/Reviews";
+import Footer from "../components/footer/footer";
 
 
 import Map from "../components/home/Map";
@@ -25,6 +26,7 @@ const IndexPage = (props) => (
     <Map />
     <Reviews />
     <Faq />
+    <Footer />
     <Popup />
   </Layout>
 )

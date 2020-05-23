@@ -123,14 +123,13 @@ $box-shadow: 1em 1em 10em -1em $background;
 // ---------------------------------------------------------------------------------------------------
 @import "layout/headings";
 @import "layout/global";
-
+@import './layout/footer';
 
 // Header Structure
 @import './header/header';
 @import './header/navigation';
 @import './header/mobile-navigation';
 @import './hamburgers/hamburgers';
-
 
 // 2.0 MODULES - Page Specific
 // ---------------------------------------------------------------------------------------------------

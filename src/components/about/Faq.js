@@ -2,8 +2,8 @@ import React from "react"
 
 const Faq = () => (
     <div className="Faq">
-    <div className="wrap">
-      <h1>Frequently Asked Questions</h1>
+    <div className="inner-wrap">
+      <h2>Frequently Asked Questions</h2>
       <span className="line"></span>
         <h5>Dietary Restrictions?</h5>
           <p>We accommodate most dietary needs like gluten free, vegetarian, and vegan. Ask for our gluten free menu. Our meat is Halal.</p>
