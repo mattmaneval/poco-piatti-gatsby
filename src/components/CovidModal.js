@@ -35,7 +35,14 @@ class CovidModal extends Component {
             for updates on food specials
             and food truck locations.
           </div>
-          <div className="cta" onClick={this.handleClick}>Enter</div>
+          <div
+            className="cta"
+            role="button"
+            tabIndex={0}
+            onClick={this.handleClick}
+            onKeyDown={this.handleClick}>
+            Enter
+          </div>
         </div>
       </div>
     );

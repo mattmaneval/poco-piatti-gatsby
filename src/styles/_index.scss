@@ -106,7 +106,7 @@ $border-treatment: 1rem solid;
 $box-shadow: 1em 1em 10em -1em $background;
 
 // Base Vendor Styles
-// @import "assets/stylesheets/vendor/flickity";
+
 
 // Base Imports
 @import "base/utilities";
@@ -117,7 +117,7 @@ $box-shadow: 1em 1em 10em -1em $background;
 @import "base/fonts";
 
 // Generics
-
+@import "./mixins";
 
 // 1.0 LAYOUT - Global Structure
 // ---------------------------------------------------------------------------------------------------
@@ -126,7 +126,10 @@ $box-shadow: 1em 1em 10em -1em $background;
 
 
 // Header Structure
-
+@import './header/header';
+@import './header/navigation';
+@import './header/mobile-navigation';
+@import './hamburgers/hamburgers';
 
 
 // 2.0 MODULES - Page Specific
@@ -135,16 +138,35 @@ $box-shadow: 1em 1em 10em -1em $background;
 // Modules
 
 
-// Writeups
+// Home
+@import './covid-modal';
+@import './home/home-hero';
+@import './home/poco-experience';
+@import './popup';
+@import './home/locations';
+@import './home/map';
+@import './home/photo-gallery';
+@import './home/photo-gallery-two';
+@import './home/photo-gallery-three';
+@import './home/reviews';
 
-// Placements
+// Menu
+@import './menu/full-menu';
 
+// Catering
+@import './catering/catering';
+
+// Private Events
+@import './private-events/private-events';
+@import './private-events/downtown-room';
+@import './private-events/perrysburg-room';
+
+// FAQ
+@import './about/about';
+@import './about/faq';
 
 // Contact
-
-
-// Print
-
+@import './contact/contact';
 
 // Overrides
 
@@ -175,57 +197,3 @@ $box-shadow: 1em 1em 10em -1em $background;
 
 // iPhone Only
 // @media only screen and (max-device-width: $small-phone) {} // End iPhone Only
-
-
-
-/*reset*/
-
-
-
-/*Variable and Mixins*/
-
-@import "./mixins";
-
-/*Header*/
-
-@import './header/header';
-@import './header/navigation';
-@import './header/mobile-navigation';
-@import './hamburgers/hamburgers';
-
-/*Home*/
-
-@import './covid-modal';
-@import './home/home-hero';
-@import './home/poco-experience';
-@import './popup';
-@import './home/locations';
-@import './home/map';
-
-
-@import './home/photo-gallery';
-@import './home/photo-gallery-two';
-@import './home/photo-gallery-three';
-@import './home/review';
-
-
-/*Menu*/
-@import './menu/full-menu';
-
-/*Private Events*/
-@import './private-events/private-events';
-@import './private-events/downtown-room';
-@import './private-events/perrysburg-room';
-
-/*Catering*/
-
-@import './catering/catering';
-
-/*About*/
-
-@import './about/about';
-@import './about/faq';
-
-/*Contact*/
-
-@import './contact/contact';

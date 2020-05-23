@@ -1,6 +1,6 @@
-.FoodPhotoGallery {
+.food-photo-gallery {
   background-color: #ffffff;
-  .FoodPhotoGalleryWrap {
+  .food-photo-gallery-wrap {
     article {
       min-height: 700px;
       text-align: left;
@@ -9,9 +9,9 @@
       //  padding: 10px;
       }
     }
-    .FoodPhotoGalleryRow {
+    .food-photo-gallery-row {
       display: flex;
-      .PortobelloCaps {
+      .portobello-caps {
         width: calc(40% - 2.5px);
         border-top: 5px solid #ffffff;
         border-right: 2.5px solid #ffffff;
@@ -21,7 +21,7 @@
         background-position: center;
         background-repeat: no-repeat;
       }
-      .PocoTips {
+      .poco-tips {
         width: calc(60% + 2.5px);
         border-top: 5px solid #ffffff;
         border-bottom: 2.5px solid #ffffff;
@@ -32,9 +32,9 @@
         background-repeat: no-repeat;
       }
     }
-    .FoodPhotoGalleryRow2 {
+    .food-photo-gallery-row-2 {
       display: flex;
-      .ChickenWraps {
+      .chicken-wraps {
         width: calc(30% - 2.5px);
         border-top: 2.5px solid #ffffff;
         border-right: 2.5px solid #ffffff;
@@ -45,7 +45,7 @@
         background-position: center;
         background-repeat: no-repeat;
       }
-      .Hummus {
+      .hummus {
         width: 40%;
         border-top: 2.5px solid #ffffff;
         border-right: 2.5px solid #ffffff;
@@ -56,7 +56,7 @@
         background-position: center;
         background-repeat: no-repeat;
       }
-      .Arayes {
+      .arayes {
         width: calc(30% + 2.5px);
         border-top: 2.5px solid #ffffff;
         border-right: 0;
@@ -68,9 +68,9 @@
         background-repeat: no-repeat;
       }
     }
-    .FoodPhotoGalleryRow3 {
+    .food-photog-allery-row-3 {
       display: flex;
-      .Pizza {
+      .pizza {
         width: calc(40% - 2.5px);
         border-top: 2.5px solid #ffffff;
         border-right: 2.5px solid #ffffff;
@@ -79,7 +79,7 @@
         background-position: center;
         background-repeat: no-repeat;
       }
-      .Fatoosh {
+      .fatoosh {
         width: calc(60% + 2.5px);
         border-top: 2.5px solid #ffffff;
         border-right: 0;
@@ -93,17 +93,15 @@
   }
 }
 
-
 /*Begin Responsive Style*/
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .FoodPhotoGallery {
-    .FoodPhotoGalleryWrap {
+  .food-photo-gallery {
+    .food-photo-gallery-wrap {
       article {
-        //border: 2px solid #ffffff;
         min-height: 225px;
         max-height: 300px;
       }

@@ -1,15 +1,19 @@
-.PhotoGalleryTwo {
-  .PhotoGalleryWrap {
+.photo-gallery-2 {
+  .photo-gallery-wrap {
+
     article {
       min-height: 700px;
+
       h6 {
         @include photo-caption;
         padding: 10px;
       }
     }
-    .PhotoGalleryRow {
+
+    .photo-gallery-row {
       display: flex;
-      .Photo1 {
+
+      .photo-1 {
         width: calc(40% - 2.5px);
         border-top: 5px solid #ffffff;
         border-right: 2.5px solid #ffffff;
@@ -20,7 +24,8 @@
         background-position: center;
         background-repeat: no-repeat;
       }
-      .Photo2 {
+
+      .photo-2 {
         width: calc(60% + 2.5px);
         border-top: 5px solid #ffffff;
         border-bottom: 2.5px solid #ffffff;
@@ -31,9 +36,11 @@
         background-repeat: no-repeat;
       }
     }
-    .PhotoGalleryRow2 {
+
+    .photo-gallery-row-2 {
       display: flex;
-      .Photo3 {
+
+      .photo-3 {
         width: calc(60% - 2.5px);
         border-top: 2.5px solid #ffffff;
         border-right: 2.5px solid #ffffff;
@@ -43,7 +50,8 @@
         background-position: center;
         background-repeat: no-repeat;
       }
-      .Photo4 {
+
+      .photo-4 {
         width: calc(40% + 2.5px);
         border-top: 2.5px solid #ffffff;
         border-bottom: 2.5px solid #ffffff;
@@ -55,9 +63,10 @@
         background-repeat: no-repeat;
       }
     }
-    .PhotoGalleryRow3 {
+
+    .photo-gallery-row-3 {
       display: flex;
-      .Photo5 {
+      .photo-5 {
         width: calc(40% - 2.5px);
         border-top: 2.5px solid #ffffff;
         border-right: 2.5px solid #ffffff;
@@ -67,7 +76,8 @@
         background-position: center;
         background-repeat: no-repeat;
       }
-      .Photo6 {
+
+      .photo-6 {
         width: calc(60% + 2.5px);
         border-top: 2.5px solid #ffffff;
         border-bottom: 2.55px solid #ffffff;
@@ -78,9 +88,10 @@
         background-repeat: no-repeat;
       }
     }
-    .PhotoGalleryRow4 {
+
+    .photo-gallery-row-4 {
       display: flex;
-      .Photo7 {
+      .photo-7 {
         width: calc(60% - 2.5px);
         border-top: 2.5px solid #ffffff;
         border-right: 2.5px solid #ffffff;
@@ -90,7 +101,8 @@
         background-position: center;
         background-repeat: no-repeat;
       }
-      .Photo8 {
+
+      .photo-8 {
         width: calc(40% + 2.5px);
         border-top: 2.5px solid #ffffff;
         border-bottom: 2.5px solid #ffffff;
@@ -105,17 +117,12 @@
 }
 
 /*Begin Responsive Style*/
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-
-}
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .PhotoGalleryTwo {
-    .PhotoGalleryWrap {
-      .PhotoGalleryRow {
+  .photo-gallery-2 {
+    .photo-gallery-wrap {
+      .photo-gallery-row {
         display: block;
-        .Photo1 {
+        .photo-1 {
           width: 100%;
           border-right: 0;
           min-height: 300px;
@@ -123,7 +130,7 @@
           background-repeat: no-repeat;
           background-position: center;
         }
-        .Photo2 {
+        .photo-2 {
           width: 100%;
           border-top: 2.5px solid #ffffff;
           border-left: 0;
@@ -133,9 +140,9 @@
           background-position: center;
         }
       }
-      .PhotoGalleryRow2 {
+      .photo-gallery-row-2 {
         display: block;
-        .Photo3 {
+        .photo-3 {
           width: 100%;
           border-right: 0;
           min-height: 300px;
@@ -143,7 +150,7 @@
           background-repeat: no-repeat;
           background-position: center;
         }
-        .Photo4 {
+        .photo-4 {
           width: 100%;
           border-left: 0;
           min-height: 300px;
@@ -152,9 +159,9 @@
           background-position: center;
         }
       }
-      .PhotoGalleryRow3 {
+      .photo-gallery-row-3 {
         display: block;
-        .Photo5 {
+        .photo-5 {
           width: 100%;
           border-right: 0;
           min-height: 300px;
@@ -162,7 +169,7 @@
           background-repeat: no-repeat;
           background-position: center;
         }
-        .Photo6 {
+        .photo-6 {
           width: 100%;
           border-left: 0;
           min-height: 300px;
@@ -171,9 +178,9 @@
           background-position: center;
         }
       }
-      .PhotoGalleryRow4 {
+      .photo-gallery-row-4 {
         display: block;
-        .Photo7 {
+        .photo-7 {
           width: 100%;
           border-right: 0;
           border-bottom: 2.5px solid #ffffff;
@@ -182,7 +189,7 @@
           background-repeat: no-repeat;
           background-position: center;
         }
-        .Photo8 {
+        .photo-8 {
           width: 100%;
           border-left: 0;
           min-height: 300px;
@@ -194,5 +201,4 @@
       }
     }
   }
-
 }
