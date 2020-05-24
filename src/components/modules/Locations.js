@@ -1,9 +1,17 @@
 import React from 'react';
+import IMG_0198 from '../../images/IMG_0198.jpg'
+import IMG_0093 from '../../images/IMG_0093.jpg'
+import IMG_0096 from '../../images/IMG_0096.jpg'
 
 const Locations = () => (
-  <section class="locations">
-    <div class="locations-content inner-wrap">
+<section class="locations">
+  <div class="wrap">
+    <h2>Find us</h2>
+    <div class="locations-content">
       <div class="location">
+        <figure>
+          <img src={IMG_0198} alt="Person on a tour" class="story__img" />
+        </figure>
         <h6>Perrysburg</h6>
         <div class="address">
           <p>3155 Chappel Dr.</p>
@@ -17,6 +25,9 @@ const Locations = () => (
         </div>
       </div>
       <div class="location">
+        <figure class="story__shape">
+          <img src={IMG_0096} alt="Person on a tour" class="story__img" />
+        </figure>
         <h6>Sylvania</h6>
         <div class="address">
           <p>6710 W. Central Ave #1</p>
@@ -29,6 +40,9 @@ const Locations = () => (
         </div>
       </div>
       <div class="location">
+        <figure class="story__shape">
+          <img src={IMG_0093} alt="Person on a tour" class="story__img" />
+        </figure>
         <h6>Downtown</h6>
         <div class="address">
           <p>329 N Huron</p>
@@ -39,7 +53,8 @@ const Locations = () => (
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 );
 
 export default Locations;

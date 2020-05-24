@@ -3,7 +3,39 @@
   overflow: hidden;
   position: relative;
   z-index: 0;
-  display: block;
+  //display: block;
+  text-align: center;
+  background-color: $foreground;
+
+  figure {
+    display: inline-block;
+    width: 15rem;
+    height: 15rem;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+
+  img {
+    height: 143%;
+    transform: translateY(-45px);
+  }
+
+  h2 {
+    @include h1;
+    color: $background;
+    font-size: 4em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    @include h1;
+    color: $background;
+    font-size: 1em;
+  }
 
   &-content {
     display: flex;

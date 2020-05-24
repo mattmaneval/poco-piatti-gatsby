@@ -1,14 +1,10 @@
 .home-hero {
-  position: relative;
-  //height: 70vh;
   padding: 6em 0;
-  //background-image: linear-gradient(to right bottom, rgba(#000, 0.7), rgba(#000, 0.2)), url('../images/beet-salad.png');
   background-image: url('../images/beet-salad.png');
   background-position: 104%;
   background-repeat: no-repeat;
   background-size: contain;
   border: none;
-  background-color: lightblue;
 
   @media screen and (max-width: $tablet) {
     background-position: 109% bottom;
@@ -43,11 +39,9 @@
   }
 
   h1 {
-    font-size: 8em;
-
     // Secondary Mobile - Phone & Below
     @media screen and (max-width: $phone) {
-      font-size: 3.25em;
+      font-size: 3.75em;
     } // End Phone & Below
   }
 

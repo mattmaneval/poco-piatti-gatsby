@@ -3,16 +3,14 @@ h2, h3, h4, h5 {
 }
 
 @mixin h1 {
-  margin: 0;
-  margin-bottom: 0.6em;
-  font-family: $gothic;
-  font-size: 5em;
-  line-height: 1.2;
-  letter-spacing: -1px;
-  letter-spacing: 0.1rem;
   letter-spacing: -.05em;
   text-transform: uppercase;
   color: $foreground;
+  font-size: 8em;
+  font-family: trade-gothic-next, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  margin-bottom: 0;
 }
 
 h1 {

@@ -1,3 +1,31 @@
+// Html elements only
+html, body {
+  -webkit-text-size-adjust: 100%;
+  min-height: 100%;
+}
+
+html {
+  background-color: $brand;
+}
+
+body {
+  background-color: lightblue;
+  color: $type;
+  font-family: $font-stack;
+  font-size: $base;
+
+  // Primary Mobile - Tablet & Below
+  @media screen and (max-width: $tablet){
+    background-size: 180vh;
+    font-size: $tablet-base;
+  } // End Tablet & Below
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone){
+    font-size: $phone-base;
+  } // End Phone & Below
+} // End body
+
 @mixin p {
   line-height: 160%;
   font-family: $font;
