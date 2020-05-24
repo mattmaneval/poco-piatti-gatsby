@@ -6,15 +6,12 @@ import CovidModal from "../components/CovidModal";
 import HomeHero from "../components/home/HomeHero";
 import PocoExperience from "../components/home/PocoExperience";
 import Locations from "../components/modules/Locations";
+import PhotoGallery2 from "../components/home/PhotoGallery2";
+import PhotoGalleryThree from "../components/home/PhotoGalleryThree";
+import PrimaryCallout from "../components/home/PrimaryCallout";
 import Reviews from "../components/home/Reviews";
-import Footer from "../components/footer/footer";
-
-
-import Map from "../components/home/Map";
-import Faq from "../components/about/Faq";
-
+import Carousel from "../components/home/FoodGallery";
 import Popup from "../components/popup";
-
 
 const IndexPage = (props) => (
   <Layout>
@@ -23,10 +20,10 @@ const IndexPage = (props) => (
     <HomeHero />
     <PocoExperience />
     <Locations />
-    <Map />
+    <PrimaryCallout />
     <Reviews />
-    <Faq />
-    <Footer />
+    <PhotoGallery2 />
+    <PhotoGalleryThree />
     <Popup />
   </Layout>
 )

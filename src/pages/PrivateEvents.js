@@ -34,7 +34,6 @@ const PrivateEvents = () => (
           <PerrysburgRoom />
           <DowntownRoom />
         </div>
-
       </div>
     </div>
   </Layout>

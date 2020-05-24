@@ -1,5 +1,35 @@
 .photo-gallery-2 {
   .photo-gallery-wrap {
+    position: relative;
+    .overlay-text {
+      @include h1;
+      position: absolute;
+
+      &-2 {
+        @include h1;
+        position: absolute;
+
+        // Secondary Mobile - Phone & Below
+        @media screen and (max-width: $phone) {
+          font-size: 3.75em;
+        } // End Phone & Below
+      }
+
+      &-3 {
+        @include h1;
+        position: absolute;
+
+        // Secondary Mobile - Phone & Below
+        @media screen and (max-width: $phone) {
+          font-size: 3.75em;
+        } // End Phone & Below
+      }
+
+      // Secondary Mobile - Phone & Below
+      @media screen and (max-width: $phone) {
+        font-size: 3.75em;
+      } // End Phone & Below
+    }
 
     article {
       min-height: 700px;

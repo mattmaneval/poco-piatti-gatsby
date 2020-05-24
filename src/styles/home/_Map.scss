@@ -8,7 +8,7 @@
   background-color: lightblue;
 
   .bg-container {
-    
+
   }
 
   h1 {
@@ -20,7 +20,6 @@
   iframe {
     max-width: 60%;
     border: 12px solid rgb(242,242,242);
-    padding: 2em;
 
     // Secondary Mobile - Phone & Below
     @media screen and (max-width: $phone) {

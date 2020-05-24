@@ -2,7 +2,29 @@
   padding: 6em 0;
   background-color: $background;
 
-  h6,p {
-    color: $foreground;
+  &-navigation {
+
+  }
+
+  &-link {
+    margin-bottom: 1em;
+    
+    a {
+      &,
+      &:link,
+      &:visited {
+        padding: 25px;
+        font-family: $gothic;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $foreground;
+        transition: all .4s;
+
+        &:hover {
+          color: $callout;
+        }
+      }
+    }
   }
 }

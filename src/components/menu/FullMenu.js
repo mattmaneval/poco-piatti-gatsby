@@ -9,20 +9,7 @@ import Pizza from "./Pizza"
 
 const FullMenu = () => (
     <div className="full-menu">
-      <div className="column-1">
-        <Seafood />
-        <BigPlates />
-        <Accompaniments />
-      </div>
-      <div className="column-2">
-        <Carne />
-        <Salads />
-      </div>
-      <div className="column-3">
-        <Vegetarian />
-        <Pizza />
-      </div>
-      <div className="mobile-menu">
+      <div className="wrap">
         <Seafood />
         <Vegetarian />
         <Carne />

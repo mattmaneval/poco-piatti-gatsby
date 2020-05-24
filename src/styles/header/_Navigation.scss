@@ -8,28 +8,47 @@
     justify-content: space-between;
   } // End Tablet & Below
 
+  &-desktop-link {
+
+  }
+
   img {
     padding: 1em 1em 1em 0;
     width: 80px;
   }
 
   &-desktop-link {
+    margin: 0;
+    padding: 0;
 
     // Primary Mobile - Tablet & Below
     @media screen and (max-width: $tablet) {
       display: none;
     } // End Tablet & Below
 
-   a {
-     padding: 25px;
-     font-family: $gothic;
-     letter-spacing: -1px;
-     font-size: 1.2em;
-     text-transform: uppercase;
-     text-decoration: none;
-     color: $foreground;
-   }
+    a {
+      &,
+      &:link,
+      &:visited {
+        padding: 25px;
+        font-family: $gothic;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $foreground;
+        transition: all .4s;
+
+        &:hover {
+          color: $callout;
+        }
+      }
 
 
+      &:first-of-type {
+        padding-left: 0;
+      }
+
+
+    }
   }
 }

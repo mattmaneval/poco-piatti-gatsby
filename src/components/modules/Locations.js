@@ -53,6 +53,7 @@ const Locations = () => (
         </div>
       </div>
     </div>
+    <a href="https://www.google.com/maps/search/poco+piatti/@41.6013728,-83.6900514,12z/data=!3m1!4b1" class="cta">Google Maps</a>
   </div>
 </section>
 );

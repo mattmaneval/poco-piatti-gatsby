@@ -1,0 +1,19 @@
+.carousel{
+  .thumbs-wrapper {
+    display: none;
+  }
+  .slide {
+    background: none !important;
+
+    img {
+      padding: 1.5rem !important;
+      height: 45em !important;
+      width: auto !important;
+    }
+  }
+
+}
+
+.food-gallery {
+  padding: 6em 0;
+}

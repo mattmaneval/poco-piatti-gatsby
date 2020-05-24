@@ -144,10 +144,11 @@ $box-shadow: 1em 1em 10em -1em $background;
 @import './popup';
 @import './home/locations';
 @import './home/map';
-@import './home/photo-gallery';
+@import './home/primary-callout';
 @import './home/photo-gallery-two';
 @import './home/photo-gallery-three';
 @import './home/reviews';
+@import './home/food-gallery';
 
 // Menu
 @import './menu/full-menu';
