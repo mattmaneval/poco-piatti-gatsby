@@ -1,18 +1,22 @@
 .DowntownRoom {
   width: 100%;
+  //transform: skewY(-8deg);
 
   .DowntownRoomWrap {
     text-align: left;
 
     h1 {
-      @include extra-large;
-      color: $white;
+      font-size: 5em;
+      margin-bottom: 2rem;
+
+      // Secondary Mobile - Phone & Below
+      @media screen and (max-width: $phone) {
+        font-size: 2.75em
+      } // End Phone & Below
     }
 
-    h2 {
-      @include medium;
+    P {
       color: $foreground;
-      margin: 0 0 2em 0;
       font-family: $font-medium;
     }
   }

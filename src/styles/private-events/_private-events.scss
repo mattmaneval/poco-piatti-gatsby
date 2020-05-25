@@ -8,15 +8,19 @@
 
     h1 {
       @include h1;
+
+      // Secondary Mobile - Phone & Below
+      @media screen and (max-width: $phone) {
+        font-size: 3.75em
+      } // End Phone & Below
     }
 
     h3 {
       text-transform: up;
-      font-size: 2.6em;
+      font-size: 2em;
       line-height: 160%;
     }
   }
-
 
   .RoomDescription {
     //background-color: $background;
@@ -29,6 +33,37 @@
       color: $white;
       font-size: 2em;
       margin-bottom: 2em;
+    }
+  }
+
+
+  .private-events-content {
+    //padding: 6em 0;
+  //  transform: skewY(8deg);
+    background-color: #70561C;
+
+    .event-location {
+      display: flex;
+      //justify-content: space-evenly;
+      padding: 4em 0;
+
+      // Primary Mobile - Tablet & Below
+      @media screen and (max-width: $tablet) {
+        flex-direction: column;
+      } // End Tablet & Below
+
+      &-desc {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // Secondary Mobile - Phone & Below
+        @media screen and (max-width: $phone) {
+          width: 100%;
+          padding: 2em 0;
+        } // End Phone & Below
+      }
     }
   }
 }
