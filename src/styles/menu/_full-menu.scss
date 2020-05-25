@@ -1,14 +1,10 @@
 .full-menu {
-  background-color: $foreground;
+  background-color: transparent;
   color: $callout;
   padding: 6em 0;
 }
 
-
 .menu-category {
-  //display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 6em;
 
 
@@ -18,21 +14,26 @@
   } // End Tablet & Below
 
   &-type {
+    
 
     h1 {
-      color: #4B3B40;
+      color: $foreground;
       font-size: 5em;
       margin-bottom: 1em;
+
+      // Secondary Mobile - Phone & Below
+      @media screen and (max-width: $phone) {
+        font-size: 3.75em;
+      } // End Phone & Below
     }
   }
 
   &-items {
-    //max-width: 50%;
 
     h5 {
       @include h1;
       font-size: 1.5em;
-      color: #4B3B40;
+      color: $foreground;
       display: flex;
       justify-content: space-between;
     }
@@ -41,10 +42,10 @@
   &-item {
     margin-bottom: 1.5em;
     position: relative;
-    border-bottom: 0.1em solid #4B3B40;
+    border-bottom: 0.1em solid $foreground;
 
     p {
-      color: #4B3B40;
+      color: $foreground;
       font-family: $font-medium;
       font-size: 1.2;
     }

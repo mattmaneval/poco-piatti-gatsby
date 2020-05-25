@@ -4,6 +4,7 @@ import MobileNavigation from "./MobileNavigation"
 import PocoPiattiRedLogo from "../../images/PocoPiattiRedLogo.jpg";
 
 
+
 const Navigation = () => (
   <div className="navigation wrap">
     <div class="navigation-desktop-link"><Link  to="/">Home</Link></div>

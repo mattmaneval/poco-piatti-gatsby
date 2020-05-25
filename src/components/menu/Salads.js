@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Salads = () => (
-  <div className="menu-category">
+  <div>
     <div className="menu-category-type">
       <h1>Salads</h1>
       <span className="line"></span>

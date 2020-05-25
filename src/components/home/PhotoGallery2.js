@@ -3,11 +3,6 @@ import React from 'react';
 const PhotoGallery2 = () => (
   <div className="photo-gallery-2">
     <div className="photo-gallery-wrap">
-
-
-      <div className="overlay-text">Tapas</div>
-      <div className="overlay-text-2">Mezza</div>
-      <div className="overlay-text-3">Antipasti</div>
       <div className="photo-gallery-row">
         <article className="photo-1"></article>
         <article className="photo-2"></article>

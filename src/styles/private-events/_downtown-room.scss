@@ -1,40 +1,19 @@
 .DowntownRoom {
   width: 100%;
-  //display: inline-flex;
-.DowntownRoomWrap {
-  display: block;
-  padding: 15px;
-  text-align: left;
-  h1 {
-    @include extra-large;
-    color: $white;
-  }
-  h2 {
-    @include extra-large;
-        color: $white;
-        padding: 75px 200px 120px 200px;
-        margin: 0;
-  }
-}
-}
 
-/*Begin Responsive Style*/
+  .DowntownRoomWrap {
+    text-align: left;
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+      @include extra-large;
+      color: $white;
+    }
 
-
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .DowntownRoom {
-    .DowntownRoomWrap {
-      h1 {
-        padding: 10px;
-      }
-      h2 {
-        padding: 10px;
-        @include medium;
-        color: $white;
-      }
+    h2 {
+      @include medium;
+      color: $foreground;
+      margin: 0 0 2em 0;
+      font-family: $font-medium;
     }
   }
 }

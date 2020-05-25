@@ -1,27 +1,30 @@
 .Faq {
   text-align: left;
   padding: 6em 0;
-  background-color: $foreground;
 
   h2 {
     @include h1;
-    color: $background;
+    color: $foreground;
     font-size: 4em;
     margin-bottom: 1em;
   }
+
   h5 {
-    @include small-bold;
-    font-size: 1.15em;
+    @include h1;
+    font-size: 1.75em;
+    color: $foreground;
     margin: 0 0 2em 0;
   }
+
   p {
-    @include medium;
-    color: $dark;
-    margin: 0 0 2em 0;
+    color: $foreground;
+    font-family: $font-medium;
+    font-size: 1.5;
+    margin-bottom: 2em;
 
     a {
       text-decoration: none;
-      color: #3b5998;;
+      color: #963D1F;
     }
   }
 }

@@ -10,8 +10,10 @@ import PhotoGallery2 from "../components/home/PhotoGallery2";
 import PhotoGalleryThree from "../components/home/PhotoGalleryThree";
 import PrimaryCallout from "../components/home/PrimaryCallout";
 import Reviews from "../components/home/Reviews";
-import Carousel from "../components/home/FoodGallery";
 import Popup from "../components/popup";
+import FullMenu from "../components/menu/FullMenu";
+import Faq from '../components/about/faq';
+import Map from '../components/home/map';
 
 const IndexPage = (props) => (
   <Layout>
@@ -21,9 +23,12 @@ const IndexPage = (props) => (
     <PocoExperience />
     <Locations />
     <PrimaryCallout />
-    <Reviews />
+    <FullMenu />
     <PhotoGallery2 />
+    <Reviews />
+    <Faq />
     <PhotoGalleryThree />
+    <Map />
     <Popup />
   </Layout>
 )

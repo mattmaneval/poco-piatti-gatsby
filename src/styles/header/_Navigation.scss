@@ -9,7 +9,9 @@
   } // End Tablet & Below
 
   &-desktop-link {
-
+    svg {
+      height: 3em;
+    }
   }
 
   img {
@@ -39,7 +41,7 @@
         transition: all .4s;
 
         &:hover {
-          color: $callout;
+          color: #70561C;
         }
       }
 

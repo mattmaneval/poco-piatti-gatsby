@@ -1,7 +1,12 @@
 import React from 'react';
 
 const Seafood = () => (
-  <div className="menu-category">
+  <div
+    data-sal="zoom-out"
+    data-sal-delay="300"
+    data-sal-easing="ease"
+    className="menu-category"
+  >
     <div className="menu-category-type">
       <h1>Seafood</h1>
       <span className="line"></span>
