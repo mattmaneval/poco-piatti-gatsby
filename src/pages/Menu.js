@@ -3,7 +3,7 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import FullMenu from "../components/menu/FullMenu"
 import "../styles/_index.scss"
-import PrimaryCallout from "../components/home/PrimaryCallout";
+import PrimaryCallout from "../components/modules/PrimaryCallout";
 
 const Menu = () => (
   <Layout>

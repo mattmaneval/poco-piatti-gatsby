@@ -3,7 +3,7 @@ import React from 'react';
 const HomeHero = (props) => (
   <section class="home-hero">
   <div class="wrap">
-  <h1>The Poco Experience<br />TO-GO</h1>
+  <h1>The Poco Experience<br />Dine in or<br />TO-GO</h1>
   <br />
     <h6>
       <span>carryout & reservations</span>
