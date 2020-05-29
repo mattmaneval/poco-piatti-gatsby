@@ -6,6 +6,7 @@ import CovidModal from "../components/modules/CovidModal";
 import HomeHero from "../components/home/HomeHero";
 import PocoExperience from "../components/home/PocoExperience";
 import Locations from "../components/modules/Locations";
+import FoodGallery from "../components/home/FoodGallery";
 import PhotoGallery2 from "../components/home/PhotoGallery2";
 import PhotoGalleryThree from "../components/home/PhotoGalleryThree";
 import PrimaryCallout from "../components/modules/PrimaryCallout";
@@ -17,12 +18,13 @@ import Map from '../components/home/map';
 
 const IndexPage = (props) => (
   <Layout>
-    <SEO title="Home" keywords={[`Poco Piatti`, `Toledo`, `Ohio`, `Mediterranean`, `Restaurant`]} />
+    <SEO title="Home" keywords={[`Mediterranean`, `Restaurant`, `food`, `Toledo`, `Ohio`, `Poco Piatti`]} />
     <CovidModal />
     <HomeHero />
     <PocoExperience />
     <Locations />
     <PrimaryCallout />
+    <FoodGallery />
     <FullMenu />
     <PhotoGallery2 />
     <Reviews />

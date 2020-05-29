@@ -1,23 +1,37 @@
 import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-import bar from '../../images/bar.jpg'
-import DSC04717 from '../../images/DSC04717.jpg'
-import IMG_0175 from '../../images/IMG_0175.jpg'
-
-export default () => (
-  <div className="food-gallery wrap">
-    <Carousel centerMode={true} emulateTouch={true} dynamicHeight={true} showIndicators={false} showStatus={false} swipeable={true} showArrows={true} infiniteLoop={true} autoPlay={true}>
-        <div>
-          <img alt="" src={bar} />
-        </div>
-        <div>
-          <img alt="" src={DSC04717} />
-        </div>
-        <div>
-          <img alt="" src={IMG_0175} />
-        </div>
-    </Carousel>
+const PhotoGallery = () => (
+  <div className="FoodPhotoGallery">
+    <div className="FoodPhotoGalleryWrap">
+      <div className="FoodPhotoGalleryRow">
+        <article className="PortobelloCaps">
+          <h6>Stuffed Portobello Caps</h6>
+        </article>
+        <article className="PocoTips">
+        <h6>Italian Sausage and Ricotta Pizza</h6>
+        </article>
+      </div>
+      <div className="FoodPhotoGalleryRow2">
+        <article className="ChickenWraps">
+        <h6>Markouk Chicken Wraps</h6>
+        </article>
+        <article className="Hummus">
+          <h6>Hummus & Roasted Beet Salad</h6>
+        </article>
+        <article className="Arayes">
+        <h6>Ara-yes Halabi</h6>
+        </article>
+      </div>
+      <div className="FoodPhotoGalleryRow3">
+        <article className="Pizza">
+          <h6>Beef Poco Tips</h6>
+        </article>
+        <article className="Fatoosh">
+        <h6>Fatoosh</h6>
+        </article>
+      </div>
+    </div>
   </div>
 );
+
+export default PhotoGallery;

@@ -1,19 +1,112 @@
-.carousel{
-  .thumbs-wrapper {
-    display: none;
-  }
-  .slide {
-    background: none !important;
-
-    img {
-      padding: 1.5rem !important;
-      height: 45em !important;
-      width: auto !important;
+.FoodPhotoGallery {
+  background-color: #ffffff;
+  .FoodPhotoGalleryWrap {
+    article {
+      min-height: 700px;
+      text-align: left;
+      h6 {
+        @include photo-caption;
+      //  padding: 10px;
+      }
+    }
+    .FoodPhotoGalleryRow {
+      display: flex;
+      .PortobelloCaps {
+        width: calc(40% - 2.5px);
+        border-top: 5px solid #ffffff;
+        border-right: 2.5px solid #ffffff;
+        border-bottom: 2.5px solid #ffffff;
+        background-image: url("../images/DSC04717.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .PocoTips {
+        width: calc(60% + 2.5px);
+        border-top: 5px solid #ffffff;
+        border-bottom: 2.5px solid #ffffff;
+        border-left: 2.5px solid #ffffff;
+        background-image: url("../images/DSC04736.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    .FoodPhotoGalleryRow2 {
+      display: flex;
+      .ChickenWraps {
+        width: calc(30% - 2.5px);
+        border-top: 2.5px solid #ffffff;
+        border-right: 2.5px solid #ffffff;
+        border-bottom: 2.5px solid #ffffff;
+        border-left: 0;
+        background-image: url("../images/DSC04786.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .Hummus {
+        width: 40%;
+        border-top: 2.5px solid #ffffff;
+        border-right: 2.5px solid #ffffff;
+        border-bottom: 2.5px solid #ffffff;
+        border-left: 2.5px solid #ffffff;
+        background-image: url("../images/DSC04751.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .Arayes {
+        width: calc(30% + 2.5px);
+        border-top: 2.5px solid #ffffff;
+        border-right: 0;
+        border-bottom: 2.5px solid #ffffff;
+        border-left: 2.5px solid #ffffff;
+        background-image: url("../images/DSC04757.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    .FoodPhotoGalleryRow3 {
+      display: flex;
+      .Pizza {
+        width: calc(40% - 2.5px);
+        border-top: 2.5px solid #ffffff;
+        border-right: 2.5px solid #ffffff;
+        background-image: url("../images/DSC04727.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .Fatoosh {
+        width: calc(60% + 2.5px);
+        border-top: 2.5px solid #ffffff;
+        border-right: 0;
+        border-left: 2.5px solid #ffffff;
+        background-image: url("../images/DSC04768.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     }
   }
-
 }
 
-.food-gallery {
-  padding: 6em 0;
+
+/*Begin Responsive Style*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .FoodPhotoGallery {
+    .FoodPhotoGalleryWrap {
+      article {
+        //border: 2px solid #ffffff;
+        min-height: 225px;
+        max-height: 300px;
+      }
+    }
+  }
 }

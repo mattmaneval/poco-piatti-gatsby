@@ -1,10 +1,11 @@
 .Faq {
   text-align: left;
   padding: 6em 0;
+  background-color: $foreground;
 
   h2 {
     @include h1;
-    color: $foreground;
+    color: $background;
     font-size: 4em;
     margin-bottom: 1em;
   }
@@ -12,19 +13,19 @@
   h5 {
     @include h1;
     font-size: 1.75em;
-    color: $foreground;
+    color: $background;
     margin: 0 0 2em 0;
   }
 
   p {
-    color: $foreground;
+    color: $background;
     font-family: $font-medium;
     font-size: 1.5;
     margin-bottom: 2em;
 
     a {
       text-decoration: none;
-      color: #1B1811;
+      color: $callout;
     }
   }
 }
