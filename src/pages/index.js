@@ -13,8 +13,8 @@ import PrimaryCallout from "../components/modules/PrimaryCallout";
 import Reviews from "../components/home/Reviews";
 import Popup from "../components/modules/popup";
 import FullMenu from "../components/menu/FullMenu";
-import Faq from '../components/about/faq';
-import Map from '../components/home/map';
+import Faq from '../components/about/Faq';
+import Map from '../components/home/Map';
 
 const IndexPage = (props) => (
   <Layout>
