@@ -47,7 +47,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/PocoPiattiRedLogo.jpg`,
+        // icon: `src/images/PocoPiattiRedLogo.jpg`,
         include_favicon: false, // Include favicon // This path is relative to the root of the site.
       },
     },

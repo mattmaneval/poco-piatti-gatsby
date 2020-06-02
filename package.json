@@ -5,7 +5,8 @@
   "version": "0.1.0",
   "author": "Matt Maneval",
   "dependencies": {
-    "gatsby": "^2.18.4",
+    "acorn": "^6.0.0",
+    "gatsby": "^2.22.12",
     "gatsby-background-image": "^0.2.74",
     "gatsby-cli": "^2.12.15",
     "gatsby-image": "^2.2.29",
@@ -24,12 +25,11 @@
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-flickity": "^1.0.8",
-    "react-flickity-component": "^3.5.0",
     "react-headroom": "^3.0.0",
     "react-helmet": "^5.2.1",
-    "react-responsive-carousel": "^3.2.7",
-    "sharp": "^0.23.1"
+    "react-refresh": "^0.8.3",
+    "sharp": "^0.23.1",
+    "typescript": "^2.8.0-dev.20180227"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
