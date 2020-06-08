@@ -12,21 +12,21 @@ const Catering = () => (
       <h1>Packages</h1>
       <span className="Line"></span>
       <div className="Outline">
-        <h5>Package 1 &mdash; 10 per person</h5>
+        <h5>Poco Wraps &mdash; 10 per person</h5>
         <p>Hummous, Markouk Chicken Wraps, Ara-yes Halabi.</p>
-        <h5>Package 2 &mdash; 14 per person</h5>
-        <p>Hummous, Fatoosh, Grape Leaves, Shish Tawook.</p>
-        <h5>Package 3 &mdash; 19 per person</h5>
-        <p>Hummous, Fatoosh, Beef Tenderloin Shish Kabob, Shish Tawook.</p>
-        <h5>Package 4 &mdash; 23 per person</h5>
-        <p>Hummous, Fatoosh, Grape Leaves, Ara-yes Halabi, Beef Shish Kabob, Shish Tawook.</p>
-        <h5>Package 5 &mdash; 37 per person</h5>
+        <h5>Poco Signature &mdash; 14 per person</h5>
+        <p>Hummous, Fatoosh, Grape Leaves, Shish Tawook, Poco Rice.</p>
+        <h5>Poco Kabobs &mdash; 19 per person</h5>
+        <p>Hummous, Fatoosh, Beef Tenderloin Shish Kabob, Shish Tawook, Poco Rice.</p>
+        <h5>Poco Mix &mdash; 23 per person</h5>
+        <p>Hummous, Fatoosh, Grape Leaves, Ara-yes Halabi, Beef Shish Kabob, Shish Tawook, Poco Rice.</p>
+        <h5>Poco Mezza &mdash; 37 per person</h5>
         <p>Hummous, Feta Dip, Fatoosh, Tabouli, Grape Leaves, Ara-yes, Chicken Wraps, Beef Tenderloin Shish Kabob,
-          Shish Kafta, Chicken Shish Kabob.</p>
-        <h5>Package 6 &mdash; 42 per person</h5>
+          Shish Kafta, Chicken Shish Kabob, Poco Rice.</p>
+        <h5>Poco Experience &mdash; 42 per person</h5>
         <p>Hummous, Feta Dip, Fatoosh, Grape Leaves, Brussel Sprouts,
           Cauliflower, Sauteed Mushrooms, Lamb Chops, Beef Tenderloin
-          Shish Kabob, Chicken Shish Kabob.</p>
+          Shish Kabob, Chicken Shish Kabob, Poco Rice.</p>
         <h5>Deluxe Package &mdash; 50 per person</h5>
         <p>Hummous, Feta Dip, Vegetable Tray, Fatoosh, Greek Salad,
           Grape Leaves, Brussel Sprouts, Cauliflower, Sauteed Mushrooms,
@@ -36,10 +36,24 @@ const Catering = () => (
           Cauliflower, Mujadara, Sauteed Mushrooms, Veggie Shish Kabob.</p>
         <h5>Gluten-Free Package &mdash; 16 per person</h5>
         <p>Hummous, Gluten-Free Bread, Greek Salad, Grape Leaves, Chicken Shish Kabob.</p>
+        <h5>Slider Package &mdash; 16 per person</h5>
+        <p>Grilled Lamb Sliders, Chicken Parmesan Sliders, Hummus, Fattoush, Fresh Pita Bread.</p>
         <p>* Packages are intended to be guides. Any and all items may be substituted and
         are sugject to price changes. All packages are served with pita bread and rice.
         All regular menu items are available for pricing and other packages are available
         upon request.</p>
+      </div>
+      <h1>Bar Packages</h1>
+      <span className="Line"></span>
+      <div className="Outline">
+        <h5>Poco Experience  &mdash; 2 Hours/45 per person. 3 Hours/55 per person</h5>
+        <p>Top shelf liquor, 3 draft beer options, 2 domestic bottle beer options, sangria bar.</p>
+        <h5>Poco Mediterranean  &mdash; 2 Hours/30 per person. 3 Hours/40 per person</h5>
+        <p>Premium liquor, 3 draft beer options, 2 import bottle beer options, sangria bar.</p>
+        <h5>Sangria Bar  &mdash; 2 Hours/15 per person. 3 Hours/25 per person</h5>
+        <p>White sangria, red sangria, mixed sangria.</p>
+        <h5>Poco Brew  &mdash; 2 Hours/45 per person. 3 Hours/55 per person</h5>
+        <p>3 draft beer options, 2 import bottle beer options, 2 domestic beer options.</p>
       </div>
     </div>
 
@@ -47,38 +61,113 @@ const Catering = () => (
       <h1>A La Carte</h1>
       <span className="Line"></span>
       <div className="Outline">
-        <h5>Vegetable Tray &mdash; 30</h5>
-        <h5>Hummous &mdash; 35</h5>
-        <h5>Roasted Garlic Feta Dip &mdash; 60</h5>
-        <h5>Lebanee &mdash; 35</h5>
-        <h5>Fatoosh, Greek Salad, Tabouli &mdash; 45</h5>
-        <h5>Grape Leaves &mdash; 30</h5>
-        <p>40 pieces.</p>
-        <h5>Mujadra &mdash; 45</h5>
-        <h5>Sauteed Mushrooms &mdash; 50</h5>
-        <h5>Brussel Sprouts &mdash; 50</h5>
-        <h5>Roasted Cauliflower &mdash; 50</h5>
-        <h5>Lubia Bi Zeit &mdash; 50</h5>
-        <h5>Markouk Chicken Wraps &mdash; 50</h5>
-        <h5>Ara-yes Halabi &mdash; 50</h5>
-        <h5>Moussaka &mdash; 75</h5>
-        <h5>Kibbe Nayee (raw) &mdash; 90</h5>
-        <h5>Shrimp Asti-Spumante &mdash; 130</h5>
-        <p>60 pieces.</p>
-        <h5>Thai Shrimp 'Lasagna' &mdash; 130</h5>
-        <p>60 pieces</p>
-        <h5>Shrimp Saganaki &mdash; 130</h5>
-        <p>60 pieces.</p>
-        <h5>Grilled Baby Lamb Chops &mdash; 140</h5>
-        <p>40 pieces.</p>
-        <h5>Beef Tenderloin Shish Kabob &mdash; 175</h5>
-        <h5>Shish Tawook &mdash; 125 per half-pan</h5>
-        <h5>Whole Beef Tenderloin Filets &mdash; 200</h5>
-        <h5>Dessert Platter &mdash; 75</h5>
-        <p>Baklava and Brownies</p>
-        <p>* A La Carte items are for 20 - 25 people. When adding two a la carte
-        items to a package a pitcher of Poco Piatti's famous Sangria will be
-        included. </p>
+      <h5>Hummus</h5>
+      <p>10 - 15 people &mdash; 20</p>
+      <p>20 - 25 people &mdash; 40</p>
+      <p>45 - 50 people &mdash; 80</p>
+      <h5>Feta Dip</h5>
+      <p>10 - 15 people &mdash; 30</p>
+      <p>20 - 25 people &mdash; 60</p>
+      <p>45 - 50 people &mdash; 120</p>
+      <h5>Fatoosh Salad</h5>
+      <p>10 - 15 people &mdash; 25</p>
+      <p>20 - 25 people &mdash; 45</p>
+      <p>45 - 50 people &mdash; 85</p>
+      <h5>Greek Salad</h5>
+      <p>10 - 15 people &mdash; 25</p>
+      <p>20 - 25 people &mdash; 45</p>
+      <p>45 - 50 people &mdash; 85</p>
+      <h5>Poco House Salad</h5>
+      <p>10 - 15 people &mdash; 25</p>
+      <p>20 - 25 people &mdash; 45</p>
+      <p>45 - 50 people &mdash; 85</p>
+      <h5>Artichoke Salad</h5>
+      <p>10 - 15 people &mdash; 30</p>
+      <p>20 - 25 people &mdash; 50</p>
+      <p>45 - 50 people &mdash; 90</p>
+      <h5>Tabouli</h5>
+      <p>10 - 15 people &mdash; 30</p>
+      <p>20 - 25 people &mdash; 50</p>
+      <p>45 - 50 people &mdash; 90</p>
+      <h5>Sauteed Mushrooms</h5>
+      <p>10 - 15 people &mdash; 30</p>
+      <p>20 - 25 people &mdash; 50</p>
+      <p>45 - 50 people &mdash; 90</p>
+      <h5>Brussel Sprouts</h5>
+      <p>10 - 15 people &mdash; 35</p>
+      <p>20 - 25 people &mdash; 55</p>
+      <p>45 - 50 people &mdash; 95</p>
+      <h5>Roasted Cauliflower</h5>
+      <p>10 - 15 people &mdash; 35</p>
+      <p>20 - 25 people &mdash; 55</p>
+      <p>45 - 50 people &mdash; 95</p>
+      <h5>Mujadara</h5>
+      <p>10 - 15 people &mdash; 25</p>
+      <p>20 - 25 people &mdash; 45</p>
+      <p>45 - 50 people &mdash; 85</p>
+      <h5>Poco Rice</h5>
+      <p>10 - 15 people &mdash; 25</p>
+      <p>20 - 25 people &mdash; 45</p>
+      <p>45 - 50 people &mdash; 85</p>
+      <h5>Greek Potatoes</h5>
+      <p>10 - 15 people &mdash; 25</p>
+      <p>20 - 25 people &mdash; 45</p>
+      <p>45 - 50 people &mdash; 85</p>
+      <h5>Shish Tawook</h5>
+        <p>10 skewers &mdash; 70</p>
+        <p>20 skewers &mdash; 140</p>
+        <p>30 skewers &mdash; 200</p>
+      <h5>Beef Tenderloin Kabob</h5>
+        <p>10 skewers &mdash; 100</p>
+        <p>20 skewers &mdash; 200</p>
+        <p>30 skewers &mdash; 300</p>
+      <h5>Shish Kafta</h5>
+        <p>10 skewers &mdash; 100</p>
+        <p>20 skewers &mdash; 200</p>
+        <p>30 skewers &mdash; 300</p>
+      <h5>Veggie Kabob</h5>
+        <p>10 skewers &mdash; 100</p>
+        <p>20 skewers &mdash; 200</p>
+        <p>30 skewers &mdash; 300</p>
+      <h5>Shrimp Asti-Spumante</h5>
+        <p>30 pieces &mdash; 65</p>
+        <p>80 pieces &mdash; 170</p>
+        <p>140 pieces &mdash; 300</p>
+      <h5>Thai Shrimp Lasagna</h5>
+        <p>30 pieces &mdash; 65</p>
+        <p>80 pieces &mdash; 170</p>
+        <p>140 pieces &mdash; 300</p>
+      <h5>Shrimp Saganaki</h5>
+        <p>30 pieces &mdash; 65</p>
+        <p>80 pieces &mdash; 170</p>
+        <p>140 pieces &mdash; 300</p>
+      <h5>Lamb Chops</h5>
+        <p>20 &mdash; 70</p>
+        <p>30 &mdash; 105</p>
+        <p>40 &mdash; 140</p>
+      <h5>Chicken Wraps</h5>
+        <p>10 wraps &mdash; 30</p>
+        <p>15 wraps &mdash; 45</p>
+        <p>30 wraps &mdash; 90</p>
+      <h5>Chicken Sliders</h5>
+        <p>10 &mdash; 30</p>
+        <p>15 &mdash; 45</p>
+        <p>30 &mdash; 90</p>
+      <h5>Lamb Sliders</h5>
+        <p>10 &mdash; 30</p>
+        <p>15 &mdash; 45</p>
+        <p>30 &mdash; 90</p>
+      <h5>Grape Leaves</h5>
+        <p>40 &mdash; 30</p>
+        <p>90 &mdash; 90</p>
+        <p>150 &mdash; 150</p>
+      <h5>Poco Filets</h5>
+        <p>20 people &mdash; 200</p>
+
+      <h5>Dessert Platter</h5>
+        <p>10 people &mdash; 30</p>
+        <p>20 people &mdash; 20</p>
+        <p>30 people &mdash; 30</p>
       </div>
     </div>
       </div>

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Poco Piatti`,
-    description: `Perrysburg | Sylvania | Toledo`,
+    description: `Mediterranean Tapas Bar`,
     author: `Matt Maneval`,
   },
   plugins: [
