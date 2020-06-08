@@ -7,7 +7,7 @@ const Catering = () => (
   <Layout>
     <SEO title="Catering" />
     <div className="Catering">
-      <div className="CateringWrap">
+      <div className="CateringWrap mini-wrap">
       <div className="column-1">
       <h1>Packages</h1>
       <span className="Line"></span>

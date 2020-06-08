@@ -20,3 +20,7 @@
 .inner-wrap {
   @include wrap($wrap, 68em);
 }
+
+.mini-wrap {
+  @include wrap($wrap, 48em);
+}

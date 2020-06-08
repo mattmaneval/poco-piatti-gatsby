@@ -4,11 +4,15 @@
 
   .CateringWrap {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     //padding-top: 110px;
     text-align: center;
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+          flex-wrap: wrap;
+    } // End Tablet & Below
       .column-1 {
         padding: 0 10px 0 10px;
       }
@@ -28,7 +32,8 @@
       padding: 0;
       //border: 1px solid rgba(219, 0, 0, 0.52);
       text-align: left;
-      max-width: 300px;
+      max-width: 500px;
+      
       h5 {
         @include small-bold;
         margin: 0 0 5px 0;
@@ -36,7 +41,7 @@
       }
       p {
         @include small;
-        max-width: 250px;
+        //max-width: 250px;
         margin: 0 0 5px 0;
         padding: 0 0 0 25px;
       }
