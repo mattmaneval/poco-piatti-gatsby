@@ -7,60 +7,86 @@ const Catering = () => (
   <Layout>
     <SEO title="Catering" />
     <div className="Catering">
-      <div className="CateringWrap mini-wrap">
+      <div className="wrap">
       <div className="column-1">
       <h1>Packages</h1>
-      <span className="Line"></span>
-      <div className="Outline">
-        <h5>Poco Wraps &mdash; 10 per person</h5>
-        <p>Hummous, Markouk Chicken Wraps, Ara-yes Halabi.</p>
-        <h5>Poco Signature &mdash; 14 per person</h5>
-        <p>Hummous, Fatoosh, Grape Leaves, Shish Tawook, Poco Rice.</p>
-        <h5>Poco Kabobs &mdash; 19 per person</h5>
-        <p>Hummous, Fatoosh, Beef Tenderloin Shish Kabob, Shish Tawook, Poco Rice.</p>
-        <h5>Poco Mix &mdash; 23 per person</h5>
-        <p>Hummous, Fatoosh, Grape Leaves, Ara-yes Halabi, Beef Shish Kabob, Shish Tawook, Poco Rice.</p>
-        <h5>Poco Mezza &mdash; 37 per person</h5>
-        <p>Hummous, Feta Dip, Fatoosh, Tabouli, Grape Leaves, Ara-yes, Chicken Wraps, Beef Tenderloin Shish Kabob,
+        <div>
+          <h5>Poco Wraps &mdash; 10 per person</h5>
+          <p>Hummous, Markouk Chicken Wraps, Ara-yes Halabi.</p>
+        </div>
+        <div>
+          <h5>Poco Signature &mdash; 14 per person</h5>
+          <p>Hummous, Fatoosh, Grape Leaves, Shish Tawook, Poco Rice.</p>
+        </div>
+        <div>
+          <h5>Poco Kabobs &mdash; 19 per person</h5>
+          <p>Hummous, Fatoosh, Beef Tenderloin Shish Kabob, Shish Tawook, Poco Rice.</p>
+        </div>
+        <div>
+          <h5>Poco Mix &mdash; 23 per person</h5>
+          <p>Hummous, Fatoosh, Grape Leaves, Ara-yes Halabi, Beef Shish Kabob, Shish Tawook, Poco Rice.</p>
+        </div>
+        <div>
+          <h5>Poco Mezza &mdash; 37 per person</h5>
+          <p>Hummous, Feta Dip, Fatoosh, Tabouli, Grape Leaves, Ara-yes, Chicken Wraps, Beef Tenderloin Shish Kabob,
           Shish Kafta, Chicken Shish Kabob, Poco Rice.</p>
-        <h5>Poco Experience &mdash; 42 per person</h5>
-        <p>Hummous, Feta Dip, Fatoosh, Grape Leaves, Brussel Sprouts,
+        </div>
+        <div>
+          <h5>Poco Experience &mdash; 42 per person</h5>
+          <p>Hummous, Feta Dip, Fatoosh, Grape Leaves, Brussel Sprouts,
           Cauliflower, Sauteed Mushrooms, Lamb Chops, Beef Tenderloin
           Shish Kabob, Chicken Shish Kabob, Poco Rice.</p>
-        <h5>Deluxe Package &mdash; 50 per person</h5>
-        <p>Hummous, Feta Dip, Vegetable Tray, Fatoosh, Greek Salad,
+        </div>
+        <div>
+          <h5>Deluxe Package &mdash; 50 per person</h5>
+          <p>Hummous, Feta Dip, Vegetable Tray, Fatoosh, Greek Salad,
           Grape Leaves, Brussel Sprouts, Cauliflower, Sauteed Mushrooms,
           Greek Potatoes, Lamb Chops, Whole Beef Tenderloin Filet.</p>
-        <h5>Vegetarian Package &mdash; 25 per person</h5>
-        <p>Hummous, Fatoosh, Veggie Grape Leaves, Brussel Sprouts,
+        </div>
+        <div>
+          <h5>Vegetarian Package &mdash; 25 per person</h5>
+          <p>Hummous, Fatoosh, Veggie Grape Leaves, Brussel Sprouts,
           Cauliflower, Mujadara, Sauteed Mushrooms, Veggie Shish Kabob.</p>
-        <h5>Gluten-Free Package &mdash; 16 per person</h5>
-        <p>Hummous, Gluten-Free Bread, Greek Salad, Grape Leaves, Chicken Shish Kabob.</p>
-        <h5>Slider Package &mdash; 16 per person</h5>
-        <p>Grilled Lamb Sliders, Chicken Parmesan Sliders, Hummus, Fattoush, Fresh Pita Bread.</p>
-        <p>* Packages are intended to be guides. Any and all items may be substituted and
-        are sugject to price changes. All packages are served with pita bread and rice.
-        All regular menu items are available for pricing and other packages are available
-        upon request.</p>
-      </div>
-      <h1>Bar Packages</h1>
-      <span className="Line"></span>
-      <div className="Outline">
+        </div>
+        <div>
+          <h5>Gluten-Free Package &mdash; 16 per person</h5>
+          <p>Hummous, Gluten-Free Bread, Greek Salad, Grape Leaves, Chicken Shish Kabob.</p>
+        </div>
+        <div>
+          <h5>Slider Package &mdash; 16 per person</h5>
+          <p>Grilled Lamb Sliders, Chicken Parmesan Sliders, Hummus, Fattoush, Fresh Pita Bread.</p>
+        </div>
+        <div>
+          <p>* Packages are intended to be guides. Any and all items may be substituted and
+          are sugject to price changes. All packages are served with pita bread and rice.
+          All regular menu items are available for pricing and other packages are available
+          upon request.</p>
+        </div>
+    </div>
+
+    <div class="column-2">
+    <h1>Bar Packages</h1>
+      <div>
         <h5>Poco Experience  &mdash; 2 Hours/45 per person. 3 Hours/55 per person</h5>
         <p>Top shelf liquor, 3 draft beer options, 2 domestic bottle beer options, sangria bar.</p>
+      </div>
+      <div>
         <h5>Poco Mediterranean  &mdash; 2 Hours/30 per person. 3 Hours/40 per person</h5>
         <p>Premium liquor, 3 draft beer options, 2 import bottle beer options, sangria bar.</p>
+      </div>
+      <div>
         <h5>Sangria Bar  &mdash; 2 Hours/15 per person. 3 Hours/25 per person</h5>
         <p>White sangria, red sangria, mixed sangria.</p>
+      </div>
+      <div>
         <h5>Poco Brew  &mdash; 2 Hours/45 per person. 3 Hours/55 per person</h5>
         <p>3 draft beer options, 2 import bottle beer options, 2 domestic beer options.</p>
       </div>
     </div>
 
-      <div className="column-2">
+      <div className="column-3">
       <h1>A La Carte</h1>
-      <span className="Line"></span>
-      <div className="Outline">
+
       <h5>Hummus</h5>
       <p>10 - 15 people &mdash; 20</p>
       <p>20 - 25 people &mdash; 40</p>
@@ -168,11 +194,11 @@ const Catering = () => (
         <p>10 people &mdash; 30</p>
         <p>20 people &mdash; 20</p>
         <p>30 people &mdash; 30</p>
-      </div>
+
     </div>
       </div>
     </div>
   </Layout>
 )
 
-export default Catering
+export default Catering;
