@@ -1,60 +1,91 @@
 .Catering {
-  margin: 0;
-  padding: 0;
 
-  .CateringWrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    //padding-top: 110px;
-    text-align: center;
-      .column-1 {
-        padding: 0 10px 0 10px;
-      }
-      .column-2 {
-        padding: 0 10px 0 10px;
-      }
-      h1 {
-        @include large;
-        margin: 10px 0 0 0;
-        padding: 20px;
-      }
-    span {
-      @include gray-span;
+  .column-1 {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 3em;
+    -moz-column-gap: 3em;
+    column-gap: 3em;
+    padding: 2em 0;
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      column-count: 3;
+    } // End Tablet & Below
+
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      column-count: 1;
+    } // End Phone & Below
+  }
+
+  .column-2 {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 3em;
+    -moz-column-gap: 3em;
+    column-gap: 3em;
+    padding: 2em 0;
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      column-count: 3;
+    } // End Tablet & Below
+
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      column-count: 1;
+    } // End Phone & Below
+
+    p {
+      // margin: 0;
+      // padding: 0;
+
     }
-    .Outline {
+  }
+  .column-3 {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 3em;
+    -moz-column-gap: 3em;
+    column-gap: 3em;
+    padding: 2em 0;
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      column-count: 3;
+    } // End Tablet & Below
+
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      column-count: 1;
+    } // End Phone & Below
+
+    p {
       margin: 0;
       padding: 0;
-      //border: 1px solid rgba(219, 0, 0, 0.52);
-      text-align: left;
-      max-width: 300px;
-      h5 {
-        @include small-bold;
-        margin: 0 0 5px 0;
-        padding: 25px 0 0 25px;
-      }
-      p {
-        @include small;
-        max-width: 250px;
-        margin: 0 0 5px 0;
-        padding: 0 0 0 25px;
-      }
+
     }
   }
-}
 
-/*Begin Responsive Style*/
+  h1 {
+    @include large;
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .Catering {
-    .CateringWrap {
-      //display: block;
-
-      //padding-top: 50px;
-    }
   }
+
+
+  h5 {
+    @include small-bold;
+    margin-bottom: 1rem;
+
+  }
+
+  p {
+    @include small;
+
+  }
+
 }
