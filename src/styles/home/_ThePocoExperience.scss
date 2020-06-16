@@ -27,6 +27,11 @@
     height: auto;
   } // End Tablet & Below
 
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    padding: 2em 0;
+  } // End Phone & Below
+
   //
   // // Secondary Mobile - Phone & Below
   // @media screen and (max-width: $phone) {
@@ -127,7 +132,7 @@
 
     // Secondary Mobile - Phone & Below
     @media screen and (max-width: $phone) {
-      font-size: 3.25em;
+      font-size: 2.25em;
     } // End Phone & Below
   }
   h6 {

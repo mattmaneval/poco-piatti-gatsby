@@ -1,0 +1,15 @@
+.delivery-banner {
+  padding: 2em 0;
+  text-align: center;
+  background-color: #171717;
+
+  div {
+    font-family: $adobe-font;
+    color: #fff;
+  }
+
+  &-text {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+  }
+}

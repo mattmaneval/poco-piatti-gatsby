@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import Locations from "../components/home/Locations"
 import "../styles/_index.scss"
 import CovidModal from "../components/CovidModal"
+import DeliveryBanner from "../components/home/DeliveryBanner"
 import Review from "../components/home/Review"
 import PhotoGallery from "../components/home/PhotoGallery"
 import PhotoGalleryTwo from "../components/home/PhotoGalleryTwo"
@@ -19,6 +20,7 @@ const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" keywords={[`Poco Piatti`, `Toledo`, `Ohio`, `Mediterranean`, `Restaurant`]} />
     <CovidModal />
+    <DeliveryBanner />
     <ThePocoExperience />
     <Togo />
     <Locations />
