@@ -79,7 +79,7 @@ const Catering = () => (
         <p>White sangria, red sangria, mixed sangria.</p>
       </div>
       <div>
-        <h5>Poco Brew  &mdash; 2 Hours/45 per person. 3 Hours/55 per person</h5>
+        <h5>Poco Brew  &mdash; 2 Hours/15 per person. 3 Hours/25 per person</h5>
         <p>3 draft beer options, 2 import bottle beer options, 2 domestic beer options.</p>
       </div>
     </div>
