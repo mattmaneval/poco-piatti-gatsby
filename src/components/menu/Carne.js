@@ -23,7 +23,7 @@ const Carne = () => (
       <p>Stuffed with ground beef, lamb and rice. Cooked with lemon juice and mint.</p>
       <h5>Chicken Parmesan Sliders<br /> &mdash; Sm 9 Lg 15</h5>
       <p>Spicy chicken meatballs made with homemade seasoned bread crumbs and served atop our brioche buns.</p>
-      <h5>Lamb Sliders &mdash; Sm 10 Lg 17</h5>
+      <h5>Lamb Sliders &mdash; Sm 10 Lg 18</h5>
       <p>Grilled lamb sliders with a caramelized onion cream cheese and fresh arugula on brioche.</p>
       <h5>Chorizo and Beans &mdash; 8 </h5>
       <p>Chorizo with white beans in a spicy tomato sauce.</p>

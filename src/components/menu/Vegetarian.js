@@ -5,9 +5,9 @@ const Vegetarian = () => (
     <h1>Vegetarian</h1>
     <span className="Line"></span>
       <div className="Outline">
-        <h5>Riad's Hummuos B Tahini<br />&mdash; Sm 5 Lg 8</h5>
+        <h5>Riad's Hummuos B Tahini<br />&mdash; Sm 5 Lg 9</h5>
         <p>Served with Pita.</p>
-        <h5>Roasted Garlic Feta Dip &mdash; Sm 6 Lg 9</h5>
+        <h5>Roasted Garlic Feta Dip &mdash; Sm 6 Lg 10</h5>
         <p>Served warm with diced tomato.</p>
         <h5>Lebanee &mdash; Sm 5 Lg 8</h5>
         <p>Yogurt with cucumber, mint and drizzled with olive oil.</p>
