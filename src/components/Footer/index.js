@@ -2,8 +2,8 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { Link } from "gatsby";
 // import Link from 'next/link';
-// import Facebook from './icons/Facebook';
-// import Instagram from './icons/Instagram';
+import Facebook from '../Facebook/index';
+import Instagram from '../Instagram/index';
 import mixins from '../../../styles/mixins';
 import theme from '../../../styles/theme';
 import media from '../../../styles/media';
@@ -127,7 +127,8 @@ const Footer = () => (
         <Link to="/Contact/">Contact</Link>
       </nav>
       <div className="footer-socials">
-
+        <Facebook />
+        <Instagram />
       </div>
 
     </div>
