@@ -21,10 +21,10 @@ const theme = {
   // #FFF8EA
   // Color
   color: {
-    background: '#F0EDE5',
+    background: '#ffffff',
     backgroundAlt: '#FFF8EA',
     backgroundTert: '#748D63',
-    foreground: '#B29353',
+    foreground: '#171717',
     callout: '#C2243E',
     foregroundDim: '#8f9296',
   },

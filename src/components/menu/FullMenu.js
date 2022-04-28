@@ -8,7 +8,7 @@ import Salads from "./Salads"
 import Pizza from "./Pizza"
 
 const FullMenu = () => (
-    <div className="full-menu">
+    <section className="full-menu">
       <div className="column-1">
         <Seafood />
         <BigPlates />
@@ -31,7 +31,7 @@ const FullMenu = () => (
         <Salads />
         <Accompaniments />
       </div>
-    </div>
+    </section>
 );
 
 export default FullMenu;

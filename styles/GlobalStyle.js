@@ -99,10 +99,10 @@ const GlobalStyle = createGlobalStyle`
     ${mixins.animate};
     font-family: ${fonts.heading};
     color: ${color.foregroundDim};
-    padding: ${space.halfSpace};
-    font-size: 1em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    // padding: ${space.halfSpace};
+    // font-size: 1em;
+    // letter-spacing: 0.1em;
+    // text-transform: uppercase;
 
     @media ${media.secondary} {
       // font-size: 2.25em;
@@ -139,10 +139,12 @@ const GlobalStyle = createGlobalStyle`
     display: none;
   }
 
-  .photo-caption {
-    margin: 0.5em;
-    color: ${color.background};
-    text-transform: uppercase;
+  .no-padding-top {
+    padding-top: 0;
+  }
+
+  .no-padding-bottom {
+    padding-bottom: 0;
   }
 `;
 

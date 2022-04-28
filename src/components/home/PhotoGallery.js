@@ -1,8 +1,8 @@
 import React from 'react';
 
 const PhotoGallery = () => (
-  <div className="FoodPhotoGallery">
-    <div className="FoodPhotoGalleryWrap">
+  <section className="FoodPhotoGallery">
+    <div className="FoodPhotoGalleryWrap wrap">
       <div className="FoodPhotoGalleryRow">
         <article className="PortobelloCaps">
           <h6>Stuffed Portobello Caps</h6>
@@ -31,7 +31,7 @@ const PhotoGallery = () => (
         </article>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default PhotoGallery;

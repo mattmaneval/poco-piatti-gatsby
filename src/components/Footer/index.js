@@ -22,7 +22,7 @@ const footerLink = {
 
 const FooterStyles = styled.footer`
   ${mixins.section};
-  /* background-color: ${color.backgroundAlt}; */
+  background-color: ${color.foreground};
 
   .wrap {
     display: flex;
@@ -32,12 +32,16 @@ const FooterStyles = styled.footer`
     }
   }
 
+  h3 {
+    color: ${color.background};
+  }
+
   .footer-contact {
     width: 24em;
 
     a {
       ${footerLink.hover};
-      color: ${color.foreground};
+      color: ${color.background};
       font-family: ${fonts.font};
       line-height: 140%;
       font-size: 1.25em;
@@ -64,7 +68,7 @@ const FooterStyles = styled.footer`
       ${footerLink.hover};
       display: block;
       font-family: ${fonts.heading};
-      color: ${color.foreground};
+      color: ${color.background};
       padding-bottom: 0.65rem;
       font-size: 0.95em;
       line-height: 160%;

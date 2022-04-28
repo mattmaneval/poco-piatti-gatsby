@@ -10,7 +10,7 @@ import PhotoGallery from "../components/home/PhotoGallery"
 import PhotoGalleryTwo from "../components/home/PhotoGalleryTwo"
 import PhotoGalleryThree from "../components/home/PhotoGalleryThree"
 import ThePocoExperience from "../components/home/ThePocoExperience"
-import Map from "../components/home/Map"
+import GoogleMap from "../components/GoogleMap/index"
 import Faq from "../components/about/Faq"
 import FullMenu from "../components/menu/FullMenu"
 import Popup from "../components/popup"
@@ -25,7 +25,7 @@ const IndexPage = (props) => (
     <ThePocoExperience />
     <Togo />
     <Locations />
-    <Map />
+    <GoogleMap />
     <PhotoGalleryTwo />
     <Review />
     <PhotoGallery />
