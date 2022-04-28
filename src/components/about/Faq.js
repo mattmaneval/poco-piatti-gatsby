@@ -11,10 +11,10 @@ const Faq = () => (
           <p>We have three locations: Levis Commons in Perrysburg, Central Avenue in Sylvania, and Downtown Toledo on
             Huron near Adams.</p>
         <h5>Reservations and Carryout?</h5>
-          <p>For reservations at Perrysburg location call: <a href="tel:419-931-0281">419-931-0281</a>
-          For reservations at Sylvania location call: <a href="tel:419-931-0281">419-931-0281</a>
-          For reservations at Downtown location call: <a href="tel:419-931-0281">419-931-0281</a>
-          Automatic gratuity may be applied to groups of 5 or more.</p>
+          <p>For reservations and carryout orders call <a href="tel:419-931-0281">419-931-0281</a> - Perrysburg
+            ext #1, Sylvania ext #2, Downtown ext #3. Or order online for easy online ordering.
+            When visiting us in house, automatic gratuity may be applied to groups of 5 or more.
+          </p>
         <h5>Bar Options?</h5>
           <p>We serve beer, wine, cocktails, and our famous sangria!</p>
         <h5>Kids Menu?</h5>
