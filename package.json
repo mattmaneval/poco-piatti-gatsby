@@ -5,7 +5,8 @@
   "version": "0.1.0",
   "author": "Matt Maneval",
   "dependencies": {
-    "gatsby": "^2.18.4",
+    "babel-plugin-styled-components": "^2.0.7",
+    "gatsby": "^4.0.0",
     "gatsby-background-image": "^0.2.74",
     "gatsby-cli": "^2.12.15",
     "gatsby-image": "^2.2.29",
@@ -16,6 +17,7 @@
     "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-sass": "^2.1.20",
     "gatsby-plugin-sharp": "^2.2.32",
+    "gatsby-plugin-styled-components": "^5.13.0",
     "gatsby-source-filesystem": "^2.1.33",
     "gatsby-transformer-sharp": "^2.2.23",
     "node-sass": "^4.12.0",
@@ -24,7 +26,8 @@
     "react-dom": "^16.10.2",
     "react-headroom": "^3.0.0",
     "react-helmet": "^5.2.1",
-    "sharp": "^0.23.1"
+    "sharp": "^0.23.1",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
