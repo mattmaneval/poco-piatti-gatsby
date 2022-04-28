@@ -37,7 +37,10 @@ const Locations = () => (
           <p>Toledo, Ohio</p>
         </div>
         <div class="hours">
-          <p>Open for private events.</p>
+          <p>Mon, lunch</p>
+          <p>Tues - Fri, 11 am - Close</p>
+          <p>Sat, 4 pm - Close</p>
+          <p>Sun, Closed</p>
         </div>
       </div>
     </div>

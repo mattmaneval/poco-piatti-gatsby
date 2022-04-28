@@ -6,7 +6,7 @@ const BigPlates = () => (
     <span className="Line"></span>
     <div className="Outline">
       <h5>Poco Piatti Kabobs</h5>
-      <p>2 for 15, 3 for 21, 4 for 27</p>
+      <p>2 for 16, 3 for 23, 4 for 30</p>
       <h5>Beef Tenderloin Shish Kabobs</h5>
       <p>Beef tenderloin filet butchered in house and skewered with peppers, mushrooms, tomato and onion.</p>
       <h5>Shish Tawook</h5>
@@ -15,13 +15,13 @@ const BigPlates = () => (
       <p>Ground lamb and beef mixed with chopped parsley and onion. Charbroiled.</p>
       <h5>Vegetable Kabob</h5>
       <p>Seasonl Vegetables</p>
-      <h5>Grilled Baby Lamb Chops &mdash; 26</h5>
+      <h5>Grilled Baby Lamb Chops &mdash; 28</h5>
       <p>New Zealand rack marinated and charbroiled. Served over rice pilaf.</p>
-      <h5>Poco Piatti Filet &mdash; 26</h5>
+      <h5>Poco Piatti Filet &mdash; 27</h5>
       <p>Charbroiled filet served with rice over a bed of peppers, onions and mushrooms.</p>
       <h5>Lamb Shank Ossu Buco &mdash; 25</h5>
       <p>Poco specialty served over rice pilaf with carrots, celery and tomato sauce.</p>
-      <h5>Mousakka &mdash; 14</h5>
+      <h5>Mousakka &mdash; 15</h5>
       <p>Layered eggplant, beef, bechamel, provolone and three cheese blend.</p>
       <h5>Beef Marsala &mdash; 16</h5>
       <p>Tender beef tips, bell peppers, onions and mushrooms served over rice pilaf.</p>

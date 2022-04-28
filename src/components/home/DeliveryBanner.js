@@ -7,7 +7,7 @@ const DeliveryBanner = () => (
       <div className="delivery-banner-text">Now offering delivery from our Sylvania and Perrysburg locations!
         Please select order online then delivery from the online ordering page.
       </div>
-      <div>Minimum order: $15</div>
+      <div>Minimum order: $60</div>
       <div>Delivery charge: $2</div>
     </div>
   </div>

@@ -8,6 +8,7 @@ const Popup = () => (
       <div class="popup-content-bottom">
         <a href="https://www.toasttab.com/poco-piatti-perrysburg-3155-chapel-drive/v2/online-order#!/" class="cta leave-popup">Perrysburg</a>
         <a href="https://www.toasttab.com/poco-piatti-toledo-6710-w-central-ave-1/v2/online-order#!/" class="cta leave-popup">Sylvania</a>
+        <a href="https://www.toasttab.com/poco-piatti-downtown-329-n-huron-st" class="cta leave-popup">Downtown</a>
       </div>
       <h6>Or call <a href="tel:419-931-0281" class="phone" id="cta">419-931-0281</a> for any location.</h6>
     </div>
