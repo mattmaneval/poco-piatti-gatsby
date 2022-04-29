@@ -2,7 +2,7 @@ import React from 'react';
 
 const PhotoGalleryThree = () => (
   <div className="PhotoGalleryThree">
-    <div className="PhotoGalleryThreeWrap">
+    <div className="PhotoGalleryThreeWrap wrap">
       <div className="PhotoGalleryThreeRow">
         <article className="Photo1"></article>
         <article className="Photo2"></article>

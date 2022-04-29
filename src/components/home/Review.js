@@ -1,21 +1,58 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Review = () => (
-  <div className="Review">
+// Components
+import SectionHeading from '../SectionHeading/index';
+
+// Styles
+import theme from '../../../styles/theme';
+import media from '../../../styles/media';
+
+const { color } = theme;
+
+const ReviewsStyle = styled.section`
+  background-color: ${color.foreground};
+
+  .review {
+    color: ${color.background};
+    font-size: 1.85em;
+    line-height: 1.25em;
+    margin-bottom: 1em;
+    max-width: 20em;
+
+    @media ${media.secondary} {
+      font-size: 2.05em;
+    }
+  }
+
+  .review-source {
+    color: ${color.foregroundDim};
+    font-size: 1.05em;
+    margin-bottom: 1.85em;
+    text-transform: uppercase;
+
+    @media ${media.secondary} {
+      font-size: 1.15em;
+    }
+  }
+`;
+
+const Reviews = () => (
+  <ReviewsStyle>
     <div className="wrap">
-      <h2>"The Mediterranean food at this restaurant (with heavy
-      Lebanese and Italian influences) is so beautifully prepared
-      that it seems like a more elite spot, but you can certainly find
-      great values."
-      </h2>
-      <p>&mdash; The Blade</p>
-      <h2>2019 Dining Guide Award Winner for Best Appetizers &
-        Runner-Up for Best Staff
-      </h2>
-      <h2>2018 Dining Guide Award Winner for Best Restaurateur</h2>
-      <p>&mdash; Toledo City Paper</p>
+      <SectionHeading text="Reviews" light />
+      <div className="review">
+        &quot;The Mediterranean food at this restaurant (with heavy Lebanese and
+        Italian influences) is so beautifully prepared that it seems like a more
+        elite spot, but you can certainly find great values.&quot;
+      </div>
+      <div className="review-source">&mdash; The Blade</div>
+      <div className="review">Dining Guide Award Winner for Best Appetizers & Runner-Up for Best Staff</div>
+      <div className="review-source">&mdash; Toledo City Paper</div>
+      <div className="review">Dining Guide Award Winner for Best Restaurateur</div>
+      <div className="review-source">&mdash; Toledo City Paper</div>
     </div>
-  </div>
+  </ReviewsStyle>
 );
 
-export default Review;
+export default Reviews;
