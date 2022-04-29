@@ -91,7 +91,7 @@ const GlobalStyle = createGlobalStyle`
   h4 {
     color: ${color.foreground};
     margin-bottom: 3rem;
-    font-size: 5.25em;
+    font-size: 1.65em;
     font-family: ${fonts.title};
   }
 
@@ -100,9 +100,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${fonts.heading};
     color: ${color.foregroundDim};
     // padding: ${space.halfSpace};
-    // font-size: 1em;
+    font-size: 1em;
     // letter-spacing: 0.1em;
-    // text-transform: uppercase;
+    text-transform: uppercase;
 
     @media ${media.secondary} {
       // font-size: 2.25em;
@@ -111,7 +111,7 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     font-family: ${fonts.font};
-    color: ${color.callout};
+    color: ${color.foregroundDim};
     line-height: 140%;
     font-size: 1.25em;
 

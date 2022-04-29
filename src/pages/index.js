@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Locations from "../components/Locations/index";
-import "../styles/_index.scss"
+// import "../styles/_index.scss"
 import DeliveryBanner from "../components/home/DeliveryBanner"
 import Review from "../components/home/Review"
 import PhotoGallery from "../components/home/PhotoGallery"
@@ -12,7 +12,7 @@ import ThePocoExperience from "../components/home/ThePocoExperience"
 import GoogleMap from "../components/GoogleMap/index"
 import Faq from "../components/about/Faq"
 import FullMenu from "../components/menu/FullMenu"
-import Popup from "../components/popup"
+// import Popup from "../components/popup"
 import Togo from "../components/home/Togo"
 
 const IndexPage = (props) => (
@@ -29,7 +29,6 @@ const IndexPage = (props) => (
     <FullMenu />
     <PhotoGalleryThree />
     <Faq />
-    <Popup />
   </Layout>
 )
 

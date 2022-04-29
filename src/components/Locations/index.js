@@ -11,7 +11,6 @@ import media from '../../../styles/media';
 const { color, space } = theme;
 
 const LocationsStyle = styled.section`
-  /* text-align: center; */
 
   .locations-container {
     /* display: grid;

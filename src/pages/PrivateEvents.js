@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../styles/_index.scss"
+// import "../styles/_index.scss"
 import PerrysburgRoom from "../components/private-events/PerrysburgRoom"
 import DowntownRoom from "../components/private-events/DowntownRoom"
 

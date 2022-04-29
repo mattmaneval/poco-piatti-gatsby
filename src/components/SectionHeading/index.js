@@ -10,6 +10,7 @@ import media from '../../../styles/media';
 const { color, fonts } = theme;
 
 const SectionHeadingStyle = styled.div`
+  ${({ wrap }) => (wrap ? `${mixins.wrap}` : null)};
   align-items: center;
   display: flex;
   margin-bottom: 4em;
@@ -34,8 +35,8 @@ const SectionHeadingText = styled.span`
   }
 `;
 
-const SectionHeading = ({ text, light }) => (
-  <SectionHeadingStyle light={light}>
+const SectionHeading = ({ text, light, wrap }) => (
+  <SectionHeadingStyle wrap={wrap} light={light}>
     <SectionHeadingText light={light}>{text}</SectionHeadingText>
   </SectionHeadingStyle>
 );
