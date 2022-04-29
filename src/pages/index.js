@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { GlobalStyle } from '../../styles';
 import Locations from "../components/Locations/index";
 import "../styles/_index.scss"
 import DeliveryBanner from "../components/home/DeliveryBanner"
@@ -20,7 +19,6 @@ import Footer from "../components/Footer/index";
 const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" keywords={[`Poco Piatti`, `Toledo`, `Ohio`, `Mediterranean`, `Restaurant`]} />
-    <GlobalStyle />
     <DeliveryBanner />
     <ThePocoExperience />
     <Togo />
