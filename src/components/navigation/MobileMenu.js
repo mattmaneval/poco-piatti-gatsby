@@ -70,21 +70,11 @@ const MobileMenuStyles = styled.div`
 const MobileMenu = ({ menu }) => (
   <MobileMenuStyles menu={menu}>
     <nav className="mobile-nav">
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-      <Link href="/menu">
-        <a>Menu</a>
-      </Link>
-      <Link href="/catering">
-        <a>Catering</a>
-      </Link>
-      <Link href="/private-events">
-        <a>Private Events</a>
-      </Link>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
+      <Link href="/">Home</Link>
+      <Link to="/Menu/">Menu</Link>
+      <Link to="/Catering/">Catering</Link>
+      <Link to="/PrivateEvents/">Private Events</Link>
+      <Link to="/About/">About</Link>
     </nav>
     <div className="mobile-menu-contact">
       <a href="tel:419-931-0281">419-931-0281</a>

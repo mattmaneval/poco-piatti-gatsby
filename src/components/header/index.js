@@ -2,13 +2,12 @@ import React from 'react';
 import { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from "gatsby";
-// import Link from 'next/link';
 
 // Components
 // import GlobalHeader from './GlobalHeader/index';
-// import Logo from './icons/Logo';
+import Logo from '../Logo/index';
 // import InnerNav from './InnerNav/index';
-import PrimaryCta from '../navigation/PrimaryCta';
+// import PrimaryCta from '../navigation/PrimaryCta';
 import MenuButton from '../navigation/MenuButton';
 import MobileMenu from '../navigation/MobileMenu';
 
@@ -22,8 +21,12 @@ const { color, fonts, space } = theme;
 const HeaderStyles = styled.header`
   border-bottom: 1.5px solid ${color.foreground};
   padding: 2em 2.65em;
+  position: relative;
   width: 100%;
   z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
 
   .wrap {
     ${mixins.flexBetween};
@@ -74,33 +77,20 @@ function Header() {
   return (
     <HeaderStyles menu={menu}>
       <div className="wrap">
-      <div className="header-logo">
-
+        <div className="header-logo">
+          <Logo />
+        </div>
+        <div className="header-links">
+          <nav>
+            <Link to="/Menu/">Menu</Link>
+            <Link to="/Catering/">Catering</Link>
+            <Link to="/PrivateEvents/">Private Events</Link>
+            <Link to="/About/">About</Link>
+          </nav>
+        </div>
       </div>
-      <div className="header-links">
-        <nav>
-          <Link to="/Menu/">
-            <a>Menu</a>
-          </Link>
-          <Link to="/Catering/">
-            <a>Catering</a>
-          </Link>
-          <Link to="/PrivateEvents/">
-            <a>Private Events</a>
-          </Link>
-          <Link to="/About/">
-            <a>About</a>
-          </Link>
-        </nav>
-
-        <MenuButton menu={menu} onClick={handleClick} />
-      </div>
-      <PrimaryCta
-        text="Order Now"
-        onClick={handleClick}
-      />
+      <MenuButton menu={menu} onClick={handleClick} />
       <MobileMenu menu={menu} />
-      </div>
     </HeaderStyles>
   );
 }
