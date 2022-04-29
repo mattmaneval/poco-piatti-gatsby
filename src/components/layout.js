@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import GlobalHeader from "./GlobalHeader/index"
 import Header from "./Header/index"
 import Footer from "./Footer/index"
 // import "../styles/_index.scss"
@@ -27,6 +28,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <GlobalStyle />
+        <GlobalHeader />
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <Footer />

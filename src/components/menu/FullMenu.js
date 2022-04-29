@@ -1,37 +1,32 @@
 import React from 'react';
-import Seafood from "./Seafood"
-import Vegetarian from "./Vegetarian"
-import BigPlates from "./BigPlates"
-import Accompaniments from "./Accompaniments"
-import Carne from "./Carne"
-import Salads from "./Salads"
-import Pizza from "./Pizza"
+import styled from 'styled-components';
+import Seafood from './Seafood';
+import Vegetarian from './Vegetarian';
+import Carne from './Carne';
+import BigPlates from './BigPlates';
+import Pizza from './Pizza';
+import Salads from './Salads';
+import Sides from './Sides';
+
+const FullMenuStyles = styled.section`
+
+  /* .wrap {
+    max-width: 48em;
+  } */
+`;
 
 const FullMenu = () => (
-    <section className="full-menu">
-      <div className="column-1">
-        <Seafood />
-        <BigPlates />
-        <Accompaniments />
-      </div>
-      <div className="column-2">
-        <Carne />
-        <Salads />
-      </div>
-      <div className="column-3">
-        <Vegetarian />
-        <Pizza />
-      </div>
-      <div className="mobile-menu">
-        <Seafood />
-        <Vegetarian />
-        <Carne />
-        <BigPlates />
-        <Pizza />
-        <Salads />
-        <Accompaniments />
-      </div>
-    </section>
+  <FullMenuStyles>
+    <div className="wrap">
+      <Seafood />
+      <Carne />
+      <Vegetarian />
+      <BigPlates />
+      <Pizza />
+      <Salads />
+      <Sides />
+    </div>
+  </FullMenuStyles>
 );
 
 export default FullMenu;

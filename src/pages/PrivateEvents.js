@@ -1,13 +1,33 @@
-import React from "react"
+import React from 'react';
+import styled from 'styled-components';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import "../styles/_index.scss"
+
+// Components
+import HeadingGroup from "../components/HeadingGroup/index";
+import SectionHeading from "../components/SectionHeading/index";
 import PerrysburgRoom from "../components/private-events/PerrysburgRoom"
 import DowntownRoom from "../components/private-events/DowntownRoom"
+
+// Styles
+import mixins from '../../styles/mixins';
+import theme from '../../styles/theme';
+import media from '../../styles/media';
+
+const { color, space, fonts } = theme;
+
 
 const PrivateEvents = () => (
   <Layout>
     <SEO title="Private Events" />
+    <section>
+      <div className="wrap">
+        <HeadingGroup
+          h1Text="Private Events"
+          h4Text="Book your next private party or event at Poco Piatti. We offer flexible packages and personal attention to your party planning needs with each event customized to fit your criteria."
+        />
+      </div>
+    </section>
     <div className="PrivateEvents">
       <div className="PrivateEventsWrap">
         <div className="PrivateEventsWrapHeader">

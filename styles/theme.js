@@ -22,6 +22,7 @@ const theme = {
   // Color
   color: {
     background: '#ffffff',
+    // background: '#F0EDE5',
     backgroundAlt: '#FFF8EA',
     backgroundTert: '#748D63',
     foreground: '#171717',

@@ -1,9 +1,19 @@
-import React from "react"
+import React from 'react';
+import styled from 'styled-components';
+
+// Components
+import SectionHeading from '../SectionHeading/index';
+
+// Styles
+import theme from '../../../styles/theme';
+import media from '../../../styles/media';
+
+const { color, space } = theme;
 
 const Faq = () => (
   <section className="Faq">
     <div className="wrap">
-      <h1>Frequently Asked Questions</h1>
+      <SectionHeading text="Faq" />
       <h5>Dietary Restrictions?</h5>
         <p>We accommodate most dietary needs like gluten free, vegetarian, and vegan. Ask for our gluten free menu. Our meat is Halal.</p>
       <h5>Locations?</h5>

@@ -34,7 +34,6 @@ const Catering = () => (
       <section class="no-padding-top">
         <SectionHeading text="Packages" wrap />
         <div class="wrap">
-
           <CateringPackage>
             <h5>Poco Signature &mdash; 15 per person</h5>
             <p>Hummous, Fresh Pita Bread, Fatoosh, Grape Leaves, Shish Tawook, and Poco Rice.</p>
@@ -80,8 +79,8 @@ const Catering = () => (
         </div>
       </section>
       <section class="no-padding-top">
+        <SectionHeading text="Bar Packages" wrap />
         <div class="wrap">
-          <SectionHeading text="Bar Packages" />
           <CateringPackage>
             <h5>Poco Experience  &mdash; 2 Hours/45 per person. 3 Hours/55 per person</h5>
             <p>Top shelf liquor, 3 draft beer options, 2 domestic bottle beer options, sangria bar.</p>
@@ -101,8 +100,8 @@ const Catering = () => (
         </div>
       </section>
       <section class="no-padding-top">
+        <SectionHeading text="A La Carte" wrap />
         <div class="wrap">
-          <SectionHeading text="A La Carte" />
           <CateringPackage>
             <h5>Hummous</h5>
             <p>1/2 Pan &mdash; 35 (10 - 15 ppl.)</p>

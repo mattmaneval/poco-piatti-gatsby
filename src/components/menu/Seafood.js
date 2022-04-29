@@ -1,24 +1,84 @@
 import React from 'react';
+import styled from 'styled-components';
+import FoodItem from './FoodItem';
+
+// Styles
+import mixins from '../../../styles/mixins';
+import theme from '../../../styles/theme';
+import media from '../../../styles/media';
+
+const { space } = theme;
+
+const SeafoodStyle = styled.div`
+  margin-bottom: ${space.space};
+`;
+
+const seafoodData = [
+  {
+    name: 'Shrimp Saganaki',
+    desc: 'Sauteed with tomatoes, garlic, white wine, fresh oregano and feta.',
+    price: {
+      small: 7,
+      large: 13,
+    },
+  },
+  {
+    name: 'Fried Calamari Zaatar',
+    desc: 'Zaatar encrusted and served with spicy marinara.',
+    price: {
+      small: 7,
+      large: 13,
+    },
+  },
+  {
+    name: 'Shrimp Asti-Spumante',
+    desc: 'Sauteed with garlic, asti-spumante and parsley.',
+    price: {
+      small: 7,
+      large: 13,
+    },
+    dietary: {
+      type: 'gluten-free',
+      title: 'Gluten Free',
+    },
+  },
+  {
+    name: 'Thai Shrimp \'Lasagna\'',
+    desc: 'Layered with crispy wontons, spicy thai and coconut basil.',
+    price: {
+      small: 7,
+      large: 13,
+    },
+  },
+  {
+    name: 'Blue Crab Lump Crab Cakes',
+    desc: 'Served with roasted red pepper cream sauce.',
+    price: {
+      small: 9,
+      large: 17,
+    },
+  },
+  {
+    name: 'Sumac Encrusted Tuna',
+    desc: 'Served with tahini and diced cucumber salad.',
+    price: {
+      small: 10,
+      large: 18,
+    },
+    dietary: {
+      type: 'gluten-free',
+      title: 'Gluten Free',
+    },
+  },
+];
 
 const Seafood = () => (
-  <div className="Seafood">
-    <h1>Seafood</h1>
-    <span className="Line"></span>
-    <div className="Outline">
-      <h5>Shrimp Saganaki &mdash; Sm 7 Lg 13</h5>
-      <p>Sauteed with tomatoes, garlic, white wine, fresh oregano and feta.</p>
-      <h5>Fried Calamari Zaatar &mdash; Sm 7 Lg 13</h5>
-      <p>Zaatar encrusted and served with spicy marinara.</p>
-      <h5>Shrimp Asti-Spumante &mdash; Sm 7 Lg 13</h5>
-      <p>Sauteed with garlic, asti-spumante and parsley.</p>
-      <h5>Thai Shrimp 'Lasagna' &mdash; Sm 7 Lg 13</h5>
-      <p>Layered with crispy wontons, spicy thai and coconut basil.</p>
-      <h5>Blue Crab Lump Crab Cakes<br /> &mdash; Sm 10 Lg 19</h5>
-      <p>Served with roasted red pepper cream sauce.</p>
-      <h5>Sumac Encrusted Tuna &mdash; Sm 10 Lg 18</h5>
-      <p>Served with tahini and diced cucumber salad.</p>
-    </div>
-  </div>
+  <SeafoodStyle>
+    <h4>Seafood</h4>
+    {Object.keys(seafoodData).map((key) => (
+      <FoodItem data={seafoodData[key]} />
+    ))}
+  </SeafoodStyle>
 );
 
 export default Seafood;

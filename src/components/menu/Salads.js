@@ -1,26 +1,100 @@
 import React from 'react';
+import styled from 'styled-components';
+import FoodItem from './FoodItem';
+
+// Styles
+import mixins from '../../../styles/mixins';
+import theme from '../../../styles/theme';
+import media from '../../../styles/media';
+
+const { space } = theme;
+
+const SaladsStyle = styled.div`
+  margin-bottom: ${space.space};
+`;
+
+const saladsData = [
+  {
+    name: 'Greek Salad',
+    desc: 'Lettuce, tomato, cucumber, onion, peppers, olives, feta.',
+    price: {
+      small: 6,
+      large: 11,
+    },
+    dietary: {
+      type: 'gluten-free',
+      title: 'Gluten Free',
+    },
+  },
+  {
+    name: 'Fatoosh',
+    desc: 'Tomato, cucumber, peppers, onion, pita chips, sumac, lemon and olive oil.',
+    price: {
+      small: 7,
+      large: 12,
+    },
+  },
+  {
+    name: 'Mashgara Tabouli',
+    desc: 'Parsley, tomato, cucumber, onion, mint, cracked wheat, lemon and olive oil.',
+    price: {
+      small: 6,
+      large: 10,
+    },
+  },
+  {
+    name: 'Falafel Salad',
+    desc: 'Falafel patties, tomato, cucumber, radish, pickle, onion, tahini sauce.',
+    price: {
+      small: 6,
+      large: 11,
+    },
+  },
+  {
+    name: 'Artichoke Salad',
+    desc: 'Artichoke hearts, hearts of palm, radish, grape tomato, spring mix, lemon feta vinaigrette.',
+    price: {
+      small: 7,
+      large: 12,
+    },
+    dietary: {
+      type: 'gluten-free',
+      title: 'Gluten Free',
+    },
+  },
+  {
+    name: 'Poco House Salad',
+    desc: 'Spring mix, red onion, candied pecans, grape tomato, raspberry vinaigrette.',
+    price: {
+      small: 5,
+      large: 9,
+    },
+    dietary: {
+      type: 'gluten-free',
+      title: 'Gluten Free',
+    },
+  },
+  {
+    name: 'Roasted Beet Salad',
+    desc: 'Spring mix, roasted beets, carrots, red pepper, red onion, goat cheese, candied pecans, balsamic dressing.',
+    price: {
+      small: 7,
+      large: 12,
+    },
+    dietary: {
+      type: 'gluten-free',
+      title: 'Gluten Free',
+    },
+  },
+];
 
 const Salads = () => (
-  <div className="Salads">
-    <h1>Salads</h1>
-    <span className="Line"></span>
-    <div className="Outline">
-      <h5>Greek Salad &mdash; Sm 6 Lg 11</h5>
-      <p>Lettuce, tomato, cucumber, onion, peppers, olives, feta.</p>
-      <h5>Fatoosh &mdash; Sm 7 Lg 13</h5>
-      <p>Tomato, cucumber, peppers, onion, pita chips, sumac, lemon and olive oil.</p>
-      <h5>Mashgara Tabouli &mdash; Sm 7 Lg 12</h5>
-      <p>Parsley, tomato, cucumber, onion, mint, cracked wheat, lemon and olive oil.</p>
-      <h5>Falafel Salad &mdash; Sm 6 Lg 11</h5>
-      <p>Falafel patties, tomato, cucumber, radish, pickle, onion, tahini sauce.</p>
-      <h5>Artichoke Salad &mdash; Sm 7 Lg 13</h5>
-      <p>Artichoke hearts, hearts of palm, radish, grape tomato, spring mix, lemon feta vinaigrette.</p>
-      <h5>Poco House Salad &mdash; Sm 5 Lg 9</h5>
-      <p>Spring mix, red onion, candied pecans, grape tomato, raspberry vinaigrette.</p>
-      <h5>Roasted Beet Salad &mdash; Sm 8 Lg 14</h5>
-      <p>Spring mix, roasted beets, carrots, red pepper, red onion, goat cheese, candied pecans, balsamic dressing.</p>
-    </div>
-  </div>
+  <SaladsStyle>
+    <h4>Salads</h4>
+    {Object.keys(saladsData).map((key) => (
+      <FoodItem data={saladsData[key]} />
+    ))}
+  </SaladsStyle>
 );
 
 export default Salads;

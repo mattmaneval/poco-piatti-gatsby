@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-family: ${fonts.title};
-    font-size: 7em;
+    font-size: 5.25em;
     color: ${color.callout};
     margin-bottom: ${space.space};
     line-height: 85%;
