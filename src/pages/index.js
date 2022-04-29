@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { GlobalStyle } from '../../styles';
-import Locations from "../components/home/Locations"
+import Locations from "../components/Locations/index";
 import "../styles/_index.scss"
 import DeliveryBanner from "../components/home/DeliveryBanner"
 import Review from "../components/home/Review"
