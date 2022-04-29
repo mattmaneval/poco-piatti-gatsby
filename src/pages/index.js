@@ -14,7 +14,6 @@ import Faq from "../components/about/Faq"
 import FullMenu from "../components/menu/FullMenu"
 import Popup from "../components/popup"
 import Togo from "../components/home/Togo"
-import Footer from "../components/Footer/index";
 
 const IndexPage = (props) => (
   <Layout>
@@ -31,7 +30,6 @@ const IndexPage = (props) => (
     <PhotoGalleryThree />
     <Faq />
     <Popup />
-    <Footer />
   </Layout>
 )
 
