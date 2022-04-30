@@ -1,6 +1,8 @@
 import { css } from 'styled-components';
 
 // Fonts
+import yantramanavmediumWoff from '../fonts/yantramanav-medium-webfont.woff';
+import yantramanavmediumWoff2 from '../fonts/yantramanav-medium-webfont.woff2';
 import yantramanavboldWoff from '../fonts/yantramanav-bold-webfont.woff';
 import yantramanavboldWoff2 from '../fonts/yantramanav-bold-webfont.woff2';
 import yantramanavblackWoff from '../fonts/yantramanav-black-webfont.woff';
@@ -54,8 +56,8 @@ const Fonts = css`
 
   @font-face {
     font-family: 'yantramanavmedium';
-    src: url('/fonts/yantramanav-medium-webfont.woff2') format('woff2'),
-         url('/fonts/yantramanav-medium-webfont.woff') format('woff');
+    src: url('${yantramanavmediumWoff2}') format('woff2'),
+         url('${yantramanavmediumWoff}') format('woff');
     font-weight: normal;
     font-style: normal;
   }

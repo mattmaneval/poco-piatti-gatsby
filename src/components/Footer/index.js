@@ -104,14 +104,12 @@ const FooterStyles = styled.footer`
 
   .copyright,
   .copyright a {
-    font-family: ${fonts.heading};
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    font-family: ${fonts.fontMedium};
     color: ${color.foregroundDim};
 
     a {
       display: inline-block;
-      color: ${color.backgroundTert};
+      color: ${color.background};
       padding-bottom: 0;
     }
   }

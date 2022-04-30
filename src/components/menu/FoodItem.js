@@ -66,7 +66,7 @@ const FoodItem = ({ data }) => (
       <div className="food-item-price">
         {data.price
           ? `${typeof data.price === 'object'
-            ? `${data.price.small} | ${data.price.large}`
+            ? `Sm ${data.price.small} Lg ${data.price.large}`
             : `${data.price}`}`
           : ''}
       </div>

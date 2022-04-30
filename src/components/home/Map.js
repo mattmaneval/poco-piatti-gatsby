@@ -5,6 +5,7 @@ const Map = () => (
     <div className="MapWrap">
       <h1>Find Us</h1>
     <iframe
+      class="map"
       title="Poco Piatti"
       width="600"
       height="450"

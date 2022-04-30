@@ -160,6 +160,10 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.085em;
     text-transform: uppercase;
   }
+
+  .map {
+    -webkit-filter: grayscale(100%);
+  }
 `;
 
 export default GlobalStyle;

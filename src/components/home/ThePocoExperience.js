@@ -6,7 +6,7 @@ import OrderModal from '../OnlineOrderModal/index';
 import Cta from '../Cta/index';
 
 // Images
-import lambChops from "../../images/lamb-chops.jpg";
+import ThePocoExperienceImage from "../../images/the-poco-experience.jpg";
 
 // Styles
 import mixins from '../../../styles/mixins';
@@ -28,7 +28,7 @@ const Grid = styled.div`
     margin: auto;
 
     p {
-      margin: 0 1em 1em 0;
+      margin: 0 1em 1.25em 0;
 
       @media ${media.primary} {
         margin: 0 0 1em 0;
@@ -38,9 +38,9 @@ const Grid = styled.div`
 `;
 
 const GridImage = styled.div`
-  background-image: url(${lambChops});
+  background-image: url(${ThePocoExperienceImage});
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   border-radius: 50%;
   padding-top: 100%;

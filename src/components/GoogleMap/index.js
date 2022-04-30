@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const MapStyle = styled.div`
   iframe {
     width: 100vw;
+    -webkit-filter: grayscale(100%);
   }
 `;
 
