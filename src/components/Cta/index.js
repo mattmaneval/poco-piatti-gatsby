@@ -24,7 +24,8 @@ const CtaStyle = styled(props => <Link {...props} />)`
   font-size: 0.95em;
   letter-spacing: 0.085em;
   font-family: ${fonts.fontBold};
-
+  width: fit-content;
+  
   &:hover {
     color: ${color.background};
     background-color: ${color.callout};

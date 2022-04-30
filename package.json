@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Matt Maneval",
   "dependencies": {
+    "@googlemaps/react-wrapper": "^1.1.32",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^4.0.0",
     "gatsby-background-image": "^0.2.74",

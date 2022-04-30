@@ -10,7 +10,6 @@ import PhotoGallery from "../components/home/PhotoGallery"
 import PhotoGalleryTwo from "../components/home/PhotoGalleryTwo"
 import PhotoGalleryThree from "../components/home/PhotoGalleryThree"
 import ThePocoExperience from "../components/home/ThePocoExperience"
-import GoogleMap from "../components/GoogleMap/index"
 import PrivateEventsCallout from "../components/PrivateEventsCallout/index";
 // import Faq from "../components/about/Faq"
 // import FullMenu from "../components/menu/FullMenu"
@@ -29,7 +28,6 @@ const IndexPage = ({props, absolute}) => (
     <PhotoGallery />
     <PhotoGalleryThree />
     <PrivateEventsCallout />
-    <GoogleMap />
   </Layout>
 )
 
