@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+
+// Components
+import SectionHeading from '../SectionHeading/index';
 import FoodItem from './FoodItem';
 
 // Styles
@@ -95,7 +98,7 @@ const bigPlatesData = [
 
 const BigPlates = () => (
   <BigPlatesStyles>
-    <h4>Big Plates</h4>
+    <SectionHeading text="Big Plates" light />
     {Object.keys(bigPlatesData).map((key) => (
       <FoodItem data={bigPlatesData[key]} />
     ))}

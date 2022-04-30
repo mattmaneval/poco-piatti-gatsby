@@ -19,8 +19,10 @@ import media from '../../../styles/media';
 const { color, fonts } = theme;
 
 const PhotoGalleryStyle = styled.section`
+
+
   padding: 0;
-  
+
 .FoodPhotoGallery {
   .FoodPhotoGalleryWrap {
     article {
@@ -35,9 +37,10 @@ const PhotoGalleryStyle = styled.section`
       display: flex;
       .PortobelloCaps {
         width: calc(40% - 2.5px);
-        border-top: 5px solid #ffffff;
-        border-right: 2.5px solid #ffffff;
-        border-bottom: 2.5px solid #ffffff;
+        border-top: 5px solid ${color.background};
+        border-left: 5px solid ${color.background};
+        border-right: 2.5px solid ${color.background};
+        border-bottom: 2.5px solid ${color.background};
         background-image: url(${stuffedPortobelloCaps});
         background-size: cover;
         background-position: center;
@@ -45,9 +48,10 @@ const PhotoGalleryStyle = styled.section`
       }
       .PocoTips {
         width: calc(60% + 2.5px);
-        border-top: 5px solid #ffffff;
-        border-bottom: 2.5px solid #ffffff;
-        border-left: 2.5px solid #ffffff;
+        border-top: 5px solid ${color.background};
+        border-bottom: 2.5px solid ${color.background};
+        border-left: 2.5px solid ${color.background};
+        border-right: 5px solid ${color.background};
         background-image: url(${italianSausageAndRicottaPizza});
         background-size: cover;
         background-position: center;
@@ -58,10 +62,10 @@ const PhotoGalleryStyle = styled.section`
       display: flex;
       .ChickenWraps {
         width: calc(30% - 2.5px);
-        border-top: 2.5px solid #ffffff;
-        border-right: 2.5px solid #ffffff;
-        border-bottom: 2.5px solid #ffffff;
-        border-left: 0;
+        border-top: 2.5px solid ${color.background};
+        border-right: 2.5px solid ${color.background};
+        border-bottom: 2.5px solid ${color.background};
+        border-left: 5px solid ${color.background};
         background-image: url(${chickenWraps});
         background-size: cover;
         background-position: center;
@@ -69,10 +73,10 @@ const PhotoGalleryStyle = styled.section`
       }
       .Hummus {
         width: 40%;
-        border-top: 2.5px solid #ffffff;
-        border-right: 2.5px solid #ffffff;
-        border-bottom: 2.5px solid #ffffff;
-        border-left: 2.5px solid #ffffff;
+        border-top: 2.5px solid ${color.background};
+        border-right: 2.5px solid ${color.background};
+        border-bottom: 2.5px solid ${color.background};
+        border-left: 2.5px solid ${color.background};
         background-image: url(${hummus});
         background-size: cover;
         background-position: center;
@@ -80,10 +84,10 @@ const PhotoGalleryStyle = styled.section`
       }
       .Arayes {
         width: calc(30% + 2.5px);
-        border-top: 2.5px solid #ffffff;
-        border-right: 0;
-        border-bottom: 2.5px solid #ffffff;
-        border-left: 2.5px solid #ffffff;
+        border-top: 2.5px solid ${color.background};
+        border-right: 5px solid ${color.background};
+        border-bottom: 2.5px solid ${color.background};
+        border-left: 2.5px solid ${color.background};
         background-image: url(${arayes});
         background-size: cover;
         background-position: center;
@@ -94,8 +98,10 @@ const PhotoGalleryStyle = styled.section`
       display: flex;
       .Pizza {
         width: calc(40% - 2.5px);
-        border-top: 2.5px solid #ffffff;
-        border-right: 2.5px solid #ffffff;
+        border-top: 2.5px solid ${color.background};
+        border-right: 2.5px solid ${color.background};
+        border-left: 5px solid ${color.background};
+        border-bottom: 5px solid ${color.background};
         background-image: url(${beefPocoTips});
         background-size: cover;
         background-position: center;
@@ -103,9 +109,10 @@ const PhotoGalleryStyle = styled.section`
       }
       .Fatoosh {
         width: calc(60% + 2.5px);
-        border-top: 2.5px solid #ffffff;
-        border-right: 0;
-        border-left: 2.5px solid #ffffff;
+        border-top: 2.5px solid ${color.background};
+        border-right: 5px solid ${color.background};
+        border-left: 2.5px solid ${color.background};
+        border-bottom: 5px solid ${color.background};
         background-image: url(${fatoosh});
         background-size: cover;
         background-position: center;
@@ -125,7 +132,7 @@ const PhotoGalleryStyle = styled.section`
   .FoodPhotoGallery {
     .FoodPhotoGalleryWrap {
       article {
-        //border: 2px solid #ffffff;
+        //border: 2px solid ${color.background};
         min-height: 225px;
         max-height: 300px;
       }

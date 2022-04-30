@@ -17,7 +17,7 @@ const FoodItemStyles = styled.div`
   .food-item-name {
     ${mixins.flexBetween};
     margin-bottom: ${space.quarterSpace};
-    color: ${color.foreground};
+    color: ${color.background};
     font-weight: bold;
     font-size: 1.5em;
 
@@ -35,11 +35,11 @@ const FoodItemStyles = styled.div`
   .food-item-options {
     display: flex;
     align-items: center;
-    color: ${color.foreground};
+    color: ${color.background};
     text-transform: uppercase;
     font-family: ${fonts.fontBold};
     letter-spacing: 0.25em;
-    font-size: 0.8em;
+    font-size: 0.65em;
 
     svg {
       width: 1.5em;

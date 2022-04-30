@@ -12,7 +12,7 @@ const { color, fonts, space } = theme;
 
 const MobileMenuStyles = styled.div`
   width: 300px;
-  background-color: ${color.background};
+  background-color: ${color.foreground};
   height: 100vh;
   transform: ${({ menu }) => (menu ? 'translateX(0)' : 'translateX(300px)')};
   opacity: ${({ menu }) => (menu ? '1' : '0')};
@@ -25,12 +25,16 @@ const MobileMenuStyles = styled.div`
   z-index: 2;
   overflow-x: hidden;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   .mobile-nav {
     display: inline-block;
     margin-bottom: ${space.halfSpace};
 
     a {
-      color: ${color.foreground};
+      color: ${color.background};
       display: block;
       padding: ${space.halfSpace} 0;
       font-size: 1.65rem;
@@ -62,6 +66,7 @@ const MobileMenuStyles = styled.div`
     transform: translateX(-1.3em);
 
     svg {
+      fill: none;
       color: ${color.foregroundDim};
     }
   }
@@ -76,10 +81,6 @@ const MobileMenu = ({ menu }) => (
       <Link to="/PrivateEvents/">Private Events</Link>
       <Link to="/About/">About</Link>
     </nav>
-    <div className="mobile-menu-contact">
-      <a href="tel:419-931-0281">419-931-0281</a>
-      <a href="mailto:pocopiattiparty@gmail.com">pocopiattiparty@gmail.com</a>
-    </div>
     <div className="mobile-menu-socials">
       <Facebook />
       <Instagram />

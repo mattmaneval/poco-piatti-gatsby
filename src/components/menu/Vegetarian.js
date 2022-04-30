@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+
+// Components
+import SectionHeading from '../SectionHeading/index';
 import FoodItem from './FoodItem';
 
 // Styles
@@ -135,7 +138,7 @@ const vegetarianData = [
 
 const Vegetarian = () => (
   <VegetarianStyle>
-    <h4>Vegetarian</h4>
+    <SectionHeading text="Vegetarian" light />
     {Object.keys(vegetarianData).map((key) => (
       <FoodItem data={vegetarianData[key]} />
     ))}

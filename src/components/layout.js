@@ -8,13 +8,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import GlobalHeader from "./GlobalHeader/index"
+// import GlobalHeader from "./GlobalHeader/index"
 import Header from "./Header/index"
 import Footer from "./Footer/index"
 // import "../styles/_index.scss"
 import { GlobalStyle } from '../../styles';
 
-const Layout = ({ children }) => (
+const Layout = ({ children, absolute }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -28,8 +28,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <GlobalStyle />
-        <GlobalHeader />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header absolute={absolute} siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <Footer />
       </>

@@ -7,11 +7,15 @@ import theme from '../../../styles/theme';
 const { color } = theme;
 
 const GlobalHeaderStyle = styled.div`
-  background-color: ${color.callout};
+  backdrop-filter: blur(0.8em);
+  background-color: rgba(20,20,21,.1);
   color: ${color.background};
-  padding: 0.5em 0;
-  text-align: center;
+  padding: 1.5em 0;
   width: 100%;
+
+  .wrap {
+    text-align: center;
+  }
 
   span {
     line-height: 1.3;
@@ -20,12 +24,10 @@ const GlobalHeaderStyle = styled.div`
 
 const GlobalHeader = () => (
   <GlobalHeaderStyle>
-    <div className="wrap">
-      <span>
+      <div className="wrap">
         Now offering delivery from our Sylvania and Perrysburg locations!
         Minimum order: $60. Delivery charge: $2.
-      </span>
-    </div>
+      </div>
   </GlobalHeaderStyle>
 );
 

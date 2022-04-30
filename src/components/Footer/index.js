@@ -1,7 +1,9 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { Link } from "gatsby";
-// import Link from 'next/link';
+
+// Components
+import Logo from '../Logo/index';
 import Facebook from '../Facebook/index';
 import Instagram from '../Instagram/index';
 
@@ -40,6 +42,12 @@ const FooterStyles = styled.footer`
 
   .footer-contact {
     width: 24em;
+
+    svg {
+      fill ${color.background};
+      width: 12em;
+      margin-bottom: 1em;
+    }
 
     a {
       ${footerLink.hover};
@@ -121,7 +129,7 @@ const Footer = () => (
   <FooterStyles>
     <div className="wrap">
       <div className="footer-contact">
-        <h3>Poco Piatti</h3>
+      <Logo />
         <a href="tel:419-931-0281">419-931-0281</a>
         <a href="mailto:pocopiattiparty@gmail.com">pocopiattiparty@gmail.com</a>
       </div>

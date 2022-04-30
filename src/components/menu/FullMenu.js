@@ -8,11 +8,15 @@ import Pizza from './Pizza';
 import Salads from './Salads';
 import Sides from './Sides';
 
-const FullMenuStyles = styled.section`
+// Styles
+import mixins from '../../../styles/mixins';
+import theme from '../../../styles/theme';
+import media from '../../../styles/media';
 
-  /* .wrap {
-    max-width: 48em;
-  } */
+const { space, color } = theme;
+
+const FullMenuStyles = styled.section`
+  background-color: ${color.foreground};
 `;
 
 const FullMenu = () => (

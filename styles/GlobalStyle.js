@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
 
   html,
   body {
-    background-color: ${color.background};
+    background-color: ${color.foreground};
     font-family: ${fonts.font};
     overflow-x: hidden;
   }
@@ -50,7 +50,7 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     font-family: ${fonts.title};
     font-size: 5.25em;
-    color: ${color.callout};
+    color: ${color.background};
     margin-bottom: ${space.space};
     line-height: 85%;
 
@@ -77,7 +77,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h3 {
-    color: ${color.foreground};
+    color: ${color.background};
     margin-bottom: ${space.halfSpace};
     font-size: 2.25em;
     font-family: ${fonts.subHeading};

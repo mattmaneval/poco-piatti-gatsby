@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Link } from "gatsby";
 
 // Components
-// import GlobalHeader from './GlobalHeader/index';
+import GlobalHeader from '../GlobalHeader/index';
 import Logo from '../Logo/index';
 // import InnerNav from './InnerNav/index';
 // import PrimaryCta from '../navigation/PrimaryCta';
@@ -19,22 +19,65 @@ import media from '../../../styles/media';
 const { color, fonts, space } = theme;
 
 const HeaderStyles = styled.header`
-  border-bottom: 1.5px solid ${color.foreground};
-  padding: 2em 2.65em;
-  position: relative;
+  padding: 0 0 2em;
+  position: ${({ absolute }) => (absolute ? 'absolute' : 'relative')};
   width: 100%;
   z-index: 10;
 
-  display: flex;
-  justify-content: space-between;
+  &:before {
+    background-image: linear-gradient(#02020a,rgba(2,2,10,0));
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
 
-  .wrap {
-    ${mixins.flexBetween};
+
+
+  .header-wrap {
+    ${mixins.wrap}
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2em 0;
+
+    .header-links {
+      margin: auto
+    }
+
+    .header-logo {
+      margin: auto;
+    }
+
+    .header-cta-container {
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+    }
+
+    .header-cta {
+      ${mixins.animate}
+      color: ${color.background};
+      border: 1.5px solid ${color.background};
+      display: inline-block;
+      padding: 1em 2em;
+      border-radius: 2em;
+
+      @media ${media.primary} {
+        display: none;
+      }
+
+      &:hover {
+        color: ${color.foreground};
+        background-color: ${color.background}
+      }
+    }
   }
 
   .header-logo {
     transform: translateX(-1em);
-    width: 9em;
+    width: 12em;
 
 
     @media ${media.primary} {
@@ -43,7 +86,7 @@ const HeaderStyles = styled.header`
   }
 
   svg {
-    fill: ${color.foreground};
+    fill: ${color.background};
   }
 
   nav {
@@ -58,7 +101,7 @@ const HeaderStyles = styled.header`
   a {
     ${mixins.animate};
     font-family: ${fonts.heading};
-    color: ${color.foreground};
+    color: ${color.background};
     padding: ${space.halfSpace};
     font-size: 0.95em;
     text-transform: uppercase;
@@ -69,27 +112,35 @@ const HeaderStyles = styled.header`
   }
 `;
 
-function Header() {
+function Header({absolute}) {
   const [menu, active] = useState(false);
 
   const handleClick = () => (menu ? active(false) : active(true));
 
   return (
-    <HeaderStyles menu={menu}>
-      <div className="wrap">
+    <HeaderStyles absolute={absolute} menu={menu}>
+      <GlobalHeader />
+      <div className="header-wrap">
+      <div className="header-links">
+        <nav>
+          <Link to="/Menu/">Menu</Link>
+          <Link to="/Catering/">Catering</Link>
+          <Link to="/PrivateEvents/">Private Events</Link>
+          <Link to="/About/">About</Link>
+        </nav>
+      </div>
         <div className="header-logo">
           <Logo />
         </div>
-        <div className="header-links">
-          <nav>
-            <Link to="/Menu/">Menu</Link>
-            <Link to="/Catering/">Catering</Link>
-            <Link to="/PrivateEvents/">Private Events</Link>
-            <Link to="/About/">About</Link>
-          </nav>
+      <div className="header-cta-container">
+        <div className="header-cta">
+        Order Now
         </div>
+        <MenuButton menu={menu} onClick={handleClick} />
       </div>
-      <MenuButton menu={menu} onClick={handleClick} />
+
+      </div>
+
       <MobileMenu menu={menu} />
     </HeaderStyles>
   );

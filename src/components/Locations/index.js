@@ -11,11 +11,7 @@ import media from '../../../styles/media';
 const { color, space } = theme;
 
 const LocationsStyle = styled.section`
-
   .locations-container {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: ${space.space}; */
     display: flex;
     justify-content: space-between;
 
@@ -56,7 +52,7 @@ const LocationsStyle = styled.section`
 const Locations = () => (
   <LocationsStyle>
     <div className="wrap">
-      <SectionHeading text="Locations" />
+      <SectionHeading text="Locations" light/>
       <div className="locations-container">
         <div className="location-container">
           <h3>Perrysburg</h3>

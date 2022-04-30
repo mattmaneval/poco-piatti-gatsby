@@ -32,7 +32,7 @@ const Catering = () => (
         </div>
       </section>
       <section class="no-padding-top">
-        <SectionHeading text="Packages" wrap />
+        <SectionHeading text="Packages" wrap light />
         <div class="wrap">
           <CateringPackage>
             <h5>Poco Signature &mdash; 15 per person</h5>
@@ -79,7 +79,7 @@ const Catering = () => (
         </div>
       </section>
       <section class="no-padding-top">
-        <SectionHeading text="Bar Packages" wrap />
+        <SectionHeading text="Bar Packages" wrap light />
         <div class="wrap">
           <CateringPackage>
             <h5>Poco Experience  &mdash; 2 Hours/45 per person. 3 Hours/55 per person</h5>
@@ -100,7 +100,7 @@ const Catering = () => (
         </div>
       </section>
       <section class="no-padding-top">
-        <SectionHeading text="A La Carte" wrap />
+        <SectionHeading text="A La Carte" wrap light />
         <div class="wrap">
           <CateringPackage>
             <h5>Hummous</h5>

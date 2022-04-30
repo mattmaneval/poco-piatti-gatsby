@@ -13,7 +13,7 @@ const { color, space } = theme;
 const Faq = () => (
   <section className="Faq">
     <div className="wrap">
-      <SectionHeading text="Faq" />
+      <SectionHeading text="Faq" light />
       <h5>Dietary Restrictions?</h5>
         <p>We accommodate most dietary needs like gluten free, vegetarian, and vegan. Ask for our gluten free menu. Our meat is Halal.</p>
       <h5>Locations?</h5>
