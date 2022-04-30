@@ -31,7 +31,7 @@ const Grid = styled.div`
       margin: 0 1em 1em 0;
 
       @media ${media.primary} {
-        margin: 0;
+        margin: 0 0 1em 0;
       }
     }
   }
@@ -66,7 +66,7 @@ function ThePocoExperience() {
               quality ingredients. So share the small, or large, plates with your
               table and enjoy!
             </p>
-            <Cta text="Explore Our Menu" href="/Menu/"/>
+            <Cta text="Explore Our Menu" href="https://www.golfgalaxy.com/"/>
           </div>
           <GridImage />
         </Grid>

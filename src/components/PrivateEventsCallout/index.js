@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import DowntownWindows from "../../images/IMG_0046.jpg";
 
 // Components
-import PrimaryCta from '../navigation/PrimaryCta';
+import Cta from '../Cta/index';
 
 // Styles
 import mixins from '../../../styles/mixins';
@@ -45,7 +45,7 @@ const PrivateEventsCalloutStyle = styled.section`
       padding: 2em;
     }
 
-    h3 {
+    .title {
       margin-bottom: 1.25em;
     }
   }
@@ -55,13 +55,13 @@ const PrivateEventsCallout = () => (
   <PrivateEventsCalloutStyle>
     <div className="inner-wrap">
       <div className="private-events-callout">
-        <h5>Private Events</h5>
+        <div className="title">Private Events</div>
         <h3>
           Book your next private party or event at Poco Piatti.
           We offer flexible packages and personal attention to your
           party planning needs with each event customized to fit your criteria.
         </h3>
-        <PrimaryCta text="Learn More" />
+        <Cta text="Learn More" />
       </div>
     </div>
   </PrivateEventsCalloutStyle>

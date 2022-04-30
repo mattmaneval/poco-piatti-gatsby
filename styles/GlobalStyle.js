@@ -64,7 +64,7 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     display: inline-block;
-    color: ${color.callout};
+    color: ${color.background};
     font-family: ${fonts.font};
     font-size: min(6.8vw,2.2em);
     margin-bottom: 1.25rem;
@@ -124,7 +124,7 @@ const GlobalStyle = createGlobalStyle`
       cursor: pointer;
 
       &:hover {
-        color: ${color.backgroundTert};
+        color: ${color.callout};
       }
     }
   }
@@ -147,6 +147,14 @@ const GlobalStyle = createGlobalStyle`
 
   .no-padding-bottom {
     padding-bottom: 0;
+  }
+
+  .title {
+    color: ${color.background};
+    font-family: ${fonts.fontBold};
+    font-size: 0.95em;
+    letter-spacing: 0.085em;
+    text-transform: uppercase;
   }
 `;
 

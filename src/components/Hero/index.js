@@ -18,7 +18,7 @@ const { color, space, fonts } = theme;
 const HeroImage = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   background-image: url(${diningRoom});
   background-size: cover;
@@ -75,20 +75,30 @@ const HeroNavLinkConatainer = styled.div`
   font-family: ${fonts.fontBold};
   text-transform: uppercase;
   letter-spacing: 0.085em;
-
-
   text-align: center;
 
   &:hover {
     background-color: ${color.callout};
   }
+
+  &:first-of-type {
+    margin: 0 1em 1em 0;
+
+    @media ${media.secondary} {
+      margin: 0 0 1em 0;
+    }
+  }
+
+  &:last-of-type {
+    margin 0 0 1em 1em;
+
+    @media ${media.secondary} {
+      margin: 0;
+    }
+  }
 `;
 
 const HeroLinkContent = styled.div`
-  // border: 1px solid ${color.background};
-  // border-radius: 0.4em;
-  // padding: 2em;
-
   .hero-link-text {
     margin-bottom: 5em;
   }
@@ -140,18 +150,12 @@ function Hero() {
         <HeroNav>
           <HeroNavLinkConatainer>
             <HeroLinkContent>
-              <a onClick={handleClick} class="cta">Order Now</a>
+              <a onClick={handleClick} class="cta">Order Online</a>
             </HeroLinkContent>
           </HeroNavLinkConatainer>
           <HeroNavLinkConatainer>
             <HeroLinkContent>
-              <a href="tel:419-931-0281">Phone</a>
-            </HeroLinkContent>
-          </HeroNavLinkConatainer>
-
-          <HeroNavLinkConatainer>
-            <HeroLinkContent>
-              <Link to="/Menu/">View Menu</Link>
+              <a href="tel:419-931-0281">Carryout & Reservations</a>
             </HeroLinkContent>
           </HeroNavLinkConatainer>
         </HeroNav>

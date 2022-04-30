@@ -17,7 +17,7 @@ const SectionHeadingStyle = styled.div`
 
   &:after {
     content: "";
-    height: 3px;
+    height: 0.5px;
     flex: 1 1 0%;
     background-color: ${({ light }) => (light ? `${color.background}` : `${color.foreground}`)};
   }
@@ -25,14 +25,11 @@ const SectionHeadingStyle = styled.div`
 
 const SectionHeadingText = styled.span`
   color: ${({ light }) => (light ? `${color.background}` : `${color.foreground}`)};
-  font-family: ${fonts.heading};
-  font-size: 2.25em;
-  letter-spacing: 0.05em;
+  font-family: ${fonts.fontBold};
+  font-size: 0.95em;
+  letter-spacing: 0.085em;
   margin-right: 1em;
-
-  @media ${media.secondary} {
-    font-size: 1.35em;
-  }
+  text-transform: uppercase;
 `;
 
 const SectionHeading = ({ text, light, wrap }) => (

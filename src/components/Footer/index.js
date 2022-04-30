@@ -19,7 +19,7 @@ const footerLink = {
     ${mixins.animate};
 
     &:hover {
-      color: ${color.backgroundTert};
+      color: ${color.callout};
     }
   `,
 };
@@ -54,7 +54,7 @@ const FooterStyles = styled.footer`
       color: ${color.background};
       font-family: ${fonts.font};
       line-height: 140%;
-      font-size: 1.25em;
+      font-size: 0.95em;
       letter-spacing: 0.05rem;
       display: block;
     }
@@ -77,7 +77,7 @@ const FooterStyles = styled.footer`
     a {
       ${footerLink.hover};
       display: block;
-      font-family: ${fonts.heading};
+      font-family: ${fonts.fontBold};
       color: ${color.background};
       padding-bottom: 0.65rem;
       font-size: 0.95em;
