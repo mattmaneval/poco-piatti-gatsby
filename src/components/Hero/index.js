@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 // Components
 import OrderModal from '../OnlineOrderModal/index';
+import Cta from '../Cta/index';
 
 // Images
 import diningRoom from "../../images/IMG_0066.jpg";
@@ -55,7 +56,6 @@ const HeroImage = styled.div`
 `;
 
 const HeroNav = styled.div`
-  ${mixins.flexBetween}
   width: 100%;
   position: relative;
   z-index: 1;
@@ -63,50 +63,22 @@ const HeroNav = styled.div`
   @media ${media.secondary} {
     flex-direction: column;
   }
-`;
-
-const HeroNavLinkConatainer = styled.div`
-  ${mixins.animate}
-  color: ${color.background};
-  cursor: pointer;
-  background-color: ${color.foreground};
-  padding: 1em;
-  width: 100%;
-  font-family: ${fonts.fontBold};
-  text-transform: uppercase;
-  letter-spacing: 0.085em;
-  text-align: center;
-
-  &:hover {
-    background-color: ${color.callout};
-  }
-
-  &:first-of-type {
-    margin: 0 1em 1em 0;
-
-    @media ${media.secondary} {
-      margin: 0 0 1em 0;
-    }
-  }
-
-  &:last-of-type {
-    margin 0 0 1em 1em;
-
-    @media ${media.secondary} {
-      margin: 0;
-    }
-  }
-`;
-
-const HeroLinkContent = styled.div`
-  .hero-link-text {
-    margin-bottom: 5em;
-  }
 
   a {
-    color: ${color.background};
-    font-size: 0.95em;
+    @media ${media.secondary} {
+      width: 100%;
+      text-align: center;
+    }
+  }
+`;
 
+const HandleClickWrap = styled.a`
+  position: relative;
+  display: inline-block;
+  margin-right: 1em;
+
+  @media ${media.secondary} {
+    margin: 0 0 1em 0;
   }
 `;
 
@@ -148,16 +120,10 @@ function Hero() {
       <div className="wrap">
         <h1><span>Experience</span> <br />Poco Piatti</h1>
         <HeroNav>
-          <HeroNavLinkConatainer>
-            <HeroLinkContent>
-              <a onClick={handleClick} class="cta">Order Online</a>
-            </HeroLinkContent>
-          </HeroNavLinkConatainer>
-          <HeroNavLinkConatainer>
-            <HeroLinkContent>
-              <a href="tel:419-931-0281">Carryout & Reservations</a>
-            </HeroLinkContent>
-          </HeroNavLinkConatainer>
+          <HandleClickWrap onClick={handleClick}>
+            <Cta text="Order Online" filled />
+          </HandleClickWrap>
+          <Cta text="Carryout & Reservations" href="tel:419-931-0281"/>
         </HeroNav>
 
         <OrderModal modal={modal} onClick={handleClick} />
@@ -168,3 +134,15 @@ function Hero() {
 }
 
 export default Hero;
+
+
+// <HeroNavLinkConatainer>
+//   <HeroLinkContent>
+//     <a onClick={handleClick} class="cta">Order Online</a>
+//   </HeroLinkContent>
+// </HeroNavLinkConatainer>
+// <HeroNavLinkConatainer>
+//   <HeroLinkContent>
+//     <a href="tel:419-931-0281">Carryout & Reservations</a>
+//   </HeroLinkContent>
+// </HeroNavLinkConatainer>

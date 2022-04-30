@@ -13,7 +13,17 @@ import media from '../../../styles/media';
 const { space } = theme;
 
 const PizzaStyles = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: ${space.space};
+
+  @media ${media.primary} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media ${media.secondary} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const pizzaData = [
@@ -85,12 +95,14 @@ const pizzaData = [
 ];
 
 const Pizza = () => (
-  <PizzaStyles>
+  <>
     <SectionHeading text="Pizza" light />
-    {Object.keys(pizzaData).map((key) => (
-      <FoodItem data={pizzaData[key]} />
-    ))}
-  </PizzaStyles>
+    <PizzaStyles>
+      {Object.keys(pizzaData).map((key) => (
+        <FoodItem data={pizzaData[key]} />
+      ))}
+    </PizzaStyles>
+  </>
 );
 
 export default Pizza;

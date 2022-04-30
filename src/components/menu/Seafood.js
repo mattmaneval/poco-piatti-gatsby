@@ -13,7 +13,17 @@ import media from '../../../styles/media';
 const { space } = theme;
 
 const SeafoodStyle = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: ${space.space};
+
+  @media ${media.primary} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media ${media.secondary} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const seafoodData = [
@@ -76,12 +86,14 @@ const seafoodData = [
 ];
 
 const Seafood = () => (
-  <SeafoodStyle>
+  <>
     <SectionHeading text="Seafood" light />
-    {Object.keys(seafoodData).map((key) => (
-      <FoodItem data={seafoodData[key]} />
-    ))}
-  </SeafoodStyle>
+    <SeafoodStyle>
+      {Object.keys(seafoodData).map((key) => (
+        <FoodItem data={seafoodData[key]} />
+      ))}
+    </SeafoodStyle>
+  </>
 );
 
 export default Seafood;

@@ -13,7 +13,17 @@ import media from '../../../styles/media';
 const { space } = theme;
 
 const SaladsStyle = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: ${space.space};
+
+  @media ${media.primary} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media ${media.secondary} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const saladsData = [
@@ -92,12 +102,14 @@ const saladsData = [
 ];
 
 const Salads = () => (
-  <SaladsStyle>
+  <>
     <SectionHeading text="Salads" light />
-    {Object.keys(saladsData).map((key) => (
-      <FoodItem data={saladsData[key]} />
-    ))}
-  </SaladsStyle>
+    <SaladsStyle>
+      {Object.keys(saladsData).map((key) => (
+        <FoodItem data={saladsData[key]} />
+      ))}
+    </SaladsStyle>
+  </>
 );
 
 export default Salads;

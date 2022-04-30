@@ -53,6 +53,10 @@ const GlobalStyle = createGlobalStyle`
     color: ${color.callout};
     line-height: 1;
 
+    span {
+      color: ${color.background};
+    }
+
     @media ${media.primary} {
       font-size: 4em;
     }

@@ -13,7 +13,7 @@ const { color, space, fonts } = theme;
 
 const OrderModalStyle = styled.div`
   ${mixins.animate}
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.45);
   position: fixed;
   height: 100vh;
   width: 100vw;

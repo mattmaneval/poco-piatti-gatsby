@@ -12,12 +12,14 @@ const { fonts, space, color } = theme;
 
 const FoodItemStyles = styled.div`
   font-family: ${fonts.font};
-  margin-bottom: 4rem;
+  margin-bottom: 1em;
+  padding: 1em;
 
   .food-item-name {
     ${mixins.flexBetween};
     margin-bottom: ${space.quarterSpace};
     color: ${color.background};
+    font-family: ${fonts.fontItalic};
     font-weight: bold;
     font-size: 1.5em;
 
@@ -50,7 +52,8 @@ const FoodItemStyles = styled.div`
   }
 
   .food-item-price {
-    font-family: ${fonts.heading};
+    font-size: 0.85em;
+    font-family: ${fonts.font};
   }
 `;
 
@@ -63,7 +66,7 @@ const FoodItem = ({ data }) => (
       <div className="food-item-price">
         {data.price
           ? `${typeof data.price === 'object'
-            ? `Sm ${data.price.small} Lg ${data.price.large}`
+            ? `${data.price.small} | ${data.price.large}`
             : `${data.price}`}`
           : ''}
       </div>

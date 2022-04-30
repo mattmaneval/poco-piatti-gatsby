@@ -11,10 +11,11 @@ import media from '../../../styles/media';
 const { color, fonts } = theme;
 
 const CtaStyle = styled(props => <Link {...props} />)`
-  ${({ wrap }) => (wrap ? `${mixins.wrap}` : null)};
   ${mixins.animate}
-  color: ${color.background};
-  border: 1.2px solid ${color.callout};
+  color: ${({ filled }) => (filled ? `${color.foreground}` : `${color.background}`)};
+  cursor: pointer;
+  background-color: ${({ filled }) => (filled ? `${color.background}` : `none`)};
+  border: ${({ filled }) => (filled ? `1.2px solid ${color.background}` : `1.2px solid ${color.callout}`)};
   display: inline-block;
   padding: 0.5em 2.3em;
   position: relative;
@@ -27,6 +28,7 @@ const CtaStyle = styled(props => <Link {...props} />)`
   &:hover {
     color: ${color.background};
     background-color: ${color.callout};
+    border: 1.2px solid ${color.callout};
   }
 `;
 
@@ -34,8 +36,8 @@ const CtaText = styled.span`
 
 `;
 
-const Cta = ({ text, light, href }) => (
-  <CtaStyle light={light} to={href} light={light}>
+const Cta = ({ text, light, href, filled }) => (
+  <CtaStyle light={light} to={href} light={light} filled={filled}>
     {text}
   </CtaStyle>
 );

@@ -13,7 +13,17 @@ import media from '../../../styles/media';
 const { space } = theme;
 
 const BigPlatesStyles = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: ${space.space};
+
+  @media ${media.primary} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media ${media.secondary} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const bigPlatesData = [
@@ -97,12 +107,14 @@ const bigPlatesData = [
 ];
 
 const BigPlates = () => (
-  <BigPlatesStyles>
+  <>
     <SectionHeading text="Big Plates" light />
-    {Object.keys(bigPlatesData).map((key) => (
-      <FoodItem data={bigPlatesData[key]} />
-    ))}
-  </BigPlatesStyles>
+    <BigPlatesStyles>
+      {Object.keys(bigPlatesData).map((key) => (
+        <FoodItem data={bigPlatesData[key]} />
+      ))}
+    </BigPlatesStyles>
+  </>
 );
 
 export default BigPlates;

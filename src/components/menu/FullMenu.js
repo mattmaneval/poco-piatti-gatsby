@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+
+// Components
+import HeadingGroup from "../HeadingGroup/index";
 import Seafood from './Seafood';
 import Vegetarian from './Vegetarian';
 import Carne from './Carne';
@@ -22,6 +25,7 @@ const FullMenuStyles = styled.section`
 const FullMenu = () => (
   <FullMenuStyles>
     <div className="wrap">
+
       <Seafood />
       <Carne />
       <Vegetarian />

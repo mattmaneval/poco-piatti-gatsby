@@ -13,7 +13,17 @@ import media from '../../../styles/media';
 const { space } = theme;
 
 const CarneStyles = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: ${space.space};
+
+  @media ${media.primary} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media ${media.secondary} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const carneData = [
@@ -121,12 +131,14 @@ const carneData = [
 ];
 
 const Carne = () => (
-  <CarneStyles>
+  <>
     <SectionHeading text="Carne" light />
-    {Object.keys(carneData).map((key) => (
-      <FoodItem data={carneData[key]} />
-    ))}
-  </CarneStyles>
+    <CarneStyles>
+      {Object.keys(carneData).map((key) => (
+        <FoodItem data={carneData[key]} />
+      ))}
+    </CarneStyles>
+  </>
 );
 
 export default Carne;
