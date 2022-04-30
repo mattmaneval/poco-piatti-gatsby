@@ -23,12 +23,13 @@ const IndexPage = ({props, absolute}) => (
     <Hero />
     <ThePocoExperience />
     <Locations />
-    <GoogleMap />
+
     <PhotoGalleryTwo />
     <Review />
     <PhotoGallery />
     <PhotoGalleryThree />
     <PrivateEventsCallout />
+    <GoogleMap />
   </Layout>
 )
 

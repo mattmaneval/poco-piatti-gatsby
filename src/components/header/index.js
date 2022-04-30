@@ -35,42 +35,40 @@ const HeaderStyles = styled.header`
 
 
   .header-wrap {
-    ${mixins.wrap}
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 2em 0;
 
-    .header-links {
-      margin: auto
-    }
+    ${mixins.flexBetween}
 
-    .header-logo {
-      margin: auto;
-    }
+    padding: 2em;
+
+
+
+
 
     .header-cta-container {
-
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-
+      display: inline-block;
     }
 
     .header-cta {
       ${mixins.animate}
       color: ${color.background};
-      border: 1.5px solid ${color.background};
+      border: 1.2px solid ${color.callout};
       display: inline-block;
-      padding: 1em 2em;
-      border-radius: 2em;
+      padding: 0.5em 2.3em;
+      position: relative;
+      margin-left: 1em;
+      text-transform: uppercase;
+      line-height: 1.1;
+      font-size: 0.95em;
+      letter-spacing: 0.085em;
+      font-family: ${fonts.fontBold};
 
       @media ${media.primary} {
         display: none;
       }
 
       &:hover {
-        color: ${color.foreground};
-        background-color: ${color.background}
+        color: ${color.background};
+        background-color: ${color.callout};
       }
     }
   }
@@ -100,14 +98,15 @@ const HeaderStyles = styled.header`
 
   a {
     ${mixins.animate};
-    font-family: ${fonts.heading};
+    font-family: ${fonts.fontBold};
     color: ${color.background};
     padding: ${space.halfSpace};
     font-size: 0.95em;
+    letter-spacing: 0.085em;
     text-transform: uppercase;
 
     &:hover {
-      color: ${color.backgroundTert};
+      color: ${color.callout};
     }
   }
 `;
@@ -121,6 +120,9 @@ function Header({absolute}) {
     <HeaderStyles absolute={absolute} menu={menu}>
       <GlobalHeader />
       <div className="header-wrap">
+      <div className="header-logo">
+        <Logo />
+      </div>
       <div className="header-links">
         <nav>
           <Link to="/Menu/">Menu</Link>
@@ -128,16 +130,16 @@ function Header({absolute}) {
           <Link to="/PrivateEvents/">Private Events</Link>
           <Link to="/About/">About</Link>
         </nav>
-      </div>
-        <div className="header-logo">
-          <Logo />
+
+        <div className="header-cta-container">
+          <div className="header-cta">
+          Order Now
+          </div>
+          <MenuButton menu={menu} onClick={handleClick} />
         </div>
-      <div className="header-cta-container">
-        <div className="header-cta">
-        Order Now
-        </div>
-        <MenuButton menu={menu} onClick={handleClick} />
       </div>
+
+
 
       </div>
 

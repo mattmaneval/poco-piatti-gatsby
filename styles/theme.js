@@ -8,10 +8,10 @@ const theme = {
 
   // Space
   space: {
-    space: '2rem',
-    halfSpace: '1rem',
-    quarterSpace: '0.5rem',
-    gap: '2rem',
+    space: '2em',
+    halfSpace: '1em',
+    quarterSpace: '0.5em',
+    gap: '2em',
   },
 
   // #748D63
@@ -21,22 +21,23 @@ const theme = {
   // #FFF8EA
   // Color
   color: {
-    background: '#ffffff',
+    background: '#F0EDE5',
     // background: '#F0EDE5',
     backgroundAlt: '#FFF8EA',
     backgroundTert: '#748D63',
     foreground: '#171717',
-    callout: '#C2243E',
+    callout: '#B29353',
     foregroundDim: '#8f9296',
   },
 
   // Fonts
   fonts: {
     font: 'old_standard_ttregular',
-    fontBold: 'old_standard_ttregular',
-    title: 'old_standard_ttregular',
-    heading: 'old_standard_ttregular',
-    subHeading: 'old_standard_ttregular',
+    fontItalic: 'old_standard_ttitalic',
+    fontBold: 'yantramanavbold',
+    title: 'yantramanavblack',
+    // heading: 'old_standard_ttregular',
+    // subHeading: 'old_standard_ttregular',
   },
 };
 

@@ -18,7 +18,7 @@ const { color, space, fonts } = theme;
 const HeroImage = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   background-image: url(${diningRoom});
   background-size: cover;
@@ -29,8 +29,24 @@ const HeroImage = styled.div`
   position: relative;
   z-index: 1;
 
+  video {
+    height: 100vh;
+    width: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    filter: brightness(0.65);
+  }
+
   h1 {
-    color: ${color.background};
+    text-transform: uppercase;
+    margin-bottom: 0.25em;
+
+    span {
+      font-family: ${fonts.fontItalic};
+      font-size: 0.65em;
+      text-transform: capitalize;
+    }
   }
 
   .wrap {
@@ -54,9 +70,12 @@ const HeroNavLinkConatainer = styled.div`
   color: ${color.background};
   cursor: pointer;
   background-color: ${color.foreground};
-  margin: 1em;
   padding: 1em;
   width: 100%;
+  font-family: ${fonts.fontBold};
+  text-transform: uppercase;
+  letter-spacing: 0.085em;
+
 
   text-align: center;
 
@@ -76,7 +95,8 @@ const HeroLinkContent = styled.div`
 
   a {
     color: ${color.background};
-    font-size: 1.65em;
+    font-size: 0.95em;
+
   }
 `;
 
@@ -90,7 +110,7 @@ const GradientOverlay = styled.div `
   pointer-events: none;
   position: absolute;
   width: 100%;
-  z-index: 2;
+  // z-index: 1000;
 
   &:before {
     background-color: #02020a;
@@ -110,29 +130,32 @@ function Hero() {
 
   return (
     <HeroImage>
+
+      <video playsInline  autoPlay muted loop id="bgvid">
+        <source src="https://pocopiatti.s3.us-east-2.amazonaws.com/background-video.mp4" type="video/mp4" />
+        <source src="https://pocopiatti.s3.us-east-2.amazonaws.com/background-video.mp4" type="video/mmp4" />
+      </video>
       <div className="wrap">
-        <h1>Welcome to Poco.</h1>
+        <h1><span>Experience</span> <br />Poco Piatti</h1>
         <HeroNav>
           <HeroNavLinkConatainer>
             <HeroLinkContent>
-              <div>Online Ordering</div>
               <a onClick={handleClick} class="cta">Order Now</a>
             </HeroLinkContent>
           </HeroNavLinkConatainer>
           <HeroNavLinkConatainer>
             <HeroLinkContent>
-              <div>Carryout & Reservations</div>
               <a href="tel:419-931-0281">Phone</a>
             </HeroLinkContent>
           </HeroNavLinkConatainer>
 
           <HeroNavLinkConatainer>
             <HeroLinkContent>
-              <div>View Our Menu</div>
               <Link to="/Menu/">View Menu</Link>
             </HeroLinkContent>
           </HeroNavLinkConatainer>
         </HeroNav>
+
         <OrderModal modal={modal} onClick={handleClick} />
       </div>
       <GradientOverlay />

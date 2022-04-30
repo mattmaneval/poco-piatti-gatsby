@@ -50,9 +50,8 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     font-family: ${fonts.title};
     font-size: 5.25em;
-    color: ${color.background};
-    margin-bottom: ${space.space};
-    line-height: 85%;
+    color: ${color.callout};
+    line-height: 1;
 
     @media ${media.primary} {
       font-size: 4em;
@@ -65,11 +64,14 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     display: inline-block;
-    color: ${color.foreground};
-    font-family: ${fonts.title};
-    font-size: 3.65em;
+    color: ${color.callout};
+    font-family: ${fonts.font};
+    font-size: min(6.8vw,2.2em);
     margin-bottom: 1.25rem;
-    text-transform: uppercase;
+
+    span {
+      font-family: ${fonts.fontItalic};
+    }
 
     @media ${media.secondary} {
       font-size: 2.25em;
@@ -113,7 +115,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${fonts.font};
     color: ${color.foregroundDim};
     line-height: 140%;
-    font-size: 1.25em;
+    font-size: 1.125em;;
 
     a {
       ${mixins.animate};

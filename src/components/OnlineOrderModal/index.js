@@ -44,15 +44,17 @@ const OrderModalStyle = styled.div`
     }
 
     &-links {
+      ${mixins.cta}
       align-items: center;
       height: 100%;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      padding: 4em 2em;
+      // padding: 4em 2em;
       background-image: url(${img});
       background-size: cover;
       background-repeat: no-repeat;
+
     }
   }
 
@@ -85,6 +87,19 @@ const LocationButton = styled.a`
   text-align: center;
   background-color: ${color.foreground};
   color: ${color.background};
+
+
+  ${mixins.animate};
+  font-family: ${fonts.fontBold};
+  color: ${color.background};
+  padding: ${space.halfSpace};
+  font-size: 0.95em;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+
+  &:hover {
+    color: ${color.callout};
+  }
 
   &:hover {
     background-color: ${color.callout};
