@@ -25,7 +25,7 @@ const CtaStyle = styled(props => <Link {...props} />)`
   letter-spacing: 0.085em;
   font-family: ${fonts.fontBold};
   width: fit-content;
-  
+
   &:hover {
     color: ${color.background};
     background-color: ${color.callout};
@@ -38,7 +38,7 @@ const CtaText = styled.span`
 `;
 
 const Cta = ({ text, light, href, filled }) => (
-  <CtaStyle light={light} to={href} light={light} filled={filled}>
+  <CtaStyle className="cta" light={light} to={href} light={light} filled={filled}>
     {text}
   </CtaStyle>
 );

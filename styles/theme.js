@@ -36,6 +36,7 @@ const theme = {
     font: 'old_standard_ttregular',
     fontItalic: 'old_standard_ttitalic',
     fontMedium: 'yantramanavmedium',
+    fontLight: 'yantramanavlight',
     fontBold: 'yantramanavbold',
     title: 'yantramanavblack',
     // heading: 'old_standard_ttregular',

@@ -1,6 +1,8 @@
 import { css } from 'styled-components';
 
 // Fonts
+import yantramanavlightWoff from '../fonts/yantramanav-light-webfont.woff';
+import yantramanavlightWoff2 from '../fonts/yantramanav-light-webfont.woff2';
 import yantramanavmediumWoff from '../fonts/yantramanav-medium-webfont.woff';
 import yantramanavmediumWoff2 from '../fonts/yantramanav-medium-webfont.woff2';
 import yantramanavboldWoff from '../fonts/yantramanav-bold-webfont.woff';
@@ -48,8 +50,8 @@ const Fonts = css`
 
   @font-face {
     font-family: 'yantramanavlight';
-    src: url('/fonts/yantramanav-light-webfont.woff2') format('woff2'),
-         url('/fonts/yantramanav-light-webfont.woff') format('woff');
+    src: url('${yantramanavlightWoff2}') format('woff2'),
+         url('${yantramanavlightWoff}') format('woff');
     font-weight: normal;
     font-style: normal;
   }

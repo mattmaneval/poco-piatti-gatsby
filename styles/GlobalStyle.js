@@ -159,6 +159,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 0.95em;
     letter-spacing: 0.085em;
     text-transform: uppercase;
+
+    &.light {
+      color: ${color.background};
+    }
   }
 
   .map {

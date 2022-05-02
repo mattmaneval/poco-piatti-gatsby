@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import img from "../../images/DSC04736.jpg";
+// Components
+import Cta from '../Cta/index';
 
 // Styles
 import mixins from '../../../styles/mixins';
@@ -26,7 +27,6 @@ const OrderModalStyle = styled.div`
 
   .order-modal-container {
     ${mixins.wrap}
-    background-color: ${color.foreground};
     position: absolute;
     top: 50%;
     left: 50%;
@@ -34,6 +34,7 @@ const OrderModalStyle = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    grid-gap: 1em;
 
     @media ${media.primary} {
       grid-template-columns: 1fr;
@@ -50,15 +51,25 @@ const OrderModalStyle = styled.div`
       display: flex;
       justify-content: center;
       flex-direction: column;
-      // padding: 4em 2em;
-      background-image: url(${img});
-      background-size: cover;
-      background-repeat: no-repeat;
+      background: transparent;
 
+      .cta {
+        text-align: center;
+        width: 100%;
+
+        margin-bottom: 0.5em;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 
   .order-modal {
+    &-container-content {
+      background-color: ${color.foreground};
+    }
 
     &-content {
       color: ${color.background};
@@ -74,36 +85,36 @@ const OrderModalStyle = styled.div`
 `;
 
 const LocationButton = styled.a`
-  ${mixins.animate}
-  border-bottom: 1px solid ${color.callout};
-  display: inline-block;
-  cursor: pointer;
-  font-size: 1.65rem;
-  color: ${color.foreground};
-  padding: 1.15rem 2rem;
-  width: 100%;
-  background-color: ${color.background};
-  position: relative;
-  text-align: center;
-  background-color: ${color.foreground};
-  color: ${color.background};
-
-
-  ${mixins.animate};
-  font-family: ${fonts.fontBold};
-  color: ${color.background};
-  padding: ${space.halfSpace};
-  font-size: 0.95em;
-  letter-spacing: 0.085em;
-  text-transform: uppercase;
-
-  &:hover {
-    color: ${color.callout};
-  }
-
-  &:hover {
-    background-color: ${color.callout};
-  }
+  // ${mixins.animate}
+  // border-bottom: 1px solid ${color.callout};
+  // display: inline-block;
+  // cursor: pointer;
+  // font-size: 1.65rem;
+  // color: ${color.foreground};
+  // padding: 1.15rem 2rem;
+  // width: 100%;
+  // background-color: ${color.background};
+  // position: relative;
+  // text-align: center;
+  // background-color: ${color.foreground};
+  // color: ${color.background};
+  //
+  //
+  // ${mixins.animate};
+  // font-family: ${fonts.fontBold};
+  // color: ${color.background};
+  // padding: ${space.halfSpace};
+  // font-size: 0.95em;
+  // letter-spacing: 0.085em;
+  // text-transform: uppercase;
+  //
+  // &:hover {
+  //   color: ${color.callout};
+  // }
+  //
+  // &:hover {
+  //   background-color: ${color.callout};
+  // }
 `;
 
 const GoBack = styled.a`
@@ -132,9 +143,9 @@ const OrderModal = ({ modal, onClick }) => (
         </div>
       </div>
       <div className="order-modal-container-links">
-        <LocationButton href="https://www.toasttab.com/poco-piatti-perrysburg-3155-chapel-drive/v3/?mode=fulfillment">Perrysburg</LocationButton>
-        <LocationButton href="https://www.toasttab.com/poco-piatti-toledo-6710-w-central-ave-1/v3/?mode=fulfillment">Sylvania</LocationButton>
-        <LocationButton href="https://www.toasttab.com/poco-piatti-downtown-329-n-huron-st">Downtown</LocationButton>
+        <Cta text="Perrysburg" href="https://www.toasttab.com/poco-piatti-perrysburg-3155-chapel-drive/v3/?mode=fulfillment" />
+        <Cta text="Sylvania" href="https://www.toasttab.com/poco-piatti-toledo-6710-w-central-ave-1/v3/?mode=fulfillment" />
+        <Cta text="Downtown" href="https://www.toasttab.com/poco-piatti-downtown-329-n-huron-st" />
         <GoBack onClick={onClick}>Go Back</GoBack>
       </div>
     </div>

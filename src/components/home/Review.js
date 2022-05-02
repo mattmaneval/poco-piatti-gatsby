@@ -25,15 +25,8 @@ const ReviewsStyle = styled.section`
     }
   }
 
-  .review-source {
-    color: ${color.foregroundDim};
-    font-size: 1.05em;
+  .title {
     margin-bottom: 1.85em;
-    text-transform: uppercase;
-
-    @media ${media.secondary} {
-      font-size: 1.15em;
-    }
   }
 `;
 
@@ -46,11 +39,11 @@ const Reviews = () => (
         Italian influences) is so beautifully prepared that it seems like a more
         elite spot, but you can certainly find great values.&quot;
       </div>
-      <div className="review-source">&mdash; The Blade</div>
+      <div className="title light">&mdash; The Blade</div>
       <div className="review">Dining Guide Award Winner for Best Appetizers & Runner-Up for Best Staff</div>
-      <div className="review-source">&mdash; Toledo City Paper</div>
+      <div className="title light">&mdash; Toledo City Paper</div>
       <div className="review">Dining Guide Award Winner for Best Restaurateur</div>
-      <div className="review-source">&mdash; Toledo City Paper</div>
+      <div className="title light">&mdash; Toledo City Paper</div>
     </div>
   </ReviewsStyle>
 );

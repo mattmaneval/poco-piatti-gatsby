@@ -45,38 +45,61 @@ const LocationContent = styled.div`
   .hours {
     margin-bottom: 1em;
   }
+
+  .map-link {
+    a {
+      color: ${color.callout};
+      font-family: ${fonts.fontLight};
+    }
+  }
 `;
 
-const LocationMap = styled.div`
+const LocationImage = styled.div`
   grid-area: 1/2/2/6;
-
+  background-image: ${props => `url(${props.imageUrl})`};
+  background-size: cover;
+  background-position: center;
 `;
 
 const GetDirections = styled.a`
   color: ${color.background};
-  clip-path: polygon(100% 0%,100% 0%,82% 70%,38% 0%);
+  clip-path: polygon(100% 0%,100% 0%,68% 48%,38% 0%);
   background-color: ${color.callout};
   z-index: 2;
   grid-area: 1/2/2/3;
 `;
 
 
-const Map = () => (
+const Location = ({ data }) => (
+
   <>
     <LocationContainer>
       <LocationContent>
-        <div className="title">Perrysburg</div>
+        <div className="title">
+          {data.name
+            ?  `${data.name}`
+            : ''}
+        </div>
         <div className="address">
-          <div>3155 Chappel Dr.</div>
-          <div>Perrysburg, Ohio</div>
+          <div>
+            {data.addLine1
+              ?  `${data.addLine1}`
+              : ''}
+          </div>
+          <div>
+            {data.addLine2
+              ?  `${data.addLine2}`
+              : ''}
+          </div>
+        </div>
+        <div className="map-link">
+          <a href="">view on map</a>
         </div>
       </LocationContent>
-      <GetDirections>G</GetDirections>
-      <LocationMap>
-        <GoogleMap />
-      </LocationMap>
+      <GetDirections></GetDirections>
+      <LocationImage imageUrl={data.image} />
     </LocationContainer>
   </>
 );
 
-export default Map;
+export default Location;

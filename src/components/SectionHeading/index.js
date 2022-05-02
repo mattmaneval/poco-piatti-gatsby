@@ -10,7 +10,7 @@ import media from '../../../styles/media';
 const { color, fonts } = theme;
 
 const SectionHeadingStyle = styled.div`
-  ${({ wrap }) => (wrap ? `${mixins.wrap}` : null)};
+  ${({ wrap }) => (wrap ? `${mixins.wrap}` : null)}
   align-items: center;
   display: flex;
   margin-bottom: 4em;
