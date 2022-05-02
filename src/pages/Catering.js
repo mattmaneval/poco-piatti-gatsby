@@ -6,6 +6,10 @@ import SEO from "../components/seo"
 // Components
 import HeadingGroup from "../components/HeadingGroup/index";
 import SectionHeading from "../components/SectionHeading/index";
+import Cta from "../components/Cta/index";
+
+// Images
+import CateringImage from "../images/catering-image.jpg";
 
 // Styles
 import mixins from '../../styles/mixins';
@@ -20,18 +24,23 @@ const CateringPackage = styled.div`
 `;
 
 const Catering = () => (
-  <Layout>
+  <Layout absolute>
     <SEO title="Catering" />
     <main>
+      <HeadingGroup
+        h1Text={[<span>The Poco Experience</span>,<br />,  "Catering"]}
+
+        imageUrl={CateringImage}
+        light
+      />
       <section>
-        <div class="wrap">
-          <HeadingGroup
-            h1Text="Catering"
-            h4Text="Full service catering for memorable food experiences."
-          />
+        <div className="wrap">
+          <div className="title light">Plan your event</div>
+          <h2>Full service catering for <span>memorable</span> food <span>experiences.</span></h2>
+          <Cta text="Order Catering" />
         </div>
       </section>
-      <section class="no-padding-top">
+      <section>
         <SectionHeading text="Packages" wrap light />
         <div class="wrap">
           <CateringPackage>

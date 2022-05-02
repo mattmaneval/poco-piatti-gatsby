@@ -20,17 +20,7 @@ const PrivateEventsCalloutStyle = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
 
-  &:after {
-    background: ${color.foreground};
-    content: "";
-    left: 0;
-    opacity: 0.75;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 0;
-  }
+
 
 
   .private-events-callout {
@@ -51,6 +41,28 @@ const PrivateEventsCalloutStyle = styled.section`
   }
 `;
 
+const GradientOverlay = styled.div `
+  bottom: 0;
+  height: 40em;
+  left: 0;
+  -webkit-mask-image: linear-gradient(180deg,rgba(2,2,10,0), ${color.foreground});
+  mask-image: linear-gradient(180deg,rgba(2,2,10,0), ${color.foreground});
+  overflow-x: hidden;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+
+  &:before {
+    background-color: #02020a;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+`;
+
 const PrivateEventsCallout = () => (
   <PrivateEventsCalloutStyle>
     <div className="inner-wrap">
@@ -61,9 +73,10 @@ const PrivateEventsCallout = () => (
           We offer flexible packages and personal attention to your
           party planning needs with each event customized to fit your criteria.
         </h3>
-        <Cta text="Learn More" />
+        <Cta text="Learn More" href="/PrivateEvents" />
       </div>
     </div>
+    <GradientOverlay />
   </PrivateEventsCalloutStyle>
 );
 

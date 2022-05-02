@@ -9,6 +9,9 @@ import SectionHeading from "../components/SectionHeading/index";
 import PerrysburgRoom from "../components/private-events/PerrysburgRoom"
 import DowntownRoom from "../components/private-events/DowntownRoom"
 
+// Images
+import PrivateEventsImage from "../images/private-events-image.jpg";
+
 // Styles
 import mixins from '../../styles/mixins';
 import theme from '../../styles/theme';
@@ -18,16 +21,14 @@ const { color, space, fonts } = theme;
 
 
 const PrivateEvents = () => (
-  <Layout>
+  <Layout absolute>
     <SEO title="Private Events" />
-    <section>
-      <div className="wrap">
-        <HeadingGroup
-          h1Text="Private Events"
-          h4Text="Book your next private party or event at Poco Piatti. We offer flexible packages and personal attention to your party planning needs with each event customized to fit your criteria."
-        />
-      </div>
-    </section>
+    <HeadingGroup
+      h1Text={[<span>Experience</span>,<br />,  "Private Events"]}
+      h4Text="Book your next private party or event at Poco Piatti. We offer flexible packages and personal attention to your party planning needs with each event customized to fit your criteria."
+      imageUrl={PrivateEventsImage}
+      light
+    />
     <div className="PrivateEvents">
       <div className="PrivateEventsWrap">
         <div className="PrivateEventsWrapHeader">

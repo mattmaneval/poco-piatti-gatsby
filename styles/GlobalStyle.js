@@ -52,9 +52,15 @@ const GlobalStyle = createGlobalStyle`
     font-size: 5.25em;
     color: ${color.callout};
     line-height: 1;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
 
     span {
       color: ${color.background};
+      font-family: ${fonts.fontItalic};
+      font-size: 0.65em;
+      text-transform: capitalize;
     }
 
     @media ${media.primary} {

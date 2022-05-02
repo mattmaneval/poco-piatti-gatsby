@@ -21,10 +21,6 @@ const HeroImage = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(${diningRoom});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -42,12 +38,6 @@ const HeroImage = styled.div`
   h1 {
     text-transform: uppercase;
     margin-bottom: 0.25em;
-
-    span {
-      font-family: ${fonts.fontItalic};
-      font-size: 0.65em;
-      text-transform: capitalize;
-    }
   }
 
   .wrap {
@@ -112,7 +102,6 @@ function Hero() {
 
   return (
     <HeroImage>
-
       <video playsInline  autoPlay muted loop id="bgvid">
         <source src="https://pocopiatti.s3.us-east-2.amazonaws.com/background-video.mp4" type="video/mp4" />
         <source src="https://pocopiatti.s3.us-east-2.amazonaws.com/background-video.mp4" type="video/mmp4" />
