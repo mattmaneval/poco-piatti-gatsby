@@ -34,7 +34,6 @@ const OrderModalStyle = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    grid-gap: 1em;
 
     @media ${media.primary} {
       grid-template-columns: 1fr;
@@ -51,7 +50,8 @@ const OrderModalStyle = styled.div`
       display: flex;
       justify-content: center;
       flex-direction: column;
-      background: transparent;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 2em;
 
       .cta {
         text-align: center;

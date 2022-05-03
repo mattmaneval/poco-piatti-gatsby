@@ -77,6 +77,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${color.background};
     font-family: ${fonts.font};
     font-size: min(6.8vw,2.2em);
+    line-height: 1.2;
     margin-bottom: 1.15em;
 
     span {
@@ -160,7 +161,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .title {
-    color: ${color.background};
+    color: ${color.foreground};
     font-family: ${fonts.fontBold};
     font-size: 0.95em;
     letter-spacing: 0.085em;

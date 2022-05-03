@@ -51,6 +51,7 @@ const ReviewsBackgroundImage = styled.div`
   top: -15%;
   width: 130%;
 `;
+
 const Reviews = () => (
   <ReviewsStyle>
     <ReviewsBackgroundImage />

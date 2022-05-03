@@ -1,5 +1,5 @@
 import React from 'react';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -10,9 +10,16 @@ import DowntownRoom from "../components/private-events/DowntownRoom"
 import H2Callout from "../components/H2Callout/index";
 import PrivateRoomCallout from "../components/PrivateRoomCallout/index";
 import PhotoGallery from "../components/PhotoGallery/index";
+import MoreInfoCallout from "../components/MoreInfoCallout/index";
 
 // Images
 import PrivateEventsImage from "../images/private-events-image.jpg";
+
+// Styles
+import theme from '../../styles/theme';
+import media from '../../styles/media';
+
+const { color } = theme;
 
 
 const PrivateEventsImagesData = [
@@ -29,6 +36,52 @@ const PrivateEventsImagesData = [
     image: 'https://pocopiatti.s3.us-east-2.amazonaws.com/Locations/perrysburg-storefront.jpg',
   },
 ];
+
+const BackgroundImageContainer = styled.div`
+  position: relative;
+`;
+
+const BackgroundImage = styled.div`
+  background-image: url(${PrivateEventsImage});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 130%;
+  filter: blur(4em);
+  height: 130%;
+  left: -15%;
+  mask-image: linear-gradient(180deg, ${color.foreground}, rgba(${color.foreground}, 0));
+  -webkit-mask-image: linear-gradient(180deg,${color.foreground}, rgba(${color.foreground}, 0));
+  opacity: 0.5;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 130%;
+
+`;
+
+
+const GradientOverlayBottom = styled.div `
+  bottom: 0;
+  height: 40em;
+  left: 0;
+  -webkit-mask-image: linear-gradient(180deg,rgba(2,2,10,0), ${color.foreground});
+  mask-image: linear-gradient(180deg,rgba(2,2,10,0), ${color.foreground});
+  overflow-x: hidden;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+
+  &:before {
+    background-color: #02020a;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+`;
 
 
 const PrivateEvents = () => (
@@ -58,8 +111,15 @@ const PrivateEvents = () => (
       ctaHref="tel:419-931-0281"
       reverse
     />
-
-    <PhotoGallery imageData={PrivateEventsImagesData} />
+    <BackgroundImageContainer>
+      <BackgroundImage />
+      <PhotoGallery imageData={PrivateEventsImagesData} />
+      <MoreInfoCallout
+        ctaText="Email"
+        ctaHref="tel:419-931-0281"
+      />
+      <GradientOverlayBottom />
+    </BackgroundImageContainer>
   </Layout>
 )
 
