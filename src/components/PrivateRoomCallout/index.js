@@ -6,7 +6,7 @@ import OrderModal from '../OnlineOrderModal/index';
 import Cta from '../Cta/index';
 
 // Images
-import ThePocoExperienceImage from "../../images/the-poco-experience.jpg";
+import PrivateRoomImage from "../../images/the-poco-experience.jpg";
 
 // Styles
 import mixins from '../../../styles/mixins';
@@ -18,6 +18,7 @@ const { color, space, fonts } = theme;
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
 
   @media ${media.primary} {
     display: flex;
@@ -28,7 +29,7 @@ const Grid = styled.div`
     margin: auto;
 
     p {
-      margin: 0 1em 1.25em 0;
+      margin: 0 0 1em 0;
 
       @media ${media.primary} {
         margin: 0 0 1em 0;
@@ -38,7 +39,8 @@ const Grid = styled.div`
 `;
 
 const GridImage = styled.div`
-  background-image: url(${ThePocoExperienceImage});
+  // background-image: ${props => `url(${props.imageUrl})`};
+  background-image: url(${PrivateRoomImage});
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -46,28 +48,25 @@ const GridImage = styled.div`
   padding-top: 100%;
   filter: brightness(0.85);
 
+  grid-area: ${({ reverse }) => (reverse ? `1/1/2/2` : `auto`)};
+
   @media ${media.primary} {
     margin-bottom: 3em;
   }
 `;
 
-function ThePocoExperience() {
+function PrivateRoom({ titleText, pText, ctaText, ctaHref, reverse}) {
   return (
     <>
     <section className="">
       <div class="wrap">
         <Grid>
           <div className="grid-content">
-            <h2>The Poco <span>Experience</span></h2>
-            <p>Poco Piatti means "small plates." Here, you have the opportunity to
-              experience the many flavors of the mediterranean! We strive to create
-              dishes that are unique and healthy using only the most fresh and best
-              quality ingredients. So share the small, or large, plates with your
-              table and enjoy!
-            </p>
-            <Cta text="Explore Our Menu" href="/Menu/"/>
+            <div class="title light">{titleText}</div>
+            <p>{pText}</p>
+            <Cta text={ctaText} href={ctaHref}/>
           </div>
-          <GridImage />
+          <GridImage reverse={reverse} />
         </Grid>
       </div>
     </section>
@@ -75,4 +74,4 @@ function ThePocoExperience() {
   );
 }
 
-export default ThePocoExperience;
+export default PrivateRoom;

@@ -77,7 +77,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${color.background};
     font-family: ${fonts.font};
     font-size: min(6.8vw,2.2em);
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.15em;
 
     span {
       font-family: ${fonts.fontItalic};
@@ -164,6 +164,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${fonts.fontBold};
     font-size: 0.95em;
     letter-spacing: 0.085em;
+    margin-bottom: 1em;
     text-transform: uppercase;
 
     &.light {

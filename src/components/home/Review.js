@@ -4,6 +4,9 @@ import styled from 'styled-components';
 // Components
 import SectionHeading from '../SectionHeading/index';
 
+// Images
+import DowntownWindows from "../../images/IMG_0046.jpg";
+
 // Styles
 import theme from '../../../styles/theme';
 import media from '../../../styles/media';
@@ -27,11 +30,30 @@ const ReviewsStyle = styled.section`
 
   .title {
     margin-bottom: 1.85em;
+    color: ${color.callout};
   }
 `;
 
+const ReviewsBackgroundImage = styled.div`
+  background-image: url(${DowntownWindows});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 130%;
+  filter: blur(4em);
+  height: 130%;
+  left: -15%;
+  mask-image: linear-gradient(180deg, ${color.foreground}, rgba(${color.foreground}, 0));
+  -webkit-mask-image: linear-gradient(180deg,${color.foreground}, rgba(${color.foreground}, 0));
+  opacity: 0.5;
+  overflow: hidden;
+  position: absolute;
+  top: -15%;
+  width: 130%;
+`;
 const Reviews = () => (
   <ReviewsStyle>
+    <ReviewsBackgroundImage />
     <div className="wrap">
       <SectionHeading text="Reviews" light />
       <div className="review">

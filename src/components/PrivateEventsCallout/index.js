@@ -20,9 +20,6 @@ const PrivateEventsCalloutStyle = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
 
-
-
-
   .private-events-callout {
     background-color: ${color.foreground};
     border: 1em solid ${color.background};

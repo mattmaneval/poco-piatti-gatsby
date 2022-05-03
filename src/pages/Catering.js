@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import HeadingGroup from "../components/HeadingGroup/index";
 import SectionHeading from "../components/SectionHeading/index";
 import Cta from "../components/Cta/index";
+import H2Callout from "../components/H2Callout/index";
 
 // Images
 import CateringImage from "../images/catering-image.jpg";
@@ -33,13 +34,12 @@ const Catering = () => (
         imageUrl={CateringImage}
         light
       />
-      <section>
-        <div className="wrap">
-          <div className="title light">Plan your event</div>
-          <h2>Full service catering for <span>memorable</span> food <span>experiences.</span></h2>
-          <Cta text="Order Catering" />
-        </div>
-      </section>
+      <H2Callout
+        titleText="Plan your event"
+        h2Text={["Full service catering for ", <span>memorable</span>, " food ", <span>experiences.</span>]}
+        ctaText="Order Catering"
+        ctaHref="tel:419-931-0281"
+      />
       <section>
         <SectionHeading text="Packages" wrap light />
         <div class="wrap">

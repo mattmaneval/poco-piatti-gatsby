@@ -6,7 +6,6 @@ import { Link } from "gatsby";
 // Styles
 import mixins from '../../../styles/mixins';
 import theme from '../../../styles/theme';
-import media from '../../../styles/media';
 
 const { color, fonts } = theme;
 
@@ -33,12 +32,8 @@ const CtaStyle = styled(props => <Link {...props} />)`
   }
 `;
 
-const CtaText = styled.span`
-
-`;
-
 const Cta = ({ text, light, href, filled }) => (
-  <CtaStyle className="cta" light={light} to={href} light={light} filled={filled}>
+  <CtaStyle className="cta" to={href} light={light} filled={filled}>
     {text}
   </CtaStyle>
 );
