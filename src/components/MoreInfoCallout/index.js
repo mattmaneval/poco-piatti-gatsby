@@ -18,6 +18,10 @@ const MoreInfoCalloutContent = styled.div`
   position: relative;
   z-index: 1;
 
+  @media ${media.secondary} {
+    padding: 1em;
+  }
+
   .border {
     border: 0.5px solid ${color.callout};
     padding: 2em;
@@ -25,6 +29,10 @@ const MoreInfoCalloutContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media ${media.secondary} {
+      padding: 1em;
+    }
   }
 
   h2, .cta {

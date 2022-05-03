@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from "gatsby";
 import styled from 'styled-components';
 
 // Styles
 import theme from '../../../styles/theme';
 
-const { color } = theme;
+const { color, fonts  } = theme;
 
 const GlobalHeaderStyle = styled.div`
   backdrop-filter: blur(0.8em);
@@ -15,18 +16,25 @@ const GlobalHeaderStyle = styled.div`
 
   .wrap {
     text-align: center;
+    line-height: 1.4;
   }
 
-  span {
-    line-height: 1.3;
+  .global-header-link {
+    color: ${color.callout};
+    font-family: ${fonts.fontItalic};
+    text-decoration: underline;
+    padding: 0;
+    text-transform: unset;
+    font-size: 1em;
+    letter-spacing: 0;
+    cursor: pointer;
   }
 `;
 
 const GlobalHeader = () => (
   <GlobalHeaderStyle>
       <div className="wrap">
-        Now offering delivery from our Sylvania and Perrysburg locations!
-        Minimum order: $60. Delivery charge: $2.
+        Now offering <Link to="/Order/" class="global-header-link">delivery</Link> from our Sylvania and Perrysburg locations!
       </div>
   </GlobalHeaderStyle>
 );

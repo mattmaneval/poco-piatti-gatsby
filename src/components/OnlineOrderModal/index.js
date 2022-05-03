@@ -84,46 +84,15 @@ const OrderModalStyle = styled.div`
   }
 `;
 
-const LocationButton = styled.a`
-  // ${mixins.animate}
-  // border-bottom: 1px solid ${color.callout};
-  // display: inline-block;
-  // cursor: pointer;
-  // font-size: 1.65rem;
-  // color: ${color.foreground};
-  // padding: 1.15rem 2rem;
-  // width: 100%;
-  // background-color: ${color.background};
-  // position: relative;
-  // text-align: center;
-  // background-color: ${color.foreground};
-  // color: ${color.background};
-  //
-  //
-  // ${mixins.animate};
-  // font-family: ${fonts.fontBold};
-  // color: ${color.background};
-  // padding: ${space.halfSpace};
-  // font-size: 0.95em;
-  // letter-spacing: 0.085em;
-  // text-transform: uppercase;
-  //
-  // &:hover {
-  //   color: ${color.callout};
-  // }
-  //
-  // &:hover {
-  //   background-color: ${color.callout};
-  // }
-`;
-
 const GoBack = styled.a`
   background: none;
   display: inline-block;
   cursor: pointer;
   color: ${color.foregroundDim};
-  font-family: ${fonts.title};
-  font-size: 1em;
+  font-family: ${fonts.fontBold};
+  font-size: 0.95em;
+  letter-spacing: 0.085em;
+  margin-bottom: 1em;
   text-transform: uppercase;
   position: absolute;
   top: 1.75em;

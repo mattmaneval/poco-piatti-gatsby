@@ -50,7 +50,7 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     font-family: ${fonts.title};
     font-size: 5.25em;
-    color: ${color.callout};
+    color: ${color.background};
     line-height: 1;
     position: relative;
     text-transform: uppercase;
@@ -85,7 +85,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     @media ${media.secondary} {
-      font-size: 2.25em;
+      // font-size: 2.25em;
     }
   }
 

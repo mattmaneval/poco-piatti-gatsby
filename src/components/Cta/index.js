@@ -11,10 +11,10 @@ const { color, fonts } = theme;
 
 const CtaStyle = styled(props => <Link {...props} />)`
   ${mixins.animate}
-  color: ${({ filled }) => (filled ? `${color.foreground}` : `${color.background}`)};
+  color: ${({ filled }) => (filled ? `${color.background}` : `${color.background}`)};
   cursor: pointer;
-  background-color: ${({ filled }) => (filled ? `${color.background}` : `none`)};
-  border: ${({ filled }) => (filled ? `1.2px solid ${color.background}` : `1.2px solid ${color.callout}`)};
+  background-color: ${({ filled }) => (filled ? `${color.callout}` : `none`)};
+  border: ${({ filled }) => (filled ? `1.2px solid ${color.callout}` : `1.2px solid ${color.callout}`)};
   display: inline-block;
   padding: 0.5em 2.3em;
   position: relative;
@@ -26,8 +26,8 @@ const CtaStyle = styled(props => <Link {...props} />)`
   width: fit-content;
 
   &:hover {
-    color: ${color.background};
-    background-color: ${color.callout};
+    color: ${({ filled }) => (filled ? `${color.foreground}` : `${color.background}`)};
+    background-color: ${({ filled }) => (filled ? `${color.background}` : `${color.callout}`)};;
     border: 1.2px solid ${color.callout};
   }
 `;

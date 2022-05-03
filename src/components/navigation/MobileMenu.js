@@ -11,10 +11,10 @@ import theme from '../../../styles/theme';
 const { color, fonts, space } = theme;
 
 const MobileMenuStyles = styled.div`
-  width: 300px;
-  background-color: ${color.foreground};
+  width: 100%;
+  background-color: rgba(2,2,10,0.95);
   height: 100vh;
-  transform: ${({ menu }) => (menu ? 'translateX(0)' : 'translateX(300px)')};
+  transform: ${({ menu }) => (menu ? 'translateX(0)' : 'translateX(100%)')};
   opacity: ${({ menu }) => (menu ? '1' : '0')};
   transition: all 0.9s;
   padding: 6em 2em 0 2em;
@@ -24,7 +24,7 @@ const MobileMenuStyles = styled.div`
   bottom: 0;
   z-index: 2;
   overflow-x: hidden;
-
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,8 +37,9 @@ const MobileMenuStyles = styled.div`
       color: ${color.background};
       display: block;
       padding: ${space.halfSpace} 0;
-      font-size: 1.65rem;
+      font-size: 1em;
       letter-spacing: 0.12em;
+      text-align: right;
     }
   }
 
@@ -81,10 +82,6 @@ const MobileMenu = ({ menu }) => (
       <Link to="/PrivateEvents/">Private Events</Link>
       <Link to="/About/">About</Link>
     </nav>
-    <div className="mobile-menu-socials">
-      <Facebook />
-      <Instagram />
-    </div>
   </MobileMenuStyles>
 );
 

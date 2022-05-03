@@ -40,7 +40,7 @@ const ButtonStyle = styled.button`
       content: "";
       position: absolute;
       background-color: ${color.background};
-      height: 0.22rem;
+      height: 0.1em;
       width: 1.65rem;
       border-radius: 5em;
     }

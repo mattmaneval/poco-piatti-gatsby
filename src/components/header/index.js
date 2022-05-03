@@ -126,8 +126,8 @@ function Header({absolute}) {
       <div className="header-links">
         <nav>
           <Link to="/Menu/">Menu</Link>
-          <Link to="/Catering/">Catering</Link>
           <Link to="/PrivateEvents/">Private Events</Link>
+          <Link to="/Catering/">Catering</Link>
           <Link to="/About/">About</Link>
         </nav>
 

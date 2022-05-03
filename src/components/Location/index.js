@@ -16,6 +16,10 @@ const LocationContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   position: relative;
+
+  @media ${media.secondary} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 const LocationContent = styled.div`
   background-color: ${color.background};
@@ -26,10 +30,14 @@ const LocationContent = styled.div`
   position: relative;
   padding: 2.5em;
   z-index: 1;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  @media ${media.secondary} {
+    clip-path: none;
+    padding: 1.65em;
+  }
 
   .title {
     color: ${color.foreground};
@@ -59,6 +67,11 @@ const LocationImage = styled.div`
   background-image: ${props => `url(${props.imageUrl})`};
   background-size: cover;
   background-position: center;
+
+  @media ${media.secondary} {
+    height: 100%;
+    width: 10em;
+  }
 `;
 
 const GetDirections = styled.a`

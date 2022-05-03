@@ -5,8 +5,6 @@ import SEO from "../components/seo"
 
 // Components
 import HeadingGroup from "../components/HeadingGroup/index";
-import PerrysburgRoom from "../components/private-events/PerrysburgRoom"
-import DowntownRoom from "../components/private-events/DowntownRoom"
 import H2Callout from "../components/H2Callout/index";
 import PrivateRoomCallout from "../components/PrivateRoomCallout/index";
 import PhotoGallery from "../components/PhotoGallery/index";
