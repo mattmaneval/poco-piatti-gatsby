@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 // Styles
-import mixins from '../../../styles/mixins';
-import theme from '../../../styles/theme';
-import media from '../../../styles/media';
+import mixins from '../../styles/mixins';
+import theme from '../../styles/theme';
+import media from '../../styles/media';
 
 const { color, fonts, responsive } = theme;
 

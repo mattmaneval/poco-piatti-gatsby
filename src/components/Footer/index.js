@@ -8,9 +8,9 @@ import Facebook from '../Facebook/index';
 import Instagram from '../Instagram/index';
 
 // Styles
-import mixins from '../../../styles/mixins';
-import theme from '../../../styles/theme';
-import media from '../../../styles/media';
+import mixins from '../../styles/mixins';
+import theme from '../../styles/theme';
+import media from '../../styles/media';
 
 const { color, fonts, space } = theme;
 

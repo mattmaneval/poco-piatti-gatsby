@@ -5,8 +5,8 @@ import styled from 'styled-components';
 import SectionHeading from '../SectionHeading/index';
 
 // Styles
-import theme from '../../../styles/theme';
-import media from '../../../styles/media';
+import theme from '../../styles/theme';
+import media from '../../styles/media';
 
 const { color, space } = theme;
 

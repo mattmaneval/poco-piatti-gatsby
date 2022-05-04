@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import { Link } from "gatsby";
 
 // Styles
-import mixins from '../../../styles/mixins';
-import theme from '../../../styles/theme';
+import mixins from '../../styles/mixins';
+import theme from '../../styles/theme';
 
 const { color, fonts } = theme;
 

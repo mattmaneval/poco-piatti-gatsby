@@ -6,7 +6,7 @@ import Facebook from '../Facebook/index';
 import Instagram from '../Instagram/index';
 
 // Styles
-import theme from '../../../styles/theme';
+import theme from '../../styles/theme';
 
 const { color, fonts, space } = theme;
 

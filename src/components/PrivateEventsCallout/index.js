@@ -8,9 +8,9 @@ import DowntownWindows from "../../images/IMG_0046.jpg";
 import Cta from '../Cta/index';
 
 // Styles
-import mixins from '../../../styles/mixins';
-import theme from '../../../styles/theme';
-import media from '../../../styles/media';
+import mixins from '../../styles/mixins';
+import theme from '../../styles/theme';
+import media from '../../styles/media';
 
 const { color, fonts } = theme;
 

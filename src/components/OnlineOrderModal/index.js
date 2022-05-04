@@ -6,9 +6,9 @@ import styled from 'styled-components';
 import Cta from '../Cta/index';
 
 // Styles
-import mixins from '../../../styles/mixins';
-import theme from '../../../styles/theme';
-import media from '../../../styles/media';
+import mixins from '../../styles/mixins';
+import theme from '../../styles/theme';
+import media from '../../styles/media';
 
 const { color, space, fonts } = theme;
 

@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import GlutenFree from '../GlutenFree/index';
 
 // Styles
-import mixins from '../../../styles/mixins';
-import theme from '../../../styles/theme';
-import media from '../../../styles/media';
+import mixins from '../../styles/mixins';
+import theme from '../../styles/theme';
+import media from '../../styles/media';
 
 const { fonts, space, color } = theme;
 

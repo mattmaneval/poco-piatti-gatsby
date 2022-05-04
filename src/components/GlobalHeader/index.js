@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import styled from 'styled-components';
 
 // Styles
-import theme from '../../../styles/theme';
+import theme from '../../styles/theme';
 
 const { color, fonts  } = theme;
 

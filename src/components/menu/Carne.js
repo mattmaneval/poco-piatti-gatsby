@@ -6,9 +6,9 @@ import SectionHeading from '../SectionHeading/index';
 import FoodItem from './FoodItem';
 
 // Styles
-import mixins from '../../../styles/mixins';
-import theme from '../../../styles/theme';
-import media from '../../../styles/media';
+import mixins from '../../styles/mixins';
+import theme from '../../styles/theme';
+import media from '../../styles/media';
 
 const { space } = theme;
 

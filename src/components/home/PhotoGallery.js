@@ -12,9 +12,9 @@ import beefPocoTips from "../../images/DSC04727.jpg";
 import fatoosh from "../../images/DSC04768.jpg";
 
 // Styles
-import mixins from '../../../styles/mixins';
-import theme from '../../../styles/theme';
-import media from '../../../styles/media';
+import mixins from '../../styles/mixins';
+import theme from '../../styles/theme';
+import media from '../../styles/media';
 
 const { color, fonts } = theme;
 

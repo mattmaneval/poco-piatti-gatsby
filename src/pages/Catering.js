@@ -13,9 +13,9 @@ import H2Callout from "../components/H2Callout/index";
 import CateringImage from "../images/catering-image.jpg";
 
 // Styles
-import mixins from '../../styles/mixins';
-import theme from '../../styles/theme';
-import media from '../../styles/media';
+import mixins from '../styles/mixins';
+import theme from '../styles/theme';
+import media from '../styles/media';
 
 const { color, space, fonts } = theme;
 

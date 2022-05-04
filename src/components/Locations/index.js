@@ -10,9 +10,9 @@ import Location from '../Location/index';
 // import DowntownStorefront from "../../images/IMG_0093.jpg";
 
 // Styles
-import theme from '../../../styles/theme';
-import media from '../../../styles/media';
-import mixins from '../../../styles/mixins';
+import theme from '../../styles/theme';
+import media from '../../styles/media';
+import mixins from '../../styles/mixins';
 
 const { color, space } = theme;
 

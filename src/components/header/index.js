@@ -6,15 +6,13 @@ import { Link } from "gatsby";
 // Components
 import GlobalHeader from '../GlobalHeader/index';
 import Logo from '../Logo/index';
-// import InnerNav from './InnerNav/index';
-// import PrimaryCta from '../navigation/PrimaryCta';
 import MenuButton from '../navigation/MenuButton';
 import MobileMenu from '../navigation/MobileMenu';
 
 // Styles
-import mixins from '../../../styles/mixins';
-import theme from '../../../styles/theme';
-import media from '../../../styles/media';
+import mixins from '../../styles/mixins';
+import theme from '../../styles/theme';
+import media from '../../styles/media';
 
 const { color, fonts, space } = theme;
 
