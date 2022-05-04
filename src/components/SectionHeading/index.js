@@ -7,13 +7,21 @@ import mixins from '../../../styles/mixins';
 import theme from '../../../styles/theme';
 import media from '../../../styles/media';
 
-const { color, fonts } = theme;
+const { color, fonts, responsive } = theme;
 
 const SectionHeadingStyle = styled.div`
-  ${({ wrap }) => (wrap ? `${mixins.wrap}` : null)}
   align-items: center;
   display: flex;
-  margin-bottom: 4em;
+  margin-bottom: 3em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  width: ${({ wrap }) => (wrap ? `${responsive.wrap}` : `100%`)};
+
+  @media ${media.secondary} {
+    width: ${({ wrap }) => (wrap ? `${responsive.wrapMobile}` : `100%`)};
+  }
 
   &:after {
     content: "";

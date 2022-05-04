@@ -105,9 +105,13 @@ const Location = ({ data }) => (
               : ''}
           </div>
         </div>
-        <div className="map-link">
-          <a href="">view on map</a>
-        </div>
+        {data.addLine2
+          ? (
+            <div className="map-link">
+              <a href={data.mapLink} target="_blank">view on map</a>
+            </div>
+          )
+          : ''}
       </LocationContent>
       <GetDirections></GetDirections>
       <LocationImage imageUrl={data.image} />

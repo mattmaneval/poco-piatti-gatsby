@@ -46,7 +46,7 @@ const BackgroundImage = styled.div`
   background-size: cover;
   background-size: 130%;
   filter: blur(4em);
-  height: 130%;
+  height: 100%;
   left: -15%;
   mask-image: linear-gradient(180deg, ${color.foreground}, rgba(${color.foreground}, 0));
   -webkit-mask-image: linear-gradient(180deg,${color.foreground}, rgba(${color.foreground}, 0));
@@ -54,7 +54,7 @@ const BackgroundImage = styled.div`
   overflow: hidden;
   position: absolute;
   top: 0;
-  width: 130%;
+  width: 100%;
 
 `;
 

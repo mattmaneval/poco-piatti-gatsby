@@ -17,6 +17,10 @@ const GlobalHeaderStyle = styled.div`
   .wrap {
     text-align: center;
     line-height: 1.4;
+
+    a {
+      padding: 0;
+    }
   }
 
   .global-header-link {
@@ -24,17 +28,18 @@ const GlobalHeaderStyle = styled.div`
     font-family: ${fonts.fontItalic};
     text-decoration: underline;
     padding: 0;
-    text-transform: unset;
+    text-transform: none;
     font-size: 1em;
     letter-spacing: 0;
     cursor: pointer;
+    padding: 0;
   }
 `;
 
 const GlobalHeader = () => (
   <GlobalHeaderStyle>
       <div className="wrap">
-        Now offering <Link to="/Order/" class="global-header-link">delivery</Link> from our Sylvania and Perrysburg locations!
+        Now offering <Link to="/Order/"><span class="global-header-link">delivery</span></Link> from our Sylvania and Perrysburg locations!
       </div>
   </GlobalHeaderStyle>
 );

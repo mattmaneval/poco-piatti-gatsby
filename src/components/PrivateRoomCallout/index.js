@@ -28,7 +28,7 @@ const Grid = styled.div`
   .grid-content {
     margin: auto;
 
-    p {
+    h2 {
       margin: 0 0 1em 0;
 
       @media ${media.primary} {
@@ -63,7 +63,7 @@ function PrivateRoom({ titleText, pText, ctaText, ctaHref, reverse}) {
         <Grid>
           <div className="grid-content">
             <div class="title light">{titleText}</div>
-            <p>{pText}</p>
+            <h2>{pText}</h2>
             <Cta text={ctaText} href={ctaHref}/>
           </div>
           <GridImage reverse={reverse} />

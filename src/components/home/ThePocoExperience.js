@@ -27,7 +27,7 @@ const Grid = styled.div`
   .grid-content {
     margin: auto;
 
-    p {
+    h2 {
       margin: 0 1em 1.25em 0;
 
       @media ${media.primary} {
@@ -58,13 +58,13 @@ function ThePocoExperience() {
       <div class="wrap">
         <Grid>
           <div className="grid-content">
-            <h2>The Poco <span>Experience</span></h2>
-            <p>Poco Piatti means "small plates." Here, you have the opportunity to
+            <div className="title light">The Poco <span>Experience</span></div>
+            <h2>Poco Piatti means "small plates." Here, you have the opportunity to
               experience the many flavors of the mediterranean! We strive to create
               dishes that are unique and healthy using only the most fresh and best
               quality ingredients. So share the small, or large, plates with your
               table and enjoy!
-            </p>
+            </h2>
             <Cta text="Explore Our Menu" href="/Menu/"/>
           </div>
           <GridImage />
