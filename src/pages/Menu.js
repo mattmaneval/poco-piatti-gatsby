@@ -1,9 +1,8 @@
 import React from 'react';
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import FullMenu from "../components/menu/FullMenu"
+import FullMenu from "../components/menu/index";
 import PrivateEventsCallout from "../components/PrivateEventsCallout/index";
-// import "../styles/_index.scss"
 
 const Menu = () => (
   <Layout>

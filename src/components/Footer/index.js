@@ -54,7 +54,7 @@ const FooterStyles = styled.footer`
       color: ${color.background};
       font-family: ${fonts.font};
       line-height: 140%;
-      font-size: 0.95em;
+      font-size: 0.85em;
       letter-spacing: 0.05rem;
       display: block;
     }
@@ -80,7 +80,7 @@ const FooterStyles = styled.footer`
       font-family: ${fonts.fontBold};
       color: ${color.background};
       padding-bottom: 0.65rem;
-      font-size: 0.95em;
+      font-size: 0.85em;
       line-height: 160%;
       letter-spacing: 0.12em;
       break-inside: avoid;
@@ -88,17 +88,18 @@ const FooterStyles = styled.footer`
     }
   }
 
-  .footer-socials a {
-    ${footerLink.hover};
-    display: inline-block;
-    position: relative;
-    padding: 0.3rem;
-    transform: translateY(0.3em);
-    color: ${color.foregroundDim};
-
-    @media ${media.primary} {
-      transform: translateY(0);
-      transform: translateX(-0.7em);
+  .footer-socials  {
+    a {
+      ${footerLink.hover};
+      display: block;
+      font-family: ${fonts.fontBold};
+      color: ${color.background};
+      padding-bottom: 0.65rem;
+      font-size: 0.85em;
+      line-height: 160%;
+      letter-spacing: 0.12em;
+      break-inside: avoid;
+      text-transform: uppercase;
     }
   }
 
@@ -128,8 +129,7 @@ const Footer = () => (
     <div className="wrap">
       <div className="footer-contact">
       <Logo />
-        <a href="tel:419-931-0281">419-931-0281</a>
-        <a href="mailto:pocopiattiparty@gmail.com">pocopiattiparty@gmail.com</a>
+
       </div>
       <nav>
         <Link to="/Menu/">Menu</Link>
@@ -139,8 +139,8 @@ const Footer = () => (
         <Link to="/Contact/">Contact</Link>
       </nav>
       <div className="footer-socials">
-        <Facebook />
-        <Instagram />
+        <a>Instagram</a>
+        <a>Facebook</a>
       </div>
 
     </div>
@@ -160,3 +160,6 @@ const Footer = () => (
 );
 
 export default Footer;
+
+// <a href="tel:419-931-0281">419-931-0281</a>
+// <a href="mailto:pocopiattiparty@gmail.com">pocopiattiparty@gmail.com</a>

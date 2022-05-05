@@ -12,8 +12,6 @@ import media from '../../styles/media';
 const { space } = theme;
 
 const FoodSectionStyles = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   margin-bottom: ${space.space};
 
   @media ${media.primary} {

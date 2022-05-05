@@ -79,8 +79,6 @@ const Fonts = css`
     font-weight: normal;
     font-style: normal;
   }
-
-
 `;
 
 export default Fonts;

@@ -34,6 +34,7 @@ const PrivateEventsCalloutStyle = styled.section`
 
     .title {
       margin-bottom: 1.25em;
+
     }
   }
 `;
@@ -64,12 +65,12 @@ const PrivateEventsCallout = () => (
   <PrivateEventsCalloutStyle>
     <div className="inner-wrap">
       <div className="private-events-callout">
-        <div className="title">Private Events</div>
-        <h3>
+        <div className="title light">Private Events</div>
+        <h2>
           Book your next private party or event at Poco Piatti.
           We offer flexible packages and personal attention to your
           party planning needs with each event customized to fit your criteria.
-        </h3>
+        </h2>
         <Cta text="Learn More" href="/PrivateEvents" />
       </div>
     </div>

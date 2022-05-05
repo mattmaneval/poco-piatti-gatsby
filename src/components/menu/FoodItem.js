@@ -13,13 +13,16 @@ const { fonts, space, color } = theme;
 const FoodItemStyles = styled.div`
   font-family: ${fonts.font};
   margin-bottom: 1em;
-  padding: 1em;
+
+  p {
+    margin-bottom: 1em;
+  }
 
   .food-item-name {
     ${mixins.flexBetween};
     margin-bottom: ${space.quarterSpace};
     color: ${color.background};
-    font-family: ${fonts.fontItalic};
+    font-family: ${fonts.font};
     font-weight: bold;
     font-size: 1.5em;
 
@@ -71,7 +74,7 @@ const FoodItem = ({ data }) => (
           : ''}
       </div>
     </div>
-    <div className="food-item-desc">{data.desc ? data.desc : null }</div>
+    <p>{data.desc ? data.desc : null }</p>
     {data.dietary
       ? (
         <div className="food-item-options">
