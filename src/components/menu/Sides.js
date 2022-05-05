@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Data
+import sidesData from '../../../data/food/sides-local';
+
 // Components
 import SectionHeading from '../SectionHeading/index';
 import FoodItem from './FoodItem';
@@ -25,30 +28,6 @@ const SidesStyle = styled.div`
     grid-template-columns: repeat(1, 1fr);
   }
 `;
-
-const sidesData = [
-  {
-    name: 'Hand-Cut French Fries',
-    price: {
-      small: 2,
-      large: 4,
-    },
-  },
-  {
-    name: 'Rice Pilaf',
-    price: {
-      small: 2,
-      large: 4,
-    },
-  },
-  {
-    name: 'Greek Potatoes',
-    price: {
-      small: 3,
-      large: 6,
-    },
-  },
-];
 
 const Sides = () => (
   <>
