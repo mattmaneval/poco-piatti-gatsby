@@ -12,9 +12,7 @@ import Salads from './Salads';
 import Sides from './Sides';
 
 // Styles
-import mixins from '../../styles/mixins';
 import theme from '../../styles/theme';
-import media from '../../styles/media';
 
 const { space, color } = theme;
 
@@ -25,7 +23,6 @@ const FullMenuStyles = styled.section`
 const FullMenu = () => (
   <FullMenuStyles>
     <div className="wrap">
-
       <Seafood />
       <Carne />
       <Vegetarian />
