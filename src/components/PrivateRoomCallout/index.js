@@ -1,19 +1,16 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 // Components
-import OrderModal from '../OnlineOrderModal/index';
-import Cta from '../Cta/index';
+import Cta from '../Cta/index'
 
 // Images
-import PrivateRoomImage from "../../images/the-poco-experience.jpg";
+import PrivateRoomImage from '../../images/the-poco-experience.jpg'
 
 // Styles
-import mixins from '../../styles/mixins';
-import theme from '../../styles/theme';
-import media from '../../styles/media';
 
-const { color, space, fonts } = theme;
+import media from '../../styles/media'
 
 const Grid = styled.div`
   display: grid;
@@ -36,10 +33,10 @@ const Grid = styled.div`
       }
     }
   }
-`;
+`
 
 const GridImage = styled.div`
-  // background-image: ${props => `url(${props.imageUrl})`};
+  // background-image: ${(props) => `url(${props.imageUrl})`};
   background-image: url(${PrivateRoomImage});
   background-size: cover;
   background-position: bottom;
@@ -53,25 +50,31 @@ const GridImage = styled.div`
   @media ${media.primary} {
     margin-bottom: 3em;
   }
-`;
+`
 
-function PrivateRoom({ titleText, pText, ctaText, ctaHref, reverse}) {
+function PrivateRoom({ titleText, pText, ctaText, ctaHref, reverse }) {
   return (
-    <>
     <section className="">
-      <div class="wrap">
+      <div className="wrap">
         <Grid>
           <div className="grid-content">
-            <div class="title light">{titleText}</div>
+            <div className="title light">{titleText}</div>
             <h2>{pText}</h2>
-            <Cta text={ctaText} href={ctaHref}/>
+            <Cta text={ctaText} href={ctaHref} />
           </div>
           <GridImage reverse={reverse} />
         </Grid>
       </div>
     </section>
-    </>
-  );
+  )
 }
 
-export default PrivateRoom;
+PrivateRoom.propTypes = {
+  titleText: PropTypes.string.isRequired,
+  pText: PropTypes.string.isRequired,
+  ctaText: PropTypes.string.isRequired,
+  ctaHref: PropTypes.string.isRequired,
+  reverse: PropTypes.bool,
+}
+
+export default PrivateRoom

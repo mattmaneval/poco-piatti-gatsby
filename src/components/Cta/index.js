@@ -1,20 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Link } from "gatsby";
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 // Styles
-import mixins from '../../styles/mixins';
-import theme from '../../styles/theme';
+import mixins from '../../styles/mixins'
+import theme from '../../styles/theme'
 
-const { color, fonts } = theme;
+const { color, fonts } = theme
 
-const CtaStyle = styled(props => <Link {...props} />)`
+const CtaStyle = styled((props) => <Link {...props} />)`
   ${mixins.animate}
-  color: ${({ filled }) => (filled ? `${color.background}` : `${color.background}`)};
+  color: ${({ filled }) =>
+    filled ? `${color.background}` : `${color.background}`};
   cursor: pointer;
   background-color: ${({ filled }) => (filled ? `${color.callout}` : `none`)};
-  border: ${({ filled }) => (filled ? `1.2px solid ${color.callout}` : `1.2px solid ${color.callout}`)};
+  border: ${({ filled }) =>
+    filled ? `1.2px solid ${color.callout}` : `1.2px solid ${color.callout}`};
   display: inline-block;
   padding: 0.5em 2.3em;
   position: relative;
@@ -26,21 +28,25 @@ const CtaStyle = styled(props => <Link {...props} />)`
   width: fit-content;
 
   &:hover {
-    color: ${({ filled }) => (filled ? `${color.foreground}` : `${color.background}`)};
-    background-color: ${({ filled }) => (filled ? `${color.background}` : `${color.callout}`)};;
+    color: ${({ filled }) =>
+      filled ? `${color.foreground}` : `${color.background}`};
+    background-color: ${({ filled }) =>
+      filled ? `${color.background}` : `${color.callout}`};
     border: 1.2px solid ${color.callout};
   }
-`;
+`
 
 const Cta = ({ text, light, href, filled }) => (
   <CtaStyle className="cta" to={href} light={light} filled={filled}>
     {text}
   </CtaStyle>
-);
+)
 
 Cta.propTypes = {
   text: PropTypes.string.isRequired,
   light: PropTypes.bool.isRequired,
-};
+  href: PropTypes.string.isRequired,
+  filled: PropTypes.bool,
+}
 
-export default Cta;
+export default Cta

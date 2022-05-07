@@ -1,5 +1,4 @@
 const theme = {
-
   // Responsive
   responsive: {
     wrap: 'calc(100% - 10rem)',
@@ -42,6 +41,6 @@ const theme = {
     // heading: 'old_standard_ttregular',
     // subHeading: 'old_standard_ttregular',
   },
-};
+}
 
-export default theme;
+export default theme

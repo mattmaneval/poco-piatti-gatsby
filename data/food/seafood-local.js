@@ -28,7 +28,7 @@ const seafoodData = [
     },
   },
   {
-    name: 'Thai Shrimp \'Lasagna\'',
+    name: "Thai Shrimp 'Lasagna'",
     desc: 'Layered with crispy wontons, spicy thai and coconut basil.',
     price: {
       small: 7,
@@ -55,6 +55,6 @@ const seafoodData = [
       title: 'Gluten Free',
     },
   },
-];
+]
 
-export default seafoodData;
+export default seafoodData

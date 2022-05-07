@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 // Styles
-import mixins from '../../styles/mixins';
-import theme from '../../styles/theme';
-import media from '../../styles/media';
+import mixins from '../../styles/mixins'
+import theme from '../../styles/theme'
+import media from '../../styles/media'
 
-const { color } = theme;
+const { color } = theme
 
 const ButtonStyle = styled.button`
   display: none;
@@ -37,7 +37,7 @@ const ButtonStyle = styled.button`
     &:before,
     &:after {
       ${mixins.animate};
-      content: "";
+      content: '';
       position: absolute;
       background-color: ${color.background};
       height: 0.1em;
@@ -46,33 +46,32 @@ const ButtonStyle = styled.button`
     }
 
     &:before {
-      top: ${({ menu }) => (menu ? '0' : '-6px')};;
+      top: ${({ menu }) => (menu ? '0' : '-6px')};
       left: 0;
       transform: ${({ menu }) => (menu ? 'rotate(45deg)' : 'rotate(0)')};
-      background-color: ${({ menu }) => (menu ? `${color.background}` : `${color.background}`)};
+      background-color: ${({ menu }) =>
+        menu ? `${color.background}` : `${color.background}`};
     }
 
     &:after {
       top: ${({ menu }) => (menu ? '0' : '6px')};
       left: 0;
       transform: ${({ menu }) => (menu ? 'rotate(-45deg)' : 'rotate(0)')};
-      background-color: ${({ menu }) => (menu ? `${color.background}` : `${color.background}`)};
+      background-color: ${({ menu }) =>
+        menu ? `${color.background}` : `${color.background}`};
     }
   }
-`;
+`
 
 const MenuButton = ({ menu, onClick }) => (
-  <ButtonStyle
-    menu={menu}
-    onClick={onClick}
-  >
+  <ButtonStyle menu={menu} onClick={onClick}>
     <span />
   </ButtonStyle>
-);
+)
 
 MenuButton.propTypes = {
   menu: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
-};
+}
 
-export default MenuButton;
+export default MenuButton

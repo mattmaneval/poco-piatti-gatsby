@@ -5,14 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { StaticQuery, graphql } from 'gatsby'
 // import GlobalHeader from "./GlobalHeader/index"
-import Header from "./Header/index"
-import Footer from "./Footer/index"
+import Header from './Header/index'
+import Footer from './Footer/index'
 // import "../styles/_index.scss"
-import { GlobalStyle } from '../styles';
+import { GlobalStyle } from '../styles'
 
 const Layout = ({ children, absolute }) => (
   <StaticQuery
@@ -25,7 +25,7 @@ const Layout = ({ children, absolute }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <GlobalStyle />
         <Header absolute={absolute} siteTitle={data.site.siteMetadata.title} />
@@ -38,6 +38,7 @@ const Layout = ({ children, absolute }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  absolute: PropTypes.bool,
 }
 
 export default Layout

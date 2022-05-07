@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 // Components
-import Cta from '../Cta/index';
+import Cta from '../Cta/index'
 
 // Styles
-import media from '../../styles/media';
+import media from '../../styles/media'
 
 // const { color, fonts } = theme;
 
@@ -33,9 +33,9 @@ const H2CalloutContainer = styled.section`
       text-align: left;
     }
   }
-`;
+`
 
-const H2Callout = ({ titleText, h2Text, ctaText, ctaHref}) => (
+const H2Callout = ({ titleText, h2Text, ctaText, ctaHref }) => (
   <H2CalloutContainer>
     <div className="inner-wrap">
       <div className="title light">{titleText}</div>
@@ -43,11 +43,13 @@ const H2Callout = ({ titleText, h2Text, ctaText, ctaHref}) => (
       <Cta text={ctaText} href={ctaHref} />
     </div>
   </H2CalloutContainer>
-);
+)
 
 H2Callout.propTypes = {
-  text: PropTypes.string.isRequired,
-  light: PropTypes.bool.isRequired,
-};
+  titleText: PropTypes.string.isRequired,
+  h2Text: PropTypes.string.isRequired,
+  ctaHref: PropTypes.string.isRequired,
+  ctaText: PropTypes.string.isRequired,
+}
 
-export default H2Callout;
+export default H2Callout

@@ -1,17 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 // Data
-import seafoodData from '../../../data/food/seafood-local';
+import seafoodData from '../../../data/food/seafood-local'
 
 // Components
-import SectionHeading from '../SectionHeading/index';
-import FoodSection from './FoodSection';
+import FoodSection from './FoodSection'
 
 const Seafood = () => (
-  <FoodSection
-    foodSectionHeading="Seafood"
-    foodData={seafoodData}
-  />
-);
+  <FoodSection foodSectionHeading="Seafood" foodData={seafoodData} />
+)
 
-export default Seafood;
+export default Seafood

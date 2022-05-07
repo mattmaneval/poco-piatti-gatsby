@@ -76,6 +76,6 @@ const bigPlatesData = [
       title: 'Gluten Free',
     },
   },
-];
+]
 
-export default bigPlatesData;
+export default bigPlatesData

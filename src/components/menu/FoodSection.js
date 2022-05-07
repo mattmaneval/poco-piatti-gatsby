@@ -1,17 +1,19 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 // Components
-import SectionHeading from '../SectionHeading/index';
-import FoodItem from './FoodItem';
+import FoodItem from './FoodItem'
 
 // Styles
-import theme from '../../styles/theme';
-import media from '../../styles/media';
+import theme from '../../styles/theme'
+import media from '../../styles/media'
 
-const { space } = theme;
+const { space, color } = theme
 
 const FoodSectionStyles = styled.div`
+  background-color: ${color.background};
+  padding: 6em;
+
   margin-bottom: ${space.space};
 
   @media ${media.primary} {
@@ -21,17 +23,16 @@ const FoodSectionStyles = styled.div`
   @media ${media.secondary} {
     grid-template-columns: repeat(1, 1fr);
   }
-`;
+`
 
 const FoodSection = ({ foodSectionHeading, foodData }) => (
-  <>
-    <SectionHeading text={foodSectionHeading} light />
-    <FoodSectionStyles>
-      {Object.keys(foodData).map((key) => (
-        <FoodItem data={foodData[key]} />
-      ))}
-    </FoodSectionStyles>
-  </>
-);
+  <FoodSectionStyles>
+    {Object.keys(foodData).map((key) => (
+      <FoodItem data={foodData[key]} />
+    ))}
+  </FoodSectionStyles>
+)
 
-export default FoodSection;
+export default FoodSection
+
+// <SectionHeading text={foodSectionHeading} light />

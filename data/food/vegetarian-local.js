@@ -1,6 +1,6 @@
 const vegetarianData = [
   {
-    name: 'Riad\'s Hummuos B Tahini',
+    name: "Riad's Hummuos B Tahini",
     desc: 'Served with Pita.',
     price: {
       small: 5,
@@ -116,6 +116,6 @@ const vegetarianData = [
       title: 'Gluten Free',
     },
   },
-];
+]
 
-export default vegetarianData;
+export default vegetarianData

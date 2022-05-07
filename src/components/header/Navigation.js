@@ -1,8 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
-import MobileNavigation from "./MobileNavigation"
-import PocoPiattiRedLogo from "../../images/PocoPiattiRedLogo.jpg";
-
+import React from 'react'
+import { Link } from 'gatsby'
+import MobileNavigation from './MobileNavigation'
+import PocoPiattiRedLogo from '../../images/PocoPiattiRedLogo.jpg'
 
 const Navigation = () => (
   <div className="navigation wrap">
@@ -11,18 +10,19 @@ const Navigation = () => (
         <img src={PocoPiattiRedLogo} alt="Poco Piatti Logo" />
       </Link>
     </div>
-    <div class="navigation-desktop-link">
+    <div className="navigation-desktop-link">
       <Link to="/Menu/">Menu</Link>
     </div>
-    <div class="navigation-desktop-link">
+    <div className="navigation-desktop-link">
       <Link to="/PrivateEvents/">Private Events</Link>
     </div>
-    <div class="navigation-desktop-link">
-      <Link to="/Catering/">Catering</Link></div>
-    <div class="navigation-desktop-link">
+    <div className="navigation-desktop-link">
+      <Link to="/Catering/">Catering</Link>
+    </div>
+    <div className="navigation-desktop-link">
       <Link to="/About/">About</Link>
     </div>
-    <div class="navigation-desktop-link">
+    <div className="navigation-desktop-link">
       <Link to="/Contact/">Contact</Link>
     </div>
     <MobileNavigation />

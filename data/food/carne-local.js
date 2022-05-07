@@ -100,6 +100,6 @@ const carneData = [
       title: 'Gluten Free',
     },
   },
-];
+]
 
-export default carneData;
+export default carneData

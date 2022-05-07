@@ -1,18 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Link } from "gatsby";
-import Facebook from '../Facebook/index';
-import Instagram from '../Instagram/index';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 // Styles
-import theme from '../../styles/theme';
+import theme from '../../styles/theme'
 
-const { color, fonts, space } = theme;
+const { color, fonts, space } = theme
 
 const MobileMenuStyles = styled.div`
   width: 100%;
-  background-color: rgba(2,2,10,0.95);
+  background-color: rgba(2, 2, 10, 0.95);
   height: 100vh;
   transform: ${({ menu }) => (menu ? 'translateX(0)' : 'translateX(100%)')};
   opacity: ${({ menu }) => (menu ? '1' : '0')};
@@ -71,7 +69,7 @@ const MobileMenuStyles = styled.div`
       color: ${color.foregroundDim};
     }
   }
-`;
+`
 
 const MobileMenu = ({ menu }) => (
   <MobileMenuStyles menu={menu}>
@@ -83,10 +81,10 @@ const MobileMenu = ({ menu }) => (
       <Link to="/About/">About</Link>
     </nav>
   </MobileMenuStyles>
-);
+)
 
 MobileMenu.propTypes = {
   menu: PropTypes.bool.isRequired,
-};
+}
 
-export default MobileMenu;
+export default MobileMenu

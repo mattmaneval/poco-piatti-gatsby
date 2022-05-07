@@ -1,27 +1,28 @@
-import React from 'react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import GlutenFree from '../GlutenFree/index';
+import React from 'react'
+import styled from 'styled-components'
+import PropTypes from 'prop-types'
+import GlutenFree from '../GlutenFree/index'
 
 // Styles
-import mixins from '../../styles/mixins';
-import theme from '../../styles/theme';
-import media from '../../styles/media';
+import mixins from '../../styles/mixins'
+import theme from '../../styles/theme'
 
-const { fonts, space, color } = theme;
+const { fonts, space, color } = theme
 
 const FoodItemStyles = styled.div`
   font-family: ${fonts.font};
-  margin-bottom: 1em;
+  margin-bottom: 4em;
 
   p {
     margin-bottom: 1em;
+    color: ${color.foreground};
+    max-width: 15em;
   }
 
   .food-item-name {
     ${mixins.flexBetween};
     margin-bottom: ${space.quarterSpace};
-    color: ${color.background};
+    color: ${color.foreground};
     font-family: ${fonts.font};
     font-weight: bold;
     font-size: 1.5em;
@@ -32,15 +33,21 @@ const FoodItemStyles = styled.div`
   }
 
   .food-item-desc {
-    color: ${color.foregroundDim};
+    color: ${color.foreground};
     font-size: 1.25em;
     margin-bottom: ${space.halfSpace};
+  }
+
+  .food-item-options-desc {
+    color: ${color.foreground};
+    margin-left: 1.8em;
+    font-size: 0.8em;
   }
 
   .food-item-options {
     display: flex;
     align-items: center;
-    color: ${color.background};
+    color: ${color.foreground};
     text-transform: uppercase;
     font-family: ${fonts.fontBold};
     letter-spacing: 0.25em;
@@ -49,7 +56,7 @@ const FoodItemStyles = styled.div`
     svg {
       width: 1.5em;
       height: 1.5em;
-      fill: rgb(0, 160, 72);;
+      fill: rgb(0, 160, 72);
       margin-right: 0.85em;
     }
   }
@@ -58,43 +65,35 @@ const FoodItemStyles = styled.div`
     font-size: 0.85em;
     font-family: ${fonts.font};
   }
-`;
+`
 
 const FoodItem = ({ data }) => (
   <FoodItemStyles>
     <div className="food-item-name">
-      <div>
-        {data.name}
-      </div>
+      <div>{data.name}</div>
       <div className="food-item-price">
         {data.price
-          ? `${typeof data.price === 'object'
-            ? `Sm ${data.price.small} Lg ${data.price.large}`
-            : `${data.price}`}`
+          ? `${
+              typeof data.price === 'object'
+                ? `Sm ${data.price.small} Lg ${data.price.large}`
+                : `${data.price}`
+            }`
           : ''}
       </div>
     </div>
-    <p>{data.desc ? data.desc : null }</p>
-    {data.dietary
-      ? (
-        <div className="food-item-options">
-          <GlutenFree />
-          {data.dietary
-            ? `${data.dietary.title}`
-            : null }
-        </div>
-      )
-      : null }
+    <p>{data.desc ? data.desc : null}</p>
+    {data.dietary ? (
+      <div className="food-item-options">
+        <GlutenFree />
+        {data.dietary ? `${data.dietary.title}` : null}
+      </div>
+    ) : null}
 
-    {data.dietary && data.dietary.subtitle
-      ? (
-        <div className="food-item-desc">
-          {data.dietary.subtitle}
-        </div>
-      )
-      : null }
+    {data.dietary && data.dietary.subtitle ? (
+      <div className="food-item-options-desc">{data.dietary.subtitle}</div>
+    ) : null}
   </FoodItemStyles>
-);
+)
 
 FoodItem.propTypes = {
   data: PropTypes.shape({
@@ -109,6 +108,6 @@ FoodItem.propTypes = {
       title: PropTypes.string,
     },
   }).isRequired,
-};
+}
 
-export default FoodItem;
+export default FoodItem

@@ -1,28 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 // Components
-import SectionHeading from '../SectionHeading/index';
-import Location from '../Location/index';
-import GalleryImage from './GalleryImage';
-
-// Images
-import stuffedPortobelloCaps from "../../images/DSC04717.jpg";
-import italianSausageAndRicottaPizza from "../../images/DSC04736.jpg";
-import chickenWraps from "../../images/DSC04786.jpg";
-import hummus from "../../images/DSC04751.jpg";
-import arayes from "../../images/DSC04757.jpg";
-import beefPocoTips from "../../images/DSC04727.jpg";
-import fatoosh from "../../images/DSC04768.jpg";
+import SectionHeading from '../SectionHeading/index'
+import GalleryImage from './GalleryImage'
 
 // Styles
-import mixins from '../../styles/mixins';
-import theme from '../../styles/theme';
-import media from '../../styles/media';
-
-const { color, space } = theme;
-
-
+import mixins from '../../styles/mixins'
+import media from '../../styles/media'
 
 const PhotoGalleryContainer = styled.div`
   ${mixins.wrap}
@@ -33,10 +19,9 @@ const PhotoGalleryContainer = styled.div`
   @media ${media.primary} {
     grid-template-columns: repeat(1, 1fr);
   }
-`;
+`
 
-
-const PhotoGallery = ({ imageData}) => (
+const PhotoGallery = ({ imageData }) => (
   <>
     <SectionHeading text="Gallery" wrap light />
     <PhotoGalleryContainer>
@@ -45,6 +30,12 @@ const PhotoGallery = ({ imageData}) => (
       ))}
     </PhotoGalleryContainer>
   </>
-);
+)
 
-export default PhotoGallery;
+PhotoGallery.propTypes = {
+  imageData: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+  }),
+}
+
+export default PhotoGallery

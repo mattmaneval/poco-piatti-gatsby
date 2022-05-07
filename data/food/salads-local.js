@@ -71,6 +71,6 @@ const saladsData = [
       title: 'Gluten Free',
     },
   },
-];
+]
 
-export default saladsData;
+export default saladsData

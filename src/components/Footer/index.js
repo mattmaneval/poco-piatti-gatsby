@@ -1,18 +1,16 @@
-import React from 'react';
-import styled, { css } from 'styled-components';
-import { Link } from "gatsby";
+import React from 'react'
+import styled, { css } from 'styled-components'
+import { Link } from 'gatsby'
 
 // Components
-import Logo from '../Logo/index';
-import Facebook from '../Facebook/index';
-import Instagram from '../Instagram/index';
+import Logo from '../Logo/index'
 
 // Styles
-import mixins from '../../styles/mixins';
-import theme from '../../styles/theme';
-import media from '../../styles/media';
+import mixins from '../../styles/mixins'
+import theme from '../../styles/theme'
+import media from '../../styles/media'
 
-const { color, fonts, space } = theme;
+const { color, fonts, space } = theme
 
 const footerLink = {
   hover: css`
@@ -22,7 +20,7 @@ const footerLink = {
       color: ${color.callout};
     }
   `,
-};
+}
 
 const FooterStyles = styled.footer`
   ${mixins.section};
@@ -120,16 +118,15 @@ const FooterStyles = styled.footer`
     ${mixins.wrap};
     font-size: 0.8em;
   }
-  `;
+  `
 
-const year = new Date().getFullYear();
+const year = new Date().getFullYear()
 
 const Footer = () => (
   <FooterStyles>
     <div className="wrap">
       <div className="footer-contact">
-      <Logo />
-
+        <Logo />
       </div>
       <nav>
         <Link to="/Menu/">Menu</Link>
@@ -142,24 +139,15 @@ const Footer = () => (
         <a>Instagram</a>
         <a>Facebook</a>
       </div>
-
     </div>
     <div className="copyright">
-      Copyright &#169;
-      {' '}
-      {year}
-      {' '}
-      Poco Piatti All Rights Reserved.
-      Site by
-      {' '}
-      <a href="https://mattmaneval.com/">Matt Maneval</a>
-      .
+      Copyright &#169; {year} Poco Piatti All Rights Reserved. Site by{' '}
+      <a href="https://mattmaneval.com/">Matt Maneval</a>.
     </div>
-
   </FooterStyles>
-);
+)
 
-export default Footer;
+export default Footer
 
 // <a href="tel:419-931-0281">419-931-0281</a>
 // <a href="mailto:pocopiattiparty@gmail.com">pocopiattiparty@gmail.com</a>

@@ -1,17 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 // Data
-import pizzaData from '../../../data/food/pizza-local';
+import pizzaData from '../../../data/food/pizza-local'
 
 // Components
-import SectionHeading from '../SectionHeading/index';
-import FoodSection from './FoodSection';
+import FoodSection from './FoodSection'
 
 const Pizza = () => (
-  <FoodSection
-    foodSectionHeading="Pizza"
-    foodData={pizzaData}
-  />
-);
+  <FoodSection foodSectionHeading="Pizza" foodData={pizzaData} />
+)
 
-export default Pizza;
+export default Pizza

@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 // Styles
-import mixins from '../../styles/mixins';
-import theme from '../../styles/theme';
-import media from '../../styles/media';
+import mixins from '../../styles/mixins'
+import theme from '../../styles/theme'
+import media from '../../styles/media'
 
-const { color, fonts } = theme;
+const { color, fonts } = theme
 
 const PrimaryCtaStyle = styled.button`
   ${mixins.animate}
@@ -23,22 +23,21 @@ const PrimaryCtaStyle = styled.button`
   text-transform: uppercase;
 
   @media ${media.secondary} {
-
   }
 
   &:hover {
     background-color: ${color.callout};
     color: ${color.background};
   }
-`;
+`
 
 const PrimaryCta = ({ onClick, text }) => (
   <PrimaryCtaStyle onClick={onClick}>{text}</PrimaryCtaStyle>
-);
+)
 
 PrimaryCta.propTypes = {
   onClick: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,
-};
+}
 
-export default PrimaryCta;
+export default PrimaryCta

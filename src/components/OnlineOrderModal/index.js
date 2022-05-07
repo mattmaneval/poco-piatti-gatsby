@@ -1,16 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 // Components
-import Cta from '../Cta/index';
+import Cta from '../Cta/index'
 
 // Styles
-import mixins from '../../styles/mixins';
-import theme from '../../styles/theme';
-import media from '../../styles/media';
+import mixins from '../../styles/mixins'
+import theme from '../../styles/theme'
+import media from '../../styles/media'
 
-const { color, space, fonts } = theme;
+const { color, space, fonts } = theme
 
 const OrderModalStyle = styled.div`
   ${mixins.animate}
@@ -82,7 +82,7 @@ const OrderModalStyle = styled.div`
       }
     }
   }
-`;
+`
 
 const GoBack = styled.a`
   background: none;
@@ -97,33 +97,39 @@ const GoBack = styled.a`
   position: absolute;
   top: 1.75em;
   right: 1.75em;
-`;
+`
 
 const OrderModal = ({ modal, onClick }) => (
   <OrderModalStyle modal={modal}>
     <div className="order-modal-container">
       <div className="order-modal-container-content">
-        <div class="order-modal-content">
-          Choose your location for online ordering. Or call
-          {' '}
-          <a href="tel:4199310281">419-931-0281</a>
-          {' '}
-          for any location.
+        <div className="order-modal-content">
+          Choose your location for online ordering. Or call{' '}
+          <a href="tel:4199310281">419-931-0281</a> for any location.
         </div>
       </div>
       <div className="order-modal-container-links">
-        <Cta text="Perrysburg" href="https://www.toasttab.com/poco-piatti-perrysburg-3155-chapel-drive/v3/?mode=fulfillment" />
-        <Cta text="Sylvania" href="https://www.toasttab.com/poco-piatti-toledo-6710-w-central-ave-1/v3/?mode=fulfillment" />
-        <Cta text="Downtown" href="https://www.toasttab.com/poco-piatti-downtown-329-n-huron-st" />
+        <Cta
+          text="Perrysburg"
+          href="https://www.toasttab.com/poco-piatti-perrysburg-3155-chapel-drive/v3/?mode=fulfillment"
+        />
+        <Cta
+          text="Sylvania"
+          href="https://www.toasttab.com/poco-piatti-toledo-6710-w-central-ave-1/v3/?mode=fulfillment"
+        />
+        <Cta
+          text="Downtown"
+          href="https://www.toasttab.com/poco-piatti-downtown-329-n-huron-st"
+        />
         <GoBack onClick={onClick}>Go Back</GoBack>
       </div>
     </div>
   </OrderModalStyle>
-);
+)
 
 OrderModal.propTypes = {
   modal: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
-};
+}
 
-export default OrderModal;
+export default OrderModal

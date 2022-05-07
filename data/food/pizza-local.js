@@ -63,7 +63,12 @@ const pizzaData = [
     name: 'Portabella and Artichoke',
     desc: 'Goat cheese pesto, portabella mushroom, artichoke, caramelized onion, three cheese blend.',
     price: 12,
+    dietary: {
+      type: 'gluten-free',
+      title: 'Gluten Free Option',
+      subtitle: 'Ask your sever for gluten free crust.',
+    },
   },
-];
+]
 
-export default pizzaData;
+export default pizzaData

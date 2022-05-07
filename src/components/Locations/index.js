@@ -1,20 +1,20 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 // Data
-import locationsData from '../../../data/locations/locations-local';
+import locationsData from '../../../data/locations/locations-local'
 
 // Components
-import SectionHeading from '../SectionHeading/index';
-import Location from '../Location/index';
+import SectionHeading from '../SectionHeading/index'
+import Location from '../Location/index'
 
 // Styles
-import media from '../../styles/media';
-import mixins from '../../styles/mixins';
+import media from '../../styles/media'
+import mixins from '../../styles/mixins'
 
 const LocationsContainer = styled.section`
   ${mixins.wrap}
-`;
+`
 
 const LocationsGrid = styled.div`
   display: grid;
@@ -24,7 +24,7 @@ const LocationsGrid = styled.div`
   @media ${media.primary} {
     grid-template-columns: repeat(1, 1fr);
   }
-`;
+`
 
 const Locations = () => (
   <LocationsContainer>
@@ -35,6 +35,6 @@ const Locations = () => (
       ))}
     </LocationsGrid>
   </LocationsContainer>
-);
+)
 
-export default Locations;
+export default Locations

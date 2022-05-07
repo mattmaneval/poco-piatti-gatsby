@@ -1,11 +1,10 @@
-import { css } from 'styled-components';
-import media from './media';
-import theme from './theme';
+import { css } from 'styled-components'
+import media from './media'
+import theme from './theme'
 
-const { color, space, fonts, responsive } = theme;
+const { color, responsive } = theme
 
 const mixins = {
-
   // Wrap
   wrap: css`
     display: block;
@@ -70,6 +69,6 @@ const mixins = {
   animate: css`
     transition: 0.2s all ease-in-out;
   `,
-};
+}
 
-export default mixins;
+export default mixins

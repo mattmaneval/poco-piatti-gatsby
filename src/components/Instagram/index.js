@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Instagram = () => (
   <a href="https://www.instagram.com/pocopiatti_pb/?hl=en">
@@ -19,6 +19,6 @@ const Instagram = () => (
       <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
     </svg>
   </a>
-);
+)
 
-export default Instagram;
+export default Instagram

@@ -1,18 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 // Components
-import SectionHeading from '../SectionHeading/index';
-
-// Images
-import DowntownWindows from "../../images/IMG_0046.jpg";
+import SectionHeading from '../SectionHeading/index'
 
 // Styles
-import mixins from '../../styles/mixins';
-import theme from '../../styles/theme';
-import media from '../../styles/media';
 
-const { color } = theme;
+import theme from '../../styles/theme'
+import media from '../../styles/media'
+
+const { color } = theme
 
 const ReviewsStyle = styled.section`
   background-color: ${color.foreground};
@@ -32,7 +29,7 @@ const ReviewsStyle = styled.section`
   .title {
     margin-bottom: 1.85em;
   }
-`;
+`
 
 const Reviews = () => (
   <ReviewsStyle>
@@ -44,12 +41,16 @@ const Reviews = () => (
         elite spot, but you can certainly find great values.&quot;
       </div>
       <div className="title light">&mdash; The Blade</div>
-      <div className="review">Dining Guide Award Winner for Best Appetizers & Runner-Up for Best Staff</div>
+      <div className="review">
+        Dining Guide Award Winner for Best Appetizers & Runner-Up for Best Staff
+      </div>
       <div className="title light">&mdash; Toledo City Paper</div>
-      <div className="review">Dining Guide Award Winner for Best Restaurateur</div>
+      <div className="review">
+        Dining Guide Award Winner for Best Restaurateur
+      </div>
       <div className="title light">&mdash; Toledo City Paper</div>
     </div>
   </ReviewsStyle>
-);
+)
 
-export default Reviews;
+export default Reviews

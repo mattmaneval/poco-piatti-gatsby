@@ -1,17 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 // Data
-import vegetarianData from '../../../data/food/vegetarian-local';
+import vegetarianData from '../../../data/food/vegetarian-local'
 
 // Components
-import SectionHeading from '../SectionHeading/index';
-import FoodSection from './FoodSection';
+import FoodSection from './FoodSection'
 
 const Vegetarian = () => (
-  <FoodSection
-    foodSectionHeading="Vegetarian"
-    foodData={vegetarianData}
-  />
-);
+  <FoodSection foodSectionHeading="Vegetarian" foodData={vegetarianData} />
+)
 
-export default Vegetarian;
+export default Vegetarian

@@ -20,6 +20,6 @@ const sidesData = [
       large: 6,
     },
   },
-];
+]
 
-export default sidesData;
+export default sidesData

@@ -1,11 +1,11 @@
-import { createGlobalStyle } from 'styled-components';
-import Resets from './resets';
-import Fonts from './fonts';
-import mixins from './mixins';
-import media from './media';
-import theme from './theme';
+import { createGlobalStyle } from 'styled-components'
+import Resets from './resets'
+import Fonts from './fonts'
+import mixins from './mixins'
+import media from './media'
+import theme from './theme'
 
-const { space, color, fonts } = theme;
+const { space, color, fonts } = theme
 
 const GlobalStyle = createGlobalStyle`
   ${Resets};
@@ -176,6 +176,6 @@ const GlobalStyle = createGlobalStyle`
   .map {
     -webkit-filter: grayscale(100%);
   }
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle

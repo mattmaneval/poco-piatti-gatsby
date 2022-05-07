@@ -1,20 +1,15 @@
-import React, { useState } from 'react';
-import { Link } from "gatsby";
-import styled from 'styled-components';
+import React, { useState } from 'react'
+import styled from 'styled-components'
 
 // Components
-import OrderModal from '../OnlineOrderModal/index';
-import Cta from '../Cta/index';
-
-// Images
-import diningRoom from "../../images/IMG_0066.jpg";
+import OrderModal from '../OnlineOrderModal/index'
+import Cta from '../Cta/index'
 
 // Styles
-import mixins from '../../styles/mixins';
-import theme from '../../styles/theme';
-import media from '../../styles/media';
+import theme from '../../styles/theme'
+import media from '../../styles/media'
 
-const { color, space, fonts } = theme;
+const { color } = theme
 
 const HeroImage = styled.div`
   display: flex;
@@ -43,7 +38,7 @@ const HeroImage = styled.div`
   .wrap {
     z-index: 1000;
   }
-`;
+`
 
 const HeroNav = styled.div`
   width: 100%;
@@ -60,7 +55,7 @@ const HeroNav = styled.div`
       text-align: center;
     }
   }
-`;
+`
 
 const HandleClickWrap = styled.a`
   position: relative;
@@ -70,14 +65,18 @@ const HandleClickWrap = styled.a`
   @media ${media.secondary} {
     margin: 0 0 1em 0;
   }
-`;
+`
 
-const GradientOverlay = styled.div `
+const GradientOverlay = styled.div`
   bottom: 0;
   height: 40em;
   left: 0;
-  -webkit-mask-image: linear-gradient(180deg,rgba(2,2,10,0), ${color.foreground});
-  mask-image: linear-gradient(180deg,rgba(2,2,10,0), ${color.foreground});
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    rgba(2, 2, 10, 0),
+    ${color.foreground}
+  );
+  mask-image: linear-gradient(180deg, rgba(2, 2, 10, 0), ${color.foreground});
   overflow-x: hidden;
   pointer-events: none;
   position: absolute;
@@ -87,51 +86,48 @@ const GradientOverlay = styled.div `
   &:before {
     background-color: #02020a;
     bottom: 0;
-    content: "";
+    content: '';
     height: 100%;
     left: 0;
     position: absolute;
     width: 100%;
   }
-`;
+`
 
 function Hero() {
-  const [modal, openModal] = useState(false);
+  const [modal, openModal] = useState(false)
 
-  const handleClick = () => (modal ? openModal(false) : openModal(true));
+  const handleClick = () => (modal ? openModal(false) : openModal(true))
 
   return (
     <HeroImage>
-      <video playsInline  autoPlay muted loop id="bgvid">
-        <source src="https://pocopiatti.s3.us-east-2.amazonaws.com/background-video.mp4" type="video/mp4" />
-        <source src="https://pocopiatti.s3.us-east-2.amazonaws.com/background-video.mp4" type="video/mmp4" />
+      <video playsInline autoPlay muted loop id="bgvid">
+        <source
+          src="https://pocopiatti.s3.us-east-2.amazonaws.com/background-video.mp4"
+          type="video/mp4"
+        />
+        <source
+          src="https://pocopiatti.s3.us-east-2.amazonaws.com/background-video.mp4"
+          type="video/mmp4"
+        />
       </video>
       <div className="wrap">
-        <h1><span>Experience</span> <br />Poco Piatti</h1>
+        <h1>
+          <span>Experience</span> <br />
+          Poco Piatti
+        </h1>
         <HeroNav>
           <HandleClickWrap onClick={handleClick}>
             <Cta text="Order Online" filled />
           </HandleClickWrap>
-          <Cta text="Carryout & Reservations" href="tel:419-931-0281"/>
+          <Cta text="Carryout & Reservations" href="tel:419-931-0281" />
         </HeroNav>
 
         <OrderModal modal={modal} onClick={handleClick} />
       </div>
       <GradientOverlay />
     </HeroImage>
-  );
+  )
 }
 
-export default Hero;
-
-
-// <HeroNavLinkConatainer>
-//   <HeroLinkContent>
-//     <a onClick={handleClick} class="cta">Order Online</a>
-//   </HeroLinkContent>
-// </HeroNavLinkConatainer>
-// <HeroNavLinkConatainer>
-//   <HeroLinkContent>
-//     <a href="tel:419-931-0281">Carryout & Reservations</a>
-//   </HeroLinkContent>
-// </HeroNavLinkConatainer>
+export default Hero

@@ -1,17 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 // Data
-import saladsData from '../../../data/food/salads-local';
+import saladsData from '../../../data/food/salads-local'
 
 // Components
-import SectionHeading from '../SectionHeading/index';
-import FoodSection from './FoodSection';
+import FoodSection from './FoodSection'
 
 const Salads = () => (
-  <FoodSection
-    foodSectionHeading="Salads"
-    foodData={saladsData}
-  />
-);
+  <FoodSection foodSectionHeading="Salads" foodData={saladsData} />
+)
 
-export default Salads;
+export default Salads

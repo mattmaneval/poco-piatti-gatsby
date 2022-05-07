@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 // import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
 const MapOptions = {
@@ -15,7 +15,7 @@ const MapStyle = styled.div`
     width: 100%;
     -webkit-filter: grayscale(100%);
   }
-`;
+`
 
 const Map = () => (
   <MapStyle>
@@ -29,6 +29,6 @@ const Map = () => (
       MapOptions={MapOptions}
     />
   </MapStyle>
-);
+)
 
-export default Map;
+export default Map

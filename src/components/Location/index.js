@@ -1,16 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
-
-// Components
-import GoogleMap from '../GoogleMap/index';
-import Cta from '../Cta/index';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 // Styles
-import mixins from '../../styles/mixins';
-import theme from '../../styles/theme';
-import media from '../../styles/media';
+import theme from '../../styles/theme'
+import media from '../../styles/media'
 
-const { color, space, fonts } = theme;
+const { color, fonts } = theme
 
 const LocationContainer = styled.div`
   display: grid;
@@ -20,12 +16,12 @@ const LocationContainer = styled.div`
   @media ${media.secondary} {
     grid-template-columns: repeat(1, 1fr);
   }
-`;
+`
 const LocationContent = styled.div`
   background-color: ${color.background};
   font-family: ${fonts.fontMedium};
   grid-area: 1/1/2/3;
-  clip-path: polygon(69% 0,100% 100%,0% 100%,0 0%);
+  clip-path: polygon(69% 0, 100% 100%, 0% 100%, 0 0%);
   min-height: 18.5em;
   position: relative;
   padding: 2.5em;
@@ -60,11 +56,11 @@ const LocationContent = styled.div`
       font-family: ${fonts.fontLight};
     }
   }
-`;
+`
 
 const LocationImage = styled.div`
   grid-area: 1/2/2/6;
-  background-image: ${props => `url(${props.imageUrl})`};
+  background-image: ${(props) => `url(${props.imageUrl})`};
   background-size: cover;
   background-position: center;
 
@@ -72,51 +68,51 @@ const LocationImage = styled.div`
     height: 100%;
     width: 10em;
   }
-`;
+`
 
 const GetDirections = styled.a`
   color: ${color.background};
-  clip-path: polygon(100% 0%,100% 0%,68% 48%,38% 0%);
+  clip-path: polygon(100% 0%, 100% 0%, 68% 48%, 38% 0%);
   background-color: ${color.callout};
   z-index: 2;
   grid-area: 1/2/2/3;
-`;
+`
 
+const Location = ({ data }) => {
+  const { name, addLine1, addLine2, mapLink, image } = data
 
-const Location = ({ data }) => (
-
-  <>
+  return (
     <LocationContainer>
       <LocationContent>
-        <div className="title">
-          {data.name
-            ?  `${data.name}`
-            : ''}
-        </div>
+        <div className="title">{name ? `${name}` : ''}</div>
         <div className="address">
-          <div>
-            {data.addLine1
-              ?  `${data.addLine1}`
-              : ''}
-          </div>
-          <div>
-            {data.addLine2
-              ?  `${data.addLine2}`
-              : ''}
-          </div>
+          <div>{addLine1 ? `${addLine1}` : ''}</div>
+          <div>{addLine2 ? `${addLine2}` : ''}</div>
         </div>
-        {data.addLine2
-          ? (
-            <div className="map-link">
-              <a href={data.mapLink} target="_blank">view on map</a>
-            </div>
-          )
-          : ''}
+        {addLine2 ? (
+          <div className="map-link">
+            <a href={mapLink} target="_blank" rel="noreferrer">
+              view on map
+            </a>
+          </div>
+        ) : (
+          ''
+        )}
       </LocationContent>
-      <GetDirections></GetDirections>
-      <LocationImage imageUrl={data.image} />
+      <GetDirections />
+      <LocationImage imageUrl={image} />
     </LocationContainer>
-  </>
-);
+  )
+}
 
-export default Location;
+Location.propTypes = {
+  data: PropTypes.shape({
+    name: PropTypes.string,
+    addLine1: PropTypes.string,
+    addLine2: PropTypes.string,
+    mapLink: PropTypes.string,
+    image: PropTypes.string,
+  }),
+}
+
+export default Location
