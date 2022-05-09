@@ -6,13 +6,15 @@ import SEO from '../components/seo'
 import Locations from '../components/Locations/index'
 import Hero from '../components/Hero/index'
 import Review from '../components/Reviews/index'
-import PhotoGallery from '../components/home/PhotoGallery'
-import PhotoGalleryTwo from '../components/home/PhotoGalleryTwo'
-import PhotoGalleryThree from '../components/home/PhotoGalleryThree'
 import ThePocoExperience from '../components/ThePocoExperience/index'
 import PrivateEventsCallout from '../components/PrivateEventsCallout/index'
+import PhotoGallery from '../components/PhotoGallery/index'
 
-const IndexPage = ({ props, absolute }) => (
+// Images
+import FoodImagesData from '../../data/images/food-images'
+import GenericImagesData from '../../data/images/generic-images'
+
+const IndexPage = () => (
   <Layout absolute>
     <SEO
       title="Home"
@@ -27,10 +29,9 @@ const IndexPage = ({ props, absolute }) => (
     <Hero />
     <ThePocoExperience />
     <Locations />
-    <PhotoGalleryTwo />
+    <PhotoGallery imageData={GenericImagesData} />
     <Review />
-    <PhotoGallery />
-    <PhotoGalleryThree />
+    <PhotoGallery imageData={FoodImagesData} />
     <PrivateEventsCallout />
   </Layout>
 )

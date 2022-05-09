@@ -1,0 +1,40 @@
+const PrivateEventsImagesData = [
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/private-events/poco-piatti-private-events-1.jpg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/private-events/poco-piatti-private-events-2.jpg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/private-events/poco-piatti-private-events-3.jpg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/private-events/poco-piatti-private-events-4.jpg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/private-events/poco-piatti-private-events-5.jpg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/private-events/poco-piatti-private-events-6.jpg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/private-events/poco-piatti-private-events-7.jpg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/private-events/poco-piatti-private-events-8.jpg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/private-events/poco-piatti-private-events-9.jpg',
+  },
+]
+
+export default PrivateEventsImagesData

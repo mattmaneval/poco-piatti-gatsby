@@ -1,0 +1,40 @@
+const FoodImagesData = [
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/food/poco-piatti-food-1.jpeg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/food/poco-piatti-food-2.jpeg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/food/poco-piatti-food-3.jpeg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/food/poco-piatti-food-4.jpeg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/food/poco-piatti-food-5.jpeg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/food/poco-piatti-food-6.jpeg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/food/poco-piatti-food-7.jpeg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/food/poco-piatti-food-8.jpeg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/food/poco-piatti-food-9.jpeg',
+  },
+]
+
+export default FoodImagesData

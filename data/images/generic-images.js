@@ -1,0 +1,40 @@
+const GenericImagesData = [
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/generic/poco-piatti-generic-1.jpeg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/generic/poco-piatti-generic-2.jpeg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/generic/poco-piatti-generic-3.jpeg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/generic/poco-piatti-generic-4.JPG',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/generic/poco-piatti-generic-5.JPG',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/generic/poco-piatti-generic-6.jpeg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/generic/poco-piatti-generic-7.jpeg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/generic/poco-piatti-generic-8.jpeg',
+  },
+  {
+    image:
+      'https://pocopiatti.s3.us-east-2.amazonaws.com/generic/poco-piatti-generic-9.jpeg',
+  },
+]
+
+export default GenericImagesData

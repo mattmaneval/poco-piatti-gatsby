@@ -12,31 +12,12 @@ import MoreInfoCallout from '../components/MoreInfoCallout/index'
 
 // Images
 import PrivateEventsImage from '../images/private-events-image.jpg'
+import PrivateEventsImagesData from '../../data/images/private-events-images'
 
 // Styles
 import theme from '../styles/theme'
-import media from '../styles/media'
 
 const { color } = theme
-
-const PrivateEventsImagesData = [
-  {
-    image:
-      'https://pocopiatti.s3.us-east-2.amazonaws.com/Locations/perrysburg-storefront.jpg',
-  },
-  {
-    image:
-      'https://pocopiatti.s3.us-east-2.amazonaws.com/Locations/perrysburg-storefront.jpg',
-  },
-  {
-    image:
-      'https://pocopiatti.s3.us-east-2.amazonaws.com/Locations/perrysburg-storefront.jpg',
-  },
-  {
-    image:
-      'https://pocopiatti.s3.us-east-2.amazonaws.com/Locations/perrysburg-storefront.jpg',
-  },
-]
 
 const BackgroundImageContainer = styled.div`
   position: relative;

@@ -7,9 +7,11 @@ import SEO from '../components/seo'
 import HeadingGroup from '../components/HeadingGroup/index'
 import SectionHeading from '../components/SectionHeading/index'
 import H2Callout from '../components/H2Callout/index'
+import PhotoGallery from '../components/PhotoGallery'
 
 // Images
 import CateringImage from '../images/catering-image.jpg'
+import CateringImagesData from '../../data/images/catering-images'
 
 // Styles
 import theme from '../styles/theme'
@@ -303,6 +305,7 @@ const Catering = () => (
           </CateringPackage>
         </div>
       </section>
+      <PhotoGallery imageData={CateringImagesData} />
     </main>
   </Layout>
 )
