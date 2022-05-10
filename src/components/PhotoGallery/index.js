@@ -17,7 +17,7 @@ const PhotoGalleryContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
 
   @media ${media.primary} {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 `
 

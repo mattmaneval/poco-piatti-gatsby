@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 // Components
-import Cta from '../Cta/index'
+import ArrowCta from '../ArrowCta/index'
 
 // Images
 import ThePocoExperienceImage from '../../images/the-poco-experience.jpg'
@@ -63,7 +63,7 @@ function ThePocoExperience() {
               fresh and best quality ingredients. So share the small, or large,
               plates with your table and enjoy!
             </h2>
-            <Cta text="Explore Our Menu" href="/Menu/" />
+            <ArrowCta text="Explore Our Menu" href="/Menu/" />
           </div>
           <GridImage />
         </Grid>

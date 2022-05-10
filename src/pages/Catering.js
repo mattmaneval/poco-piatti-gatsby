@@ -42,6 +42,7 @@ const Catering = () => (
         ctaText="Order Catering"
         ctaHref="tel:419-931-0281"
       />
+      <PhotoGallery imageData={CateringImagesData} />
       <section>
         <SectionHeading text="Packages" wrap light />
         <div className="wrap">
@@ -305,7 +306,6 @@ const Catering = () => (
           </CateringPackage>
         </div>
       </section>
-      <PhotoGallery imageData={CateringImagesData} />
     </main>
   </Layout>
 )
